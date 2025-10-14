@@ -78,4 +78,16 @@ function loadDataChunks(data) {
   return dataChunks;
 }
 
-export { errorDataChunks, loadDataChunks };
+function engagementDataChunks(data) {
+  const dataChunks = new DataChunks();
+  dataChunks.load(data);
+  dataChunks.addSeries('pageViews', series.pageViews);
+  dataChunks.addFacet('hour', hour, 'every', 'none');
+  dataChunks.addSeries('fills', b => b.events.find(e => e.checkpoint === 'fill') ? b.weight : 0);
+  dataChunks.addSeries('clicks', b => b.events.find(e => e.checkpoint === 'click') ? b.weight : 0);
+  dataChunks.addSeries('fillCount', b => b.events.filter(e => e.checkpoint === 'fill').length);
+  dataChunks.addSeries('clickCount', b => b.events.filter(e => e.checkpoint === 'click').length);
+  return dataChunks;
+}
+
+export { errorDataChunks, loadDataChunks, engagementDataChunks };

@@ -5,7 +5,8 @@ import URLAutocomplete from './components/url-autocomplete.js';
 import DateRangePicker from './components/date-range-picker.js';
 import ErrorDashboard from './dashboards/error-dashboard.js';
 import LoadDashboard from './dashboards/load-dashboard.js';
-import { errorDataChunks, loadDataChunks } from './datachunks.js';
+import EngagementDashboard from './dashboards/engagement-dashboard.js';
+import { errorDataChunks, loadDataChunks, engagementDataChunks } from './datachunks.js';
 
 const dataLoader = new DataLoader();
 const BUNDLER_ENDPOINT = 'https://bundles.aem.page';
@@ -60,18 +61,25 @@ function renderDashboard(dashboardType, filteredData, url) {
     const loadDashboard = document.createElement('load-dashboard');
     urlResults.appendChild(loadDashboard);
     loadDashboard.setData(dataChunks, url);
+  } else if (dashboardType === 'engagement') {
+    const dataChunks = engagementDataChunks(filteredData);
+    const engagementDashboard = document.createElement('engagement-dashboard');
+    urlResults.appendChild(engagementDashboard);
+    engagementDashboard.setData(dataChunks, url);
   }
 }
 
 function setupDashboardSwitcher() {
   const errorTab = document.getElementById('tab-errors');
   const loadTab = document.getElementById('tab-load');
+  const engagementTab = document.getElementById('tab-engagement');
   const urlResults = document.getElementById('url-results');
 
   errorTab.addEventListener('click', () => {
     currentDashboard = 'errors';
     errorTab.classList.add('active');
     loadTab.classList.remove('active');
+    engagementTab.classList.remove('active');
 
     // If we have data loaded, automatically show the error dashboard
     if (currentFilteredData && currentUrl) {
@@ -85,10 +93,25 @@ function setupDashboardSwitcher() {
     currentDashboard = 'load';
     loadTab.classList.add('active');
     errorTab.classList.remove('active');
+    engagementTab.classList.remove('active');
 
     // If we have data loaded, automatically show the load dashboard
     if (currentFilteredData && currentUrl) {
       renderDashboard('load', currentFilteredData, currentUrl);
+    } else {
+      urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
+    }
+  });
+
+  engagementTab.addEventListener('click', () => {
+    currentDashboard = 'engagement';
+    engagementTab.classList.add('active');
+    errorTab.classList.remove('active');
+    loadTab.classList.remove('active');
+
+    // If we have data loaded, automatically show the engagement dashboard
+    if (currentFilteredData && currentUrl) {
+      renderDashboard('engagement', currentFilteredData, currentUrl);
     } else {
       urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
     }

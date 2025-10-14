@@ -111,7 +111,7 @@ url-autocomplete {
   gap: 20px;
 }
 
-error-dashboard, load-dashboard {
+error-dashboard, load-dashboard, engagement-dashboard {
   display: block;
   width: 100%;
 }
