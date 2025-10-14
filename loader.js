@@ -383,8 +383,11 @@ export default class DataLoader {
     const { rumBundles } = json;
     rumBundles.forEach((bundle) => addCalculatedProps(bundle));
 
-    // Store in cache (don't await to avoid blocking)
-    this.setCachedData(apiRequestURL, { rumBundles });
+    // do not cache if the date is today
+    if (date !== new Date().toISOString().split('T')[0]) {
+      // Store in cache (don't await to avoid blocking)
+      this.setCachedData(apiRequestURL, { rumBundles });
+    }
 
     return { date, hour, rumBundles: this.filterByDateRange(rumBundles, start, end) };
   }

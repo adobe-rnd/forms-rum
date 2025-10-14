@@ -1,7 +1,8 @@
 import DataLoader from './loader.js';
 import { fetchDomainKey } from './loader.js';
 import { DataChunks, series, facets } from '@adobe/rum-distiller';
-import ErrorRateChart from './error-rate-chart.js';
+import URLAutocomplete from './components/url-autocomplete.js';
+import ErrorDashboard from './dashboards/error-dashboard.js';
 
 const dataLoader = new DataLoader();
 const BUNDLER_ENDPOINT = 'https://bundles.aem.page';
@@ -10,7 +11,11 @@ const domain = 'applyonline.hdfcbank.com';
 const domainKey = await fetchDomainKey(domain);
 dataLoader.domainKey = domainKey;
 dataLoader.domain = domain;
-const data = await dataLoader.fetchDateRange('2025-10-06', '2025-10-07');
+const data = await dataLoader.fetchDateRange('2025-10-11');
+const dataChunks = new DataChunks();
+dataChunks.load(data);
+dataChunks.addFacet('url', facets.url);
+const urls = dataChunks.facets.url.map(url => url.value);
 /**
   * Data structure
   * [{
@@ -62,51 +67,68 @@ https://www.aem.live/developer/operational-telemetry
 
 function handleURL() {
   const urlForm = document.getElementById('url-form');
-  const urlInput = document.getElementById('url');
+  const urlAutocomplete = document.getElementById('url-autocomplete');
   const urlResults = document.getElementById('url-results');
+
+  // Set the URLs from the facet data to the autocomplete component
+  urlAutocomplete.setUrls(urls);
 
   urlForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const url = urlInput.value;
+    const url = urlAutocomplete.getValue();
 
-    // Filter bundles by URL
+    // Filter bundles by URL using text search (substring match)
     const filteredData = data.map((chunk) => ({
       date: chunk.date,
       hour: chunk.hour,
-      rumBundles: chunk.rumBundles.filter((bundle) => bundle.url === url)
+      rumBundles: chunk.rumBundles.filter((bundle) => bundle.url.includes(url))
     })).filter((chunk) => chunk.rumBundles.length > 0);
 
-    // Calculate error rate data
-    const errorRateData = ErrorRateChart.calculateErrorRate(filteredData);
+    const dataChunks = new DataChunks();
+    dataChunks.load(filteredData);
+    dataChunks.addSeries('pageViews', series.pageViews);
+    dataChunks.addSeries('errorCount', (bundle) => bundle.events.filter(
+      (event) => event.checkpoint === 'error' && event.source !== 'focus-loss'
+    ).length, 'every', 'none');
+    dataChunks.addFacet('errorSource', (bundle) => {
+      return bundle.events
+        .filter((event) => event.checkpoint === 'error' && event.source !== 'focus-loss')
+        .map((event) => event.source)
+        .filter(Boolean); // Remove empty sources
+    });
+    dataChunks.addFacet('errorTarget', (bundle) => {
+      return bundle.events
+        .filter((event) => event.checkpoint === 'error' && event.source !== 'focus-loss')
+        .map((event) => event.target)
+        .filter(Boolean); // Remove empty targets
+    });
+    dataChunks.addFacet('hour', (bundle) => {
+      // Convert UTC timeSlot to local timezone
+      // API returns timeSlot in UTC format: '2025-10-06T00:00:00Z'
+      // JavaScript Date constructor automatically converts to local timezone
+      const utcDate = new Date(bundle.timeSlot);
+      // Format as ISO string in local timezone (keeping only date and hour)
+      const year = utcDate.getFullYear();
+      const month = String(utcDate.getMonth() + 1).padStart(2, '0');
+      const day = String(utcDate.getDate()).padStart(2, '0');
+      const hour = String(utcDate.getHours()).padStart(2, '0');
+      return [`${year}-${month}-${day}T${hour}:00:00`];
+    });
+
 
     // Clear previous results
     urlResults.innerHTML = '';
 
-    if (errorRateData.length === 0) {
+    // Check if we have data
+    if (dataChunks.bundles.length === 0) {
       urlResults.innerHTML = '<p>No data found for this URL</p>';
       return;
     }
 
-    // Create and render error rate chart
-    const chartComponent = document.createElement('error-rate-chart');
-    urlResults.appendChild(chartComponent);
-    chartComponent.setData(errorRateData);
-
-    // Display summary statistics
-    const totalErrors = errorRateData.reduce((sum, d) => sum + d.totalErrors, 0);
-    const totalViews = errorRateData.reduce((sum, d) => sum + d.totalPageViews, 0);
-    const avgErrorRate = totalViews > 0 ? (totalErrors / totalViews) * 100 : 0;
-
-    const summaryDiv = document.createElement('div');
-    summaryDiv.className = 'summary-stats';
-    summaryDiv.innerHTML = `
-      <h3>Summary Statistics</h3>
-      <p><strong>Total Page Views:</strong> ${totalViews}</p>
-      <p><strong>Total Errors:</strong> ${totalErrors}</p>
-      <p><strong>Average Error Rate:</strong> ${avgErrorRate.toFixed(2)}%</p>
-      <p><strong>URL:</strong> ${url}</p>
-    `;
-    urlResults.appendChild(summaryDiv);
+    // Create and render error dashboard
+    const errorDashboard = document.createElement('error-dashboard');
+    urlResults.appendChild(errorDashboard);
+    errorDashboard.setData(dataChunks, url);
   });
 }
 

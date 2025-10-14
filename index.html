@@ -14,7 +14,11 @@
     <body>
         <h1>Forms RUM Dashboard</h1>
         <form id="url-form">
-          <input type="text" id="url" placeholder="Enter URL" />
+          <url-autocomplete
+            id="url-autocomplete"
+            placeholder="Search for URL"
+            value="https://applyonline.hdfcbank.com/loan/personal-loan/existing-to-bank/apply-for-personal-loan-online.html">
+          </url-autocomplete>
           <button id="submit">Submit</button>
         </form>
         <div id="url-results">

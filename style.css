@@ -38,18 +38,12 @@ h3 {
   align-items: center;
 }
 
-#url {
+url-autocomplete {
   flex: 1;
-  padding: 12px 16px;
-  border: 2px solid #e5e7eb;
-  border-radius: 6px;
-  font-size: 16px;
-  transition: border-color 0.2s;
 }
 
-#url:focus {
-  outline: none;
-  border-color: #2563eb;
+#url-autocomplete {
+  flex: 1;
 }
 
 #submit {
@@ -78,16 +72,9 @@ h3 {
   gap: 20px;
 }
 
-error-rate-chart {
+error-dashboard {
   display: block;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-error-rate-chart canvas {
-  max-height: 400px;
+  width: 100%;
 }
 
 .summary-stats {
@@ -119,7 +106,7 @@ error-rate-chart canvas {
     flex-direction: column;
   }
 
-  #url, #submit {
+  url-autocomplete, #submit {
     width: 100%;
   }
 
