@@ -41,8 +41,27 @@ function hideLoading() {
   }
 }
 
-// Track current active dashboard
+// Track current active dashboard and loaded data
 let currentDashboard = 'errors';
+let currentUrl = '';
+let currentFilteredData = null;
+
+function renderDashboard(dashboardType, filteredData, url) {
+  const urlResults = document.getElementById('url-results');
+  urlResults.innerHTML = '';
+
+  if (dashboardType === 'errors') {
+    const dataChunks = errorDataChunks(filteredData);
+    const errorDashboard = document.createElement('error-dashboard');
+    urlResults.appendChild(errorDashboard);
+    errorDashboard.setData(dataChunks, url);
+  } else if (dashboardType === 'load') {
+    const dataChunks = loadDataChunks(filteredData);
+    const loadDashboard = document.createElement('load-dashboard');
+    urlResults.appendChild(loadDashboard);
+    loadDashboard.setData(dataChunks, url);
+  }
+}
 
 function setupDashboardSwitcher() {
   const errorTab = document.getElementById('tab-errors');
@@ -53,14 +72,26 @@ function setupDashboardSwitcher() {
     currentDashboard = 'errors';
     errorTab.classList.add('active');
     loadTab.classList.remove('active');
-    urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
+
+    // If we have data loaded, automatically show the error dashboard
+    if (currentFilteredData && currentUrl) {
+      renderDashboard('errors', currentFilteredData, currentUrl);
+    } else {
+      urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
+    }
   });
 
   loadTab.addEventListener('click', () => {
     currentDashboard = 'load';
     loadTab.classList.add('active');
     errorTab.classList.remove('active');
-    urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
+
+    // If we have data loaded, automatically show the load dashboard
+    if (currentFilteredData && currentUrl) {
+      renderDashboard('load', currentFilteredData, currentUrl);
+    } else {
+      urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
+    }
   });
 }
 
@@ -93,7 +124,9 @@ function handleURL() {
       const newUrls = newDataChunks.facets.url.map(url => url.value);
       urlAutocomplete.setUrls(newUrls);
 
-      // Clear results after data is loaded
+      // Clear current data and results
+      currentFilteredData = null;
+      currentUrl = '';
       urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
     } catch (error) {
       urlResults.innerHTML = '<p class="error">Error loading data. Please try again.</p>';
@@ -119,30 +152,25 @@ function handleURL() {
         rumBundles: chunk.rumBundles.filter((bundle) => bundle.url.includes(url))
       })).filter((chunk) => chunk.rumBundles.length > 0);
 
-      // Clear previous results
-      urlResults.innerHTML = '';
-
       // Check if we have data
       if (filteredData.length === 0 || filteredData.every(chunk => chunk.rumBundles.length === 0)) {
         urlResults.innerHTML = '<p>No data found for this URL</p>';
+        currentFilteredData = null;
+        currentUrl = '';
         return;
       }
 
-      // Create and render dashboard based on current selection
-      if (currentDashboard === 'errors') {
-        const dataChunks = errorDataChunks(filteredData);
-        const errorDashboard = document.createElement('error-dashboard');
-        urlResults.appendChild(errorDashboard);
-        errorDashboard.setData(dataChunks, url);
-      } else if (currentDashboard === 'load') {
-        const dataChunks = loadDataChunks(filteredData);
-        const loadDashboard = document.createElement('load-dashboard');
-        urlResults.appendChild(loadDashboard);
-        loadDashboard.setData(dataChunks, url);
-      }
+      // Store the filtered data and URL for tab switching
+      currentFilteredData = filteredData;
+      currentUrl = url;
+
+      // Render the appropriate dashboard
+      renderDashboard(currentDashboard, filteredData, url);
     } catch (error) {
       urlResults.innerHTML = '<p class="error">Error processing data. Please try again.</p>';
       console.error('Error processing dashboard data:', error);
+      currentFilteredData = null;
+      currentUrl = '';
     }
   });
 }
