@@ -4,7 +4,8 @@ import { DataChunks, series, facets } from '@adobe/rum-distiller';
 import URLAutocomplete from './components/url-autocomplete.js';
 import DateRangePicker from './components/date-range-picker.js';
 import ErrorDashboard from './dashboards/error-dashboard.js';
-import { errorDataChunks } from './datachunks.js';
+import LoadDashboard from './dashboards/load-dashboard.js';
+import { errorDataChunks, loadDataChunks } from './datachunks.js';
 
 const dataLoader = new DataLoader();
 const BUNDLER_ENDPOINT = 'https://bundles.aem.page';
@@ -40,6 +41,29 @@ function hideLoading() {
   }
 }
 
+// Track current active dashboard
+let currentDashboard = 'errors';
+
+function setupDashboardSwitcher() {
+  const errorTab = document.getElementById('tab-errors');
+  const loadTab = document.getElementById('tab-load');
+  const urlResults = document.getElementById('url-results');
+
+  errorTab.addEventListener('click', () => {
+    currentDashboard = 'errors';
+    errorTab.classList.add('active');
+    loadTab.classList.remove('active');
+    urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
+  });
+
+  loadTab.addEventListener('click', () => {
+    currentDashboard = 'load';
+    loadTab.classList.add('active');
+    errorTab.classList.remove('active');
+    urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
+  });
+}
+
 function handleURL() {
   const urlForm = document.getElementById('url-form');
   const urlAutocomplete = document.getElementById('url-autocomplete');
@@ -48,6 +72,9 @@ function handleURL() {
   // Set the URLs from the facet data to the autocomplete component
   urlAutocomplete.setUrls(urls);
   const dateRangePicker = document.getElementById('date-range-picker');
+
+  // Setup dashboard switcher
+  setupDashboardSwitcher();
 
   dateRangePicker.addEventListener('date-range-changed', async (event) => {
     const { startDate, endDate } = event.detail;
@@ -92,20 +119,27 @@ function handleURL() {
         rumBundles: chunk.rumBundles.filter((bundle) => bundle.url.includes(url))
       })).filter((chunk) => chunk.rumBundles.length > 0);
 
-      const dataChunks = errorDataChunks(filteredData);
       // Clear previous results
       urlResults.innerHTML = '';
 
       // Check if we have data
-      if (dataChunks.bundles.length === 0) {
+      if (filteredData.length === 0 || filteredData.every(chunk => chunk.rumBundles.length === 0)) {
         urlResults.innerHTML = '<p>No data found for this URL</p>';
         return;
       }
 
-      // Create and render error dashboard
-      const errorDashboard = document.createElement('error-dashboard');
-      urlResults.appendChild(errorDashboard);
-      errorDashboard.setData(dataChunks, url);
+      // Create and render dashboard based on current selection
+      if (currentDashboard === 'errors') {
+        const dataChunks = errorDataChunks(filteredData);
+        const errorDashboard = document.createElement('error-dashboard');
+        urlResults.appendChild(errorDashboard);
+        errorDashboard.setData(dataChunks, url);
+      } else if (currentDashboard === 'load') {
+        const dataChunks = loadDataChunks(filteredData);
+        const loadDashboard = document.createElement('load-dashboard');
+        urlResults.appendChild(loadDashboard);
+        loadDashboard.setData(dataChunks, url);
+      }
     } catch (error) {
       urlResults.innerHTML = '<p class="error">Error processing data. Please try again.</p>';
       console.error('Error processing dashboard data:', error);

@@ -48,4 +48,34 @@ function errorDataChunks(data) {
   return dataChunks;
 }
 
-export { errorDataChunks };
+function isFormLoadEvent(event) {
+  return event.checkpoint === 'viewblock' && event.source.match(/form/);
+}
+
+function getFormLoadEvent(events) {
+  return events.find(isFormLoadEvent);
+}
+
+function formBlockLoadTime(bundle) {
+  const sortedEvents = bundle.events.sort((a, b) => a.timeDelta - b.timeDelta);
+  const formLoad = getFormLoadEvent(sortedEvents);
+  if (formLoad?.timeDelta > 2 * 60 * 1000) {
+    return undefined;
+  }
+  if (formLoad?.timeDelta > 0) {
+    return formLoad?.timeDelta / 1000;
+  }
+  return undefined;
+}
+
+function loadDataChunks(data) {
+  const dataChunks = new DataChunks();
+  dataChunks.load(data);
+  dataChunks.addSeries('pageViews', series.pageViews);
+  dataChunks.addSeries('formBlockLoadTime', formBlockLoadTime);
+  dataChunks.addSeries('formLoaded', b => b.events.find(isFormLoadEvent) ? b.weight : 0);
+  dataChunks.addFacet('hour', hour, 'every', 'none');
+  return dataChunks;
+}
+
+export { errorDataChunks, loadDataChunks };

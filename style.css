@@ -16,7 +16,7 @@ body {
 
 h1 {
   color: #2563eb;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -25,6 +25,44 @@ h3 {
   color: #1e40af;
   margin-bottom: 15px;
   font-size: 1.25rem;
+}
+
+.dashboard-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 30px;
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+  flex: 1;
+  padding: 12px 24px;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.tab.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.tab.active:hover {
+  background: #1d4ed8;
 }
 
 #url-form {
@@ -73,7 +111,7 @@ url-autocomplete {
   gap: 20px;
 }
 
-error-dashboard {
+error-dashboard, load-dashboard {
   display: block;
   width: 100%;
 }
