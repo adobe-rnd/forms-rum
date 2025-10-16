@@ -14,16 +14,37 @@ const BUNDLER_ENDPOINT = 'https://bundles.aem.page';
 dataLoader.apiEndpoint = BUNDLER_ENDPOINT;
 const domain = 'applyonline.hdfcbank.com';
 const domainKey = await fetchDomainKey(domain);
+// updateURLParams({ domainKey });
 dataLoader.domainKey = domainKey;
 dataLoader.domain = domain;
 
-// Initial data load with default date range
-let data = await dataLoader.fetchDateRange('2025-10-11', '2025-10-12');
+// URL Parameter Management
+function getURLParams() {
+  const params = new URLSearchParams(window.location.search);
+  return {
+    tab: params.get('tab') || undefined,
+    url: params.get('url') || undefined,
+    startDate: params.get('startDate') || undefined,
+    endDate: params.get('endDate') || undefined,
+  };
+}
 
-const dataChunks = new DataChunks();
-dataChunks.load(data);
-dataChunks.addFacet('url', facets.url);
-let urls = dataChunks.facets.url.map(url => url.value);
+function updateURLParams(params) {
+  const currentParams = new URLSearchParams(window.location.search);
+
+  // Update or set each parameter
+  Object.keys(params).forEach(key => {
+    if (params[key]) {
+      currentParams.set(key, params[key]);
+    } else {
+      currentParams.delete(key);
+    }
+  });
+
+  const newURL = `${window.location.pathname}?${currentParams.toString()}`;
+  window.history.pushState({ ...params }, '', newURL);
+}
+
 
 function showLoading() {
   const urlResults = document.getElementById('url-results');
@@ -43,118 +64,107 @@ function hideLoading() {
   }
 }
 
-// Track current active dashboard and loaded data
-let currentDashboard = 'errors';
-let currentUrl = '';
-let currentFilteredData = null;
+const dataChunksConfig = {
+  error: errorDataChunks,
+  load: loadDataChunks,
+  engagement: engagementDataChunks,
+  resources: resourceDataChunks
+}
 
-function renderDashboard(dashboardType, filteredData, url) {
+// Single function to read URL params, set state, and render
+async function renderFromURLParams() {
+  const params = getURLParams();
+  const dateRangePicker = document.getElementById('date-range-picker');
+  const urlAutocomplete = document.getElementById('url-autocomplete');
+
+  const {
+    startDate = dateRangePicker.getStartDate(),
+    endDate = dateRangePicker.getEndDate(),
+    url = urlAutocomplete.getValue(),
+    tab = 'error'
+  } = params;
+  // Set active tab based on URL params
   const urlResults = document.getElementById('url-results');
-  urlResults.innerHTML = '';
 
-  if (dashboardType === 'errors') {
-    const dataChunks = errorDataChunks(filteredData);
-    const errorDashboard = document.createElement('error-dashboard');
-    urlResults.appendChild(errorDashboard);
-    errorDashboard.setData(dataChunks, url);
-  } else if (dashboardType === 'load') {
-    const dataChunks = loadDataChunks(filteredData);
-    const loadDashboard = document.createElement('load-dashboard');
-    urlResults.appendChild(loadDashboard);
-    loadDashboard.setData(dataChunks, url);
-  } else if (dashboardType === 'engagement') {
-    const dataChunks = engagementDataChunks(filteredData);
-    const engagementDashboard = document.createElement('engagement-dashboard');
-    urlResults.appendChild(engagementDashboard);
-    engagementDashboard.setData(dataChunks, url);
-  } else if (dashboardType === 'resources') {
-    const dataChunks = resourceDataChunks(filteredData);
-    const resourceDashboard = document.createElement('resource-dashboard');
-    urlResults.appendChild(resourceDashboard);
-    resourceDashboard.setData(dataChunks, url);
+  document.querySelectorAll('.dashboard-tabs .tab').forEach(tabElement => {
+    tabElement.classList.remove('active');
+  });
+
+  const activeTab = document.getElementById(`tab-${tab}`);
+  activeTab?.classList.add('active');
+  // Update date range picker
+  dateRangePicker.setDates(startDate, endDate);
+  // If URL is specified, filter data and render dashboard
+  if (url) {
+    try {
+      const filteredData = currentData.map((chunk) => ({
+        date: chunk.date,
+        hour: chunk.hour,
+        rumBundles: chunk.rumBundles.filter((bundle) => bundle.url.includes(url))
+      })).filter((chunk) => chunk.rumBundles.length > 0);
+
+      if (filteredData.length > 0 && !filteredData.every(chunk => chunk.rumBundles.length === 0)) {
+        // Render the dashboard based on the tab
+        urlResults.innerHTML = '';
+
+        let dataChunksForDashboard;
+        let dashboardElement;
+        dataChunksForDashboard = dataChunksConfig[tab](filteredData);
+        dashboardElement = document.createElement(`${tab}-dashboard`);
+        urlResults.appendChild(dashboardElement);
+        dashboardElement.setData(dataChunksForDashboard, url);
+      } else {
+        urlResults.innerHTML = '<p>No data found for this URL</p>';
+      }
+    } catch (error) {
+      console.error('Error rendering dashboard:', error);
+      urlResults.innerHTML = '<p class="error">Error processing data. Please try again.</p>';
+    }
+  } else {
+    urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
   }
 }
 
-function setupDashboardSwitcher() {
-  const errorTab = document.getElementById('tab-errors');
-  const loadTab = document.getElementById('tab-load');
-  const engagementTab = document.getElementById('tab-engagement');
-  const resourcesTab = document.getElementById('tab-resources');
-  const urlResults = document.getElementById('url-results');
-
-  errorTab.addEventListener('click', () => {
-    currentDashboard = 'errors';
-    errorTab.classList.add('active');
-    loadTab.classList.remove('active');
-    engagementTab.classList.remove('active');
-    resourcesTab.classList.remove('active');
-
-    // If we have data loaded, automatically show the error dashboard
-    if (currentFilteredData && currentUrl) {
-      renderDashboard('errors', currentFilteredData, currentUrl);
-    } else {
-      urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
-    }
-  });
-
-  loadTab.addEventListener('click', () => {
-    currentDashboard = 'load';
-    loadTab.classList.add('active');
-    errorTab.classList.remove('active');
-    engagementTab.classList.remove('active');
-    resourcesTab.classList.remove('active');
-
-    // If we have data loaded, automatically show the load dashboard
-    if (currentFilteredData && currentUrl) {
-      renderDashboard('load', currentFilteredData, currentUrl);
-    } else {
-      urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
-    }
-  });
-
-  engagementTab.addEventListener('click', () => {
-    currentDashboard = 'engagement';
-    engagementTab.classList.add('active');
-    errorTab.classList.remove('active');
-    loadTab.classList.remove('active');
-    resourcesTab.classList.remove('active');
-
-    // If we have data loaded, automatically show the engagement dashboard
-    if (currentFilteredData && currentUrl) {
-      renderDashboard('engagement', currentFilteredData, currentUrl);
-    } else {
-      urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
-    }
-  });
-
-  resourcesTab.addEventListener('click', () => {
-    currentDashboard = 'resources';
-    resourcesTab.classList.add('active');
-    errorTab.classList.remove('active');
-    loadTab.classList.remove('active');
-    engagementTab.classList.remove('active');
-
-    // If we have data loaded, automatically show the resources dashboard
-    if (currentFilteredData && currentUrl) {
-      renderDashboard('resources', currentFilteredData, currentUrl);
-    } else {
-      urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
-    }
-  });
+// Generic handler for updating URL params and re-rendering
+function handleParamUpdate(paramUpdates) {
+  updateURLParams(paramUpdates);
+  renderFromURLParams();
 }
 
-function handleURL() {
+let currentData;
+
+async function loadData(startDate, endDate) {
+  currentData = await dataLoader.fetchDateRange(startDate, endDate);
+  // Update the URLs autocomplete with new data
+  const newDataChunks = new DataChunks();
+  newDataChunks.load(currentData);
+  newDataChunks.addFacet('url', facets.url);
+  const newUrls = newDataChunks.facets.url.map(url => url.value);
+  urlAutocomplete.setUrls(newUrls);
+}
+
+
+function setupEventListeners() {
   const urlForm = document.getElementById('url-form');
   const urlAutocomplete = document.getElementById('url-autocomplete');
-  const urlResults = document.getElementById('url-results');
-
-  // Set the URLs from the facet data to the autocomplete component
-  urlAutocomplete.setUrls(urls);
   const dateRangePicker = document.getElementById('date-range-picker');
+  const dashboardTabs = document.querySelector('.dashboard-tabs');
 
-  // Setup dashboard switcher
-  setupDashboardSwitcher();
+  // Handle tab clicks with event delegation on parent
+  dashboardTabs.addEventListener('click', (e) => {
+    const tab = e.target.closest('.tab');
+    if (tab && tab.id) {
+      const tabName = tab.id.replace('tab-', '');
+      handleParamUpdate({ tab: tabName });
+    }
+  });
 
+  urlAutocomplete.addEventListener('url-selected', (event) => {
+    const url = event.detail.url;
+    handleParamUpdate({ url });
+  });
+
+  // Date range change handler
   dateRangePicker.addEventListener('date-range-changed', async (event) => {
     const { startDate, endDate } = event.detail;
 
@@ -163,64 +173,50 @@ function handleURL() {
 
     try {
       // Fetch new data for the date range
-      data = await dataLoader.fetchDateRange(startDate, endDate);
-
-      // Update the URLs autocomplete with new data
-      const newDataChunks = new DataChunks();
-      newDataChunks.load(data);
-      newDataChunks.addFacet('url', facets.url);
-      const newUrls = newDataChunks.facets.url.map(url => url.value);
-      urlAutocomplete.setUrls(newUrls);
-
-      // Clear current data and results
-      currentFilteredData = null;
-      currentUrl = '';
-      urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
+      loadData(startDate, endDate);
+      // Update URL parameters and re-render
+      handleParamUpdate({ startDate, endDate });
     } catch (error) {
+      const urlResults = document.getElementById('url-results');
       urlResults.innerHTML = '<p class="error">Error loading data. Please try again.</p>';
       console.error('Error fetching data:', error);
     }
   });
-
-
-
-  urlForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    // Show loading state
-    showLoading();
-
-    const url = urlAutocomplete.getValue();
-
-    try {
-      // Filter bundles by URL using text search (substring match)
-      const filteredData = data.map((chunk) => ({
-        date: chunk.date,
-        hour: chunk.hour,
-        rumBundles: chunk.rumBundles.filter((bundle) => bundle.url.includes(url))
-      })).filter((chunk) => chunk.rumBundles.length > 0);
-
-      // Check if we have data
-      if (filteredData.length === 0 || filteredData.every(chunk => chunk.rumBundles.length === 0)) {
-        urlResults.innerHTML = '<p>No data found for this URL</p>';
-        currentFilteredData = null;
-        currentUrl = '';
-        return;
-      }
-
-      // Store the filtered data and URL for tab switching
-      currentFilteredData = filteredData;
-      currentUrl = url;
-
-      // Render the appropriate dashboard
-      renderDashboard(currentDashboard, filteredData, url);
-    } catch (error) {
-      urlResults.innerHTML = '<p class="error">Error processing data. Please try again.</p>';
-      console.error('Error processing dashboard data:', error);
-      currentFilteredData = null;
-      currentUrl = '';
-    }
-  });
 }
 
-handleURL();
+// Handle browser back/forward buttons
+window.addEventListener('popstate', () => {
+  renderFromURLParams();
+});
+
+const params = getURLParams();
+const dateRangePicker = document.getElementById('date-range-picker');
+const urlAutocomplete = document.getElementById('url-autocomplete');
+const defaults = {
+  tab: 'error',
+  url: urlAutocomplete.getValue(),
+  startDate: dateRangePicker.getStartDate(),
+  endDate: dateRangePicker.getEndDate()
+}
+
+const merged = {
+  ...defaults,
+  ...JSON.parse(JSON.stringify(params))
+}
+
+const changedParams = Object.fromEntries(
+    Object.entries(defaults).filter(
+      ([key, value]) => merged[key] !== value
+    )
+  )
+debugger;
+// Initialize event listeners
+setupEventListeners();
+
+if (merged.startDate || merged.endDate) {
+  await loadData(merged.startDate, merged.endDate);
+}
+
+//if (Object.keys(changedParams).length > 0) {
+handleParamUpdate(changedParams);
+//}

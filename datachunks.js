@@ -59,13 +59,18 @@ function getFormLoadEvent(events) {
 function formBlockLoadTime(bundle) {
   const sortedEvents = bundle.events.sort((a, b) => a.timeDelta - b.timeDelta);
   const formLoad = getFormLoadEvent(sortedEvents);
-  if (formLoad?.timeDelta > 2 * 60 * 1000) {
+  const topEvent = sortedEvents[0];
+  if (formLoad?.timeDelta > 5 * 60 * 1000) {
     return undefined;
   }
   if (formLoad?.timeDelta > 0) {
     return formLoad?.timeDelta / 1000;
   }
   return undefined;
+}
+
+function pageViews(bundle) {
+  return bundle.weight;
 }
 
 function loadDataChunks(data) {

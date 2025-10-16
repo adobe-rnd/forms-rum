@@ -320,32 +320,31 @@ class ResourceDashboard extends HTMLElement {
     }
 
     // Sort by count (descending)
-    const sortedResources = [...missingResources].sort((a, b) => b.count - a.count);
-
-    // Calculate total for percentages
-    const totalMissing = sortedResources.reduce((sum, resource) => sum + resource.count, 0);
+    const sortedResources = [...missingResources].sort((a, b) => b.weight - a.weight);
 
     // Determine thresholds for high/medium/low
-    const maxCount = sortedResources[0]?.count || 0;
+    const maxCount = sortedResources[0]?.weight || 0;
     const highThreshold = maxCount * 0.5;
     const mediumThreshold = maxCount * 0.2;
 
+    const totalPageViews = this.dataChunks.totals.pageViews?.sum || 0;
+
     // Render resources list
     const html = sortedResources.map((resource, index) => {
-      const percentage = totalMissing > 0 ? (resource.count / totalMissing) * 100 : 0;
+      const percentage = totalPageViews > 0 ? (resource.weight / totalPageViews) * 100 : 0;
       const frequencyClass = resource.count >= highThreshold ? 'high-frequency' :
-                           resource.count >= mediumThreshold ? 'medium-frequency' : '';
-      const countClass = resource.count >= highThreshold ? 'high' :
-                        resource.count >= mediumThreshold ? 'medium' : 'low';
+                           resource.weight >= mediumThreshold ? 'medium-frequency' : '';
+      const countClass = resource.weight >= highThreshold ? 'high' :
+                        resource.weight >= mediumThreshold ? 'medium' : 'low';
 
       return `
         <div class="resource-item ${frequencyClass}">
           <div class="resource-info">
             <div class="resource-url">${this.escapeHtml(resource.value)}</div>
-            <div class="resource-details">Rank #${index + 1} • Affected ${resource.weight.toLocaleString()} page view(s)</div>
+            <div class="resource-details">Rank #${index + 1}</div>
           </div>
           <div class="resource-stats">
-            <span class="resource-count ${countClass}">${resource.count.toLocaleString()}</span>
+            <span class="resource-count ${countClass}">${resource.weight.toLocaleString()}</span>
             <span class="resource-percentage">${percentage.toFixed(1)}%</span>
           </div>
         </div>

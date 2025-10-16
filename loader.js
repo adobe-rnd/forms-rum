@@ -13,6 +13,11 @@ function getPersistentToken() {
 
 export async function fetchDomainKey(domain) {
   try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const domainKey = urlParams.get('domainKey');
+    if (domainKey) {
+      return domainKey;
+    }
     const auth = getPersistentToken();
     let org;
     if (domain.endsWith(':all') && domain !== 'aem.live:all') {
