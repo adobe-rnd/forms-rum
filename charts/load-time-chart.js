@@ -206,7 +206,7 @@ class LoadTimeChart extends HTMLElement {
           },
           title: {
             display: true,
-            text: 'Form Block Load Time Percentiles Per Hour',
+            text: 'Engagement Readiness Time (Form Visibility) Percentiles Per Hour',
             font: {
               size: 16,
               weight: 'bold'
