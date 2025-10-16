@@ -253,10 +253,6 @@ class ResourceDashboard extends HTMLElement {
               <span class="stat-label">Unique Resources</span>
               <span class="stat-value" id="unique-resources">-</span>
             </div>
-            <div class="stat-item" style="grid-column: 1 / -1;">
-              <span class="stat-label">URL</span>
-              <span class="stat-value" id="filtered-url" style="font-size: 0.875rem; word-break: break-all; font-weight: 500;">-</span>
-            </div>
           </div>
         </div>
 
@@ -304,7 +300,6 @@ class ResourceDashboard extends HTMLElement {
     // Update percentage
     this.shadowRoot.getElementById('pages-percentage').textContent = `${pagesPercentage.toFixed(1)}% of page views affected`;
 
-    this.shadowRoot.getElementById('filtered-url').textContent = this.url || 'All URLs';
   }
 
   updateResourcesList() {

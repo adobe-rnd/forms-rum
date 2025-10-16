@@ -255,10 +255,6 @@ class ErrorDashboard extends HTMLElement {
               <span class="stat-label">Average Error Rate</span>
               <span class="stat-value" id="avg-error-rate">-</span>
             </div>
-            <div class="stat-item">
-              <span class="stat-label">URL</span>
-              <span class="stat-value" id="filtered-url" style="font-size: 0.875rem; word-break: break-all;">-</span>
-            </div>
           </div>
         </div>
 
@@ -326,7 +322,6 @@ class ErrorDashboard extends HTMLElement {
     this.shadowRoot.getElementById('total-errors').textContent = totalErrors.toLocaleString();
     this.shadowRoot.getElementById('total-views').textContent = totalViews.toLocaleString();
     this.shadowRoot.getElementById('avg-error-rate').textContent = `${avgErrorRate.toFixed(2)}%`;
-    this.shadowRoot.getElementById('filtered-url').textContent = this.url || 'All URLs';
   }
 
   updateFilter(filter) {

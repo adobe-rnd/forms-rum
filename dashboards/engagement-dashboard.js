@@ -161,10 +161,6 @@ class EngagementDashboard extends HTMLElement {
               <span class="stat-label">Average Clicks per Page</span>
               <span class="stat-value click-color" id="avg-clicks">-</span>
             </div>
-            <div class="stat-item" style="grid-column: 1 / -1;">
-              <span class="stat-label">URL</span>
-              <span class="stat-value" id="filtered-url" style="font-size: 0.875rem; word-break: break-all; font-weight: 500;">-</span>
-            </div>
           </div>
         </div>
 
@@ -221,8 +217,6 @@ class EngagementDashboard extends HTMLElement {
     // Update rates
     this.shadowRoot.getElementById('fill-rate').textContent = `${fillRate.toFixed(1)}% engagement`;
     this.shadowRoot.getElementById('click-rate').textContent = `${clickRate.toFixed(1)}% engagement`;
-
-    this.shadowRoot.getElementById('filtered-url').textContent = this.url || 'All URLs';
   }
 
   reset() {

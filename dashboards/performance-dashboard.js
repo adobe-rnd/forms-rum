@@ -175,6 +175,7 @@ class PerformanceDashboard extends HTMLElement {
       <div class="dashboard-container">
         <div class="dashboard-header">
           <h2>Performance Dashboard</h2>
+          <h3>Time to View Form on Screen</h3>
           <div class="summary-stats" id="summary-stats">
             <div class="stat-item">
               <span class="stat-label">Fastest (Min)</span>
@@ -199,10 +200,6 @@ class PerformanceDashboard extends HTMLElement {
               <span class="stat-label">Total Page Views</span>
               <span class="stat-value" id="total-views">-</span>
               <span class="stat-subtext" id="load-rate">-</span>
-            </div>
-            <div class="stat-item" style="grid-column: 1 / -1;">
-              <span class="stat-label">URL</span>
-              <span class="stat-value" id="filtered-url" style="font-size: 0.875rem; word-break: break-all; font-weight: 500;">-</span>
             </div>
           </div>
         </div>
@@ -272,8 +269,6 @@ class PerformanceDashboard extends HTMLElement {
     // Calculate and display form load rate
     const loadRate = totalViews > 0 ? (formsLoaded / totalViews) * 100 : 0;
     this.shadowRoot.getElementById('load-rate').textContent = `${loadRate.toFixed(1)}% with forms`;
-
-    this.shadowRoot.getElementById('filtered-url').textContent = this.url || 'All URLs';
   }
 
   getPerformanceClass(loadTime) {
