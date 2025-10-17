@@ -1,10 +1,13 @@
 import { DataChunks, series, facets } from '@adobe/rum-distiller';
 
-
 function errorCount(bundle) {
-  return bundle.events.filter(
-    (event) => event.checkpoint === 'error' && event.source !== 'focus-loss'
-  ).length;
+  const errorEvents = bundle.events.filter(
+    (event) => event.checkpoint === 'error' &&
+    event.source !== 'focus-loss' &&
+    event.source !== 'undefined error'
+  );
+  const hasUndefinedError = errorEvents.some(({source}) => source === 'undefined error');
+  return errorEvents.length + (hasUndefinedError ? 1 : 0);
 }
 
 function isValidError(event) {
@@ -12,17 +15,23 @@ function isValidError(event) {
 }
 
 function errorSource(bundle) {
-  return bundle.events
+  return Array.from(bundle.events
     .filter(isValidError)
-    .map(({source}) => source)
-    .filter(Boolean); // Remove empty sources
+    .filter(({source}) => source)
+    .reduce((acc, { source }) => {
+        acc.add(source);
+        return acc;
+      }, new Set()))
 }
 
 function errorTarget(bundle) {
-  return bundle.events
+  return Array.from(bundle.events
     .filter(isValidError)
-    .map(({target}) => target)
-    .filter(Boolean); // Remove empty targets
+    .filter(({target}) => target)
+    .reduce((acc, { target }) => {
+        acc.add(target);
+        return acc;
+      }, new Set()))
 }
 
 function hour(bundle) {
@@ -39,6 +48,31 @@ function missingresource(bundle) {
   return bundle.events
   .filter(e => e.checkpoint === 'missingresource')
   .map(e => e.source);
+}
+
+function loadresource(bundle) {
+  return bundle.events
+  .filter(e => e.checkpoint === 'loadresource')
+  .map(e => e.source);
+}
+
+function loadResourceWithTime(bundle) {
+  return bundle.events
+    .filter(e => e.checkpoint === 'loadresource' && e.target && e.timeDelta)
+    .map(e => ({
+      target: e.target,
+      time: e.timeDelta / 1000 // Convert to seconds
+    }));
+}
+
+function resourceLoadTime(bundle) {
+  const resourceEvents = bundle.events
+    .filter(e => e.checkpoint === 'loadresource' && e.target && e.timeDelta);
+
+  if (resourceEvents.length === 0) return undefined;
+
+  // Return the time for each resource load event
+  return resourceEvents.map(e => e.timeDelta / 1000);
 }
 
 function errorDataChunks(data) {
@@ -93,6 +127,16 @@ function performanceDataChunks(data) {
     return undefined;
   });
   dataChunks.addSeries('formLoaded', b => b.events.find(isFormLoadEvent) ? b.weight : 0);
+  dataChunks.addFacet('loadresource', loadresource, 'every');
+
+  // Add resource load time tracking
+  dataChunks.addSeries('resourceLoadTime', resourceLoadTime, 'every');
+  dataChunks.addFacet('resourceTarget', (bundle) => {
+    return bundle.events
+      .filter(e => e.checkpoint === 'loadresource' && e.target)
+      .map(e => e.target);
+  }, 'every');
+
   dataChunks.addFacet('hour', hour, 'every', 'none');
   return dataChunks;
 }

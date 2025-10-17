@@ -408,13 +408,6 @@ class ErrorDashboard extends HTMLElement {
 
         <error-rate-chart id="error-chart"></error-rate-chart>
 
-        <div class="resources-section">
-          <h3>Missing Resources (sorted by frequency)</h3>
-          <div class="resources-list" id="resources-list">
-            <div class="loading">Loading resources...</div>
-          </div>
-        </div>
-
         <div class="details-panel" id="details-panel">
           <div class="details-header">
             <h3>Error Details for <span id="selected-hour-label">-</span></h3>
@@ -435,6 +428,15 @@ class ErrorDashboard extends HTMLElement {
             <user-agent-pie-chart id="user-agent-chart"></user-agent-pie-chart>
           </div>
         </div>
+
+        <div class="resources-section">
+          <h3>Missing Resources (sorted by frequency)</h3>
+          <div class="resources-list" id="resources-list">
+            <div class="loading">Loading resources...</div>
+          </div>
+        </div>
+
+
       </div>
     `;
 

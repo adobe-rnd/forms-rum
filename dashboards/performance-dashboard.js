@@ -4,6 +4,7 @@
  */
 import '../charts/load-time-chart.js';
 import '../charts/load-time-histogram.js';
+import '../charts/resource-time-table.js';
 
 class PerformanceDashboard extends HTMLElement {
   constructor() {
@@ -133,6 +134,10 @@ class PerformanceDashboard extends HTMLElement {
           margin-top: 32px;
         }
 
+        resource-time-table {
+          margin-top: 32px;
+        }
+
         .performance-insights {
           margin-top: 24px;
           padding: 16px;
@@ -204,6 +209,8 @@ class PerformanceDashboard extends HTMLElement {
         <load-time-chart id="load-time-chart"></load-time-chart>
 
         <load-time-histogram id="load-time-histogram"></load-time-histogram>
+
+        <resource-time-table id="resource-time-table"></resource-time-table>
       </div>
     `;
   }
@@ -232,6 +239,7 @@ class PerformanceDashboard extends HTMLElement {
     this.updateSummaryStats();
     this.updateChart();
     this.updateHistogram();
+    this.updateResourceTable();
   }
 
   updateChart() {
@@ -257,6 +265,13 @@ class PerformanceDashboard extends HTMLElement {
     // Option 3: Use different number of buckets with custom ranges
     // const bucketThresholds = [0, 1, 2, 5, 10, Infinity];
     // histogram.setData(this.dataChunks.facets.formBlockLoadTime, bucketThresholds);
+  }
+
+  updateResourceTable() {
+    if (!this.dataChunks) return;
+
+    const resourceTable = this.shadowRoot.getElementById('resource-time-table');
+    resourceTable.setData(this.dataChunks);
   }
 
   updateSummaryStats() {
@@ -316,6 +331,10 @@ class PerformanceDashboard extends HTMLElement {
     const histogram = this.shadowRoot.getElementById('load-time-histogram');
     if (histogram) {
       histogram.reset();
+    }
+    const resourceTable = this.shadowRoot.getElementById('resource-time-table');
+    if (resourceTable) {
+      resourceTable.reset();
     }
     this.dataChunks = null;
     this.url = '';
