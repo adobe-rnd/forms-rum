@@ -146,6 +146,9 @@ function handleParamUpdate(paramUpdates) {
 let currentData;
 
 async function loadData(startDate, endDate) {
+   // Show loading state
+  showLoading();
+
   currentData = await dataLoader.fetchDateRange(startDate, endDate);
   // Update the URLs autocomplete with new data
   const newDataChunks = new DataChunks();
@@ -154,6 +157,7 @@ async function loadData(startDate, endDate) {
   const newUrls = newDataChunks.facets.url.map(url => url.value);
   const urlAutocomplete = document.getElementById('url-autocomplete');
   urlAutocomplete.setUrls(newUrls);
+  hideLoading();
 }
 
 
@@ -180,9 +184,6 @@ function setupEventListeners() {
   // Date range change handler
   dateRangePicker.addEventListener('date-range-changed', async (event) => {
     const { startDate, endDate } = event.detail;
-
-    // Show loading state
-    showLoading();
 
     try {
       // Fetch new data for the date range

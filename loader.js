@@ -35,16 +35,7 @@ export async function fetchDomainKey(domain) {
       // no domainkey
     }
     if (issueResp.status === 403 || domainkey === '') {
-      // you don't have an admin key
-      // let's see if we can get access anyway
-      const n = new Date();
-      const y = n.getFullYear();
-      const m = String(n.getMonth() + 1).padStart(2, '0');
-      const d = String(n.getDate()).padStart(2, '0');
-      const probeResp = await fetch(`https://bundles.aem.page/bundles/${domain}/${y}/${m}/${d}?domainkey=open`);
-      if (probeResp.status === 200) {
-        return 'open';
-      }
+      return 'open';
     }
     return domainkey;
   } catch (e) {
@@ -52,224 +43,12 @@ export async function fetchDomainKey(domain) {
   }
 }
 
-
 export default class DataLoader {
   constructor() {
-    this.cache = new Map();
     this.API_ENDPOINT = 'https://bundles.aem.page';
     this.DOMAIN = 'www.thinktanked.org';
     this.DOMAIN_KEY = undefined;
-    this.ORG = undefined;
-    this.SCOPE = undefined; // unused
     this.granularity = 'month';
-    this.cacheExpiration = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
-    this.useCache = true; // enable/disable IndexedDB caching
-    this.DB_NAME = 'rum-bundles-db';
-    this.DB_VERSION = 1;
-    this.STORE_NAME = 'bundles-cache';
-    this.dbPromise = null;
-    this.dbInitialized = false;
-  }
-
-  /**
-   * Initializes the IndexedDB database
-   * @returns {Promise<IDBDatabase>} - Promise resolving to the database instance
-   */
-  async initDB() {
-    if (this.dbPromise) {
-      return this.dbPromise;
-    }
-
-    this.dbPromise = new Promise((resolve, reject) => {
-      if (!window.indexedDB) {
-        console.warn('IndexedDB is not supported in this browser');
-        reject(new Error('IndexedDB not supported'));
-        return;
-      }
-
-      const request = indexedDB.open(this.DB_NAME, this.DB_VERSION);
-
-      request.onerror = () => {
-        console.error('Failed to open IndexedDB:', request.error);
-        reject(request.error);
-      };
-
-      request.onsuccess = () => {
-        this.dbInitialized = true;
-        resolve(request.result);
-      };
-
-      request.onupgradeneeded = (event) => {
-        const db = event.target.result;
-
-        // Create object store if it doesn't exist
-        if (!db.objectStoreNames.contains(this.STORE_NAME)) {
-          const objectStore = db.createObjectStore(this.STORE_NAME, { keyPath: 'url' });
-          // Create index on timestamp for efficient cleanup of expired entries
-          objectStore.createIndex('timestamp', 'timestamp', { unique: false });
-        }
-      };
-    });
-
-    return this.dbPromise;
-  }
-
-  async flush() {
-    this.cache.clear();
-    await this.clearCache();
-  }
-
-  /**
-   * Clears all cached entries from IndexedDB
-   */
-  async clearCache() {
-    try {
-      const db = await this.initDB();
-      const transaction = db.transaction([this.STORE_NAME], 'readwrite');
-      const objectStore = transaction.objectStore(this.STORE_NAME);
-      objectStore.clear();
-
-      return new Promise((resolve, reject) => {
-        transaction.oncomplete = () => resolve();
-        transaction.onerror = () => reject(transaction.error);
-      });
-    } catch (e) {
-      console.warn('Failed to clear IndexedDB cache:', e);
-    }
-  }
-
-  /**
-   * Removes expired entries from the cache
-   */
-  async cleanupExpiredCache() {
-    try {
-      const db = await this.initDB();
-      const transaction = db.transaction([this.STORE_NAME], 'readwrite');
-      const objectStore = transaction.objectStore(this.STORE_NAME);
-      const index = objectStore.index('timestamp');
-      const now = Date.now();
-      const expiredThreshold = now - this.cacheExpiration;
-
-      const request = index.openCursor();
-
-      request.onsuccess = (event) => {
-        const cursor = event.target.result;
-        if (cursor) {
-          if (cursor.value.timestamp < expiredThreshold) {
-            cursor.delete();
-          }
-          cursor.continue();
-        }
-      };
-    } catch (e) {
-      console.warn('Failed to cleanup expired cache:', e);
-    }
-  }
-
-  /**
-   * Retrieves cached data from IndexedDB if available and not expired
-   * @param {string} url - The API URL used as cache key
-   * @returns {Promise<object|null>} - Cached data or null if not found/expired
-   */
-  async getCachedData(url) {
-    if (!this.useCache) {
-      return null;
-    }
-
-    try {
-      const db = await this.initDB();
-      const transaction = db.transaction([this.STORE_NAME], 'readonly');
-      const objectStore = transaction.objectStore(this.STORE_NAME);
-      const request = objectStore.get(url);
-
-      return new Promise((resolve, reject) => {
-        request.onsuccess = () => {
-          const result = request.result;
-
-          if (!result) {
-            resolve(null);
-            return;
-          }
-
-          const now = Date.now();
-
-          // Check if cache has expired
-          if (now - result.timestamp > this.cacheExpiration) {
-            // Delete expired entry
-            this.deleteCachedData(url);
-            resolve(null);
-            return;
-          }
-
-          resolve(result.data);
-        };
-
-        request.onerror = () => {
-          console.warn('Failed to retrieve cached data:', request.error);
-          resolve(null);
-        };
-      });
-    } catch (e) {
-      console.warn('Failed to access IndexedDB:', e);
-      return null;
-    }
-  }
-
-  /**
-   * Stores data in IndexedDB with current timestamp
-   * @param {string} url - The API URL used as cache key
-   * @param {object} data - The data to cache
-   */
-  async setCachedData(url, data) {
-    if (!this.useCache) {
-      return;
-    }
-
-    try {
-      const db = await this.initDB();
-      const transaction = db.transaction([this.STORE_NAME], 'readwrite');
-      const objectStore = transaction.objectStore(this.STORE_NAME);
-
-      const cacheItem = {
-        url,
-        data,
-        timestamp: Date.now(),
-      };
-
-      const request = objectStore.put(cacheItem);
-
-      return new Promise((resolve, reject) => {
-        request.onsuccess = () => resolve();
-        request.onerror = () => {
-          console.warn('Failed to cache data:', request.error);
-          // If quota exceeded, try to cleanup old entries
-          if (request.error.name === 'QuotaExceededError') {
-            this.cleanupExpiredCache().then(() => {
-              // Retry after cleanup
-              objectStore.put(cacheItem);
-            });
-          }
-          reject(request.error);
-        };
-      });
-    } catch (e) {
-      console.warn('Failed to cache data:', e);
-    }
-  }
-
-  /**
-   * Deletes a specific cached entry
-   * @param {string} url - The API URL to delete from cache
-   */
-  async deleteCachedData(url) {
-    try {
-      const db = await this.initDB();
-      const transaction = db.transaction([this.STORE_NAME], 'readwrite');
-      const objectStore = transaction.objectStore(this.STORE_NAME);
-      objectStore.delete(url);
-    } catch (e) {
-      console.warn('Failed to delete cached data:', e);
-    }
   }
 
   set domainKey(key) {
@@ -321,20 +100,11 @@ export default class DataLoader {
     }
     const apiRequestURL = this.apiURL(monthPath);
 
-    // Check cache first
-    const cachedData = await this.getCachedData(apiRequestURL);
-    if (cachedData) {
-      return { date, rumBundles: this.filterByDateRange(cachedData.rumBundles, start, end) };
-    }
-
     // Fetch from API if not cached
     const resp = await fetch(apiRequestURL);
     const json = await resp.json();
     const { rumBundles } = json;
     rumBundles.forEach((bundle) => addCalculatedProps(bundle));
-
-    // Store in cache (don't await to avoid blocking)
-    this.setCachedData(apiRequestURL, { rumBundles });
 
     return { date, rumBundles: this.filterByDateRange(rumBundles, start, end) };
   }
@@ -348,20 +118,11 @@ export default class DataLoader {
       return {date, rumBundles: []};
     }
 
-    // Check cache first
-    const cachedData = await this.getCachedData(apiRequestURL);
-    if (cachedData) {
-      return { date, rumBundles: this.filterByDateRange(cachedData.rumBundles, start, end) };
-    }
-
     // Fetch from API if not cached
     const resp = await fetch(apiRequestURL);
     const json = await resp.json();
     const { rumBundles } = json;
     rumBundles.forEach((bundle) => addCalculatedProps(bundle));
-
-    // Store in cache (don't await to avoid blocking)
-    this.setCachedData(apiRequestURL, { rumBundles });
 
     return { date, rumBundles: this.filterByDateRange(rumBundles, start, end) };
   }
@@ -375,24 +136,11 @@ export default class DataLoader {
     if (this.DOMAIN_KEY === undefined) {
       return {date, hour, rumBundles: []};
     }
-
-    // Check cache first
-    const cachedData = await this.getCachedData(apiRequestURL);
-    if (cachedData) {
-      return { date, hour, rumBundles: this.filterByDateRange(cachedData.rumBundles, start, end) };
-    }
-
     // Fetch from API if not cached
     const resp = await fetch(apiRequestURL);
     const json = await resp.json();
     const { rumBundles } = json;
     rumBundles.forEach((bundle) => addCalculatedProps(bundle));
-
-    // do not cache if the date is today
-    if (date !== new Date().toISOString().split('T')[0]) {
-      // Store in cache (don't await to avoid blocking)
-      this.setCachedData(apiRequestURL, { rumBundles });
-    }
 
     return { date, hour, rumBundles: this.filterByDateRange(rumBundles, start, end) };
   }
