@@ -4,7 +4,8 @@ function errorCount(bundle) {
   const errorEvents = bundle.events.filter(
     (event) => event.checkpoint === 'error' &&
     event.source !== 'focus-loss' &&
-    event.source !== 'undefined error'
+    event.source !== 'undefined error' &&
+    !event.source?.includes('helix-rum-enhancer')
   );
   const hasUndefinedError = errorEvents.some(({source}) => source === 'undefined error');
   return errorEvents.length + (hasUndefinedError ? 1 : 0);
