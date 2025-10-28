@@ -68,13 +68,13 @@ class ErrorDashboard extends HTMLElement {
         }
 
         .stat-item.error-stat {
-          border-left-color: #ef4444;
-          background: #fef2f2;
+          /*border-left-color: #ef4444;
+          background: #fef2f2;*/
         }
 
         .stat-item.warning {
-          border-left-color: #f59e0b;
-          background: #fffbeb;
+          /*border-left-color: #f59e0b;
+          background: #fffbeb;*/
         }
 
         .stat-label {
@@ -208,6 +208,45 @@ class ErrorDashboard extends HTMLElement {
           padding: 4px 12px;
           border-radius: 12px;
           font-weight: 600;
+        }
+
+        .threshold-legend {
+          display: flex;
+          gap: 12px;
+          margin: 8px 0 16px;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        .legend-item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 0.75rem;
+          color: #6b7280;
+        }
+
+        .legend-badge {
+          display: inline-block;
+          padding: 2px 8px;
+          border-radius: 12px;
+          font-weight: 600;
+          font-size: 0.75rem;
+        }
+
+        .legend-badge.high {
+          background: #fef2f2;
+          color: #dc2626;
+        }
+
+        .legend-badge.medium {
+          background: #fffbeb;
+          color: #d97706;
+        }
+
+        .legend-badge.low {
+          background: #f3f4f6;
+          color: #6b7280;
         }
 
         .no-data.success {
@@ -431,6 +470,7 @@ class ErrorDashboard extends HTMLElement {
 
         <div class="resources-section">
           <h3>Missing Resources (sorted by frequency)</h3>
+          <div class="threshold-legend" id="threshold-legend"></div>
           <div class="resources-list" id="resources-list">
             <div class="loading">Loading resources...</div>
           </div>
@@ -483,7 +523,7 @@ class ErrorDashboard extends HTMLElement {
 
     // Calculate pages with missing resources (unique page views that had missing resources)
     const pagesWithMissing = missingResources.reduce((sum, resource) => sum + resource.weight, 0);
-
+    this.pagesWithMissing = pagesWithMissing;
     // Calculate percentage
     const pagesPercentage = totalViews > 0 ? (pagesWithMissing / totalViews) * 100 : 0;
 
@@ -592,11 +632,36 @@ class ErrorDashboard extends HTMLElement {
     const sortedResources = [...missingResources].sort((a, b) => b.weight - a.weight);
 
     // Determine thresholds for high/medium/low
-    const maxCount = sortedResources[0]?.weight || 0;
-    const highThreshold = maxCount * 0.5;
-    const mediumThreshold = maxCount * 0.2;
+    const maxCount = this.pagesWithMissing || 0;
+    const highThreshold = maxCount * 0.4;
+    const mediumThreshold = maxCount * 0.1;
 
     const totalPageViews = this.dataChunks.totals.pageViews?.sum || 0;
+
+    // Update threshold legend
+    const legend = this.shadowRoot.getElementById('threshold-legend');
+    if (legend) {
+      if (missingResources.length === 0 || maxCount === 0) {
+        legend.innerHTML = '';
+      } else {
+        const highMin = Math.ceil(highThreshold);
+        const mediumMin = Math.ceil(mediumThreshold);
+        legend.innerHTML = `
+          <div class="legend-item">
+            <span class="legend-badge high">High</span>
+            ≥ 40% of max (≥ ${highMin})
+          </div>
+          <div class="legend-item">
+            <span class="legend-badge medium">Medium</span>
+            ≥ 10% and < 40% of max (≥ ${mediumMin} and < ${highMin})
+          </div>
+          <div class="legend-item">
+            <span class="legend-badge low">Low</span>
+            < 10% of max (< ${mediumMin})
+          </div>
+        `;
+      }
+    }
 
     // Render resources list
     const html = sortedResources.map((resource, index) => {

@@ -12,7 +12,9 @@ function errorCount(bundle) {
 }
 
 function isValidError(event) {
-  return event.checkpoint === 'error' && event.source !== 'focus-loss';
+  return event.checkpoint === 'error' &&
+    event.source !== 'focus-loss' &&
+  !event.source?.includes('helix-rum-enhancer')
 }
 
 function errorSource(bundle) {

@@ -204,9 +204,11 @@ window.addEventListener('popstate', () => {
 
 // Initialize event listeners FIRST
 setupEventListeners();
-
 const params = getURLParams();
 const dateRangePicker = document.getElementById('date-range-picker');
+const today = new Date().toISOString().split('T')[0];
+const oneWeekAgo = new Date(new Date().setDate(new Date().getDate() - 7)).toISOString().split('T')[0];
+dateRangePicker.setDates(oneWeekAgo, today);
 const urlAutocomplete = document.getElementById('url-autocomplete');
 const defaults = {
   tab: 'error',
