@@ -492,6 +492,7 @@ class ErrorDashboard extends HTMLElement {
     chart.addEventListener('hour-selected', (event) => {
       this.selectHour(event.detail);
     });
+    this.selectHour(null);
   }
 
   setData(dataChunks, url) {
@@ -550,9 +551,11 @@ class ErrorDashboard extends HTMLElement {
 
     // Use DataChunks filter to filter by the selected hour
     // Filter the dataChunks to only include bundles from this hour
-    this.updateFilter({
-      hour: [hourData.rawHour]
-    });
+    if (hourData == null) {
+      this.updateFilter({
+        hour: [hourData.rawHour]
+      });
+    }
 
     // Access the errorSource, errorTarget, and userAgent facets for this filtered hour
     const errorSourceFacets = this.dataChunks.facets.errorSource || [];
