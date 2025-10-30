@@ -296,7 +296,7 @@ class ErrorDashboard extends HTMLElement {
 
         .details-grid {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(1, 1fr);
           gap: 24px;
           margin-bottom: 24px;
         }
@@ -453,14 +453,7 @@ class ErrorDashboard extends HTMLElement {
             <button class="back-button" id="back-button">← Back to Overview</button>
           </div>
           <div class="details-grid">
-            <div class="detail-section">
-              <h4>Error Lines</h4>
-              <div class="detail-list" id="error-sources-list"></div>
-            </div>
-            <div class="detail-section">
-              <h4>Error Messages</h4>
-              <div class="detail-list" id="error-targets-list"></div>
-            </div>
+            <div class="detail-list" id="error-sources-list"></div>
           </div>
           <div class="chart-section">
             <h4>User Agent Distribution</h4>
@@ -568,7 +561,6 @@ class ErrorDashboard extends HTMLElement {
 
     // Render sources and targets using facet data
     this.renderDetailListFromFacets('error-sources-list', errorDetailsFacets, totalErrorsInHour);
-    // this.renderDetailListFromFacets('error-targets-list', errorTargetFacets, totalErrorsInHour);
 
     // Render user agent pie chart
     const userAgentChart = this.shadowRoot.getElementById('user-agent-chart');
