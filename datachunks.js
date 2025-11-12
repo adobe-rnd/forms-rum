@@ -67,6 +67,7 @@ function missingresource(bundle) {
 function loadresource(bundle) {
   return bundle.events
   .filter(e => e.checkpoint === 'loadresource')
+  .filter(e => e.source && ['redacted', 'junk_email'].every(s => !e.source.toLowerCase().includes(s)))
   .map(e => e.source);
 }
 
