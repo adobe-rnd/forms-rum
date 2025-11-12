@@ -3,8 +3,9 @@
  * Displays hourly average form block load times as an interactive line chart
  */
 import { Chart, registerables } from 'chartjs';
+import { dayNightPlugin } from './day-night-plugin.js';
 
-// Register Chart.js components
+// Register Chart.js components (without the day-night plugin globally)
 Chart.register(...registerables);
 
 class LoadTimeChart extends HTMLElement {
@@ -172,10 +173,19 @@ class LoadTimeChart extends HTMLElement {
         labels: chartData.map(d => d.hour),
         datasets: datasets
       },
+      plugins: [dayNightPlugin], // Register plugin locally for this chart only
       options: {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
+          dayNightBackground: {
+            enabled: true,
+            dayStart: 6,
+            dayEnd: 20,
+            nightColor: 'rgba(30, 41, 59, 0.08)',
+            showLegend: true,
+            rawHourData: chartData.map(d => d.rawHour)
+          },
           legend: {
             display: true,
             position: 'bottom',
@@ -286,6 +296,11 @@ class LoadTimeChart extends HTMLElement {
     // Update title
     const percentileLabel = this.selectedPercentile === 'p75' ? 'p75 (75th Percentile)' : 'p50 (Median)';
     this.chart.options.plugins.title.text = `Form Block Load Time - ${percentileLabel} Per Hour`;
+
+    // Ensure day/night plugin still has access to raw hour data
+    if (this.chart.options.plugins.dayNightBackground) {
+      this.chart.options.plugins.dayNightBackground.rawHourData = this.chartData.map(d => d.rawHour);
+    }
 
     this.chart.update();
   }
