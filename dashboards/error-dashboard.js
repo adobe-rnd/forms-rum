@@ -12,6 +12,7 @@ class ErrorDashboard extends HTMLElement {
     this.dataChunks = null;
     this.url = '';
     this.selectedHour = null;
+    this.selectedResourceTypes = new Set(['image', 'javascript', 'css', 'json', 'others']);
   }
 
   connectedCallback() {
@@ -122,6 +123,59 @@ class ErrorDashboard extends HTMLElement {
           margin: 0 0 16px 0;
           color: #1e40af;
           font-size: 1.25rem;
+          font-weight: 600;
+        }
+
+        .resource-filters {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 12px;
+          margin: 8px 0 12px;
+        }
+
+        .filter-label {
+          font-size: 0.875rem;
+          color: #6b7280;
+          margin-right: 4px;
+          font-weight: 500;
+        }
+
+        .filter-option {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          background: #f9fafb;
+          border: 1px solid #e5e7eb;
+          border-radius: 16px;
+          padding: 6px 10px;
+          font-size: 0.8125rem;
+          color: #374151;
+          cursor: pointer;
+          user-select: none;
+        }
+
+        .filter-option input[type="checkbox"] {
+          width: 14px;
+          height: 14px;
+          cursor: pointer;
+        }
+
+        .filter-count-badge {
+          color: #6b7280;
+          font-size: 0.75rem;
+        }
+
+        .filters-count {
+          margin-left: auto;
+          display: inline-flex;
+          align-items: center;
+          background: #f3f4f6;
+          border: 1px solid #e5e7eb;
+          border-radius: 12px;
+          padding: 4px 10px;
+          font-size: 0.75rem;
+          color: #374151;
           font-weight: 600;
         }
 
@@ -463,6 +517,30 @@ class ErrorDashboard extends HTMLElement {
 
         <div class="resources-section">
           <h3>Missing Resources (sorted by frequency)</h3>
+          <div class="resource-filters" id="resource-filters">
+            <span class="filter-label">Filter by type:</span>
+            <label class="filter-option">
+              <input type="checkbox" data-type="image" checked />
+              Image
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" data-type="javascript" checked />
+              JavaScript
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" data-type="css" checked />
+              CSS
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" data-type="json" checked />
+              JSON
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" data-type="others" checked />
+              Others
+            </label>
+            <div class="filters-count" id="resources-count"></div>
+          </div>
           <div class="threshold-legend" id="threshold-legend"></div>
           <div class="resources-list" id="resources-list">
             <div class="loading">Loading resources...</div>
@@ -485,6 +563,23 @@ class ErrorDashboard extends HTMLElement {
     chart.addEventListener('hour-selected', (event) => {
       this.selectHour(event.detail);
     });
+
+    // Resource type filters
+    const filtersContainer = this.shadowRoot.getElementById('resource-filters');
+    if (filtersContainer) {
+      const inputs = Array.from(filtersContainer.querySelectorAll('input[type="checkbox"][data-type]'));
+      inputs.forEach((input) => {
+        input.addEventListener('change', () => {
+          const type = input.getAttribute('data-type');
+          if (input.checked) {
+            this.selectedResourceTypes.add(type);
+          } else {
+            this.selectedResourceTypes.delete(type);
+          }
+          this.updateResourcesList();
+        });
+      });
+    }
   }
 
   setData(dataChunks, url) {
@@ -493,6 +588,7 @@ class ErrorDashboard extends HTMLElement {
     this.updateSummaryStats();
     this.updateChart();
     this.updateResourcesList();
+    this.updateFilterCounts();
     this.selectHour(null);
   }
 
@@ -612,6 +708,97 @@ class ErrorDashboard extends HTMLElement {
     return div.innerHTML;
   }
 
+  updateFilterCounts() {
+    const filtersContainer = this.shadowRoot.getElementById('resource-filters');
+    if (!filtersContainer) return;
+    const missingResources = this.dataChunks?.facets?.missingresource || [];
+    const counts = { image: 0, javascript: 0, css: 0, json: 0, others: 0 };
+    for (const res of missingResources) {
+      const category = this.categorizeResource(res.value);
+      if (counts[category] != null) counts[category] += 1;
+    }
+    const inputs = Array.from(filtersContainer.querySelectorAll('input[type="checkbox"][data-type]'));
+    inputs.forEach((input) => {
+      const type = input.getAttribute('data-type');
+      const label = input.closest('label');
+      if (!label) return;
+      let badge = label.querySelector('.filter-count-badge');
+      if (!badge) {
+        badge = document.createElement('span');
+        badge.className = 'filter-count-badge';
+        label.appendChild(document.createTextNode(' '));
+        label.appendChild(badge);
+      }
+      const value = counts[type] != null ? counts[type] : 0;
+      badge.textContent = `(${value.toLocaleString()})`;
+    });
+  }
+
+  updateThresholdLegend() {
+    const legend = this.shadowRoot.getElementById('threshold-legend');
+    if (!legend) return;
+    const missingResources = this.dataChunks?.facets?.missingresource || [];
+    const maxCount = this.pagesWithMissing || 0;
+    if (missingResources.length === 0 || maxCount === 0) {
+      legend.innerHTML = '';
+      return;
+    }
+    const highThreshold = maxCount * 0.4;
+    const mediumThreshold = maxCount * 0.1;
+    const highMin = Math.ceil(highThreshold);
+    const mediumMin = Math.ceil(mediumThreshold);
+    legend.innerHTML = `
+      <div class="legend-item">
+        <span class="legend-badge high">High</span>
+        ≥ 40% of max (≥ ${highMin})
+      </div>
+      <div class="legend-item">
+        <span class="legend-badge medium">Medium</span>
+        ≥ 10% and < 40% of max (≥ ${mediumMin} and < ${highMin})
+      </div>
+      <div class="legend-item">
+        <span class="legend-badge low">Low</span>
+        < 10% of max (< ${mediumMin})
+      </div>
+    `;
+  }
+
+  extractExtension(resourceUrl) {
+    if (!resourceUrl || typeof resourceUrl !== 'string') return null;
+    try {
+      // Strip query/hash
+      const noQuery = resourceUrl.split('#')[0].split('?')[0];
+      // Get the last path segment
+      const lastSlash = noQuery.lastIndexOf('/');
+      const lastSegment = lastSlash >= 0 ? noQuery.slice(lastSlash + 1) : noQuery;
+      if (!lastSegment) return null;
+      const lastDot = lastSegment.lastIndexOf('.');
+      if (lastDot <= 0 || lastDot === lastSegment.length - 1) {
+        return null;
+      }
+      return lastSegment.slice(lastDot + 1).toLowerCase();
+    } catch (e) {
+      return null;
+    }
+  }
+
+  categorizeResource(resourceUrl) {
+    const ext = this.extractExtension(resourceUrl);
+    if (!ext) return 'others';
+    // Images
+    const imageExts = new Set(['png', 'jpg', 'jpeg', 'gif', 'webp', 'bmp', 'ico', 'svg', 'tif', 'tiff', 'avif']);
+    if (imageExts.has(ext)) return 'image';
+    // JavaScript
+    const jsExts = new Set(['js', 'mjs', 'cjs']);
+    if (jsExts.has(ext)) return 'javascript';
+    // CSS
+    if (ext === 'css') return 'css';
+    // JSON
+    if (ext === 'json') return 'json';
+    // Others
+    return 'others';
+  }
+
   updateResourcesList() {
     if (!this.dataChunks) return;
 
@@ -620,12 +807,34 @@ class ErrorDashboard extends HTMLElement {
 
     // Check if we have data
     if (missingResources.length === 0) {
+      const countBadge = this.shadowRoot.getElementById('resources-count');
+      if (countBadge) {
+        countBadge.textContent = '0 out of 0 visible';
+      }
+      this.updateFilterCounts();
+      this.updateThresholdLegend();
       container.innerHTML = '<div class="no-data success">✓ No missing resources detected! All resources loaded successfully.</div>';
       return;
     }
 
+    // Filter by selected resource types
+    const activeTypes = this.selectedResourceTypes;
+    const filteredResources = missingResources.filter((res) => activeTypes.has(this.categorizeResource(res.value)));
+    const countBadge = this.shadowRoot.getElementById('resources-count');
+    if (countBadge) {
+      countBadge.textContent = `${filteredResources.length} out of ${missingResources.length} visible`;
+    }
+    // Update per-category counts
+    this.updateFilterCounts();
+    if (filteredResources.length === 0) {
+      container.innerHTML = '<div class="no-data">No resources match the selected types.</div>';
+      // Keep legend consistent with overall stats
+      this.updateThresholdLegend();
+      return;
+    }
+
     // Sort by weight (descending)
-    const sortedResources = [...missingResources].sort((a, b) => b.weight - a.weight);
+    const sortedResources = [...filteredResources].sort((a, b) => b.weight - a.weight);
 
     // Determine thresholds for high/medium/low
     const maxCount = this.pagesWithMissing || 0;
@@ -634,30 +843,8 @@ class ErrorDashboard extends HTMLElement {
 
     const totalPageViews = this.dataChunks.totals.pageViews?.sum || 0;
 
-    // Update threshold legend
-    const legend = this.shadowRoot.getElementById('threshold-legend');
-    if (legend) {
-      if (missingResources.length === 0 || maxCount === 0) {
-        legend.innerHTML = '';
-      } else {
-        const highMin = Math.ceil(highThreshold);
-        const mediumMin = Math.ceil(mediumThreshold);
-        legend.innerHTML = `
-          <div class="legend-item">
-            <span class="legend-badge high">High</span>
-            ≥ 40% of max (≥ ${highMin})
-          </div>
-          <div class="legend-item">
-            <span class="legend-badge medium">Medium</span>
-            ≥ 10% and < 40% of max (≥ ${mediumMin} and < ${highMin})
-          </div>
-          <div class="legend-item">
-            <span class="legend-badge low">Low</span>
-            < 10% of max (< ${mediumMin})
-          </div>
-        `;
-      }
-    }
+    // Update threshold legend (no duplication)
+    this.updateThresholdLegend();
 
     // Render resources list
     const html = sortedResources.map((resource, index) => {
