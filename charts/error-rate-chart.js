@@ -4,6 +4,7 @@
  * Emits 'hour-selected' event when a bar is clicked
  */
 import { Chart, registerables } from 'chartjs';
+import { dayNightPlugin } from './day-night-plugin.js';
 
 // Register Chart.js components
 Chart.register(...registerables);
@@ -161,6 +162,7 @@ class ErrorRateChart extends HTMLElement {
           tension: 0.3
         }]
       },
+      plugins: [dayNightPlugin], // Register plugin locally for this chart only
       options: {
         responsive: true,
         maintainAspectRatio: false,
@@ -171,6 +173,14 @@ class ErrorRateChart extends HTMLElement {
           }
         },
         plugins: {
+          dayNightBackground: {
+            enabled: true,
+            dayStart: 6,
+            dayEnd: 20,
+            nightColor: 'rgba(30, 41, 59, 0.08)',
+            showLegend: true,
+            rawHourData: chartData.map(d => d.rawHour)
+          },
           legend: {
             display: false
           },
