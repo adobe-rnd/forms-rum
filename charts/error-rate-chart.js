@@ -79,7 +79,7 @@ class ErrorRateChart extends HTMLElement {
 
       <div class="chart-wrapper">
         <div class="chart-instructions">
-          Click on any hour bar to view detailed error breakdown
+          Click on any point to view detailed error breakdown for that hour
         </div>
 
         <div class="timezone-note">
@@ -143,15 +143,22 @@ class ErrorRateChart extends HTMLElement {
 
     // Create new chart
     this.chart = new Chart(ctx, {
-      type: 'bar',
+      type: 'line',
       data: {
         labels: chartData.map(d => d.hour),
         datasets: [{
-          label: 'Error Count',
-          data: chartData.map(d => d.errorCount),
-          backgroundColor: chartData.map(d => this.getBarColor(d.errorCount)),
-          borderColor: chartData.map(d => this.getBarColor(d.errorCount, 0.8)),
-          borderWidth: 1
+          label: 'Error Rate',
+          data: chartData.map(d => d.errorRate),
+          backgroundColor: 'rgba(239, 68, 68, 0.1)',
+          borderColor: 'rgba(239, 68, 68, 0.8)',
+          borderWidth: 2,
+          pointBackgroundColor: chartData.map(d => this.getBarColorByRate(d.errorRate)),
+          pointBorderColor: chartData.map(d => this.getBarColorByRate(d.errorRate, 1)),
+          pointBorderWidth: 2,
+          pointRadius: 5,
+          pointHoverRadius: 7,
+          fill: true,
+          tension: 0.3
         }]
       },
       options: {
@@ -172,16 +179,16 @@ class ErrorRateChart extends HTMLElement {
               label: (context) => {
                 const data = chartData[context.dataIndex];
                 return [
+                  `Error Rate: ${data.errorRate.toFixed(2)}%`,
                   `Errors: ${data.errorCount}`,
-                  `Page Views: ${data.pageViews}`,
-                  `Error Rate: ${data.errorRate.toFixed(2)}%`
+                  `Page Views: ${data.pageViews}`
                 ];
               }
             }
           },
           title: {
             display: true,
-            text: 'Errors Per Hour',
+            text: 'Error Rate Per Hour',
             font: {
               size: 16,
               weight: 'bold'
@@ -193,7 +200,12 @@ class ErrorRateChart extends HTMLElement {
             beginAtZero: true,
             title: {
               display: true,
-              text: 'Error Count'
+              text: 'Error Rate (%)'
+            },
+            ticks: {
+              callback: function(value) {
+                return value.toFixed(1) + '%';
+              }
             }
           },
           x: {
@@ -204,8 +216,8 @@ class ErrorRateChart extends HTMLElement {
           }
         },
         interaction: {
-          mode: 'nearest',
-          intersect: true
+          mode: 'index',
+          intersect: false
         }
       }
     });
@@ -224,7 +236,7 @@ class ErrorRateChart extends HTMLElement {
   }
 
   getBarColor(errorCount, alpha = 0.6) {
-    // Color gradient based on error count
+    // Color gradient based on error count (kept for backward compatibility)
     if (errorCount === 0) {
       return `rgba(34, 197, 94, ${alpha})`; // green
     } else if (errorCount < 5) {
@@ -233,6 +245,19 @@ class ErrorRateChart extends HTMLElement {
       return `rgba(249, 115, 22, ${alpha})`; // orange
     } else {
       return `rgba(239, 68, 68, ${alpha})`; // red
+    }
+  }
+
+  getBarColorByRate(errorRate, alpha = 0.6) {
+    // Color gradient based on error rate percentage
+    if (errorRate === 0) {
+      return `rgba(34, 197, 94, ${alpha})`; // green - no errors
+    } else if (errorRate < 1) {
+      return `rgba(234, 179, 8, ${alpha})`; // yellow - < 1% error rate
+    } else if (errorRate < 5) {
+      return `rgba(249, 115, 22, ${alpha})`; // orange - 1-5% error rate
+    } else {
+      return `rgba(239, 68, 68, ${alpha})`; // red - > 5% error rate
     }
   }
 

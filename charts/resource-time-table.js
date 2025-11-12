@@ -368,6 +368,7 @@ class ResourceTimeTable extends HTMLElement {
     dataChunks.filtered.forEach(bundle => {
       bundle.events
         .filter(e => e.checkpoint === 'loadresource')
+        .filter(e => e.source && ['redacted', 'junk_email'].every(s => !e.source.toLowerCase().includes(s)))
         .filter(e => e.source && e.target && !isNaN(Number(e.target)))
         .forEach(e => {
           const url = e.source; // source = resource URL
