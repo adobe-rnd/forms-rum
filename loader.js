@@ -14,7 +14,7 @@ function getPersistentToken() {
 export async function fetchDomainKey(domain) {
   try {
     const urlParams = new URLSearchParams(window.location.search);
-    const domainKey = urlParams.get('domainKey');
+    const domainKey = urlParams.get('domainkey');
     if (domainKey) {
       return domainKey;
     }
