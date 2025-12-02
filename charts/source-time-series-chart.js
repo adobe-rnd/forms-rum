@@ -10,7 +10,6 @@
  *   - percentile: 'p50' | 'p75'
  */
 import { Chart, registerables } from 'chartjs';
-import { dayNightPlugin } from './day-night-plugin.js';
 Chart.register(...registerables);
 
 class SourceTimeSeriesChart extends HTMLElement {
@@ -164,7 +163,6 @@ class SourceTimeSeriesChart extends HTMLElement {
     const hoursUTC = Array.from(new Set(Array.from(sourceHourToPoints.keys()).map(k => k.split('|')[1])))
       .sort((a,b)=> new Date(a) - new Date(b));
     const labels = hoursUTC.map(h => this.formatHour(h));
-    const rawHourData = hoursUTC.slice();
 
     // Prepare datasets (cap to top 10 sources by default) - sorted by selected percentile desc
     const maxSeries = 10;
@@ -181,19 +179,10 @@ class SourceTimeSeriesChart extends HTMLElement {
     this.chart = new Chart(ctx, {
       type: 'line',
       data: { labels, datasets: this.buildDatasets() },
-      plugins: [dayNightPlugin],
       options: {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-          dayNightBackground: {
-            enabled: true,
-            dayStart: 6,
-            dayEnd: 20,
-            nightColor: 'rgba(30, 41, 59, 0.08)',
-            showLegend: true,
-            rawHourData
-          },
           legend: { display: false },
           title: {
             display: true,
@@ -219,7 +208,6 @@ class SourceTimeSeriesChart extends HTMLElement {
         }
       }
     });
-    this._rawHourData = rawHourData;
     this.updateList();
   }
 
