@@ -2,7 +2,6 @@ import DataLoader from './loader.js';
 import { fetchDomainKey } from './loader.js';
 import { DataChunks, series, facets } from '@adobe/rum-distiller';
 import URLAutocomplete from './components/url-autocomplete.js';
-import SourceFilter from './components/source-filter.js';
 import DateRangePicker from './components/date-range-picker.js';
 import ErrorDashboard from './dashboards/error-dashboard.js';
 import LoadDashboard from './dashboards/performance-dashboard.js';
@@ -27,7 +26,6 @@ function getURLParams() {
   return {
     tab: params.get('tab') || undefined,
     url: params.get('url') || undefined,
-    source: params.get('source') || undefined,
     startDate: params.get('startDate') || undefined,
     endDate: params.get('endDate') || undefined,
   };
@@ -75,38 +73,18 @@ const dataChunksConfig = {
   resource: resourceDataChunks
 }
 
-// Helper: compute unique 'enter' sources using DataChunks facets
-function computeEnterSources(chunks) {
-  try {
-    const dc = new DataChunks();
-    dc.load(chunks || []);
-    dc.addFacet('enterSource', (bundle) => {
-      return bundle.events
-        ?.filter((e) => e.checkpoint === 'enter' && e.source)
-        .map((e) => canonicalizeSource(e.source));
-    }, 'every');
-    const values = (dc.facets?.enterSource || []).map((f) => f.value);
-    return Array.from(new Set(values)).sort();
-  } catch (e) {
-    return [];
-  }
-}
-
 // Single function to read URL params, set state, and render
 async function renderFromURLParams() {
   const params = getURLParams();
   const dateRangePicker = document.getElementById('date-range-picker');
   const urlAutocomplete = document.getElementById('url-autocomplete');
-  const sourceFilter = document.getElementById('source-filter');
 
   const {
     startDate = dateRangePicker.getStartDate(),
     endDate = dateRangePicker.getEndDate(),
     url = urlAutocomplete.getValue(),
-    source: sourceParam,
     tab = 'error'
   } = params;
-  const sources = sourceParam ? sourceParam.split(',').filter(Boolean) : [];
   // Set active tab based on URL params
   const urlResults = document.getElementById('url-results');
 
@@ -136,31 +114,12 @@ async function renderFromURLParams() {
       if (!currentData || !Array.isArray(currentData)) {
         await loadData(startDate, endDate);
       }
-      // Start with URL-only filter
-      const urlOnlyData = currentData.map((chunk) => ({
+      // Filter by URL
+      const filteredData = currentData.map((chunk) => ({
         date: chunk.date,
         hour: chunk.hour,
         rumBundles: chunk.rumBundles.filter((bundle) => bundle.url.includes(url))
       })).filter((chunk) => chunk.rumBundles.length > 0);
-
-      // Update source filter options for this URL
-      if (sourceFilter) {
-        sourceFilter.setSources(computeEnterSources(urlOnlyData));
-        const currentSources = (sourceFilter.getValue() || []).join(',');
-        const newSources = sources.join(',');
-        if (currentSources !== newSources) sourceFilter.setValue(sources);
-      }
-
-      // Apply source selection if any (canonicalized)
-      const filteredData = (sources.length === 0)
-        ? urlOnlyData
-        : urlOnlyData.map((chunk) => ({
-            date: chunk.date,
-            hour: chunk.hour,
-            rumBundles: chunk.rumBundles.filter((bundle) =>
-              bundle.events?.some((e) => e.checkpoint === 'enter' && e.source && sources.includes(canonicalizeSource(e.source)))
-            )
-          })).filter((chunk) => chunk.rumBundles.length > 0);
 
       if (filteredData.length > 0 && !filteredData.every(chunk => chunk.rumBundles.length === 0)) {
         // Render the dashboard based on the tab
@@ -225,12 +184,6 @@ function normalizeSourceValue(src) {
   }
 }
 
-function canonicalizeSource(src) {
-  const norm = normalizeSourceValue(src);
-  if (sourceAliasMap && sourceAliasMap[norm]) return sourceAliasMap[norm];
-  return norm;
-}
-
 async function loadData(startDate, endDate) {
   await loadSourceAliasesOnce();
   currentData = await dataLoader.fetchDateRange(startDate, endDate);
@@ -241,10 +194,6 @@ async function loadData(startDate, endDate) {
   const newUrls = newDataChunks.facets.url.map(url => url.value);
   const urlAutocomplete = document.getElementById('url-autocomplete');
   urlAutocomplete.setUrls(newUrls);
-  const sourceFilter = document.getElementById('source-filter');
-  if (sourceFilter) {
-    sourceFilter.setSources(computeEnterSources(currentData));
-  }
 }
 
 
@@ -253,7 +202,6 @@ function setupEventListeners() {
   const urlAutocomplete = document.getElementById('url-autocomplete');
   const dateRangePicker = document.getElementById('date-range-picker');
   const dashboardTabs = document.querySelector('.dashboard-tabs');
-  const sourceFilter = document.getElementById('source-filter');
 
   // Handle tab clicks with event delegation on parent
   dashboardTabs.addEventListener('click', (e) => {
@@ -268,12 +216,6 @@ function setupEventListeners() {
     const url = event.detail.url;
     handleParamUpdate({ url });
   });
-  if (sourceFilter) {
-    sourceFilter.addEventListener('source-selected', (event) => {
-      const selected = event.detail.source || [];
-      handleParamUpdate({ source: selected.join(',') });
-    });
-  }
 
   // Date range change handler
   dateRangePicker.addEventListener('date-range-changed', async (event) => {
@@ -308,11 +250,9 @@ const today = new Date().toISOString().split('T')[0];
 const oneWeekAgo = new Date(new Date().setDate(new Date().getDate() - 7)).toISOString().split('T')[0];
 dateRangePicker.setDates(oneWeekAgo, today);
 const urlAutocomplete = document.getElementById('url-autocomplete');
-const sourceFilter = document.getElementById('source-filter');
 const defaults = {
   tab: 'error',
   url: urlAutocomplete.getValue(),
-  source: (sourceFilter?.getValue() || []).join(','),
   startDate: dateRangePicker.getStartDate(),
   endDate: dateRangePicker.getEndDate()
 }
