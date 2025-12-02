@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p124863-e1228730.adobeaemcloud.com/bin/franklin.delivery/lab339/discord-live/main"
-    type: "markup"
-    suffix: ".html"
+    url: https://author-p124863-e1228730.adobeaemcloud.com/bin/franklin.delivery/lab339/discord-live/main
+    type: markup
+    suffix: .html
