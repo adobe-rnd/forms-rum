@@ -118,10 +118,21 @@ class UserAgentPieChart extends HTMLElement {
       'Other': 0
     };
 
+    // Track which user agents fall into each category (for tooltip details)
+    const categoryDetails = {
+      'Mobile (Android/iOS)': [],
+      'Desktop (Windows/Mac)': [],
+      'Other': []
+    };
+
     userAgentFacets.forEach(facet => {
       const category = this.categorizeUserAgent(facet.value);
       categoryTotals[category] += facet.count || 0;
+      categoryDetails[category].push({ value: facet.value, count: facet.count || 0 });
     });
+
+    // Store for tooltip access
+    this.categoryDetails = categoryDetails;
 
     // Filter out categories with zero count and convert to array
     const categories = Object.entries(categoryTotals)
@@ -201,6 +212,23 @@ class UserAgentPieChart extends HTMLElement {
                 const value = context.parsed || 0;
                 const percentage = ((value / total) * 100).toFixed(1);
                 return `${label}: ${value} (${percentage}%)`;
+              },
+              afterLabel: (context) => {
+                const label = context.label || '';
+                const details = this.categoryDetails[label] || [];
+                if (details.length === 0) return '';
+                
+                // Show top 5 user agents in this category
+                const topItems = details
+                  .sort((a, b) => b.count - a.count)
+                  .slice(0, 5)
+                  .map(item => `  • ${item.value}: ${item.count}`);
+                
+                if (details.length > 5) {
+                  topItems.push(`  ... and ${details.length - 5} more`);
+                }
+                
+                return topItems;
               }
             }
           },
