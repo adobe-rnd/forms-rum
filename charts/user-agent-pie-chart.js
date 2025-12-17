@@ -97,12 +97,13 @@ class UserAgentPieChart extends HTMLElement {
       return 'Mobile (Android/iOS)';
     }
     
-    // Desktop: Windows, Mac, Linux
+    // Desktop: Windows, Mac, Linux, or generic "desktop"
     if (ua.includes('windows') || 
         ua.includes('macintosh') || 
         ua.includes('mac os') ||
         ua.includes('linux') ||
-        ua.includes('cros')) {
+        ua.includes('cros') ||
+        ua.includes('desktop')) {
       return 'Desktop (Windows/Mac)';
     }
     
