@@ -82,18 +82,68 @@ class UserAgentPieChart extends HTMLElement {
     }
   }
 
-  renderChart(userAgentFacets) {
-    // Sort by count descending and take top entries
-    const sortedFacets = [...userAgentFacets]
-      .sort((a, b) => b.count - a.count)
-      .slice(0, 10); // Show top 10 user agents
+  /**
+   * Categorize user agent string into Mobile or Desktop
+   */
+  categorizeUserAgent(userAgent) {
+    const ua = (userAgent || '').toLowerCase();
+    
+    // Mobile detection: Android, iOS (iPhone, iPad, iPod)
+    if (ua.includes('android') || 
+        ua.includes('iphone') || 
+        ua.includes('ipad') || 
+        ua.includes('ipod') ||
+        ua.includes('mobile')) {
+      return 'Mobile (Android/iOS)';
+    }
+    
+    // Desktop: Windows, Mac, Linux
+    if (ua.includes('windows') || 
+        ua.includes('macintosh') || 
+        ua.includes('mac os') ||
+        ua.includes('linux') ||
+        ua.includes('cros')) {
+      return 'Desktop (Windows/Mac)';
+    }
+    
+    // Fallback for unknown
+    return 'Other';
+  }
 
-    const labels = sortedFacets.map(facet => facet.value);
-    const data = sortedFacets.map(facet => facet.count);
+  renderChart(userAgentFacets) {
+    // Group user agents into Mobile and Desktop categories
+    const categoryTotals = {
+      'Mobile (Android/iOS)': 0,
+      'Desktop (Windows/Mac)': 0,
+      'Other': 0
+    };
+
+    userAgentFacets.forEach(facet => {
+      const category = this.categorizeUserAgent(facet.value);
+      categoryTotals[category] += facet.count || 0;
+    });
+
+    // Filter out categories with zero count and convert to array
+    const categories = Object.entries(categoryTotals)
+      .filter(([, count]) => count > 0)
+      .sort((a, b) => b[1] - a[1]);
+
+    if (categories.length === 0) {
+      this.showNoData();
+      return;
+    }
+
+    const labels = categories.map(([label]) => label);
+    const data = categories.map(([, count]) => count);
     const total = data.reduce((sum, count) => sum + count, 0);
 
-    // Generate distinct colors for each segment
-    const colors = this.generateColors(sortedFacets.length);
+    // Use specific colors for each category
+    const categoryColors = {
+      'Mobile (Android/iOS)': '#10b981',    // green
+      'Desktop (Windows/Mac)': '#3b82f6',   // blue
+      'Other': '#9ca3af'                     // gray
+    };
+    const colors = labels.map(label => categoryColors[label] || '#9ca3af');
 
     const canvas = this.shadowRoot.getElementById('user-agent-chart');
     const ctx = canvas.getContext('2d');
@@ -156,7 +206,7 @@ class UserAgentPieChart extends HTMLElement {
           },
           title: {
             display: true,
-            text: 'User Agent Distribution',
+            text: 'Device Breakdown',
             font: {
               size: 16,
               weight: 'bold'
