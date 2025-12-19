@@ -83,47 +83,68 @@ class UserAgentPieChart extends HTMLElement {
   }
 
   /**
-   * Categorize user agent string into Mobile or Desktop
+   * Categorize user agent string into specific Mobile/Desktop subcategories
    */
   categorizeUserAgent(userAgent) {
     const ua = (userAgent || '').toLowerCase();
     
-    // Mobile detection: Android, iOS (iPhone, iPad, iPod)
-    if (ua.includes('android') || 
-        ua.includes('iphone') || 
-        ua.includes('ipad') || 
-        ua.includes('ipod') ||
-        ua.includes('mobile')) {
-      return 'Mobile (Android/iOS)';
+    // Mobile: Android
+    if (ua.includes('android')) {
+      return 'Mobile: Android';
     }
     
-    // Desktop: Windows, Mac, Linux, or generic "desktop"
-    if (ua.includes('windows') || 
-        ua.includes('macintosh') || 
-        ua.includes('mac os') ||
-        ua.includes('linux') ||
-        ua.includes('cros') ||
-        ua.includes('desktop')) {
-      return 'Desktop (Windows/Mac)';
+    // Mobile: iOS (iPhone, iPad, iPod)
+    if (ua.includes('iphone') || ua.includes('ipad') || ua.includes('ipod') || 
+        (ua.includes('mac') && ua.includes('mobile'))) {
+      return 'Mobile: iOS';
     }
     
-    // Fallback for unknown
-    return 'Other';
+    // Desktop: Windows
+    if (ua.includes('windows')) {
+      return 'Desktop: Windows';
+    }
+    
+    // Desktop: macOS
+    if (ua.includes('macintosh') || ua.includes('mac os') || 
+        (ua.includes('mac') && !ua.includes('mobile'))) {
+      return 'Desktop: macOS';
+    }
+    
+    // Desktop: Others (Linux, ChromeOS, generic desktop)
+    if (ua.includes('linux') || ua.includes('cros') || ua.includes('desktop')) {
+      return 'Desktop: Others';
+    }
+    
+    // Mobile: Others (generic mobile devices)
+    if (ua.includes('mobile')) {
+      return 'Mobile: Others';
+    }
+    
+    // Fallback for completely unknown
+    return 'Others';
   }
 
   renderChart(userAgentFacets) {
-    // Group user agents into Mobile and Desktop categories
+    // Group user agents into specific categories
     const categoryTotals = {
-      'Mobile (Android/iOS)': 0,
-      'Desktop (Windows/Mac)': 0,
-      'Other': 0
+      'Mobile: Android': 0,
+      'Mobile: iOS': 0,
+      'Mobile: Others': 0,
+      'Desktop: Windows': 0,
+      'Desktop: macOS': 0,
+      'Desktop: Others': 0,
+      'Others': 0
     };
 
     // Track which user agents fall into each category (for tooltip details)
     const categoryDetails = {
-      'Mobile (Android/iOS)': [],
-      'Desktop (Windows/Mac)': [],
-      'Other': []
+      'Mobile: Android': [],
+      'Mobile: iOS': [],
+      'Mobile: Others': [],
+      'Desktop: Windows': [],
+      'Desktop: macOS': [],
+      'Desktop: Others': [],
+      'Others': []
     };
 
     userAgentFacets.forEach(facet => {
@@ -151,9 +172,13 @@ class UserAgentPieChart extends HTMLElement {
 
     // Use specific colors for each category
     const categoryColors = {
-      'Mobile (Android/iOS)': '#10b981',    // green
-      'Desktop (Windows/Mac)': '#3b82f6',   // blue
-      'Other': '#9ca3af'                     // gray
+      'Mobile: Android': '#10b981',    // green
+      'Mobile: iOS': '#6366f1',        // indigo
+      'Mobile: Others': '#14b8a6',     // teal
+      'Desktop: Windows': '#3b82f6',   // blue
+      'Desktop: macOS': '#8b5cf6',     // violet
+      'Desktop: Others': '#06b6d4',    // cyan
+      'Others': '#9ca3af'              // gray
     };
     const colors = labels.map(label => categoryColors[label] || '#9ca3af');
 
