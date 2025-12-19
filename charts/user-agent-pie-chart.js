@@ -93,9 +93,9 @@ class UserAgentPieChart extends HTMLElement {
       return 'Mobile: Android';
     }
     
-    // Mobile: iOS (iPhone, iPad, iPod)
+    // Mobile: iOS (iPhone, iPad, iPod, or "mobile:ios" format from RUM data)
     if (ua.includes('iphone') || ua.includes('ipad') || ua.includes('ipod') || 
-        (ua.includes('mac') && ua.includes('mobile'))) {
+        ua.includes('ios') || (ua.includes('mac') && ua.includes('mobile'))) {
       return 'Mobile: iOS';
     }
     
