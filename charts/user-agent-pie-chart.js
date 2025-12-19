@@ -110,8 +110,13 @@ class UserAgentPieChart extends HTMLElement {
       return 'Desktop: macOS';
     }
     
-    // Desktop: Others (Linux, ChromeOS, generic desktop)
-    if (ua.includes('linux') || ua.includes('cros') || ua.includes('desktop')) {
+    // Desktop: Linux
+    if (ua.includes('linux') && !ua.includes('android')) {
+      return 'Desktop: Linux';
+    }
+    
+    // Desktop: Others (ChromeOS, generic desktop)
+    if (ua.includes('cros') || ua.includes('desktop')) {
       return 'Desktop: Others';
     }
     
@@ -132,6 +137,7 @@ class UserAgentPieChart extends HTMLElement {
       'Mobile: Others': 0,
       'Desktop: Windows': 0,
       'Desktop: macOS': 0,
+      'Desktop: Linux': 0,
       'Desktop: Others': 0,
       'Others': 0
     };
@@ -143,6 +149,7 @@ class UserAgentPieChart extends HTMLElement {
       'Mobile: Others': [],
       'Desktop: Windows': [],
       'Desktop: macOS': [],
+      'Desktop: Linux': [],
       'Desktop: Others': [],
       'Others': []
     };
@@ -177,6 +184,7 @@ class UserAgentPieChart extends HTMLElement {
       'Mobile: Others': '#14b8a6',     // teal
       'Desktop: Windows': '#3b82f6',   // blue
       'Desktop: macOS': '#8b5cf6',     // violet
+      'Desktop: Linux': '#f59e0b',     // amber
       'Desktop: Others': '#06b6d4',    // cyan
       'Others': '#9ca3af'              // gray
     };
