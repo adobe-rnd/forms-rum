@@ -45,12 +45,21 @@ class DateRangePicker extends HTMLElement {
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
+    // Guard: shadowRoot may not be rendered yet
+    if (!this.shadowRoot) return;
+    
     const startDateInput = this.shadowRoot.getElementById('start-date');
     const endDateInput = this.shadowRoot.getElementById('end-date');
-    if (name === 'start' && startDateInput) {
-      startDateInput.value = newValue || '';
-    } else if (name === 'end' && endDateInput) {
-      endDateInput.value = newValue || '';
+    
+    // Guard: elements may not exist yet if called before render()
+    if (!startDateInput || !endDateInput) return;
+    
+    if (name === 'start' || name === 'end') {
+      if (name === 'start') {
+        startDateInput.value = newValue || '';
+      } else if (name === 'end') {
+        endDateInput.value = newValue || '';
+      }
     }
   }
 
