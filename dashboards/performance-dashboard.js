@@ -5,12 +5,14 @@
 import '../charts/load-time-chart.js';
 import '../charts/load-time-histogram.js';
 import '../charts/resource-time-table.js';
+import '../charts/user-agent-pie-chart.js';
 
 class PerformanceDashboard extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
     this.dataChunks = null;
+    this.selectedDeviceTypes = new Set(['mobile-android', 'mobile-ios', 'desktop-windows', 'desktop-macos', 'desktop-linux', 'others']);
   }
 
   connectedCallback() {
@@ -173,6 +175,85 @@ class PerformanceDashboard extends HTMLElement {
           color: #6b7280;
         }
 
+        .device-filters-section {
+          margin-top: 20px;
+          padding: 16px;
+          background: #f9fafb;
+          border-radius: 8px;
+          border: 1px solid #e5e7eb;
+        }
+
+        .device-filters-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 12px;
+        }
+
+        .device-filters-title {
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: #374151;
+        }
+
+        .filters-reset {
+          font-size: 0.75rem;
+          color: #3b82f6;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+
+        .filters-reset:hover {
+          color: #2563eb;
+        }
+
+        .device-filters {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .filter-option {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          background: white;
+          border: 1px solid #d1d5db;
+          border-radius: 16px;
+          padding: 6px 12px;
+          font-size: 0.8125rem;
+          color: #374151;
+          cursor: pointer;
+          user-select: none;
+          transition: all 0.2s;
+        }
+
+        .filter-option:hover {
+          border-color: #3b82f6;
+          background: #eff6ff;
+        }
+
+        .filter-option input[type="checkbox"] {
+          width: 14px;
+          height: 14px;
+          cursor: pointer;
+        }
+
+        .user-agent-section {
+          margin-top: 24px;
+          padding: 16px;
+          background: #f9fafb;
+          border-radius: 8px;
+          border: 1px solid #e5e7eb;
+        }
+
+        .user-agent-section h4 {
+          margin: 0 0 16px 0;
+          color: #374151;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+
         @media (max-width: 768px) {
           .summary-stats {
             grid-template-columns: 1fr;
@@ -206,6 +287,44 @@ class PerformanceDashboard extends HTMLElement {
           </div>
         </div>
 
+        <div class="device-filters-section">
+          <div class="device-filters-header">
+            <span class="device-filters-title">Filter by Device Type:</span>
+            <span class="filters-reset" id="reset-filters">Reset All</span>
+          </div>
+          <div class="device-filters" id="device-filters">
+            <label class="filter-option">
+              <input type="checkbox" data-device="mobile-android" checked />
+              Mobile: Android
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" data-device="mobile-ios" checked />
+              Mobile: iOS
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" data-device="desktop-windows" checked />
+              Desktop: Windows
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" data-device="desktop-macos" checked />
+              Desktop: macOS
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" data-device="desktop-linux" checked />
+              Desktop: Linux
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" data-device="others" checked />
+              Others
+            </label>
+          </div>
+        </div>
+
+        <div class="user-agent-section">
+          <h4>Performance by Device Type</h4>
+          <user-agent-pie-chart id="user-agent-chart"></user-agent-pie-chart>
+        </div>
+
         <load-time-chart id="load-time-chart"></load-time-chart>
 
         <load-time-histogram id="load-time-histogram"></load-time-histogram>
@@ -231,6 +350,31 @@ class PerformanceDashboard extends HTMLElement {
       statP50.classList.remove('active');
       chart.setAttribute('percentile', 'p75');
     });
+
+    // Device type filters
+    const filtersContainer = this.shadowRoot.getElementById('device-filters');
+    if (filtersContainer) {
+      const inputs = Array.from(filtersContainer.querySelectorAll('input[type="checkbox"][data-device]'));
+      inputs.forEach((input) => {
+        input.addEventListener('change', () => {
+          const deviceType = input.getAttribute('data-device');
+          if (input.checked) {
+            this.selectedDeviceTypes.add(deviceType);
+          } else {
+            this.selectedDeviceTypes.delete(deviceType);
+          }
+          this.applyDeviceFilter();
+        });
+      });
+    }
+
+    // Reset filters button
+    const resetButton = this.shadowRoot.getElementById('reset-filters');
+    if (resetButton) {
+      resetButton.addEventListener('click', () => {
+        this.resetDeviceFilters();
+      });
+    }
   }
 
   setData(dataChunks, url) {
@@ -240,6 +384,109 @@ class PerformanceDashboard extends HTMLElement {
     this.updateChart();
     this.updateHistogram();
     this.updateResourceTable();
+    this.updateUserAgentChart();
+  }
+
+  /**
+   * Categorize user agent into device type categories matching the filter options
+   */
+  categorizeUserAgent(userAgent) {
+    const ua = (userAgent || '').toLowerCase();
+    
+    // Mobile: Android
+    if (ua.includes('android')) {
+      return 'mobile-android';
+    }
+    
+    // Mobile: iOS
+    if (ua.includes('iphone') || ua.includes('ipad') || ua.includes('ipod') || 
+        ua.includes('ios') || (ua.includes('mac') && ua.includes('mobile'))) {
+      return 'mobile-ios';
+    }
+    
+    // Desktop: Windows
+    if (ua.includes('windows')) {
+      return 'desktop-windows';
+    }
+    
+    // Desktop: macOS
+    if (ua.includes('macintosh') || ua.includes('mac os') || 
+        (ua.includes('mac') && !ua.includes('mobile'))) {
+      return 'desktop-macos';
+    }
+    
+    // Desktop: Linux
+    if (ua.includes('linux') && !ua.includes('android')) {
+      return 'desktop-linux';
+    }
+    
+    // Others
+    return 'others';
+  }
+
+  applyDeviceFilter() {
+    if (!this.dataChunks) return;
+
+    // Get user agent facets
+    const userAgentFacets = this.dataChunks.facets.userAgent || [];
+    
+    // Build list of user agents to filter by
+    const selectedUserAgents = [];
+    userAgentFacets.forEach(facet => {
+      const category = this.categorizeUserAgent(facet.value);
+      if (this.selectedDeviceTypes.has(category)) {
+        selectedUserAgents.push(facet.value);
+      }
+    });
+
+    // Apply filter to dataChunks
+    if (selectedUserAgents.length > 0 && selectedUserAgents.length < userAgentFacets.length) {
+      this.dataChunks.filter = {
+        ...this.dataChunks.filter,
+        userAgent: selectedUserAgents
+      };
+    } else {
+      // No filter or all selected - remove the filter
+      const { userAgent, ...rest } = this.dataChunks.filter || {};
+      this.dataChunks.filter = rest;
+    }
+
+    // Update all visualizations with filtered data
+    this.updateSummaryStats();
+    this.updateChart();
+    this.updateHistogram();
+    this.updateResourceTable();
+    this.updateUserAgentChart();
+  }
+
+  resetDeviceFilters() {
+    // Reset all checkboxes to checked
+    const filtersContainer = this.shadowRoot.getElementById('device-filters');
+    if (filtersContainer) {
+      const inputs = Array.from(filtersContainer.querySelectorAll('input[type="checkbox"][data-device]'));
+      inputs.forEach(input => {
+        input.checked = true;
+        const deviceType = input.getAttribute('data-device');
+        this.selectedDeviceTypes.add(deviceType);
+      });
+    }
+
+    // Clear filter and refresh data
+    if (this.dataChunks) {
+      const { userAgent, ...rest } = this.dataChunks.filter || {};
+      this.dataChunks.filter = rest;
+    }
+    
+    this.applyDeviceFilter();
+  }
+
+  updateUserAgentChart() {
+    if (!this.dataChunks || !this.dataChunks.facets.userAgent) return;
+
+    const userAgentChart = this.shadowRoot.getElementById('user-agent-chart');
+    if (userAgentChart) {
+      userAgentChart.setData(this.dataChunks.facets.userAgent);
+    }
   }
 
   updateChart() {
@@ -336,8 +583,13 @@ class PerformanceDashboard extends HTMLElement {
     if (resourceTable) {
       resourceTable.reset();
     }
+    const userAgentChart = this.shadowRoot.getElementById('user-agent-chart');
+    if (userAgentChart) {
+      userAgentChart.reset();
+    }
     this.dataChunks = null;
     this.url = '';
+    this.resetDeviceFilters();
   }
 }
 
