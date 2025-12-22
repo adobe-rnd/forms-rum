@@ -12,7 +12,7 @@ class PerformanceDashboard extends HTMLElement {
     super();
     this.attachShadow({ mode: 'open' });
     this.dataChunks = null;
-    this.selectedDeviceTypes = new Set(['mobile-android', 'mobile-ios', 'desktop-windows', 'desktop-macos', 'desktop-linux', 'others']);
+    this.selectedDeviceTypes = new Set(['Mobile: Android', 'Mobile: iOS', 'Mobile: Others', 'Desktop: Windows', 'Desktop: macOS', 'Desktop: Linux', 'Desktop: Others', 'Others']);
   }
 
   connectedCallback() {
@@ -294,27 +294,35 @@ class PerformanceDashboard extends HTMLElement {
           </div>
           <div class="device-filters" id="device-filters">
             <label class="filter-option">
-              <input type="checkbox" data-device="mobile-android" checked />
+              <input type="checkbox" data-device="Mobile: Android" checked />
               Mobile: Android
             </label>
             <label class="filter-option">
-              <input type="checkbox" data-device="mobile-ios" checked />
+              <input type="checkbox" data-device="Mobile: iOS" checked />
               Mobile: iOS
             </label>
             <label class="filter-option">
-              <input type="checkbox" data-device="desktop-windows" checked />
+              <input type="checkbox" data-device="Mobile: Others" checked />
+              Mobile: Others
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" data-device="Desktop: Windows" checked />
               Desktop: Windows
             </label>
             <label class="filter-option">
-              <input type="checkbox" data-device="desktop-macos" checked />
+              <input type="checkbox" data-device="Desktop: macOS" checked />
               Desktop: macOS
             </label>
             <label class="filter-option">
-              <input type="checkbox" data-device="desktop-linux" checked />
+              <input type="checkbox" data-device="Desktop: Linux" checked />
               Desktop: Linux
             </label>
             <label class="filter-option">
-              <input type="checkbox" data-device="others" checked />
+              <input type="checkbox" data-device="Desktop: Others" checked />
+              Desktop: Others
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" data-device="Others" checked />
               Others
             </label>
           </div>
@@ -389,39 +397,50 @@ class PerformanceDashboard extends HTMLElement {
 
   /**
    * Categorize user agent into device type categories matching the filter options
+   * This matches the exact categorization logic from user-agent-pie-chart.js
    */
   categorizeUserAgent(userAgent) {
     const ua = (userAgent || '').toLowerCase();
     
     // Mobile: Android
     if (ua.includes('android')) {
-      return 'mobile-android';
+      return 'Mobile: Android';
     }
     
-    // Mobile: iOS
+    // Mobile: iOS (iPhone, iPad, iPod, or "mobile:ios" format from RUM data)
     if (ua.includes('iphone') || ua.includes('ipad') || ua.includes('ipod') || 
         ua.includes('ios') || (ua.includes('mac') && ua.includes('mobile'))) {
-      return 'mobile-ios';
+      return 'Mobile: iOS';
     }
     
     // Desktop: Windows
     if (ua.includes('windows')) {
-      return 'desktop-windows';
+      return 'Desktop: Windows';
     }
     
     // Desktop: macOS
     if (ua.includes('macintosh') || ua.includes('mac os') || 
         (ua.includes('mac') && !ua.includes('mobile'))) {
-      return 'desktop-macos';
+      return 'Desktop: macOS';
     }
     
     // Desktop: Linux
     if (ua.includes('linux') && !ua.includes('android')) {
-      return 'desktop-linux';
+      return 'Desktop: Linux';
     }
     
-    // Others
-    return 'others';
+    // Desktop: Others (ChromeOS, generic desktop)
+    if (ua.includes('cros') || ua.includes('desktop')) {
+      return 'Desktop: Others';
+    }
+    
+    // Mobile: Others (generic mobile devices)
+    if (ua.includes('mobile')) {
+      return 'Mobile: Others';
+    }
+    
+    // Fallback for completely unknown
+    return 'Others';
   }
 
   applyDeviceFilter() {
