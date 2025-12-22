@@ -150,8 +150,9 @@ class URLAutocomplete extends HTMLElement {
       }
     });
 
-    // Delegate click events on suggestions
-    suggestionsList.addEventListener('click', (e) => {
+    // Delegate mousedown events on suggestions (mousedown fires before blur)
+    suggestionsList.addEventListener('mousedown', (e) => {
+      e.preventDefault(); // Prevent input from losing focus
       const item = e.target.closest('.suggestion-item');
       if (item) {
         const url = item.dataset.url;
@@ -303,7 +304,11 @@ class URLAutocomplete extends HTMLElement {
       return url;
     });
     this.urls = urls || [];
-
+    // If input has a value and dropdown is open, re-filter with new URLs
+    const input = this.shadowRoot.querySelector('.url-input');
+    if (input && input.value && this.isOpen) {
+      this.handleInput(input.value);
+    }
   }
 
   // Public method to get current value
