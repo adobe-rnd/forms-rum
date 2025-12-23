@@ -14,9 +14,6 @@ class LoadTimeHistogram extends HTMLElement {
     this.chart = null;
     this.histogramData = null;
     this.bucketThresholds = null;
-    this.compareHistogramData = null;
-    this.primaryLabel = 'All devices';
-    this.compareLabel = '';
   }
 
   connectedCallback() {
@@ -133,15 +130,6 @@ class LoadTimeHistogram extends HTMLElement {
    *                                    If not provided, creates 5 equal-width buckets dynamically
    */
   setData(formBlockLoadTimeFacet, bucketThresholds = null) {
-    // Backwards-compatible signature:
-    // setData(primaryFacet, bucketThresholds)
-    // setData(primaryFacet, bucketThresholds, { compareFacet, primaryLabel, compareLabel })
-    const maybeOptions = arguments[2];
-    const options = (maybeOptions && typeof maybeOptions === 'object') ? maybeOptions : {};
-    const compareFacet = options.compareFacet || null;
-    this.primaryLabel = options.primaryLabel || this.primaryLabel || 'All devices';
-    this.compareLabel = options.compareLabel || '';
-
     if (!formBlockLoadTimeFacet || formBlockLoadTimeFacet.length === 0) {
       this.showNoData();
       return;
@@ -149,13 +137,6 @@ class LoadTimeHistogram extends HTMLElement {
 
     this.bucketThresholds = bucketThresholds;
     this.processData(formBlockLoadTimeFacet);
-
-    if (compareFacet && Array.isArray(compareFacet) && compareFacet.length > 0) {
-      this.processCompareData(compareFacet);
-    } else {
-      this.compareHistogramData = null;
-    }
-
     this.renderChart();
   }
 
@@ -213,52 +194,6 @@ class LoadTimeHistogram extends HTMLElement {
     });
 
     this.histogramData = {
-      buckets,
-      totalCount: loadTimes.length,
-      totalWeightedCount,
-      min,
-      max,
-      mean: loadTimes.reduce((sum, t) => sum + t, 0) / loadTimes.length,
-      median: this.calculateMedian(loadTimes)
-    };
-  }
-
-  processCompareData(formBlockLoadTimeFacet) {
-    // Extract and parse all load time values
-    const loadTimes = [];
-    const weights = [];
-
-    formBlockLoadTimeFacet.forEach(facet => {
-      const timeValue = parseFloat(facet.value.replace('s', ''));
-      if (!isNaN(timeValue)) {
-        loadTimes.push(timeValue);
-        weights.push(facet.weight || 1);
-      }
-    });
-
-    if (loadTimes.length === 0) {
-      this.compareHistogramData = null;
-      return;
-    }
-
-    const min = Math.min(...loadTimes);
-    const max = Math.max(...loadTimes);
-
-    let buckets = [];
-    if (this.bucketThresholds && Array.isArray(this.bucketThresholds) && this.bucketThresholds.length >= 2) {
-      buckets = this.createBucketsFromThresholds(loadTimes, weights, this.bucketThresholds);
-    } else {
-      buckets = this.createDynamicBuckets(loadTimes, weights, min, max);
-    }
-
-    const totalWeightedCount = buckets.reduce((sum, b) => sum + b.weightedCount, 0);
-    buckets.forEach(bucket => {
-      bucket.percentage = totalWeightedCount > 0
-        ? (bucket.weightedCount / totalWeightedCount) * 100
-        : 0;
-    });
-
-    this.compareHistogramData = {
       buckets,
       totalCount: loadTimes.length,
       totalWeightedCount,
@@ -431,60 +366,34 @@ class LoadTimeHistogram extends HTMLElement {
 
     const { buckets } = this.histogramData;
 
-    const hasCompare = !!(this.compareHistogramData && this.compareHistogramData.buckets && this.compareHistogramData.buckets.length);
     const { baseColors, borderColors } = this.generateColors(buckets.length);
-    const compareColor = {
-      bg: 'rgba(139, 92, 246, 0.35)',
-      border: 'rgba(139, 92, 246, 0.9)'
-    };
 
     // Create new chart
     this.chart = new Chart(ctx, {
       type: 'bar',
       data: {
         labels: buckets.map(b => b.label),
-        datasets: hasCompare ? [
-          {
-            label: this.primaryLabel,
-            data: buckets.map(b => b.weightedCount),
-            backgroundColor: baseColors,
-            borderColor: borderColors,
-            borderWidth: 2
-          },
-          {
-            label: this.compareLabel,
-            data: this.compareHistogramData.buckets.map(b => b.weightedCount),
-            backgroundColor: compareColor.bg,
-            borderColor: compareColor.border,
-            borderWidth: 2
-          }
-        ] : [
-          {
-            label: 'Number of Loads',
-            data: buckets.map(b => b.weightedCount),
-            backgroundColor: baseColors,
-            borderColor: borderColors,
-            borderWidth: 2
-          }
-        ]
+        datasets: [{
+          label: 'Number of Loads',
+          data: buckets.map(b => b.weightedCount),
+          backgroundColor: baseColors,
+          borderColor: borderColors,
+          borderWidth: 2
+        }]
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
           legend: {
-            display: hasCompare,
-            position: 'bottom'
+            display: false
           },
           tooltip: {
             callbacks: {
               label: (context) => {
-                const isCompare = hasCompare && context.datasetIndex === 1;
-                const dataObj = isCompare ? this.compareHistogramData : this.histogramData;
-                const bucket = dataObj.buckets[context.dataIndex];
-                const labelPrefix = hasCompare ? `${context.dataset.label}: ` : '';
+                const bucket = buckets[context.dataIndex];
                 return [
-                  `${labelPrefix}Count: ${bucket.weightedCount.toLocaleString()}`,
+                  `Count: ${bucket.weightedCount.toLocaleString()}`,
                   `Percentage: ${bucket.percentage.toFixed(1)}%`,
                   `Range: ${bucket.label}`
                 ];
@@ -493,9 +402,7 @@ class LoadTimeHistogram extends HTMLElement {
           },
           title: {
             display: true,
-            text: hasCompare
-              ? `Engagement Readiness Time (Form Visibility) Distribution — ${this.primaryLabel} vs ${this.compareLabel}`
-              : 'Engagement Readiness Time (Form Visibility) Distribution',
+            text: 'Engagement Readiness Time (Form Visibility) Distribution',
             font: {
               size: 16,
               weight: 'bold'
@@ -523,10 +430,6 @@ class LoadTimeHistogram extends HTMLElement {
               minRotation: 45
             }
           }
-        },
-        interaction: {
-          mode: 'index',
-          intersect: false
         }
       }
     });

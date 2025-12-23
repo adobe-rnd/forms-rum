@@ -15,9 +15,6 @@ class LoadTimeChart extends HTMLElement {
     this.chart = null;
     this.chartData = null;
     this.selectedPercentile = 'p50'; // default to p50
-    this.compareChartData = null;
-    this.primaryLabel = 'All devices';
-    this.compareLabel = '';
   }
 
   static get observedAttributes() {
@@ -117,21 +114,12 @@ class LoadTimeChart extends HTMLElement {
   }
 
   setData(hourFacets) {
-    // Backwards-compatible signature:
-    // setData(hourFacets)
-    // setData(hourFacets, { compareHourFacets, primaryLabel, compareLabel })
-    const maybeOptions = arguments[1];
-    const options = (maybeOptions && typeof maybeOptions === 'object') ? maybeOptions : {};
-    const compareHourFacets = options.compareHourFacets || null;
-    this.primaryLabel = options.primaryLabel || this.primaryLabel || 'All devices';
-    this.compareLabel = options.compareLabel || '';
-
     if (!hourFacets || hourFacets.length === 0) {
       this.showNoData();
       return;
     }
 
-    this.renderChart(hourFacets, compareHourFacets);
+    this.renderChart(hourFacets);
   }
 
   showNoData() {
@@ -144,7 +132,7 @@ class LoadTimeChart extends HTMLElement {
     }
   }
 
-  renderChart(hourFacets, compareHourFacets = null) {
+  renderChart(hourFacets) {
     // Sort by hour (timeSlot)
     const sortedHours = [...hourFacets].sort((a, b) =>
       new Date(a.value).getTime() - new Date(b.value).getTime()
@@ -167,29 +155,6 @@ class LoadTimeChart extends HTMLElement {
       };
     });
 
-    // Optional comparison series
-    let compareChartData = null;
-    if (compareHourFacets && Array.isArray(compareHourFacets) && compareHourFacets.length > 0) {
-      const sortedCompareHours = [...compareHourFacets].sort((a, b) =>
-        new Date(a.value).getTime() - new Date(b.value).getTime()
-      );
-      compareChartData = sortedCompareHours.map(facet => {
-        const p50LoadTime = facet.metrics.formBlockLoadTime?.percentile(50) || 0;
-        const p75LoadTime = facet.metrics.formBlockLoadTime?.percentile(75) || 0;
-        const pageViews = facet.metrics.pageViews?.sum || 0;
-        const minLoadTime = facet.metrics.formBlockLoadTime?.min || 0;
-        return {
-          hour: this.formatHour(facet.value),
-          rawHour: facet.value,
-          p50LoadTime,
-          p75LoadTime,
-          pageViews,
-          minLoadTime,
-          facet
-        };
-      });
-    }
-
     const canvas = this.shadowRoot.getElementById('load-time-chart');
     const ctx = canvas.getContext('2d');
 
@@ -199,7 +164,7 @@ class LoadTimeChart extends HTMLElement {
     }
 
     // Create datasets based on selected percentile
-    const datasets = this.getDatasets(chartData, compareChartData);
+    const datasets = this.getDatasets(chartData);
 
     // Create new chart
     this.chart = new Chart(ctx, {
@@ -237,7 +202,7 @@ class LoadTimeChart extends HTMLElement {
             intersect: false,
             callbacks: {
               afterLabel: (context) => {
-                if (context.datasetIndex === 0) { // Only show once (primary series)
+                if (context.datasetIndex === 0) { // Only show once
                   const data = chartData[context.dataIndex];
                   return [
                     '',
@@ -285,14 +250,12 @@ class LoadTimeChart extends HTMLElement {
 
     // Store chart data for later use
     this.chartData = chartData;
-    this.compareChartData = compareChartData;
   }
 
-  getDatasets(chartData, compareChartData = null) {
-    const hasCompare = !!(compareChartData && compareChartData.length);
+  getDatasets(chartData) {
     if (this.selectedPercentile === 'p75') {
-      const primaryDataset = {
-        label: hasCompare ? `${this.primaryLabel} — p75` : 'p75 (75th percentile)',
+      return [{
+        label: 'p75 (75th percentile)',
         data: chartData.map(d => d.p75LoadTime),
         backgroundColor: 'rgba(234, 179, 8, 0.1)',
         borderColor: 'rgba(234, 179, 8, 0.8)',
@@ -304,31 +267,11 @@ class LoadTimeChart extends HTMLElement {
         pointBackgroundColor: chartData.map(d => this.getPointColor(d.p75LoadTime)),
         pointBorderColor: '#fff',
         pointBorderWidth: 2
-      };
-
-      if (!hasCompare) return [primaryDataset];
-
-      const compareDataset = {
-        label: `${this.compareLabel} — p75`,
-        data: compareChartData.map(d => d.p75LoadTime),
-        backgroundColor: 'rgba(99, 102, 241, 0.08)',
-        borderColor: 'rgba(99, 102, 241, 0.9)',
-        borderWidth: 3,
-        fill: false,
-        tension: 0.4,
-        pointRadius: 3,
-        pointHoverRadius: 5,
-        pointBackgroundColor: compareChartData.map(d => this.getPointColor(d.p75LoadTime)),
-        pointBorderColor: '#fff',
-        pointBorderWidth: 2,
-        borderDash: [6, 4]
-      };
-
-      return [primaryDataset, compareDataset];
+      }];
     } else {
       // Default to p50
-      const primaryDataset = {
-        label: hasCompare ? `${this.primaryLabel} — p50` : 'p50 (Median)',
+      return [{
+        label: 'p50 (Median)',
         data: chartData.map(d => d.p50LoadTime),
         backgroundColor: 'rgba(59, 130, 246, 0.1)',
         borderColor: 'rgba(59, 130, 246, 1)',
@@ -340,27 +283,7 @@ class LoadTimeChart extends HTMLElement {
         pointBackgroundColor: chartData.map(d => this.getPointColor(d.p50LoadTime)),
         pointBorderColor: '#fff',
         pointBorderWidth: 2
-      };
-
-      if (!hasCompare) return [primaryDataset];
-
-      const compareDataset = {
-        label: `${this.compareLabel} — p50`,
-        data: compareChartData.map(d => d.p50LoadTime),
-        backgroundColor: 'rgba(139, 92, 246, 0.08)',
-        borderColor: 'rgba(139, 92, 246, 0.9)',
-        borderWidth: 3,
-        fill: false,
-        tension: 0.4,
-        pointRadius: 3,
-        pointHoverRadius: 5,
-        pointBackgroundColor: compareChartData.map(d => this.getPointColor(d.p50LoadTime)),
-        pointBorderColor: '#fff',
-        pointBorderWidth: 2,
-        borderDash: [6, 4]
-      };
-
-      return [primaryDataset, compareDataset];
+      }];
     }
   }
 
@@ -368,14 +291,11 @@ class LoadTimeChart extends HTMLElement {
     if (!this.chart || !this.chartData) return;
 
     // Update datasets
-    this.chart.data.datasets = this.getDatasets(this.chartData, this.compareChartData);
+    this.chart.data.datasets = this.getDatasets(this.chartData);
 
     // Update title
-    const percentileLabel = this.selectedPercentile === 'p75' ? 'p75' : 'p50';
-    const titleCompare = this.compareChartData && this.compareChartData.length
-      ? `${this.primaryLabel} vs ${this.compareLabel} — ${percentileLabel} per hour`
-      : `${percentileLabel} per hour`;
-    this.chart.options.plugins.title.text = `Engagement Readiness Time (Form Visibility) — ${titleCompare}`;
+    const percentileLabel = this.selectedPercentile === 'p75' ? 'p75 (75th Percentile)' : 'p50 (Median)';
+    this.chart.options.plugins.title.text = `Engagement Readiness Time (Form Visibility) — ${percentileLabel} Per Hour`;
 
     // Ensure day/night plugin still has access to raw hour data
     if (this.chart.options.plugins.dayNightBackground) {

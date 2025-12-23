@@ -71,38 +71,6 @@ function loadresource(bundle) {
   .map(e => e.source);
 }
 
-function categorizeDeviceType(userAgent) {
-  const ua = (userAgent || '').toLowerCase();
-
-  // Mobile: Android
-  if (ua.includes('android')) return 'Android';
-
-  // Mobile: iOS (iPhone, iPad, iPod, or "mobile:ios" style)
-  if (ua.includes('iphone') || ua.includes('ipad') || ua.includes('ipod') ||
-      ua.includes('ios') || (ua.includes('mac') && ua.includes('mobile'))) {
-    return 'iOS';
-  }
-
-  // Desktop OS
-  if (ua.includes('windows')) return 'Windows';
-  if (ua.includes('macintosh') || ua.includes('mac os') || (ua.includes('mac') && !ua.includes('mobile'))) return 'macOS';
-  if (ua.includes('linux') && !ua.includes('android')) return 'Linux';
-
-  // Other heuristics
-  if (ua.includes('cros')) return 'ChromeOS';
-  if (ua.includes('mobile')) return 'Other Mobile';
-  if (ua.includes('desktop')) return 'Other Desktop';
-
-  return 'Other';
-}
-
-function deviceType(bundle) {
-  // Reuse rum-distiller's userAgent facet when present
-  const uaValues = facets.userAgent(bundle);
-  if (!uaValues || uaValues.length === 0) return undefined;
-  return Array.from(new Set(uaValues.map(categorizeDeviceType)));
-}
-
 function errorDataChunks(data) {
   const dataChunks = new DataChunks();
   dataChunks.load(data);
@@ -159,7 +127,6 @@ function performanceDataChunks(data) {
   dataChunks.addSeries('formLoaded', b => b.events.find(isFormLoadEvent) ? b.weight : 0);
   dataChunks.addFacet('loadresource', loadresource, 'every');
   dataChunks.addFacet('userAgent', facets.userAgent);
-  dataChunks.addFacet('deviceType', deviceType, 'every');
 
   dataChunks.addFacet('hour', hour, 'every', 'none');
   return dataChunks;

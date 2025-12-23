@@ -13,8 +13,6 @@ class PerformanceDashboard extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.dataChunks = null;
     this.url = '';
-    this.selectedDeviceType = 'All';
-    this.compareDeviceType = '';
   }
 
   connectedCallback() {
@@ -53,65 +51,6 @@ class PerformanceDashboard extends HTMLElement {
           color: #1e40af;
           font-size: 1.5rem;
           font-weight: 700;
-        }
-
-        .filters-row {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 12px;
-          align-items: flex-end;
-          margin: 12px 0 8px;
-        }
-
-        .filter-group {
-          display: flex;
-          flex-direction: column;
-          gap: 6px;
-          min-width: 180px;
-        }
-
-        .filter-group label {
-          font-size: 0.75rem;
-          color: #6b7280;
-          font-weight: 600;
-          letter-spacing: 0.02em;
-          text-transform: uppercase;
-        }
-
-        select.device-select {
-          padding: 10px 12px;
-          border: 2px solid #e5e7eb;
-          border-radius: 8px;
-          font-size: 0.875rem;
-          background: white;
-          transition: all 0.2s;
-        }
-
-        select.device-select:focus {
-          outline: none;
-          border-color: #3b82f6;
-          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-        }
-
-        .filter-hint {
-          font-size: 0.75rem;
-          color: #9ca3af;
-        }
-
-        .clear-compare {
-          padding: 10px 12px;
-          border-radius: 8px;
-          border: 1px solid #d1d5db;
-          background: #f9fafb;
-          cursor: pointer;
-          font-size: 0.875rem;
-          color: #374151;
-          height: 42px;
-        }
-
-        .clear-compare:hover {
-          background: #f3f4f6;
-          border-color: #9ca3af;
         }
 
         .summary-stats {
@@ -187,17 +126,6 @@ class PerformanceDashboard extends HTMLElement {
           font-size: 0.75rem;
           color: #9ca3af;
           margin-top: 4px;
-        }
-
-        .stat-compare {
-          font-size: 0.75rem;
-          color: #6b7280;
-          margin-top: 6px;
-          display: none;
-        }
-
-        .stat-compare.visible {
-          display: block;
         }
 
         load-time-chart {
@@ -289,41 +217,20 @@ class PerformanceDashboard extends HTMLElement {
             How long does it take for the form to be visible on the screen?
           </p>
 
-          <div class="filters-row">
-            <div class="filter-group">
-              <label for="device-primary">Device type</label>
-              <select class="device-select" id="device-primary">
-                <option value="All">All</option>
-              </select>
-              <div class="filter-hint">Filter performance metrics by device type.</div>
-            </div>
-            <div class="filter-group">
-              <label for="device-compare">Compare to</label>
-              <select class="device-select" id="device-compare">
-                <option value="">None</option>
-              </select>
-              <div class="filter-hint">Overlay comparison in charts (e.g., Android vs iOS).</div>
-            </div>
-            <button class="clear-compare" id="clear-compare" title="Clear comparison">Clear compare</button>
-          </div>
-
           <div class="summary-stats" id="summary-stats">
             <div class="stat-item">
               <span class="stat-label">Fastest (Min)</span>
               <span class="stat-value fast" id="min-load-time">-</span>
-              <div class="stat-compare" id="min-compare"></div>
             </div>
             <div class="stat-item highlight clickable active" id="stat-p50" data-percentile="p50">
               <span class="stat-label">p50 (Median)</span>
               <span class="stat-value" id="p50-load-time">-</span>
               <span class="stat-subtext">50% of loads are faster</span>
-              <div class="stat-compare" id="p50-compare"></div>
             </div>
             <div class="stat-item highlight clickable" id="stat-p75" data-percentile="p75">
               <span class="stat-label">p75</span>
               <span class="stat-value" id="p75-load-time">-</span>
               <span class="stat-subtext">75% of loads are faster</span>
-              <div class="stat-compare" id="p75-compare"></div>
             </div>
           </div>
         </div>
@@ -361,137 +268,15 @@ class PerformanceDashboard extends HTMLElement {
       statP50.classList.remove('active');
       chart.setAttribute('percentile', 'p75');
     });
-
-    const primarySelect = this.shadowRoot.getElementById('device-primary');
-    const compareSelect = this.shadowRoot.getElementById('device-compare');
-    const clearCompare = this.shadowRoot.getElementById('clear-compare');
-
-    if (primarySelect) {
-      primarySelect.addEventListener('change', () => {
-        this.selectedDeviceType = primarySelect.value || 'All';
-        // Prevent comparing a device type to itself
-        if (this.compareDeviceType && this.compareDeviceType === this.selectedDeviceType) {
-          this.compareDeviceType = '';
-          if (compareSelect) compareSelect.value = '';
-        }
-        this.refresh();
-      });
-    }
-
-    if (compareSelect) {
-      compareSelect.addEventListener('change', () => {
-        const value = compareSelect.value || '';
-        this.compareDeviceType = (value && value !== this.selectedDeviceType) ? value : '';
-        if (value && value === this.selectedDeviceType) {
-          compareSelect.value = '';
-        }
-        this.refresh();
-      });
-    }
-
-    if (clearCompare) {
-      clearCompare.addEventListener('click', () => {
-        this.compareDeviceType = '';
-        if (compareSelect) compareSelect.value = '';
-        this.refresh();
-      });
-    }
   }
 
   setData(dataChunks, url) {
     this.dataChunks = dataChunks;
     this.url = url;
-    this.populateDeviceSelectors();
-    this.refresh();
-  }
-
-  getDeviceLabel(deviceType) {
-    if (!deviceType || deviceType === 'All') return 'All devices';
-    return deviceType;
-  }
-
-  escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
-  }
-
-  populateDeviceSelectors() {
-    if (!this.dataChunks) return;
-    const primarySelect = this.shadowRoot.getElementById('device-primary');
-    const compareSelect = this.shadowRoot.getElementById('device-compare');
-    if (!primarySelect || !compareSelect) return;
-
-    // Read available device types from unfiltered facets (best effort)
-    const prevFilter = this.dataChunks.filter;
-    this.dataChunks.filter = {};
-    const deviceFacets = this.dataChunks.facets.deviceType || [];
-    this.dataChunks.filter = prevFilter || {};
-
-    const available = deviceFacets.map(f => f.value).filter(Boolean);
-
-    // Stable ordering
-    const order = ['Android', 'iOS', 'Windows', 'macOS', 'Linux', 'ChromeOS', 'Other Mobile', 'Other Desktop', 'Other'];
-    const unique = Array.from(new Set(available));
-    unique.sort((a, b) => {
-      const ai = order.indexOf(a);
-      const bi = order.indexOf(b);
-      return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
-    });
-
-    primarySelect.innerHTML = [
-      `<option value="All">All</option>`,
-      unique.map(v => `<option value="${this.escapeHtml(v)}">${this.escapeHtml(v)}</option>`).join('')
-    ].join('');
-
-    compareSelect.innerHTML = [
-      `<option value="">None</option>`,
-      unique.map(v => `<option value="${this.escapeHtml(v)}">${this.escapeHtml(v)}</option>`).join('')
-    ].join('');
-
-    primarySelect.value = this.selectedDeviceType || 'All';
-    compareSelect.value = this.compareDeviceType || '';
-  }
-
-  getFilterForDevice(deviceType) {
-    if (!deviceType || deviceType === 'All') return {};
-    return { deviceType: [deviceType] };
-  }
-
-  snapshotForDevice(deviceType) {
-    const filter = this.getFilterForDevice(deviceType);
-    this.dataChunks.filter = filter;
-
-    const totals = this.dataChunks.totals;
-    const stats = {
-      minLoadTime: totals.formBlockLoadTime?.min || 0,
-      p50LoadTime: totals.formBlockLoadTime?.percentile(50) || 0,
-      p75LoadTime: totals.formBlockLoadTime?.percentile(75) || 0,
-    };
-
-    return {
-      hourFacets: this.dataChunks.facets.hour || [],
-      loadTimeFacet: this.dataChunks.facets.formBlockLoadTime || [],
-      stats
-    };
-  }
-
-  refresh() {
-    if (!this.dataChunks) return;
-
-    const primaryLabel = this.getDeviceLabel(this.selectedDeviceType);
-    const compareLabel = this.getDeviceLabel(this.compareDeviceType);
-
-    const primarySnap = this.snapshotForDevice(this.selectedDeviceType);
-    const compareSnap = this.compareDeviceType ? this.snapshotForDevice(this.compareDeviceType) : null;
-
-    // Clear filter before updating child components
-    this.dataChunks.filter = {};
-
-    this.updateSummaryStats(primarySnap, compareSnap, compareLabel);
-    this.updateChart(primarySnap, compareSnap, primaryLabel, compareLabel);
-    this.updateHistogram(primarySnap, compareSnap, primaryLabel, compareLabel);
-    this.updateResourceTable(this.selectedDeviceType);
+    this.updateSummaryStats();
+    this.updateChart();
+    this.updateHistogram();
+    this.updateResourceTable();
     this.updateUserAgentChart();
   }
 
@@ -508,42 +293,35 @@ class PerformanceDashboard extends HTMLElement {
     uaChart.setData(userAgentFacets);
   }
 
-  updateChart(primarySnap, compareSnap, primaryLabel, compareLabel) {
-    if (!primarySnap) return;
+  updateChart() {
+    if (!this.dataChunks || !this.dataChunks.facets.hour) return;
     const chart = this.shadowRoot.getElementById('load-time-chart');
     if (!chart) return;
-    chart.setData(primarySnap.hourFacets, {
-      compareHourFacets: compareSnap?.hourFacets || null,
-      primaryLabel,
-      compareLabel
-    });
+    chart.setData(this.dataChunks.facets.hour);
   }
 
-  updateHistogram(primarySnap, compareSnap, primaryLabel, compareLabel) {
-    if (!primarySnap) return;
+  updateHistogram() {
+    if (!this.dataChunks || !this.dataChunks.facets.formBlockLoadTime) return;
     const histogram = this.shadowRoot.getElementById('load-time-histogram');
     if (!histogram) return;
     const bucketThresholds = [0, 10, 20, 60, Infinity];
-    histogram.setData(primarySnap.loadTimeFacet, bucketThresholds, {
-      compareFacet: compareSnap?.loadTimeFacet || null,
-      primaryLabel,
-      compareLabel
-    });
+    histogram.setData(this.dataChunks.facets.formBlockLoadTime, bucketThresholds);
   }
 
-  updateResourceTable(deviceType) {
+  updateResourceTable() {
     if (!this.dataChunks) return;
 
     const resourceTable = this.shadowRoot.getElementById('resource-time-table');
-    if (!resourceTable) return;
-    this.dataChunks.filter = this.getFilterForDevice(deviceType);
     resourceTable.setData(this.dataChunks);
-    this.dataChunks.filter = {};
   }
 
-  updateSummaryStats(primarySnap, compareSnap, compareLabel) {
-    if (!primarySnap) return;
-    const { minLoadTime, p50LoadTime, p75LoadTime } = primarySnap.stats;
+  updateSummaryStats() {
+    if (!this.dataChunks) return;
+
+    const totals = this.dataChunks.totals;
+    const minLoadTime = totals.formBlockLoadTime?.min || 0;
+    const p50LoadTime = totals.formBlockLoadTime?.percentile(50) || 0;
+    const p75LoadTime = totals.formBlockLoadTime?.percentile(75) || 0;
 
     const minElement = this.shadowRoot.getElementById('min-load-time');
     minElement.textContent = this.formatTime(minLoadTime);
@@ -556,31 +334,6 @@ class PerformanceDashboard extends HTMLElement {
     const p75Element = this.shadowRoot.getElementById('p75-load-time');
     p75Element.textContent = this.formatTime(p75LoadTime);
     p75Element.className = 'stat-value ' + this.getPerformanceClass(p75LoadTime);
-
-    const minCompare = this.shadowRoot.getElementById('min-compare');
-    const p50Compare = this.shadowRoot.getElementById('p50-compare');
-    const p75Compare = this.shadowRoot.getElementById('p75-compare');
-
-    const setCompare = (el, value) => {
-      if (!el) return;
-      if (compareSnap) {
-        el.textContent = `${compareLabel}: ${this.formatTime(value)}`;
-        el.classList.add('visible');
-      } else {
-        el.textContent = '';
-        el.classList.remove('visible');
-      }
-    };
-
-    if (compareSnap) {
-      setCompare(minCompare, compareSnap.stats.minLoadTime);
-      setCompare(p50Compare, compareSnap.stats.p50LoadTime);
-      setCompare(p75Compare, compareSnap.stats.p75LoadTime);
-    } else {
-      setCompare(minCompare, 0);
-      setCompare(p50Compare, 0);
-      setCompare(p75Compare, 0);
-    }
   }
 
   getPerformanceClass(loadTime) {
@@ -625,8 +378,6 @@ class PerformanceDashboard extends HTMLElement {
     }
     this.dataChunks = null;
     this.url = '';
-    this.selectedDeviceType = 'All';
-    this.compareDeviceType = '';
   }
 }
 
