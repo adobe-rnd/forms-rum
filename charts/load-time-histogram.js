@@ -366,6 +366,8 @@ class LoadTimeHistogram extends HTMLElement {
 
     const { buckets } = this.histogramData;
 
+    // Create gradient colors (neutral blue shades)
+    // Generate colors dynamically based on number of buckets
     const { baseColors, borderColors } = this.generateColors(buckets.length);
 
     // Create new chart

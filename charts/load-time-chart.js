@@ -295,7 +295,7 @@ class LoadTimeChart extends HTMLElement {
 
     // Update title
     const percentileLabel = this.selectedPercentile === 'p75' ? 'p75 (75th Percentile)' : 'p50 (Median)';
-    this.chart.options.plugins.title.text = `Engagement Readiness Time (Form Visibility) — ${percentileLabel} Per Hour`;
+    this.chart.options.plugins.title.text = `Form Block Load Time - ${percentileLabel} Per Hour`;
 
     // Ensure day/night plugin still has access to raw hour data
     if (this.chart.options.plugins.dayNightBackground) {
