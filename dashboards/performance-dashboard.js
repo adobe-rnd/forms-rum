@@ -304,8 +304,18 @@ class PerformanceDashboard extends HTMLElement {
     if (!this.dataChunks || !this.dataChunks.facets.formBlockLoadTime) return;
     const histogram = this.shadowRoot.getElementById('load-time-histogram');
     if (!histogram) return;
+
+    // Option 1: Use dynamic buckets (default behavior)
+    // histogram.setData(this.dataChunks.facets.formBlockLoadTime);
+
+    // Option 2: Use custom bucket thresholds
+    // Example: Create 5 buckets with custom ranges
     const bucketThresholds = [0, 10, 20, 60, Infinity];
     histogram.setData(this.dataChunks.facets.formBlockLoadTime, bucketThresholds);
+
+    // Option 3: Use different number of buckets with custom ranges
+    // const bucketThresholds = [0, 1, 2, 5, 10, Infinity];
+    // histogram.setData(this.dataChunks.facets.formBlockLoadTime, bucketThresholds);
   }
 
   updateResourceTable() {
