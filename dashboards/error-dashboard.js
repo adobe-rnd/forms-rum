@@ -13,9 +13,9 @@ class ErrorDashboard extends HTMLElement {
     this.dataChunks = null;
     this.url = '';
     this.selectedHour = null;
-    // Top-level filter state
-    this.selectedDeviceType = 'all';
-    this.selectedSources = []; // empty = all
+    // Top-level filter state (both are multi-select, empty = all)
+    this.selectedDeviceTypes = [];
+    this.selectedSources = [];
   }
 
   connectedCallback() {
@@ -412,14 +412,14 @@ class ErrorDashboard extends HTMLElement {
           position: relative;
         }
 
-        .source-chips {
+        .filter-chips {
           display: flex;
           flex-wrap: wrap;
           gap: 6px;
           max-width: 400px;
         }
 
-        .source-chip {
+        .filter-chip {
           display: inline-flex;
           align-items: center;
           gap: 4px;
@@ -431,13 +431,18 @@ class ErrorDashboard extends HTMLElement {
           font-weight: 500;
         }
 
-        .source-chip .remove-chip {
+        .filter-chip.device {
+          background: #dcfce7;
+          color: #166534;
+        }
+
+        .filter-chip .remove-chip {
           cursor: pointer;
           font-weight: bold;
           margin-left: 2px;
         }
 
-        .source-chip .remove-chip:hover {
+        .filter-chip .remove-chip:hover {
           color: #dc2626;
         }
 
@@ -486,18 +491,22 @@ class ErrorDashboard extends HTMLElement {
           <div class="filter-group">
             <span class="filter-label">Device Type</span>
             <select class="filter-select" id="device-filter">
-              <option value="all">All Devices</option>
+              <option value="">Add Device Filter...</option>
             </select>
           </div>
-          <div class="filter-group source-filter-container">
+          <div class="filter-group" id="device-chips-container" style="display: none;">
+            <span class="filter-label">Active Devices</span>
+            <div class="filter-chips" id="device-chips"></div>
+          </div>
+          <div class="filter-group">
             <span class="filter-label">Source</span>
             <select class="filter-select" id="source-filter">
-              <option value="all">All Sources</option>
+              <option value="">Add Source Filter...</option>
             </select>
           </div>
           <div class="filter-group" id="source-chips-container" style="display: none;">
             <span class="filter-label">Active Sources</span>
-            <div class="source-chips" id="source-chips"></div>
+            <div class="filter-chips" id="source-chips"></div>
           </div>
           <button class="clear-filters-btn" id="clear-filters-btn">Clear Filters</button>
         </div>
@@ -581,27 +590,33 @@ class ErrorDashboard extends HTMLElement {
     // Filter event listeners
     const deviceFilter = this.shadowRoot.getElementById('device-filter');
     deviceFilter.addEventListener('change', (e) => {
-      this.selectedDeviceType = e.target.value;
-      this.applyFilters();
+      const value = e.target.value;
+      if (value && !this.selectedDeviceTypes.includes(value)) {
+        this.selectedDeviceTypes.push(value);
+        this.updateDeviceChips();
+        this.applyFilters();
+      }
+      // Reset dropdown to show placeholder
+      e.target.value = '';
     });
 
     const sourceFilter = this.shadowRoot.getElementById('source-filter');
     sourceFilter.addEventListener('change', (e) => {
       const value = e.target.value;
-      if (value !== 'all' && !this.selectedSources.includes(value)) {
+      if (value && !this.selectedSources.includes(value)) {
         this.selectedSources.push(value);
         this.updateSourceChips();
         this.applyFilters();
       }
       // Reset dropdown to show placeholder
-      e.target.value = 'all';
+      e.target.value = '';
     });
 
     const clearFiltersBtn = this.shadowRoot.getElementById('clear-filters-btn');
     clearFiltersBtn.addEventListener('click', () => {
-      this.selectedDeviceType = 'all';
+      this.selectedDeviceTypes = [];
       this.selectedSources = [];
-      deviceFilter.value = 'all';
+      this.updateDeviceChips();
       this.updateSourceChips();
       this.applyFilters();
     });
@@ -621,8 +636,7 @@ class ErrorDashboard extends HTMLElement {
     const deviceFilter = this.shadowRoot.getElementById('device-filter');
     const deviceTypes = this.dataChunks.facets.deviceType || [];
     
-    // Clear existing options except "All"
-    deviceFilter.innerHTML = '<option value="all">All Devices</option>';
+    deviceFilter.innerHTML = '<option value="">Add Device Filter...</option>';
     deviceTypes
       .sort((a, b) => b.count - a.count)
       .forEach(dt => {
@@ -636,7 +650,7 @@ class ErrorDashboard extends HTMLElement {
     const sourceFilter = this.shadowRoot.getElementById('source-filter');
     const sources = this.dataChunks.facets.source || [];
     
-    sourceFilter.innerHTML = '<option value="all">Add Source Filter...</option>';
+    sourceFilter.innerHTML = '<option value="">Add Source Filter...</option>';
     sources
       .sort((a, b) => b.count - a.count)
       .slice(0, 50) // Limit to top 50 sources
@@ -648,15 +662,42 @@ class ErrorDashboard extends HTMLElement {
           ? src.value.substring(0, 57) + '...' 
           : src.value;
         option.textContent = `${displayText} (${src.count})`;
-        deviceFilter.appendChild(option);
-        option.value = src.value;
         sourceFilter.appendChild(option);
       });
 
-    // Restore selected device type if still valid
-    if (this.selectedDeviceType !== 'all') {
-      deviceFilter.value = this.selectedDeviceType;
+    // Update chips for any pre-existing selections
+    this.updateDeviceChips();
+    this.updateSourceChips();
+  }
+
+  updateDeviceChips() {
+    const chipsContainer = this.shadowRoot.getElementById('device-chips');
+    const chipsWrapper = this.shadowRoot.getElementById('device-chips-container');
+
+    if (this.selectedDeviceTypes.length === 0) {
+      chipsWrapper.style.display = 'none';
+      return;
     }
+
+    chipsWrapper.style.display = 'flex';
+    chipsContainer.innerHTML = this.selectedDeviceTypes.map(device => {
+      return `
+        <span class="filter-chip device" data-device="${this.escapeHtml(device)}">
+          ${this.escapeHtml(device)}
+          <span class="remove-chip" data-device="${this.escapeHtml(device)}">×</span>
+        </span>
+      `;
+    }).join('');
+
+    // Add click handlers for removing chips
+    chipsContainer.querySelectorAll('.remove-chip').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const deviceToRemove = e.target.dataset.device;
+        this.selectedDeviceTypes = this.selectedDeviceTypes.filter(d => d !== deviceToRemove);
+        this.updateDeviceChips();
+        this.applyFilters();
+      });
+    });
   }
 
   updateSourceChips() {
@@ -672,7 +713,7 @@ class ErrorDashboard extends HTMLElement {
     chipsContainer.innerHTML = this.selectedSources.map(src => {
       const displayText = src.length > 40 ? src.substring(0, 37) + '...' : src;
       return `
-        <span class="source-chip" data-source="${this.escapeHtml(src)}">
+        <span class="filter-chip" data-source="${this.escapeHtml(src)}">
           ${this.escapeHtml(displayText)}
           <span class="remove-chip" data-source="${this.escapeHtml(src)}">×</span>
         </span>
@@ -696,8 +737,8 @@ class ErrorDashboard extends HTMLElement {
     // Build filter object
     const filter = {};
     
-    if (this.selectedDeviceType !== 'all') {
-      filter.deviceType = [this.selectedDeviceType];
+    if (this.selectedDeviceTypes.length > 0) {
+      filter.deviceType = this.selectedDeviceTypes;
     }
     
     if (this.selectedSources.length > 0) {
@@ -840,8 +881,8 @@ class ErrorDashboard extends HTMLElement {
 
     // Build filter combining top-level filters with hour selection
     const baseFilter = {};
-    if (this.selectedDeviceType !== 'all') {
-      baseFilter.deviceType = [this.selectedDeviceType];
+    if (this.selectedDeviceTypes.length > 0) {
+      baseFilter.deviceType = this.selectedDeviceTypes;
     }
     if (this.selectedSources.length > 0) {
       baseFilter.source = this.selectedSources;
@@ -967,8 +1008,8 @@ class ErrorDashboard extends HTMLElement {
     // Restore top-level filters only when returning to overview
     if (this.dataChunks) {
       const baseFilter = {};
-      if (this.selectedDeviceType !== 'all') {
-        baseFilter.deviceType = [this.selectedDeviceType];
+      if (this.selectedDeviceTypes.length > 0) {
+        baseFilter.deviceType = this.selectedDeviceTypes;
       }
       if (this.selectedSources.length > 0) {
         baseFilter.source = this.selectedSources;
@@ -986,10 +1027,9 @@ class ErrorDashboard extends HTMLElement {
   reset() {
     this.clearSelection();
     // Reset filter state
-    this.selectedDeviceType = 'all';
+    this.selectedDeviceTypes = [];
     this.selectedSources = [];
-    const deviceFilter = this.shadowRoot.getElementById('device-filter');
-    if (deviceFilter) deviceFilter.value = 'all';
+    this.updateDeviceChips();
     this.updateSourceChips();
     
     const chart = this.shadowRoot.getElementById('error-chart');
