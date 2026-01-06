@@ -93,6 +93,22 @@ function missingresource(bundle) {
   .map(e => e.source);
 }
 
+/**
+ * Facet for missing resource details - captures source URL and target (status/endpoint info)
+ * Format: "source|target" where target may contain HTTP status or API endpoint details
+ */
+function missingResourceDetails(bundle) {
+  return bundle.events
+    .filter(e => e.checkpoint === 'missingresource')
+    .filter(e => e.source && ['redacted', 'junk_email'].every(s => !e.source.toLowerCase().includes(s)))
+    .map(e => {
+      const source = e.source || '';
+      const target = e.target || '';
+      // Encode as "source|||target" for easy parsing (using ||| as delimiter to avoid URL conflicts)
+      return `${source}|||${target}`;
+    });
+}
+
 function loadresource(bundle) {
   return bundle.events
   .filter(e => e.checkpoint === 'loadresource')
@@ -138,6 +154,7 @@ function errorDataChunks(data) {
   dataChunks.addFacet('hour', hour, 'every');
   dataChunks.addFacet('userAgent', facets.userAgent);
   dataChunks.addFacet('missingresource', missingresource, 'every');
+  dataChunks.addFacet('missingResourceDetails', missingResourceDetails, 'every');
   dataChunks.addFacet('deviceType', deviceType, 'every');
   dataChunks.addFacet('source', enterSourceFacet, 'every');
   return dataChunks;

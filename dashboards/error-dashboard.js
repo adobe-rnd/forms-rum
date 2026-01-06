@@ -185,65 +185,113 @@ class ErrorDashboard extends HTMLElement {
         .resources-list {
           max-height: 600px;
           overflow-y: auto;
+          overflow-x: auto;
           border: 1px solid #e5e7eb;
           border-radius: 6px;
         }
 
-        .resource-item {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 16px;
-          border-bottom: 1px solid #e5e7eb;
-          transition: background-color 0.2s;
+        .resources-table {
+          width: 100%;
+          border-collapse: collapse;
+          font-size: 0.875rem;
         }
 
-        .resource-item:hover {
+        .resources-table th {
+          background: #f3f4f6;
+          padding: 12px 16px;
+          text-align: left;
+          font-weight: 600;
+          color: #374151;
+          border-bottom: 2px solid #e5e7eb;
+          position: sticky;
+          top: 0;
+          z-index: 1;
+        }
+
+        .resources-table td {
+          padding: 12px 16px;
+          border-bottom: 1px solid #e5e7eb;
+          vertical-align: top;
+        }
+
+        .resources-table tr:hover {
           background: #f9fafb;
         }
 
-        .resource-item:last-child {
-          border-bottom: none;
-        }
-
-        .resource-item.high-frequency {
+        .resources-table tr.high-frequency {
           background: #fef2f2;
         }
 
-        .resource-item.medium-frequency {
+        .resources-table tr.high-frequency:hover {
+          background: #fee2e2;
+        }
+
+        .resources-table tr.medium-frequency {
           background: #fffbeb;
         }
 
-        .resource-info {
-          flex: 1;
-          margin-right: 16px;
-          min-width: 0;
+        .resources-table tr.medium-frequency:hover {
+          background: #fef3c7;
         }
 
         .resource-url {
-          font-size: 0.875rem;
-          color: #374151;
-          word-break: break-all;
           font-family: monospace;
-          margin-bottom: 4px;
+          word-break: break-all;
+          color: #374151;
+          max-width: 400px;
         }
 
-        .resource-details {
-          font-size: 0.75rem;
+        .resource-target {
+          font-family: monospace;
           color: #6b7280;
+          font-size: 0.8125rem;
+          max-width: 200px;
+          word-break: break-all;
         }
 
-        .resource-stats {
-          display: flex;
-          gap: 16px;
-          align-items: center;
-          flex-shrink: 0;
+        .resource-target.has-status {
+          color: #dc2626;
+          font-weight: 500;
+        }
+
+        .resource-type-badge {
+          display: inline-block;
+          padding: 2px 8px;
+          border-radius: 12px;
+          font-size: 0.75rem;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+
+        .resource-type-badge.image {
+          background: #dbeafe;
+          color: #1e40af;
+        }
+
+        .resource-type-badge.javascript {
+          background: #fef3c7;
+          color: #92400e;
+        }
+
+        .resource-type-badge.css {
+          background: #d1fae5;
+          color: #065f46;
+        }
+
+        .resource-type-badge.json {
+          background: #e0e7ff;
+          color: #3730a3;
+        }
+
+        .resource-type-badge.others {
+          background: #f3f4f6;
+          color: #374151;
         }
 
         .resource-count {
           font-weight: 700;
-          font-size: 1.25rem;
-          color: #1f2937;
+          font-size: 1rem;
+          text-align: right;
         }
 
         .resource-count.high {
@@ -259,12 +307,9 @@ class ErrorDashboard extends HTMLElement {
         }
 
         .resource-percentage {
-          font-size: 0.875rem;
+          font-size: 0.8125rem;
           color: #6b7280;
-          background: #f3f4f6;
-          padding: 4px 12px;
-          border-radius: 12px;
-          font-weight: 600;
+          text-align: right;
         }
 
         .threshold-legend {
@@ -1074,10 +1119,14 @@ class ErrorDashboard extends HTMLElement {
     if (!this.dataChunks) return;
 
     const container = this.shadowRoot.getElementById('resources-list');
+    
+    // Use missingResourceDetails facet which contains "source|||target" format
+    const missingResourceDetails = this.dataChunks.facets.missingResourceDetails || [];
+    // Fallback to missingresource if details not available
     const missingResources = this.dataChunks.facets.missingresource || [];
 
     // Check if we have data
-    if (missingResources.length === 0) {
+    if (missingResources.length === 0 && missingResourceDetails.length === 0) {
       const countBadge = this.shadowRoot.getElementById('resources-count');
       if (countBadge) {
         countBadge.textContent = '0 out of 0 visible';
@@ -1087,6 +1136,20 @@ class ErrorDashboard extends HTMLElement {
       container.innerHTML = '<div class="no-data success">✓ No missing resources detected! All resources loaded successfully.</div>';
       return;
     }
+
+    // Parse the details to get source and target separately
+    // Build a map of source -> target for easy lookup
+    const targetMap = new Map();
+    missingResourceDetails.forEach(detail => {
+      const [source, target] = detail.value.split('|||');
+      if (source && target && target.trim()) {
+        // Aggregate targets if multiple exist for same source
+        if (!targetMap.has(source)) {
+          targetMap.set(source, new Set());
+        }
+        targetMap.get(source).add(target);
+      }
+    });
 
     // Filter by selected resource types
     const activeTypes = this.selectedResourceTypes;
@@ -1117,29 +1180,65 @@ class ErrorDashboard extends HTMLElement {
     // Update threshold legend (no duplication)
     this.updateThresholdLegend();
 
-    // Render resources list
-    const html = sortedResources.map((resource, index) => {
+    // Render as table
+    const tableHeader = `
+      <table class="resources-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Resource URL</th>
+            <th>Type</th>
+            <th>Target / Status</th>
+            <th style="text-align: right;">Count</th>
+            <th style="text-align: right;">% of Views</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+
+    const tableRows = sortedResources.map((resource, index) => {
       const percentage = totalPageViews > 0 ? (resource.weight / totalPageViews) * 100 : 0;
       const frequencyClass = resource.weight >= highThreshold ? 'high-frequency' :
                            resource.weight >= mediumThreshold ? 'medium-frequency' : '';
       const countClass = resource.weight >= highThreshold ? 'high' :
                         resource.weight >= mediumThreshold ? 'medium' : 'low';
+      
+      // Get resource type
+      const resourceType = this.categorizeResource(resource.value);
+      
+      // Get target/status info if available
+      const targets = targetMap.get(resource.value);
+      let targetDisplay = '-';
+      let hasStatus = false;
+      
+      if (targets && targets.size > 0) {
+        const targetArray = Array.from(targets);
+        // Check if any target looks like an HTTP status
+        hasStatus = targetArray.some(t => /^[1-5]\d{2}$/.test(t) || t.includes('error') || t.includes('failed'));
+        targetDisplay = targetArray.slice(0, 3).map(t => this.escapeHtml(t)).join(', ');
+        if (targetArray.length > 3) {
+          targetDisplay += ` (+${targetArray.length - 3} more)`;
+        }
+      }
 
       return `
-        <div class="resource-item ${frequencyClass}">
-          <div class="resource-info">
-            <div class="resource-url">${this.escapeHtml(resource.value)}</div>
-            <div class="resource-details">Rank #${index + 1}</div>
-          </div>
-          <div class="resource-stats">
-            <span class="resource-count ${countClass}">${resource.weight.toLocaleString()}</span>
-            <span class="resource-percentage">${percentage.toFixed(1)}%</span>
-          </div>
-        </div>
+        <tr class="${frequencyClass}">
+          <td>${index + 1}</td>
+          <td class="resource-url">${this.escapeHtml(resource.value)}</td>
+          <td><span class="resource-type-badge ${resourceType}">${resourceType}</span></td>
+          <td class="resource-target ${hasStatus ? 'has-status' : ''}">${targetDisplay}</td>
+          <td class="resource-count ${countClass}">${resource.weight.toLocaleString()}</td>
+          <td class="resource-percentage">${percentage.toFixed(1)}%</td>
+        </tr>
       `;
     }).join('');
 
-    container.innerHTML = html;
+    const tableFooter = `
+        </tbody>
+      </table>
+    `;
+
+    container.innerHTML = tableHeader + tableRows + tableFooter;
   }
 
   clearSelection() {
