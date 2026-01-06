@@ -980,15 +980,26 @@ class ErrorDashboard extends HTMLElement {
   applyTopFilters() {
     if (!this.dataChunks) return;
 
-    // Build filter object
+    // Build filter object using custom filter function for OR logic
+    // DataChunks filter with arrays may use AND logic, but we need OR
     const filter = {};
     
+    // For device type - use custom filter function for OR logic
     if (this.selectedDeviceTypes.length > 0) {
-      filter.deviceType = this.selectedDeviceTypes;
+      // Create a filter function that returns true if ANY device type matches
+      filter.deviceType = (deviceTypes) => {
+        if (!Array.isArray(deviceTypes)) deviceTypes = [deviceTypes];
+        return deviceTypes.some(dt => this.selectedDeviceTypes.includes(dt));
+      };
     }
     
+    // For source - use custom filter function for OR logic
     if (this.selectedSources.length > 0) {
-      filter.source = this.selectedSources;
+      // Create a filter function that returns true if ANY source matches
+      filter.source = (sources) => {
+        if (!Array.isArray(sources)) sources = [sources];
+        return sources.some(src => this.selectedSources.includes(src));
+      };
     }
 
     // Apply filter to dataChunks

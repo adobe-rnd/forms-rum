@@ -135,10 +135,13 @@ function normalizeSourceValue(src) {
 }
 
 function enterSourceFacet(bundle) {
-  return bundle.events
+  const sources = bundle.events
     .filter(e => e.checkpoint === 'enter')
     .filter(e => e.source && ['redacted', 'junk_email'].every(s => !e.source.toLowerCase().includes(s)))
     .map(e => normalizeSourceValue(e.source));
+  // Return unique sources - DataChunks filter matches if ANY value in the filter array
+  // matches ANY value in the facet array (OR logic)
+  return [...new Set(sources)];
 }
 
 function errorDataChunks(data) {
