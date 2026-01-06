@@ -100,11 +100,24 @@ class ErrorRateChart extends HTMLElement {
       return;
     }
 
+    // Ensure canvas exists (may have been removed by showNoData)
+    this.ensureCanvas();
     this.renderChart(hourFacets);
+  }
+
+  ensureCanvas() {
+    const container = this.shadowRoot.querySelector('.chart-container');
+    if (!container) return;
+    
+    let canvas = this.shadowRoot.getElementById('error-chart');
+    if (!canvas) {
+      container.innerHTML = '<canvas id="error-chart"></canvas>';
+    }
   }
 
   showNoData() {
     const container = this.shadowRoot.querySelector('.chart-container');
+    if (!container) return;
     container.innerHTML = '<div class="no-data">No data available</div>';
 
     if (this.chart) {
