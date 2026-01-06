@@ -4,12 +4,48 @@
  */
 import '../charts/error-rate-chart.js';
 import '../charts/user-agent-pie-chart.js';
+import { errorDataChunks } from '../datachunks.js';
+
+// Helper functions for filtering raw data
+function categorizeDeviceType(ua) {
+  if (!ua) return 'Unknown';
+  const lowerUA = ua.toLowerCase();
+  if (lowerUA.includes('android')) return 'Mobile: Android';
+  if (lowerUA.includes('iphone') || lowerUA.includes('ipad') || lowerUA.includes('ipod')) return 'Mobile: iOS';
+  if (lowerUA.includes('windows')) return 'Desktop: Windows';
+  if (lowerUA.includes('macintosh') || lowerUA.includes('mac os')) return 'Desktop: macOS';
+  if (lowerUA.includes('linux') && !lowerUA.includes('android')) return 'Desktop: Linux';
+  if (lowerUA.includes('cros')) return 'Desktop: ChromeOS';
+  return 'Other';
+}
+
+function normalizeSourceValue(src) {
+  try {
+    if (src.startsWith('http://') || src.startsWith('https://')) {
+      const u = new URL(src);
+      let path = (u.pathname || '/').replace(/\/+$/, '');
+      if (path === '') path = '';
+      return `${u.origin}${path}`;
+    }
+    return src.replace(/\/?#$/, '');
+  } catch (e) {
+    return src;
+  }
+}
+
+function getBundleSources(bundle) {
+  return bundle.events
+    .filter(e => e.checkpoint === 'enter')
+    .filter(e => e.source && ['redacted', 'junk_email'].every(s => !e.source.toLowerCase().includes(s)))
+    .map(e => normalizeSourceValue(e.source));
+}
 
 class ErrorDashboard extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
     this.dataChunks = null;
+    this.rawData = null; // Store raw data for re-filtering
     this.url = '';
     this.selectedHour = null;
     this.selectedResourceTypes = new Set(['image', 'javascript', 'css', 'json', 'others']);
@@ -285,18 +321,139 @@ class ErrorDashboard extends HTMLElement {
           color: #6b7280;
         }
 
-        .status-filter-group {
-          margin-left: 16px;
-          padding-left: 16px;
-          border-left: 1px solid #e5e7eb;
+        /* Resource Filters Bar - Matching Top-Level Filter Style */
+        .resource-filters-bar {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          margin: 16px 0;
+          padding: 16px 20px;
+          background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
 
-        .status-filter-select {
-          padding: 4px 8px;
-          border: 1px solid #d1d5db;
-          border-radius: 4px;
+        .resource-filters-row {
+          display: flex;
+          align-items: flex-end;
+          gap: 24px;
+          flex-wrap: wrap;
+        }
+
+        .resource-filter-label {
+          font-size: 0.7rem;
+          font-weight: 700;
+          color: #475569;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          margin-bottom: 6px;
+          display: block;
+        }
+
+        .type-filters {
+          display: flex;
+          gap: 6px;
+          flex-wrap: wrap;
+        }
+
+        .type-filter-option {
+          display: inline-flex;
+          align-items: center;
+          gap: 5px;
+          padding: 6px 10px;
+          background: white;
+          border: 1px solid #e2e8f0;
+          border-radius: 6px;
+          font-size: 0.75rem;
+          color: #475569;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+
+        .type-filter-option:hover {
+          background: #f1f5f9;
+          border-color: #cbd5e1;
+        }
+
+        .type-filter-option:has(input:checked) {
+          background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+          border-color: #93c5fd;
+          color: #1e40af;
+        }
+
+        .type-filter-option input[type="checkbox"] {
+          width: 12px;
+          height: 12px;
+          cursor: pointer;
+        }
+
+        .resource-filter-select {
+          padding: 8px 12px;
+          border: 1px solid #cbd5e1;
+          border-radius: 6px;
           font-size: 0.8125rem;
           background: white;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          min-width: 160px;
+          color: #334155;
+        }
+
+        .resource-filter-select:hover {
+          border-color: #94a3b8;
+        }
+
+        .resource-filter-select:focus {
+          outline: none;
+          border-color: #f59e0b;
+          box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.15);
+        }
+
+        .active-status-row {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding-top: 12px;
+          border-top: 1px solid #e2e8f0;
+        }
+
+        .status-chips {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+
+        .status-chip {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          padding: 5px 10px;
+          background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+          color: #92400e;
+          border-radius: 16px;
+          font-size: 0.75rem;
+          font-weight: 500;
+          border: 1px solid #fcd34d;
+          transition: all 0.2s ease;
+        }
+
+        .status-chip:hover {
+          background: linear-gradient(135deg, #fde68a 0%, #fcd34d 100%);
+        }
+
+        .status-chip .remove-status {
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 0.9rem;
+          line-height: 1;
+          opacity: 0.7;
+          transition: opacity 0.2s, color 0.2s;
+        }
+
+        .status-chip .remove-status:hover {
+          opacity: 1;
+          color: #dc2626;
           min-width: 120px;
         }
 
@@ -569,96 +726,146 @@ class ErrorDashboard extends HTMLElement {
           color: #6b7280;
         }
 
+        /* Top-level Filters Bar - Modern Compact Style */
         .top-filters-bar {
           display: flex;
-          gap: 16px;
-          margin-bottom: 20px;
-          padding: 16px;
-          background: #f9fafb;
-          border-radius: 8px;
-          flex-wrap: wrap;
-          align-items: center;
+          flex-direction: column;
+          gap: 12px;
+          margin-bottom: 24px;
+          padding: 16px 20px;
+          background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
 
-        .top-filter-group {
+        .filters-row {
+          display: flex;
+          align-items: flex-end;
+          gap: 16px;
+          flex-wrap: wrap;
+        }
+
+        .filter-column {
           display: flex;
           flex-direction: column;
-          gap: 4px;
+          gap: 6px;
         }
 
         .top-filter-label {
-          font-size: 0.75rem;
-          font-weight: 600;
-          color: #6b7280;
+          font-size: 0.7rem;
+          font-weight: 700;
+          color: #475569;
           text-transform: uppercase;
-          letter-spacing: 0.05em;
+          letter-spacing: 0.08em;
         }
 
         .top-filter-select {
           padding: 8px 12px;
-          border: 1px solid #d1d5db;
+          border: 1px solid #cbd5e1;
           border-radius: 6px;
-          font-size: 0.875rem;
+          font-size: 0.8125rem;
           background: white;
           min-width: 180px;
           cursor: pointer;
+          transition: all 0.2s ease;
+          color: #334155;
+        }
+
+        .top-filter-select:hover {
+          border-color: #94a3b8;
         }
 
         .top-filter-select:focus {
           outline: none;
           border-color: #3b82f6;
-          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+          box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+        }
+
+        .clear-top-filters-btn {
+          padding: 8px 16px;
+          background: white;
+          border: 1px solid #dc2626;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 0.8125rem;
+          font-weight: 500;
+          color: #dc2626;
+          transition: all 0.2s ease;
+          margin-left: auto;
+        }
+
+        .clear-top-filters-btn:hover {
+          background: #fef2f2;
+          border-color: #b91c1c;
+          color: #b91c1c;
+        }
+
+        .active-filters-row {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding-top: 12px;
+          border-top: 1px solid #e2e8f0;
+        }
+
+        .active-filters-label {
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: #64748b;
+          white-space: nowrap;
+        }
+
+        .all-chips-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
         }
 
         .top-filter-chips {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 6px;
-          max-width: 400px;
+          display: contents;
         }
 
         .top-filter-chip {
           display: inline-flex;
           align-items: center;
-          gap: 4px;
-          padding: 4px 10px;
-          background: #e0e7ff;
-          color: #3730a3;
+          gap: 6px;
+          padding: 5px 10px;
+          background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+          color: #1e40af;
           border-radius: 16px;
           font-size: 0.75rem;
           font-weight: 500;
+          border: 1px solid #bfdbfe;
+          transition: all 0.2s ease;
+        }
+
+        .top-filter-chip:hover {
+          background: linear-gradient(135deg, #bfdbfe 0%, #c7d2fe 100%);
         }
 
         .top-filter-chip.device {
-          background: #dcfce7;
-          color: #166534;
+          background: linear-gradient(135deg, #d1fae5 0%, #dcfce7 100%);
+          color: #065f46;
+          border-color: #a7f3d0;
+        }
+
+        .top-filter-chip.device:hover {
+          background: linear-gradient(135deg, #a7f3d0 0%, #bbf7d0 100%);
         }
 
         .top-filter-chip .remove-chip {
           cursor: pointer;
           font-weight: bold;
-          margin-left: 2px;
+          font-size: 0.9rem;
+          line-height: 1;
+          opacity: 0.7;
+          transition: opacity 0.2s, color 0.2s;
         }
 
         .top-filter-chip .remove-chip:hover {
+          opacity: 1;
           color: #dc2626;
-        }
-
-        .clear-top-filters-btn {
-          padding: 8px 16px;
-          background: #f3f4f6;
-          border: 1px solid #d1d5db;
-          border-radius: 6px;
-          cursor: pointer;
-          font-size: 0.875rem;
-          color: #374151;
-          transition: all 0.2s;
-          margin-left: auto;
-        }
-
-        .clear-top-filters-btn:hover {
-          background: #e5e7eb;
-          border-color: #9ca3af;
         }
 
         @media (max-width: 768px) {
@@ -686,27 +893,28 @@ class ErrorDashboard extends HTMLElement {
 
       <div class="dashboard-container">
         <div class="top-filters-bar" id="top-filters-bar">
-          <div class="top-filter-group">
-            <span class="top-filter-label">Device Type</span>
-            <select class="top-filter-select" id="device-filter">
-              <option value="">Add Device Filter...</option>
-            </select>
+          <div class="filters-row">
+            <div class="filter-column">
+              <span class="top-filter-label">Device Type</span>
+              <select class="top-filter-select" id="device-filter">
+                <option value="">+ Add Device...</option>
+              </select>
+            </div>
+            <div class="filter-column">
+              <span class="top-filter-label">Source</span>
+              <select class="top-filter-select" id="source-filter">
+                <option value="">+ Add Source...</option>
+              </select>
+            </div>
+            <button class="clear-top-filters-btn" id="clear-top-filters-btn">Clear All</button>
           </div>
-          <div class="top-filter-group" id="device-chips-container" style="display: none;">
-            <span class="top-filter-label">Active Devices</span>
-            <div class="top-filter-chips" id="device-chips"></div>
+          <div class="active-filters-row" id="active-filters-row" style="display: none;">
+            <span class="active-filters-label">Active Filters:</span>
+            <div class="all-chips-container">
+              <div class="top-filter-chips" id="device-chips"></div>
+              <div class="top-filter-chips" id="source-chips"></div>
+            </div>
           </div>
-          <div class="top-filter-group">
-            <span class="top-filter-label">Source</span>
-            <select class="top-filter-select" id="source-filter">
-              <option value="">Add Source Filter...</option>
-            </select>
-          </div>
-          <div class="top-filter-group" id="source-chips-container" style="display: none;">
-            <span class="top-filter-label">Active Sources</span>
-            <div class="top-filter-chips" id="source-chips"></div>
-          </div>
-          <button class="clear-top-filters-btn" id="clear-top-filters-btn">Clear Filters</button>
         </div>
 
         <div class="dashboard-header">
@@ -754,36 +962,45 @@ class ErrorDashboard extends HTMLElement {
 
         <div class="resources-section">
           <h3>Missing Resources (sorted by frequency)</h3>
-          <div class="resource-filters" id="resource-filters">
-            <span class="filter-label">Filter by type:</span>
-            <label class="filter-option">
-              <input type="checkbox" data-type="image" checked />
-              Image
-            </label>
-            <label class="filter-option">
-              <input type="checkbox" data-type="javascript" checked />
-              JavaScript
-            </label>
-            <label class="filter-option">
-              <input type="checkbox" data-type="css" checked />
-              CSS
-            </label>
-            <label class="filter-option">
-              <input type="checkbox" data-type="json" checked />
-              JSON
-            </label>
-            <label class="filter-option">
-              <input type="checkbox" data-type="others" checked />
-              Others
-            </label>
-            <div class="status-filter-group">
-              <span class="filter-label">Filter by status:</span>
-              <select class="status-filter-select" id="status-filter">
-                <option value="">All Statuses</option>
-              </select>
-              <span class="status-chips" id="status-chips"></span>
+          <div class="resource-filters-bar">
+            <div class="resource-filters-row">
+              <div class="filter-column">
+                <span class="resource-filter-label">Resource Type</span>
+                <div class="type-filters" id="resource-filters">
+                  <label class="type-filter-option">
+                    <input type="checkbox" data-type="image" checked />
+                    <span>Image</span>
+                  </label>
+                  <label class="type-filter-option">
+                    <input type="checkbox" data-type="javascript" checked />
+                    <span>JS</span>
+                  </label>
+                  <label class="type-filter-option">
+                    <input type="checkbox" data-type="css" checked />
+                    <span>CSS</span>
+                  </label>
+                  <label class="type-filter-option">
+                    <input type="checkbox" data-type="json" checked />
+                    <span>JSON</span>
+                  </label>
+                  <label class="type-filter-option">
+                    <input type="checkbox" data-type="others" checked />
+                    <span>Others</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter-column">
+                <span class="resource-filter-label">Status Code</span>
+                <select class="resource-filter-select" id="status-filter">
+                  <option value="">+ Add Status...</option>
+                </select>
+              </div>
+              <div class="filters-count" id="resources-count"></div>
             </div>
-            <div class="filters-count" id="resources-count"></div>
+            <div class="active-status-row" id="active-status-row" style="display: none;">
+              <span class="active-filters-label">Active Status Filters:</span>
+              <div class="status-chips" id="status-chips"></div>
+            </div>
           </div>
           <div class="threshold-legend" id="threshold-legend"></div>
           <div class="resources-list" id="resources-list">
@@ -872,8 +1089,9 @@ class ErrorDashboard extends HTMLElement {
     });
   }
 
-  setData(dataChunks, url) {
+  setData(dataChunks, url, rawData) {
     this.dataChunks = dataChunks;
+    this.rawData = rawData; // Store raw data for filtering
     this.url = url;
     this.populateTopFilters();
     this.applyTopFilters();
@@ -886,7 +1104,7 @@ class ErrorDashboard extends HTMLElement {
     const deviceFilter = this.shadowRoot.getElementById('device-filter');
     const deviceTypes = this.dataChunks.facets.deviceType || [];
     
-    deviceFilter.innerHTML = '<option value="">Add Device Filter...</option>';
+    deviceFilter.innerHTML = '<option value="">+ Add Device...</option>';
     deviceTypes
       .sort((a, b) => b.count - a.count)
       .forEach(dt => {
@@ -900,7 +1118,7 @@ class ErrorDashboard extends HTMLElement {
     const sourceFilter = this.shadowRoot.getElementById('source-filter');
     const sources = this.dataChunks.facets.source || [];
     
-    sourceFilter.innerHTML = '<option value="">Add Source Filter...</option>';
+    sourceFilter.innerHTML = '<option value="">+ Add Source...</option>';
     sources
       .sort((a, b) => b.count - a.count)
       .slice(0, 50)
@@ -920,14 +1138,8 @@ class ErrorDashboard extends HTMLElement {
 
   updateDeviceChips() {
     const chipsContainer = this.shadowRoot.getElementById('device-chips');
-    const chipsWrapper = this.shadowRoot.getElementById('device-chips-container');
+    const activeFiltersRow = this.shadowRoot.getElementById('active-filters-row');
 
-    if (this.selectedDeviceTypes.length === 0) {
-      chipsWrapper.style.display = 'none';
-      return;
-    }
-
-    chipsWrapper.style.display = 'flex';
     chipsContainer.innerHTML = this.selectedDeviceTypes.map(device => {
       return `
         <span class="top-filter-chip device" data-device="${this.escapeHtml(device)}">
@@ -936,6 +1148,9 @@ class ErrorDashboard extends HTMLElement {
         </span>
       `;
     }).join('');
+
+    // Show/hide the active filters row based on whether any filters are selected
+    this.updateActiveFiltersVisibility();
 
     chipsContainer.querySelectorAll('.remove-chip').forEach(btn => {
       btn.addEventListener('click', (e) => {
@@ -947,25 +1162,27 @@ class ErrorDashboard extends HTMLElement {
     });
   }
 
+  updateActiveFiltersVisibility() {
+    const activeFiltersRow = this.shadowRoot.getElementById('active-filters-row');
+    const hasFilters = this.selectedDeviceTypes.length > 0 || this.selectedSources.length > 0;
+    activeFiltersRow.style.display = hasFilters ? 'flex' : 'none';
+  }
+
   updateSourceChips() {
     const chipsContainer = this.shadowRoot.getElementById('source-chips');
-    const chipsWrapper = this.shadowRoot.getElementById('source-chips-container');
 
-    if (this.selectedSources.length === 0) {
-      chipsWrapper.style.display = 'none';
-      return;
-    }
-
-    chipsWrapper.style.display = 'flex';
     chipsContainer.innerHTML = this.selectedSources.map(src => {
-      const displayText = src.length > 40 ? src.substring(0, 37) + '...' : src;
+      const displayText = src.length > 35 ? src.substring(0, 32) + '...' : src;
       return `
-        <span class="top-filter-chip" data-source="${this.escapeHtml(src)}">
+        <span class="top-filter-chip" data-source="${this.escapeHtml(src)}" title="${this.escapeHtml(src)}">
           ${this.escapeHtml(displayText)}
           <span class="remove-chip" data-source="${this.escapeHtml(src)}">×</span>
         </span>
       `;
     }).join('');
+
+    // Show/hide the active filters row based on whether any filters are selected
+    this.updateActiveFiltersVisibility();
 
     chipsContainer.querySelectorAll('.remove-chip').forEach(btn => {
       btn.addEventListener('click', (e) => {
@@ -978,32 +1195,43 @@ class ErrorDashboard extends HTMLElement {
   }
 
   applyTopFilters() {
-    if (!this.dataChunks) return;
+    if (!this.rawData) return;
 
-    // Build filter object using custom filter function for OR logic
-    // DataChunks filter with arrays may use AND logic, but we need OR
-    const filter = {};
+    // Filter raw data based on selected filters (OR logic for multi-select)
+    const hasDeviceFilter = this.selectedDeviceTypes.length > 0;
+    const hasSourceFilter = this.selectedSources.length > 0;
+
+    let filteredData = this.rawData;
     
-    // For device type - use custom filter function for OR logic
-    if (this.selectedDeviceTypes.length > 0) {
-      // Create a filter function that returns true if ANY device type matches
-      filter.deviceType = (deviceTypes) => {
-        if (!Array.isArray(deviceTypes)) deviceTypes = [deviceTypes];
-        return deviceTypes.some(dt => this.selectedDeviceTypes.includes(dt));
-      };
-    }
-    
-    // For source - use custom filter function for OR logic
-    if (this.selectedSources.length > 0) {
-      // Create a filter function that returns true if ANY source matches
-      filter.source = (sources) => {
-        if (!Array.isArray(sources)) sources = [sources];
-        return sources.some(src => this.selectedSources.includes(src));
-      };
+    if (hasDeviceFilter || hasSourceFilter) {
+      filteredData = this.rawData.map(chunk => ({
+        ...chunk,
+        rumBundles: chunk.rumBundles.filter(bundle => {
+          // Device type filter (OR logic - match ANY selected device type)
+          let passesDeviceFilter = true;
+          if (hasDeviceFilter) {
+            const bundleDeviceType = categorizeDeviceType(bundle.userAgent);
+            passesDeviceFilter = this.selectedDeviceTypes.includes(bundleDeviceType);
+          }
+          
+          // Source filter (OR logic - match ANY selected source)
+          let passesSourceFilter = true;
+          if (hasSourceFilter) {
+            const bundleSources = getBundleSources(bundle);
+            passesSourceFilter = bundleSources.some(src => this.selectedSources.includes(src));
+          }
+          
+          return passesDeviceFilter && passesSourceFilter;
+        })
+      })).filter(chunk => chunk.rumBundles.length > 0);
     }
 
-    // Apply filter to dataChunks
-    this.dataChunks.filter = filter;
+    // Re-create DataChunks with filtered data
+    this.dataChunks = errorDataChunks(filteredData);
+
+    // Debug: log filter results
+    console.log('Applied filters - Devices:', this.selectedDeviceTypes, 'Sources:', this.selectedSources);
+    console.log('Filtered totals:', this.dataChunks.totals);
 
     // Update all panels with filtered data
     this.updateSummaryStats();
@@ -1025,7 +1253,13 @@ class ErrorDashboard extends HTMLElement {
 
   updateStatusChips() {
     const chipsContainer = this.shadowRoot.getElementById('status-chips');
+    const activeStatusRow = this.shadowRoot.getElementById('active-status-row');
     if (!chipsContainer) return;
+
+    // Show/hide the active status row
+    if (activeStatusRow) {
+      activeStatusRow.style.display = this.selectedStatuses.size > 0 ? 'flex' : 'none';
+    }
 
     if (this.selectedStatuses.size === 0) {
       chipsContainer.innerHTML = '';
@@ -1056,7 +1290,7 @@ class ErrorDashboard extends HTMLElement {
     if (!statusFilter) return;
 
     // Keep the first "All Statuses" option
-    statusFilter.innerHTML = '<option value="">Add Status Filter...</option>';
+    statusFilter.innerHTML = '<option value="">+ Add Status...</option>';
     
     const sortedStatuses = Array.from(statuses).sort();
     sortedStatuses.forEach(status => {

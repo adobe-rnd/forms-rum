@@ -258,7 +258,7 @@ class UserAgentPieChart extends HTMLElement {
                 const label = context.label || '';
                 const value = context.parsed || 0;
                 const percentage = ((value / total) * 100).toFixed(1);
-                return `${label}: ${value} (${percentage}%)`;
+                return `${label}: ${value.toLocaleString()} page views (${percentage}%)`;
               },
               afterLabel: (context) => {
                 const label = context.label || '';
@@ -269,7 +269,7 @@ class UserAgentPieChart extends HTMLElement {
                 const topItems = details
                   .sort((a, b) => b.count - a.count)
                   .slice(0, 5)
-                  .map(item => `  • ${item.value}: ${item.count}`);
+                  .map(item => `  • ${item.value.substring(0, 40)}${item.value.length > 40 ? '...' : ''}: ${item.count.toLocaleString()}`);
                 
                 if (details.length > 5) {
                   topItems.push(`  ... and ${details.length - 5} more`);
@@ -281,10 +281,25 @@ class UserAgentPieChart extends HTMLElement {
           },
           title: {
             display: true,
-            text: 'Device Breakdown',
+            text: ['Device Breakdown', `Total: ${total.toLocaleString()} weighted page views`],
             font: {
-              size: 16,
+              size: 14,
               weight: 'bold'
+            },
+            padding: {
+              bottom: 10
+            }
+          },
+          subtitle: {
+            display: true,
+            text: 'Numbers represent estimated page views (sampled data × weight)',
+            font: {
+              size: 11,
+              style: 'italic'
+            },
+            color: '#6b7280',
+            padding: {
+              bottom: 8
             }
           }
         }
