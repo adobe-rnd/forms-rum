@@ -16,6 +16,9 @@ class ErrorDashboard extends HTMLElement {
     // Top-level filter state (both are multi-select, empty = all)
     this.selectedDeviceTypes = [];
     this.selectedSources = [];
+    // Status filter for missing resources (empty = all)
+    this.selectedStatuses = new Set();
+    this.availableStatuses = new Set();
   }
 
   connectedCallback() {
@@ -252,6 +255,76 @@ class ErrorDashboard extends HTMLElement {
         .resource-target.has-status {
           color: #dc2626;
           font-weight: 500;
+        }
+
+        .target-expand-btn {
+          color: #3b82f6;
+          cursor: pointer;
+          font-weight: 500;
+          text-decoration: underline;
+          margin-left: 4px;
+        }
+
+        .target-expand-btn:hover {
+          color: #1d4ed8;
+        }
+
+        .target-list {
+          display: none;
+          margin-top: 4px;
+          padding: 4px 0;
+        }
+
+        .target-list.expanded {
+          display: block;
+        }
+
+        .target-list-item {
+          font-size: 0.75rem;
+          padding: 2px 0;
+          color: #6b7280;
+        }
+
+        .status-filter-group {
+          margin-left: 16px;
+          padding-left: 16px;
+          border-left: 1px solid #e5e7eb;
+        }
+
+        .status-filter-select {
+          padding: 4px 8px;
+          border: 1px solid #d1d5db;
+          border-radius: 4px;
+          font-size: 0.8125rem;
+          background: white;
+          min-width: 120px;
+        }
+
+        .status-chips {
+          display: inline-flex;
+          gap: 4px;
+          margin-left: 8px;
+          flex-wrap: wrap;
+        }
+
+        .status-chip {
+          display: inline-flex;
+          align-items: center;
+          gap: 2px;
+          padding: 2px 8px;
+          background: #fef3c7;
+          color: #92400e;
+          border-radius: 12px;
+          font-size: 0.75rem;
+        }
+
+        .status-chip .remove-status {
+          cursor: pointer;
+          font-weight: bold;
+        }
+
+        .status-chip .remove-status:hover {
+          color: #dc2626;
         }
 
         .resource-type-badge {
@@ -703,6 +776,13 @@ class ErrorDashboard extends HTMLElement {
               <input type="checkbox" data-type="others" checked />
               Others
             </label>
+            <div class="status-filter-group">
+              <span class="filter-label">Filter by status:</span>
+              <select class="status-filter-select" id="status-filter">
+                <option value="">All Statuses</option>
+              </select>
+              <span class="status-chips" id="status-chips"></span>
+            </div>
             <div class="filters-count" id="resources-count"></div>
           </div>
           <div class="threshold-legend" id="threshold-legend"></div>
@@ -742,6 +822,20 @@ class ErrorDashboard extends HTMLElement {
           }
           this.updateResourcesList();
         });
+      });
+    }
+
+    // Status filter
+    const statusFilter = this.shadowRoot.getElementById('status-filter');
+    if (statusFilter) {
+      statusFilter.addEventListener('change', (e) => {
+        const value = e.target.value;
+        if (value && !this.selectedStatuses.has(value)) {
+          this.selectedStatuses.add(value);
+          this.updateStatusChips();
+          this.updateResourcesList();
+        }
+        e.target.value = '';
       });
     }
 
@@ -905,7 +999,63 @@ class ErrorDashboard extends HTMLElement {
     this.updateChart();
     this.updateResourcesList();
     this.updateFilterCounts();
+    this.updateUserAgentChart();
     this.selectHour(null);
+  }
+
+  updateUserAgentChart() {
+    if (!this.dataChunks) return;
+    const userAgentChart = this.shadowRoot.getElementById('user-agent-chart');
+    if (!userAgentChart) return;
+    
+    const userAgentFacets = this.dataChunks.facets.userAgent || [];
+    userAgentChart.setData(userAgentFacets);
+  }
+
+  updateStatusChips() {
+    const chipsContainer = this.shadowRoot.getElementById('status-chips');
+    if (!chipsContainer) return;
+
+    if (this.selectedStatuses.size === 0) {
+      chipsContainer.innerHTML = '';
+      return;
+    }
+
+    chipsContainer.innerHTML = Array.from(this.selectedStatuses).map(status => {
+      return `
+        <span class="status-chip" data-status="${this.escapeHtml(status)}">
+          ${this.escapeHtml(status)}
+          <span class="remove-status" data-status="${this.escapeHtml(status)}">×</span>
+        </span>
+      `;
+    }).join('');
+
+    chipsContainer.querySelectorAll('.remove-status').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const statusToRemove = e.target.dataset.status;
+        this.selectedStatuses.delete(statusToRemove);
+        this.updateStatusChips();
+        this.updateResourcesList();
+      });
+    });
+  }
+
+  populateStatusFilter(statuses) {
+    const statusFilter = this.shadowRoot.getElementById('status-filter');
+    if (!statusFilter) return;
+
+    // Keep the first "All Statuses" option
+    statusFilter.innerHTML = '<option value="">Add Status Filter...</option>';
+    
+    const sortedStatuses = Array.from(statuses).sort();
+    sortedStatuses.forEach(status => {
+      if (!this.selectedStatuses.has(status)) {
+        const option = document.createElement('option');
+        option.value = status;
+        option.textContent = status;
+        statusFilter.appendChild(option);
+      }
+    });
   }
 
   updateChart() {
@@ -1138,8 +1288,10 @@ class ErrorDashboard extends HTMLElement {
     }
 
     // Parse the details to get source and target separately
-    // Build a map of source -> target for easy lookup
+    // Build a map of source -> targets for easy lookup
     const targetMap = new Map();
+    const allStatuses = new Set();
+    
     missingResourceDetails.forEach(detail => {
       const [source, target] = detail.value.split('|||');
       if (source && target && target.trim()) {
@@ -1148,12 +1300,27 @@ class ErrorDashboard extends HTMLElement {
           targetMap.set(source, new Set());
         }
         targetMap.get(source).add(target);
+        allStatuses.add(target);
       }
     });
 
+    // Populate the status filter dropdown with available statuses
+    this.populateStatusFilter(allStatuses);
+
     // Filter by selected resource types
     const activeTypes = this.selectedResourceTypes;
-    const filteredResources = missingResources.filter((res) => activeTypes.has(this.categorizeResource(res.value)));
+    let filteredResources = missingResources.filter((res) => activeTypes.has(this.categorizeResource(res.value)));
+
+    // Filter by selected statuses if any
+    if (this.selectedStatuses.size > 0) {
+      filteredResources = filteredResources.filter(res => {
+        const targets = targetMap.get(res.value);
+        if (!targets) return false;
+        // Check if any of the resource's targets match selected statuses
+        return Array.from(targets).some(t => this.selectedStatuses.has(t));
+      });
+    }
+
     const countBadge = this.shadowRoot.getElementById('resources-count');
     if (countBadge) {
       countBadge.textContent = `${filteredResources.length} out of ${missingResources.length} visible`;
@@ -1161,7 +1328,7 @@ class ErrorDashboard extends HTMLElement {
     // Update per-category counts
     this.updateFilterCounts();
     if (filteredResources.length === 0) {
-      container.innerHTML = '<div class="no-data">No resources match the selected types.</div>';
+      container.innerHTML = '<div class="no-data">No resources match the selected filters.</div>';
       // Keep legend consistent with overall stats
       this.updateThresholdLegend();
       return;
@@ -1210,14 +1377,28 @@ class ErrorDashboard extends HTMLElement {
       const targets = targetMap.get(resource.value);
       let targetDisplay = '-';
       let hasStatus = false;
+      const rowId = `target-row-${index}`;
       
       if (targets && targets.size > 0) {
         const targetArray = Array.from(targets);
         // Check if any target looks like an HTTP status
         hasStatus = targetArray.some(t => /^[1-5]\d{2}$/.test(t) || t.includes('error') || t.includes('failed'));
-        targetDisplay = targetArray.slice(0, 3).map(t => this.escapeHtml(t)).join(', ');
-        if (targetArray.length > 3) {
-          targetDisplay += ` (+${targetArray.length - 3} more)`;
+        
+        if (targetArray.length <= 2) {
+          targetDisplay = targetArray.map(t => this.escapeHtml(t)).join(', ');
+        } else {
+          // Show first 2 and make rest expandable
+          const visibleTargets = targetArray.slice(0, 2).map(t => this.escapeHtml(t)).join(', ');
+          const hiddenTargets = targetArray.slice(2).map(t => `<div class="target-list-item">${this.escapeHtml(t)}</div>`).join('');
+          const remainingCount = targetArray.length - 2;
+          
+          targetDisplay = `
+            ${visibleTargets}
+            <span class="target-expand-btn" data-target="${rowId}">(+${remainingCount} more)</span>
+            <div class="target-list" id="${rowId}">
+              ${hiddenTargets}
+            </div>
+          `;
         }
       }
 
@@ -1239,6 +1420,18 @@ class ErrorDashboard extends HTMLElement {
     `;
 
     container.innerHTML = tableHeader + tableRows + tableFooter;
+
+    // Add click handlers for expandable targets
+    container.querySelectorAll('.target-expand-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const targetId = e.target.dataset.target;
+        const targetList = container.querySelector(`#${targetId}`);
+        if (targetList) {
+          const isExpanded = targetList.classList.toggle('expanded');
+          e.target.textContent = isExpanded ? '(collapse)' : e.target.textContent.replace('(collapse)', '');
+        }
+      });
+    });
   }
 
   clearSelection() {
@@ -1260,8 +1453,10 @@ class ErrorDashboard extends HTMLElement {
     // Reset filter state
     this.selectedDeviceTypes = [];
     this.selectedSources = [];
+    this.selectedStatuses = new Set();
     this.updateDeviceChips();
     this.updateSourceChips();
+    this.updateStatusChips();
     
     const chart = this.shadowRoot.getElementById('error-chart');
     if (chart) {
