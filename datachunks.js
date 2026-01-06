@@ -1,5 +1,34 @@
 import { DataChunks, series, facets } from '@adobe/rum-distiller';
 
+/**
+ * Categorize user agent string into device types
+ * @param {string} ua - User agent string
+ * @returns {string} Device category
+ */
+function categorizeDeviceType(ua) {
+  if (!ua) return 'Unknown';
+  const lowerUA = ua.toLowerCase();
+  
+  // Mobile devices
+  if (lowerUA.includes('android')) return 'Mobile: Android';
+  if (lowerUA.includes('iphone') || lowerUA.includes('ipad') || lowerUA.includes('ipod')) return 'Mobile: iOS';
+  
+  // Desktop
+  if (lowerUA.includes('windows')) return 'Desktop: Windows';
+  if (lowerUA.includes('macintosh') || lowerUA.includes('mac os')) return 'Desktop: macOS';
+  if (lowerUA.includes('linux') && !lowerUA.includes('android')) return 'Desktop: Linux';
+  if (lowerUA.includes('cros')) return 'Desktop: ChromeOS';
+  
+  return 'Other';
+}
+
+/**
+ * Extract device type from bundle's user agent
+ */
+function deviceType(bundle) {
+  const ua = bundle.userAgent || '';
+  return [categorizeDeviceType(ua)];
+}
 
 function errorCount(bundle) {
   const errorEvents = bundle.events.filter(
@@ -109,6 +138,8 @@ function errorDataChunks(data) {
   dataChunks.addFacet('hour', hour, 'every');
   dataChunks.addFacet('userAgent', facets.userAgent);
   dataChunks.addFacet('missingresource', missingresource, 'every');
+  dataChunks.addFacet('deviceType', deviceType, 'every');
+  dataChunks.addFacet('source', enterSourceFacet, 'every');
   return dataChunks;
 }
 
@@ -155,6 +186,8 @@ function performanceDataChunks(data) {
 
   dataChunks.addFacet('hour', hour, 'every', 'none');
   dataChunks.addFacet('enterSource', enterSourceFacet, 'every', 'none');
+  dataChunks.addFacet('deviceType', deviceType, 'every');
+  dataChunks.addFacet('source', enterSourceFacet, 'every');
   return dataChunks;
 }
 

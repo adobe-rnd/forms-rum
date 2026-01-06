@@ -13,6 +13,9 @@ class ErrorDashboard extends HTMLElement {
     this.url = '';
     this.selectedHour = null;
     this.selectedResourceTypes = new Set(['image', 'javascript', 'css', 'json', 'others']);
+    // Top-level filter state (both are multi-select, empty = all)
+    this.selectedDeviceTypes = [];
+    this.selectedSources = [];
   }
 
   connectedCallback() {
@@ -448,6 +451,98 @@ class ErrorDashboard extends HTMLElement {
           color: #6b7280;
         }
 
+        .top-filters-bar {
+          display: flex;
+          gap: 16px;
+          margin-bottom: 20px;
+          padding: 16px;
+          background: #f9fafb;
+          border-radius: 8px;
+          flex-wrap: wrap;
+          align-items: center;
+        }
+
+        .top-filter-group {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+
+        .top-filter-label {
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: #6b7280;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+
+        .top-filter-select {
+          padding: 8px 12px;
+          border: 1px solid #d1d5db;
+          border-radius: 6px;
+          font-size: 0.875rem;
+          background: white;
+          min-width: 180px;
+          cursor: pointer;
+        }
+
+        .top-filter-select:focus {
+          outline: none;
+          border-color: #3b82f6;
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .top-filter-chips {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px;
+          max-width: 400px;
+        }
+
+        .top-filter-chip {
+          display: inline-flex;
+          align-items: center;
+          gap: 4px;
+          padding: 4px 10px;
+          background: #e0e7ff;
+          color: #3730a3;
+          border-radius: 16px;
+          font-size: 0.75rem;
+          font-weight: 500;
+        }
+
+        .top-filter-chip.device {
+          background: #dcfce7;
+          color: #166534;
+        }
+
+        .top-filter-chip .remove-chip {
+          cursor: pointer;
+          font-weight: bold;
+          margin-left: 2px;
+        }
+
+        .top-filter-chip .remove-chip:hover {
+          color: #dc2626;
+        }
+
+        .clear-top-filters-btn {
+          padding: 8px 16px;
+          background: #f3f4f6;
+          border: 1px solid #d1d5db;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 0.875rem;
+          color: #374151;
+          transition: all 0.2s;
+          margin-left: auto;
+        }
+
+        .clear-top-filters-btn:hover {
+          background: #e5e7eb;
+          border-color: #9ca3af;
+        }
+
         @media (max-width: 768px) {
           .summary-stats {
             grid-template-columns: 1fr;
@@ -472,6 +567,30 @@ class ErrorDashboard extends HTMLElement {
       </style>
 
       <div class="dashboard-container">
+        <div class="top-filters-bar" id="top-filters-bar">
+          <div class="top-filter-group">
+            <span class="top-filter-label">Device Type</span>
+            <select class="top-filter-select" id="device-filter">
+              <option value="">Add Device Filter...</option>
+            </select>
+          </div>
+          <div class="top-filter-group" id="device-chips-container" style="display: none;">
+            <span class="top-filter-label">Active Devices</span>
+            <div class="top-filter-chips" id="device-chips"></div>
+          </div>
+          <div class="top-filter-group">
+            <span class="top-filter-label">Source</span>
+            <select class="top-filter-select" id="source-filter">
+              <option value="">Add Source Filter...</option>
+            </select>
+          </div>
+          <div class="top-filter-group" id="source-chips-container" style="display: none;">
+            <span class="top-filter-label">Active Sources</span>
+            <div class="top-filter-chips" id="source-chips"></div>
+          </div>
+          <button class="clear-top-filters-btn" id="clear-top-filters-btn">Clear Filters</button>
+        </div>
+
         <div class="dashboard-header">
           <h2>Error Analysis</h2>
           <div class="summary-stats" id="summary-stats">
@@ -580,11 +699,163 @@ class ErrorDashboard extends HTMLElement {
         });
       });
     }
+
+    // Top-level filter event listeners
+    const deviceFilter = this.shadowRoot.getElementById('device-filter');
+    deviceFilter.addEventListener('change', (e) => {
+      const value = e.target.value;
+      if (value && !this.selectedDeviceTypes.includes(value)) {
+        this.selectedDeviceTypes.push(value);
+        this.updateDeviceChips();
+        this.applyTopFilters();
+      }
+      e.target.value = '';
+    });
+
+    const sourceFilter = this.shadowRoot.getElementById('source-filter');
+    sourceFilter.addEventListener('change', (e) => {
+      const value = e.target.value;
+      if (value && !this.selectedSources.includes(value)) {
+        this.selectedSources.push(value);
+        this.updateSourceChips();
+        this.applyTopFilters();
+      }
+      e.target.value = '';
+    });
+
+    const clearTopFiltersBtn = this.shadowRoot.getElementById('clear-top-filters-btn');
+    clearTopFiltersBtn.addEventListener('click', () => {
+      this.selectedDeviceTypes = [];
+      this.selectedSources = [];
+      this.updateDeviceChips();
+      this.updateSourceChips();
+      this.applyTopFilters();
+    });
   }
 
   setData(dataChunks, url) {
     this.dataChunks = dataChunks;
     this.url = url;
+    this.populateTopFilters();
+    this.applyTopFilters();
+  }
+
+  populateTopFilters() {
+    if (!this.dataChunks) return;
+
+    // Populate device type filter
+    const deviceFilter = this.shadowRoot.getElementById('device-filter');
+    const deviceTypes = this.dataChunks.facets.deviceType || [];
+    
+    deviceFilter.innerHTML = '<option value="">Add Device Filter...</option>';
+    deviceTypes
+      .sort((a, b) => b.count - a.count)
+      .forEach(dt => {
+        const option = document.createElement('option');
+        option.value = dt.value;
+        option.textContent = `${dt.value} (${dt.count})`;
+        deviceFilter.appendChild(option);
+      });
+
+    // Populate source filter
+    const sourceFilter = this.shadowRoot.getElementById('source-filter');
+    const sources = this.dataChunks.facets.source || [];
+    
+    sourceFilter.innerHTML = '<option value="">Add Source Filter...</option>';
+    sources
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 50)
+      .forEach(src => {
+        const option = document.createElement('option');
+        option.value = src.value;
+        const displayText = src.value.length > 60 
+          ? src.value.substring(0, 57) + '...' 
+          : src.value;
+        option.textContent = `${displayText} (${src.count})`;
+        sourceFilter.appendChild(option);
+      });
+
+    this.updateDeviceChips();
+    this.updateSourceChips();
+  }
+
+  updateDeviceChips() {
+    const chipsContainer = this.shadowRoot.getElementById('device-chips');
+    const chipsWrapper = this.shadowRoot.getElementById('device-chips-container');
+
+    if (this.selectedDeviceTypes.length === 0) {
+      chipsWrapper.style.display = 'none';
+      return;
+    }
+
+    chipsWrapper.style.display = 'flex';
+    chipsContainer.innerHTML = this.selectedDeviceTypes.map(device => {
+      return `
+        <span class="top-filter-chip device" data-device="${this.escapeHtml(device)}">
+          ${this.escapeHtml(device)}
+          <span class="remove-chip" data-device="${this.escapeHtml(device)}">×</span>
+        </span>
+      `;
+    }).join('');
+
+    chipsContainer.querySelectorAll('.remove-chip').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const deviceToRemove = e.target.dataset.device;
+        this.selectedDeviceTypes = this.selectedDeviceTypes.filter(d => d !== deviceToRemove);
+        this.updateDeviceChips();
+        this.applyTopFilters();
+      });
+    });
+  }
+
+  updateSourceChips() {
+    const chipsContainer = this.shadowRoot.getElementById('source-chips');
+    const chipsWrapper = this.shadowRoot.getElementById('source-chips-container');
+
+    if (this.selectedSources.length === 0) {
+      chipsWrapper.style.display = 'none';
+      return;
+    }
+
+    chipsWrapper.style.display = 'flex';
+    chipsContainer.innerHTML = this.selectedSources.map(src => {
+      const displayText = src.length > 40 ? src.substring(0, 37) + '...' : src;
+      return `
+        <span class="top-filter-chip" data-source="${this.escapeHtml(src)}">
+          ${this.escapeHtml(displayText)}
+          <span class="remove-chip" data-source="${this.escapeHtml(src)}">×</span>
+        </span>
+      `;
+    }).join('');
+
+    chipsContainer.querySelectorAll('.remove-chip').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const sourceToRemove = e.target.dataset.source;
+        this.selectedSources = this.selectedSources.filter(s => s !== sourceToRemove);
+        this.updateSourceChips();
+        this.applyTopFilters();
+      });
+    });
+  }
+
+  applyTopFilters() {
+    if (!this.dataChunks) return;
+
+    // Build filter object
+    const filter = {};
+    
+    if (this.selectedDeviceTypes.length > 0) {
+      filter.deviceType = this.selectedDeviceTypes;
+    }
+    
+    if (this.selectedSources.length > 0) {
+      filter.source = this.selectedSources;
+    }
+
+    // Apply filter to dataChunks
+    this.dataChunks.filter = filter;
+
+    // Update all panels with filtered data
     this.updateSummaryStats();
     this.updateChart();
     this.updateResourcesList();
@@ -887,6 +1158,12 @@ class ErrorDashboard extends HTMLElement {
 
   reset() {
     this.clearSelection();
+    // Reset filter state
+    this.selectedDeviceTypes = [];
+    this.selectedSources = [];
+    this.updateDeviceChips();
+    this.updateSourceChips();
+    
     const chart = this.shadowRoot.getElementById('error-chart');
     if (chart) {
       chart.reset();
