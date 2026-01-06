@@ -4,12 +4,16 @@
  */
 import '../charts/load-time-chart.js';
 import '../charts/load-time-histogram.js';
+import '../charts/user-agent-pie-chart.js';
 
 class PerformanceDashboard extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
     this.dataChunks = null;
+    // Top-level filter state
+    this.selectedDeviceType = 'all';
+    this.selectedSources = []; // empty = all
   }
 
   connectedCallback() {
@@ -168,6 +172,106 @@ class PerformanceDashboard extends HTMLElement {
           color: #6b7280;
         }
 
+        .filters-bar {
+          display: flex;
+          gap: 16px;
+          margin-bottom: 20px;
+          padding: 16px;
+          background: #f9fafb;
+          border-radius: 8px;
+          flex-wrap: wrap;
+          align-items: center;
+        }
+
+        .filter-group {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+
+        .filter-label {
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: #6b7280;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+
+        .filter-select {
+          padding: 8px 12px;
+          border: 1px solid #d1d5db;
+          border-radius: 6px;
+          font-size: 0.875rem;
+          background: white;
+          min-width: 180px;
+          cursor: pointer;
+        }
+
+        .filter-select:focus {
+          outline: none;
+          border-color: #3b82f6;
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .source-chips {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px;
+          max-width: 400px;
+        }
+
+        .source-chip {
+          display: inline-flex;
+          align-items: center;
+          gap: 4px;
+          padding: 4px 10px;
+          background: #e0e7ff;
+          color: #3730a3;
+          border-radius: 16px;
+          font-size: 0.75rem;
+          font-weight: 500;
+        }
+
+        .source-chip .remove-chip {
+          cursor: pointer;
+          font-weight: bold;
+          margin-left: 2px;
+        }
+
+        .source-chip .remove-chip:hover {
+          color: #dc2626;
+        }
+
+        .clear-filters-btn {
+          padding: 8px 16px;
+          background: #f3f4f6;
+          border: 1px solid #d1d5db;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 0.875rem;
+          color: #374151;
+          transition: all 0.2s;
+          margin-left: auto;
+        }
+
+        .clear-filters-btn:hover {
+          background: #e5e7eb;
+          border-color: #9ca3af;
+        }
+
+        .ua-section {
+          margin-top: 32px;
+          padding-top: 24px;
+          border-top: 2px solid #e5e7eb;
+        }
+
+        .ua-section h3 {
+          margin: 0 0 16px 0;
+          color: #1e40af;
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+
         @media (max-width: 768px) {
           .summary-stats {
             grid-template-columns: 1fr;
@@ -177,6 +281,26 @@ class PerformanceDashboard extends HTMLElement {
       </style>
 
       <div class="dashboard-container">
+        <div class="filters-bar" id="filters-bar">
+          <div class="filter-group">
+            <span class="filter-label">Device Type</span>
+            <select class="filter-select" id="device-filter">
+              <option value="all">All Devices</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Source</span>
+            <select class="filter-select" id="source-filter">
+              <option value="all">Add Source Filter...</option>
+            </select>
+          </div>
+          <div class="filter-group" id="source-chips-container" style="display: none;">
+            <span class="filter-label">Active Sources</span>
+            <div class="source-chips" id="source-chips"></div>
+          </div>
+          <button class="clear-filters-btn" id="clear-filters-btn">Clear Filters</button>
+        </div>
+
         <div class="dashboard-header">
           <h2>Performance</h2>
           <h3>Engagement Readiness Time (Form Visibility)</h3>
@@ -204,6 +328,11 @@ class PerformanceDashboard extends HTMLElement {
         <load-time-chart id="load-time-chart"></load-time-chart>
 
         <load-time-histogram id="load-time-histogram"></load-time-histogram>
+
+        <div class="ua-section">
+          <h3>User Agent Distribution</h3>
+          <user-agent-pie-chart id="user-agent-chart"></user-agent-pie-chart>
+        </div>
       </div>
     `;
   }
@@ -224,14 +353,155 @@ class PerformanceDashboard extends HTMLElement {
       statP50.classList.remove('active');
       chart.setAttribute('percentile', 'p75');
     });
+
+    // Filter event listeners
+    const deviceFilter = this.shadowRoot.getElementById('device-filter');
+    deviceFilter.addEventListener('change', (e) => {
+      this.selectedDeviceType = e.target.value;
+      this.applyFilters();
+    });
+
+    const sourceFilter = this.shadowRoot.getElementById('source-filter');
+    sourceFilter.addEventListener('change', (e) => {
+      const value = e.target.value;
+      if (value !== 'all' && !this.selectedSources.includes(value)) {
+        this.selectedSources.push(value);
+        this.updateSourceChips();
+        this.applyFilters();
+      }
+      // Reset dropdown to show placeholder
+      e.target.value = 'all';
+    });
+
+    const clearFiltersBtn = this.shadowRoot.getElementById('clear-filters-btn');
+    clearFiltersBtn.addEventListener('click', () => {
+      this.selectedDeviceType = 'all';
+      this.selectedSources = [];
+      deviceFilter.value = 'all';
+      this.updateSourceChips();
+      this.applyFilters();
+    });
   }
 
   setData(dataChunks, url) {
     this.dataChunks = dataChunks;
     this.url = url;
+    this.populateFilters();
+    this.applyFilters();
+  }
+
+  populateFilters() {
+    if (!this.dataChunks) return;
+
+    // Populate device type filter
+    const deviceFilter = this.shadowRoot.getElementById('device-filter');
+    const deviceTypes = this.dataChunks.facets.deviceType || [];
+    
+    // Clear existing options except "All"
+    deviceFilter.innerHTML = '<option value="all">All Devices</option>';
+    deviceTypes
+      .sort((a, b) => b.count - a.count)
+      .forEach(dt => {
+        const option = document.createElement('option');
+        option.value = dt.value;
+        option.textContent = `${dt.value} (${dt.count})`;
+        deviceFilter.appendChild(option);
+      });
+
+    // Populate source filter
+    const sourceFilter = this.shadowRoot.getElementById('source-filter');
+    const sources = this.dataChunks.facets.source || [];
+    
+    sourceFilter.innerHTML = '<option value="all">Add Source Filter...</option>';
+    sources
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 50) // Limit to top 50 sources
+      .forEach(src => {
+        const option = document.createElement('option');
+        option.value = src.value;
+        // Truncate long URLs for display
+        const displayText = src.value.length > 60 
+          ? src.value.substring(0, 57) + '...' 
+          : src.value;
+        option.textContent = `${displayText} (${src.count})`;
+        sourceFilter.appendChild(option);
+      });
+
+    // Restore selected device type if still valid
+    if (this.selectedDeviceType !== 'all') {
+      deviceFilter.value = this.selectedDeviceType;
+    }
+  }
+
+  updateSourceChips() {
+    const chipsContainer = this.shadowRoot.getElementById('source-chips');
+    const chipsWrapper = this.shadowRoot.getElementById('source-chips-container');
+
+    if (this.selectedSources.length === 0) {
+      chipsWrapper.style.display = 'none';
+      return;
+    }
+
+    chipsWrapper.style.display = 'flex';
+    chipsContainer.innerHTML = this.selectedSources.map(src => {
+      const displayText = src.length > 40 ? src.substring(0, 37) + '...' : src;
+      return `
+        <span class="source-chip" data-source="${this.escapeHtml(src)}">
+          ${this.escapeHtml(displayText)}
+          <span class="remove-chip" data-source="${this.escapeHtml(src)}">×</span>
+        </span>
+      `;
+    }).join('');
+
+    // Add click handlers for removing chips
+    chipsContainer.querySelectorAll('.remove-chip').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const sourceToRemove = e.target.dataset.source;
+        this.selectedSources = this.selectedSources.filter(s => s !== sourceToRemove);
+        this.updateSourceChips();
+        this.applyFilters();
+      });
+    });
+  }
+
+  escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  applyFilters() {
+    if (!this.dataChunks) return;
+
+    // Build filter object
+    const filter = {};
+    
+    if (this.selectedDeviceType !== 'all') {
+      filter.deviceType = [this.selectedDeviceType];
+    }
+    
+    if (this.selectedSources.length > 0) {
+      filter.source = this.selectedSources;
+    }
+
+    // Apply filter to dataChunks
+    this.dataChunks.filter = filter;
+
+    // Update all panels with filtered data
     this.updateSummaryStats();
     this.updateChart();
     this.updateHistogram();
+    this.updateUserAgentChart();
+  }
+
+  updateUserAgentChart() {
+    if (!this.dataChunks) return;
+
+    const userAgentChart = this.shadowRoot.getElementById('user-agent-chart');
+    if (userAgentChart) {
+      const userAgentFacets = this.dataChunks.facets.userAgent || [];
+      userAgentChart.setData(userAgentFacets);
+    }
   }
 
   updateChart() {
@@ -309,6 +579,13 @@ class PerformanceDashboard extends HTMLElement {
   }
 
   reset() {
+    // Reset filter state
+    this.selectedDeviceType = 'all';
+    this.selectedSources = [];
+    const deviceFilter = this.shadowRoot.getElementById('device-filter');
+    if (deviceFilter) deviceFilter.value = 'all';
+    this.updateSourceChips();
+
     const chart = this.shadowRoot.getElementById('load-time-chart');
     if (chart) {
       chart.reset();
@@ -316,6 +593,10 @@ class PerformanceDashboard extends HTMLElement {
     const histogram = this.shadowRoot.getElementById('load-time-histogram');
     if (histogram) {
       histogram.reset();
+    }
+    const userAgentChart = this.shadowRoot.getElementById('user-agent-chart');
+    if (userAgentChart) {
+      userAgentChart.reset();
     }
     this.dataChunks = null;
     this.url = '';
