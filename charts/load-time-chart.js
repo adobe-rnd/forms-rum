@@ -119,11 +119,24 @@ class LoadTimeChart extends HTMLElement {
       return;
     }
 
+    // Ensure canvas exists (may have been removed by showNoData)
+    this.ensureCanvas();
     this.renderChart(hourFacets);
+  }
+
+  ensureCanvas() {
+    const container = this.shadowRoot.querySelector('.chart-container');
+    if (!container) return;
+    
+    let canvas = this.shadowRoot.getElementById('load-time-chart');
+    if (!canvas) {
+      container.innerHTML = '<canvas id="load-time-chart"></canvas>';
+    }
   }
 
   showNoData() {
     const container = this.shadowRoot.querySelector('.chart-container');
+    if (!container) return;
     container.innerHTML = '<div class="no-data">No data available</div>';
 
     if (this.chart) {

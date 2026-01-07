@@ -135,17 +135,30 @@ class LoadTimeHistogram extends HTMLElement {
       return;
     }
 
+    // Ensure canvas exists (may have been removed by showNoData)
+    this.ensureCanvas();
     this.bucketThresholds = bucketThresholds;
     this.processData(formBlockLoadTimeFacet);
     this.renderChart();
   }
 
+  ensureCanvas() {
+    const container = this.shadowRoot.querySelector('.histogram-container');
+    if (!container) return;
+    
+    let canvas = this.shadowRoot.getElementById('histogram-chart');
+    if (!canvas) {
+      container.innerHTML = '<canvas id="histogram-chart"></canvas>';
+    }
+  }
+
   showNoData() {
     const container = this.shadowRoot.querySelector('.histogram-container');
+    if (!container) return;
     container.innerHTML = '<div class="no-data">No load time data available</div>';
 
     const statsContainer = this.shadowRoot.getElementById('histogram-stats');
-    statsContainer.style.display = 'none';
+    if (statsContainer) statsContainer.style.display = 'none';
 
     if (this.chart) {
       this.chart.destroy();

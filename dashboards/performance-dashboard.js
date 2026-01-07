@@ -7,13 +7,75 @@ import '../charts/load-time-histogram.js';
 import '../charts/source-time-series-chart.js';
 import '../charts/resource-time-table.js';
 import '../charts/user-agent-pie-chart.js';
+import { performanceDataChunks } from '../datachunks.js';
+
+// Helper functions for filtering raw data
+// Matches User Agent pie chart categorization for consistency
+function categorizeDeviceType(ua) {
+  if (!ua) return 'Others';
+  const lowerUA = ua.toLowerCase();
+  
+  // Mobile: Android
+  if (lowerUA.includes('android')) return 'Mobile: Android';
+  
+  // Mobile: iOS (iPhone, iPad, iPod, or "mobile:ios" format from RUM data)
+  if (lowerUA.includes('iphone') || lowerUA.includes('ipad') || lowerUA.includes('ipod') || 
+      lowerUA.includes('ios') || (lowerUA.includes('mac') && lowerUA.includes('mobile'))) {
+    return 'Mobile: iOS';
+  }
+  
+  // Desktop: Windows
+  if (lowerUA.includes('windows')) return 'Desktop: Windows';
+  
+  // Desktop: macOS
+  if (lowerUA.includes('macintosh') || lowerUA.includes('mac os') || 
+      (lowerUA.includes('mac') && !lowerUA.includes('mobile'))) {
+    return 'Desktop: macOS';
+  }
+  
+  // Desktop: Linux (but not Android)
+  if (lowerUA.includes('linux') && !lowerUA.includes('android')) return 'Desktop: Linux';
+  
+  // Desktop: Others (ChromeOS, generic desktop)
+  if (lowerUA.includes('cros') || lowerUA.includes('desktop')) return 'Desktop: Others';
+  
+  // Mobile: Others (generic mobile devices)
+  if (lowerUA.includes('mobile')) return 'Mobile: Others';
+  
+  return 'Others';
+}
+
+function normalizeSourceValue(src) {
+  try {
+    if (src.startsWith('http://') || src.startsWith('https://')) {
+      const u = new URL(src);
+      let path = (u.pathname || '/').replace(/\/+$/, '');
+      if (path === '') path = '';
+      return `${u.origin}${path}`;
+    }
+    return src.replace(/\/?#$/, '');
+  } catch (e) {
+    return src;
+  }
+}
+
+function getBundleSources(bundle) {
+  return bundle.events
+    .filter(e => e.checkpoint === 'enter')
+    .filter(e => e.source && ['redacted', 'junk_email'].every(s => !e.source.toLowerCase().includes(s)))
+    .map(e => normalizeSourceValue(e.source));
+}
 
 class PerformanceDashboard extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
     this.dataChunks = null;
+    this.rawData = null; // Store raw data for re-filtering
     this.url = '';
+    // Top-level filter state (both are multi-select, empty = all)
+    this.selectedDeviceTypes = [];
+    this.selectedSources = [];
   }
 
   connectedCallback() {
@@ -202,6 +264,148 @@ class PerformanceDashboard extends HTMLElement {
           color: #6b7280;
         }
 
+        /* Top-level Filters Bar - Modern Compact Style */
+        .top-filters-bar {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          margin-bottom: 24px;
+          padding: 16px 20px;
+          background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .filters-row {
+          display: flex;
+          align-items: flex-end;
+          gap: 16px;
+          flex-wrap: wrap;
+        }
+
+        .filter-column {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+
+        .top-filter-label {
+          font-size: 0.7rem;
+          font-weight: 700;
+          color: #475569;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+        }
+
+        .top-filter-select {
+          padding: 8px 12px;
+          border: 1px solid #cbd5e1;
+          border-radius: 6px;
+          font-size: 0.8125rem;
+          background: white;
+          min-width: 180px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          color: #334155;
+        }
+
+        .top-filter-select:hover {
+          border-color: #94a3b8;
+        }
+
+        .top-filter-select:focus {
+          outline: none;
+          border-color: #3b82f6;
+          box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+        }
+
+        .clear-top-filters-btn {
+          padding: 8px 16px;
+          background: white;
+          border: 1px solid #dc2626;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 0.8125rem;
+          font-weight: 500;
+          color: #dc2626;
+          transition: all 0.2s ease;
+          margin-left: auto;
+        }
+
+        .clear-top-filters-btn:hover {
+          background: #fef2f2;
+          border-color: #b91c1c;
+          color: #b91c1c;
+        }
+
+        .active-filters-row {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding-top: 12px;
+          border-top: 1px solid #e2e8f0;
+        }
+
+        .active-filters-label {
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: #64748b;
+          white-space: nowrap;
+        }
+
+        .all-chips-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+
+        .top-filter-chips {
+          display: contents;
+        }
+
+        .top-filter-chip {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          padding: 5px 10px;
+          background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+          color: #1e40af;
+          border-radius: 16px;
+          font-size: 0.75rem;
+          font-weight: 500;
+          border: 1px solid #bfdbfe;
+          transition: all 0.2s ease;
+        }
+
+        .top-filter-chip:hover {
+          background: linear-gradient(135deg, #bfdbfe 0%, #c7d2fe 100%);
+        }
+
+        .top-filter-chip.device {
+          background: linear-gradient(135deg, #d1fae5 0%, #dcfce7 100%);
+          color: #065f46;
+          border-color: #a7f3d0;
+        }
+
+        .top-filter-chip.device:hover {
+          background: linear-gradient(135deg, #a7f3d0 0%, #bbf7d0 100%);
+        }
+
+        .top-filter-chip .remove-chip {
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 0.9rem;
+          line-height: 1;
+          opacity: 0.7;
+          transition: opacity 0.2s, color 0.2s;
+        }
+
+        .top-filter-chip .remove-chip:hover {
+          opacity: 1;
+          color: #dc2626;
+        }
+
         @media (max-width: 768px) {
           .summary-stats {
             grid-template-columns: 1fr;
@@ -211,6 +415,31 @@ class PerformanceDashboard extends HTMLElement {
       </style>
 
       <div class="dashboard-container">
+        <div class="top-filters-bar" id="top-filters-bar">
+          <div class="filters-row">
+            <div class="filter-column">
+              <span class="top-filter-label">Device Type</span>
+              <select class="top-filter-select" id="device-filter">
+                <option value="">+ Add Device...</option>
+              </select>
+            </div>
+            <div class="filter-column">
+              <span class="top-filter-label">Source</span>
+              <select class="top-filter-select" id="source-filter">
+                <option value="">+ Add Source...</option>
+              </select>
+            </div>
+            <button class="clear-top-filters-btn" id="clear-top-filters-btn">Clear All</button>
+          </div>
+          <div class="active-filters-row" id="active-filters-row" style="display: none;">
+            <span class="active-filters-label">Active Filters:</span>
+            <div class="all-chips-container">
+              <div class="top-filter-chips" id="device-chips"></div>
+              <div class="top-filter-chips" id="source-chips"></div>
+            </div>
+          </div>
+        </div>
+
         <div class="dashboard-header">
           <h2>Performance</h2>
           <h3>Engagement Readiness Time (Form Visibility)</h3>
@@ -278,13 +507,193 @@ class PerformanceDashboard extends HTMLElement {
       chart.setAttribute('percentile', 'p75');
       sourceSeriesChart.setAttribute('percentile', 'p75');
     });
+
+    // Top-level filter event listeners
+    const deviceFilter = this.shadowRoot.getElementById('device-filter');
+    deviceFilter.addEventListener('change', (e) => {
+      const value = e.target.value;
+      if (value && !this.selectedDeviceTypes.includes(value)) {
+        this.selectedDeviceTypes.push(value);
+        this.updateDeviceChips();
+        this.applyTopFilters();
+      }
+      e.target.value = '';
+    });
+
+    const sourceFilter = this.shadowRoot.getElementById('source-filter');
+    sourceFilter.addEventListener('change', (e) => {
+      const value = e.target.value;
+      if (value && !this.selectedSources.includes(value)) {
+        this.selectedSources.push(value);
+        this.updateSourceChips();
+        this.applyTopFilters();
+      }
+      e.target.value = '';
+    });
+
+    const clearTopFiltersBtn = this.shadowRoot.getElementById('clear-top-filters-btn');
+    clearTopFiltersBtn.addEventListener('click', () => {
+      this.selectedDeviceTypes = [];
+      this.selectedSources = [];
+      this.updateDeviceChips();
+      this.updateSourceChips();
+      this.applyTopFilters();
+    });
   }
 
   setData(dataChunks, url, rawChunks, aliasMap) {
     this.dataChunks = dataChunks;
     this.url = url;
-    this.rawChunks = rawChunks;
+    this.rawChunks = rawChunks; // This is our raw data for filtering
     this.aliasMap = aliasMap || null;
+    this.populateTopFilters();
+    this.applyTopFilters();
+  }
+
+  populateTopFilters() {
+    if (!this.dataChunks) return;
+
+    // Populate device type filter - use weight for consistency with User Agent chart
+    const deviceFilter = this.shadowRoot.getElementById('device-filter');
+    const deviceTypes = this.dataChunks.facets.deviceType || [];
+    
+    deviceFilter.innerHTML = '<option value="">+ Add Device...</option>';
+    deviceTypes
+      .sort((a, b) => b.weight - a.weight)
+      .forEach(dt => {
+        const option = document.createElement('option');
+        option.value = dt.value;
+        // Use weight (extrapolated page views) for consistency
+        option.textContent = `${dt.value} (${dt.weight.toLocaleString()})`;
+        deviceFilter.appendChild(option);
+      });
+
+    // Populate source filter - use weight for consistency
+    const sourceFilter = this.shadowRoot.getElementById('source-filter');
+    const sources = this.dataChunks.facets.source || [];
+    
+    sourceFilter.innerHTML = '<option value="">+ Add Source...</option>';
+    sources
+      .sort((a, b) => b.weight - a.weight)
+      .slice(0, 50)
+      .forEach(src => {
+        const option = document.createElement('option');
+        option.value = src.value;
+        const displayText = src.value.length > 60 
+          ? src.value.substring(0, 57) + '...' 
+          : src.value;
+        // Use weight (extrapolated page views) for consistency
+        option.textContent = `${displayText} (${src.weight.toLocaleString()})`;
+        sourceFilter.appendChild(option);
+      });
+
+    this.updateDeviceChips();
+    this.updateSourceChips();
+  }
+
+  updateDeviceChips() {
+    const chipsContainer = this.shadowRoot.getElementById('device-chips');
+
+    chipsContainer.innerHTML = this.selectedDeviceTypes.map(device => {
+      return `
+        <span class="top-filter-chip device" data-device="${this.escapeHtml(device)}">
+          ${this.escapeHtml(device)}
+          <span class="remove-chip" data-device="${this.escapeHtml(device)}">×</span>
+        </span>
+      `;
+    }).join('');
+
+    // Show/hide the active filters row
+    this.updateActiveFiltersVisibility();
+
+    chipsContainer.querySelectorAll('.remove-chip').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const deviceToRemove = e.target.dataset.device;
+        this.selectedDeviceTypes = this.selectedDeviceTypes.filter(d => d !== deviceToRemove);
+        this.updateDeviceChips();
+        this.applyTopFilters();
+      });
+    });
+  }
+
+  updateActiveFiltersVisibility() {
+    const activeFiltersRow = this.shadowRoot.getElementById('active-filters-row');
+    const hasFilters = this.selectedDeviceTypes.length > 0 || this.selectedSources.length > 0;
+    activeFiltersRow.style.display = hasFilters ? 'flex' : 'none';
+  }
+
+  updateSourceChips() {
+    const chipsContainer = this.shadowRoot.getElementById('source-chips');
+
+    chipsContainer.innerHTML = this.selectedSources.map(src => {
+      const displayText = src.length > 35 ? src.substring(0, 32) + '...' : src;
+      return `
+        <span class="top-filter-chip" data-source="${this.escapeHtml(src)}" title="${this.escapeHtml(src)}">
+          ${this.escapeHtml(displayText)}
+          <span class="remove-chip" data-source="${this.escapeHtml(src)}">×</span>
+        </span>
+      `;
+    }).join('');
+
+    // Show/hide the active filters row
+    this.updateActiveFiltersVisibility();
+
+    chipsContainer.querySelectorAll('.remove-chip').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const sourceToRemove = e.target.dataset.source;
+        this.selectedSources = this.selectedSources.filter(s => s !== sourceToRemove);
+        this.updateSourceChips();
+        this.applyTopFilters();
+      });
+    });
+  }
+
+  escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  applyTopFilters() {
+    if (!this.rawChunks) return;
+
+    // Filter raw data based on selected filters (OR logic for multi-select)
+    const hasDeviceFilter = this.selectedDeviceTypes.length > 0;
+    const hasSourceFilter = this.selectedSources.length > 0;
+
+    let filteredData = this.rawChunks;
+    
+    if (hasDeviceFilter || hasSourceFilter) {
+      filteredData = this.rawChunks.map(chunk => ({
+        ...chunk,
+        rumBundles: chunk.rumBundles.filter(bundle => {
+          // Device type filter (OR logic - match ANY selected device type)
+          let passesDeviceFilter = true;
+          if (hasDeviceFilter) {
+            const bundleDeviceType = categorizeDeviceType(bundle.userAgent);
+            passesDeviceFilter = this.selectedDeviceTypes.includes(bundleDeviceType);
+          }
+          
+          // Source filter (OR logic - match ANY selected source)
+          let passesSourceFilter = true;
+          if (hasSourceFilter) {
+            const bundleSources = getBundleSources(bundle);
+            passesSourceFilter = bundleSources.some(src => this.selectedSources.includes(src));
+          }
+          
+          return passesDeviceFilter && passesSourceFilter;
+        })
+      })).filter(chunk => chunk.rumBundles.length > 0);
+    }
+
+    // Re-create DataChunks with filtered data
+    this.dataChunks = performanceDataChunks(filteredData);
+
+    // Debug: log filter results
+    console.log('Applied filters - Devices:', this.selectedDeviceTypes, 'Sources:', this.selectedSources);
+    console.log('Filtered totals:', this.dataChunks.totals);
+
+    // Update all panels with filtered data
     this.updateSummaryStats();
     this.updateChart();
     this.updateHistogram();
@@ -296,13 +705,10 @@ class PerformanceDashboard extends HTMLElement {
     if (!this.dataChunks) return;
     const uaChart = this.shadowRoot.getElementById('user-agent-chart');
     if (!uaChart) return;
-    // Always show overall distribution for the current URL/date range (not the primary device filter),
-    // otherwise selecting a specific device type makes the chart uninformative.
-    const prevFilter = this.dataChunks.filter;
-    this.dataChunks.filter = {};
-    const userAgentFacets = this.dataChunks.facets.userAgent || [];
-    this.dataChunks.filter = prevFilter || {};
-    uaChart.setData(userAgentFacets);
+    // Use deviceType facet which is already aggregated and matches Total Page Views
+    const deviceTypeFacets = this.dataChunks.facets.deviceType || [];
+    const totalPageViews = this.dataChunks.totals.pageViews?.sum || 0;
+    uaChart.setData(deviceTypeFacets, totalPageViews);
   }
 
   updateChart() {
@@ -400,6 +806,12 @@ class PerformanceDashboard extends HTMLElement {
   }
 
   reset() {
+    // Reset filter state
+    this.selectedDeviceTypes = [];
+    this.selectedSources = [];
+    this.updateDeviceChips();
+    this.updateSourceChips();
+
     const chart = this.shadowRoot.getElementById('load-time-chart');
     if (chart) {
       chart.reset();
@@ -411,6 +823,10 @@ class PerformanceDashboard extends HTMLElement {
     const resourceTable = this.shadowRoot.getElementById('resource-time-table');
     if (resourceTable) {
       resourceTable.reset();
+    }
+    const userAgentChart = this.shadowRoot.getElementById('user-agent-chart');
+    if (userAgentChart) {
+      userAgentChart.reset();
     }
     this.dataChunks = null;
     this.url = '';

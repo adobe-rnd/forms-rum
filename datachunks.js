@@ -1,5 +1,63 @@
 import { DataChunks, series, facets } from '@adobe/rum-distiller';
 
+/**
+ * Categorize user agent string into device types
+ * Matches the User Agent pie chart categorization for consistency
+ * @param {string} ua - User agent string
+ * @returns {string} Device category
+ */
+function categorizeDeviceType(ua) {
+  if (!ua) return 'Others';
+  const lowerUA = ua.toLowerCase();
+  
+  // Mobile: Android
+  if (lowerUA.includes('android')) {
+    return 'Mobile: Android';
+  }
+  
+  // Mobile: iOS (iPhone, iPad, iPod, or "mobile:ios" format from RUM data)
+  if (lowerUA.includes('iphone') || lowerUA.includes('ipad') || lowerUA.includes('ipod') || 
+      lowerUA.includes('ios') || (lowerUA.includes('mac') && lowerUA.includes('mobile'))) {
+    return 'Mobile: iOS';
+  }
+  
+  // Desktop: Windows
+  if (lowerUA.includes('windows')) {
+    return 'Desktop: Windows';
+  }
+  
+  // Desktop: macOS
+  if (lowerUA.includes('macintosh') || lowerUA.includes('mac os') || 
+      (lowerUA.includes('mac') && !lowerUA.includes('mobile'))) {
+    return 'Desktop: macOS';
+  }
+  
+  // Desktop: Linux (but not Android which also contains 'linux')
+  if (lowerUA.includes('linux') && !lowerUA.includes('android')) {
+    return 'Desktop: Linux';
+  }
+  
+  // Desktop: Others (ChromeOS, generic desktop)
+  if (lowerUA.includes('cros') || lowerUA.includes('desktop')) {
+    return 'Desktop: Others';
+  }
+  
+  // Mobile: Others (generic mobile devices)
+  if (lowerUA.includes('mobile')) {
+    return 'Mobile: Others';
+  }
+  
+  // Fallback for completely unknown
+  return 'Others';
+}
+
+/**
+ * Extract device type from bundle's user agent
+ */
+function deviceType(bundle) {
+  const ua = bundle.userAgent || '';
+  return [categorizeDeviceType(ua)];
+}
 
 function errorCount(bundle) {
   const errorEvents = bundle.events.filter(
@@ -64,6 +122,22 @@ function missingresource(bundle) {
   .map(e => e.source);
 }
 
+/**
+ * Facet for missing resource details - captures source URL and target (status/endpoint info)
+ * Format: "source|target" where target may contain HTTP status or API endpoint details
+ */
+function missingResourceDetails(bundle) {
+  return bundle.events
+    .filter(e => e.checkpoint === 'missingresource')
+    .filter(e => e.source && ['redacted', 'junk_email'].every(s => !e.source.toLowerCase().includes(s)))
+    .map(e => {
+      const source = e.source || '';
+      const target = e.target || '';
+      // Encode as "source|||target" for easy parsing (using ||| as delimiter to avoid URL conflicts)
+      return `${source}|||${target}`;
+    });
+}
+
 function loadresource(bundle) {
   return bundle.events
   .filter(e => e.checkpoint === 'loadresource')
@@ -90,10 +164,13 @@ function normalizeSourceValue(src) {
 }
 
 function enterSourceFacet(bundle) {
-  return bundle.events
+  const sources = bundle.events
     .filter(e => e.checkpoint === 'enter')
     .filter(e => e.source && ['redacted', 'junk_email'].every(s => !e.source.toLowerCase().includes(s)))
     .map(e => normalizeSourceValue(e.source));
+  // Return unique sources - DataChunks filter matches if ANY value in the filter array
+  // matches ANY value in the facet array (OR logic)
+  return [...new Set(sources)];
 }
 
 function errorDataChunks(data) {
@@ -109,6 +186,9 @@ function errorDataChunks(data) {
   dataChunks.addFacet('hour', hour, 'every');
   dataChunks.addFacet('userAgent', facets.userAgent);
   dataChunks.addFacet('missingresource', missingresource, 'every');
+  dataChunks.addFacet('missingResourceDetails', missingResourceDetails, 'every');
+  dataChunks.addFacet('deviceType', deviceType, 'every');
+  dataChunks.addFacet('source', enterSourceFacet, 'every');
   return dataChunks;
 }
 
@@ -155,6 +235,8 @@ function performanceDataChunks(data) {
 
   dataChunks.addFacet('hour', hour, 'every', 'none');
   dataChunks.addFacet('enterSource', enterSourceFacet, 'every', 'none');
+  dataChunks.addFacet('deviceType', deviceType, 'every');
+  dataChunks.addFacet('source', enterSourceFacet, 'every');
   return dataChunks;
 }
 
