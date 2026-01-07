@@ -7,16 +7,39 @@ import '../charts/user-agent-pie-chart.js';
 import { errorDataChunks } from '../datachunks.js';
 
 // Helper functions for filtering raw data
+// Matches User Agent pie chart categorization for consistency
 function categorizeDeviceType(ua) {
-  if (!ua) return 'Unknown';
+  if (!ua) return 'Others';
   const lowerUA = ua.toLowerCase();
+  
+  // Mobile: Android
   if (lowerUA.includes('android')) return 'Mobile: Android';
-  if (lowerUA.includes('iphone') || lowerUA.includes('ipad') || lowerUA.includes('ipod')) return 'Mobile: iOS';
+  
+  // Mobile: iOS (iPhone, iPad, iPod, or "mobile:ios" format from RUM data)
+  if (lowerUA.includes('iphone') || lowerUA.includes('ipad') || lowerUA.includes('ipod') || 
+      lowerUA.includes('ios') || (lowerUA.includes('mac') && lowerUA.includes('mobile'))) {
+    return 'Mobile: iOS';
+  }
+  
+  // Desktop: Windows
   if (lowerUA.includes('windows')) return 'Desktop: Windows';
-  if (lowerUA.includes('macintosh') || lowerUA.includes('mac os')) return 'Desktop: macOS';
+  
+  // Desktop: macOS
+  if (lowerUA.includes('macintosh') || lowerUA.includes('mac os') || 
+      (lowerUA.includes('mac') && !lowerUA.includes('mobile'))) {
+    return 'Desktop: macOS';
+  }
+  
+  // Desktop: Linux (but not Android)
   if (lowerUA.includes('linux') && !lowerUA.includes('android')) return 'Desktop: Linux';
-  if (lowerUA.includes('cros')) return 'Desktop: ChromeOS';
-  return 'Other';
+  
+  // Desktop: Others (ChromeOS, generic desktop)
+  if (lowerUA.includes('cros') || lowerUA.includes('desktop')) return 'Desktop: Others';
+  
+  // Mobile: Others (generic mobile devices)
+  if (lowerUA.includes('mobile')) return 'Mobile: Others';
+  
+  return 'Others';
 }
 
 function normalizeSourceValue(src) {
@@ -319,6 +342,148 @@ class ErrorDashboard extends HTMLElement {
           font-size: 0.75rem;
           padding: 2px 0;
           color: #6b7280;
+        }
+
+        /* Status Drilldown Styles */
+        .status-drilldown-toggle {
+          cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 4px 8px;
+          border-radius: 6px;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          transition: all 0.2s ease;
+        }
+
+        .status-drilldown-toggle:hover {
+          background: #f1f5f9;
+          border-color: #cbd5e1;
+        }
+
+        .status-drilldown-toggle.expanded {
+          background: #e0f2fe;
+          border-color: #7dd3fc;
+        }
+
+        .drilldown-indicator {
+          font-size: 0.7rem;
+          color: #64748b;
+          font-weight: 500;
+        }
+
+        .status-badge {
+          display: inline-block;
+          padding: 2px 8px;
+          border-radius: 4px;
+          font-size: 0.75rem;
+          font-weight: 600;
+          font-family: monospace;
+        }
+
+        .status-badge.status-5xx {
+          background: #fee2e2;
+          color: #dc2626;
+          border: 1px solid #fca5a5;
+        }
+
+        .status-badge.status-4xx {
+          background: #fef3c7;
+          color: #d97706;
+          border: 1px solid #fcd34d;
+        }
+
+        .status-badge.status-3xx {
+          background: #dbeafe;
+          color: #2563eb;
+          border: 1px solid #93c5fd;
+        }
+
+        .status-badge.status-2xx {
+          background: #d1fae5;
+          color: #059669;
+          border: 1px solid #6ee7b7;
+        }
+
+        .status-badge.status-error {
+          background: #fee2e2;
+          color: #dc2626;
+          border: 1px solid #fca5a5;
+        }
+
+        .status-badge.status-other {
+          background: #f3f4f6;
+          color: #4b5563;
+          border: 1px solid #d1d5db;
+        }
+
+        .drilldown-row {
+          display: none;
+          background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+
+        .drilldown-row.visible {
+          display: table-row;
+        }
+
+        .drilldown-row td {
+          padding: 10px 12px;
+          border-bottom: 1px solid #e2e8f0;
+          font-size: 0.8125rem;
+        }
+
+        .drilldown-bullet {
+          text-align: center;
+          color: #94a3b8;
+          font-size: 1rem;
+          width: 40px;
+        }
+
+        .drilldown-label {
+          color: #475569;
+          font-weight: 500;
+        }
+
+        .drilldown-count {
+          font-weight: 600;
+          color: #475569 !important;
+        }
+
+        tr.has-drilldown {
+          cursor: pointer;
+          transition: background-color 0.15s ease;
+        }
+
+        tr.has-drilldown:hover {
+          background: #f1f5f9;
+        }
+
+        tr.has-drilldown.expanded {
+          background: #e0f2fe;
+          border-left: 3px solid #0ea5e9;
+        }
+
+        tr.has-drilldown.expanded:hover {
+          background: #bae6fd;
+        }
+
+        tr.has-drilldown td:first-child {
+          position: relative;
+        }
+
+        tr.has-drilldown.expanded td:first-child::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          width: 3px;
+          background: #0ea5e9;
+        }
+
+        .resource-status {
+          white-space: nowrap;
         }
 
         /* Resource Filters Bar - Matching Top-Level Filter Style */
@@ -1100,27 +1265,28 @@ class ErrorDashboard extends HTMLElement {
   populateTopFilters() {
     if (!this.dataChunks) return;
 
-    // Populate device type filter
+    // Populate device type filter - use weight for consistency with User Agent chart
     const deviceFilter = this.shadowRoot.getElementById('device-filter');
     const deviceTypes = this.dataChunks.facets.deviceType || [];
     
     deviceFilter.innerHTML = '<option value="">+ Add Device...</option>';
     deviceTypes
-      .sort((a, b) => b.count - a.count)
+      .sort((a, b) => b.weight - a.weight)
       .forEach(dt => {
         const option = document.createElement('option');
         option.value = dt.value;
-        option.textContent = `${dt.value} (${dt.count})`;
+        // Use weight (extrapolated page views) for consistency
+        option.textContent = `${dt.value} (${dt.weight.toLocaleString()})`;
         deviceFilter.appendChild(option);
       });
 
-    // Populate source filter
+    // Populate source filter - use weight for consistency
     const sourceFilter = this.shadowRoot.getElementById('source-filter');
     const sources = this.dataChunks.facets.source || [];
     
     sourceFilter.innerHTML = '<option value="">+ Add Source...</option>';
     sources
-      .sort((a, b) => b.count - a.count)
+      .sort((a, b) => b.weight - a.weight)
       .slice(0, 50)
       .forEach(src => {
         const option = document.createElement('option');
@@ -1128,7 +1294,8 @@ class ErrorDashboard extends HTMLElement {
         const displayText = src.value.length > 60 
           ? src.value.substring(0, 57) + '...' 
           : src.value;
-        option.textContent = `${displayText} (${src.count})`;
+        // Use weight (extrapolated page views) for consistency
+        option.textContent = `${displayText} (${src.weight.toLocaleString()})`;
         sourceFilter.appendChild(option);
       });
 
@@ -1247,8 +1414,10 @@ class ErrorDashboard extends HTMLElement {
     const userAgentChart = this.shadowRoot.getElementById('user-agent-chart');
     if (!userAgentChart) return;
     
-    const userAgentFacets = this.dataChunks.facets.userAgent || [];
-    userAgentChart.setData(userAgentFacets);
+    // Use deviceType facet which is already aggregated
+    const deviceTypeFacets = this.dataChunks.facets.deviceType || [];
+    const totalPageViews = this.dataChunks.totals.pageViews?.sum || 0;
+    userAgentChart.setData(deviceTypeFacets, totalPageViews);
   }
 
   updateStatusChips() {
@@ -1369,10 +1538,12 @@ class ErrorDashboard extends HTMLElement {
     // Render sources and targets using facet data
     this.renderDetailListFromFacets('error-sources-list', errorDetailsFacets, totalErrorsInHour);
 
-    // Render user agent pie chart
+    // Render user agent pie chart with deviceType facet (already aggregated)
     const userAgentChart = this.shadowRoot.getElementById('user-agent-chart');
     if (userAgentChart) {
-      userAgentChart.setData(userAgentFacets);
+      const deviceTypeFacets = this.dataChunks.facets.deviceType || [];
+      const totalPV = this.dataChunks.totals.pageViews?.sum || 0;
+      userAgentChart.setData(deviceTypeFacets, totalPV);
     }
 
     // Clear the filter to reset the dataChunks
@@ -1532,20 +1703,21 @@ class ErrorDashboard extends HTMLElement {
       return;
     }
 
-    // Parse the details to get source and target separately
-    // Build a map of source -> targets for easy lookup
-    const targetMap = new Map();
+    // Parse the details to get source -> status -> weight mapping
+    // Build a map of source -> { status: weight }
+    const statusWeightMap = new Map(); // source -> Map(status -> weight)
     const allStatuses = new Set();
     
     missingResourceDetails.forEach(detail => {
-      const [source, target] = detail.value.split('|||');
-      if (source && target && target.trim()) {
-        // Aggregate targets if multiple exist for same source
-        if (!targetMap.has(source)) {
-          targetMap.set(source, new Set());
+      const [source, status] = detail.value.split('|||');
+      if (source && status && status.trim()) {
+        if (!statusWeightMap.has(source)) {
+          statusWeightMap.set(source, new Map());
         }
-        targetMap.get(source).add(target);
-        allStatuses.add(target);
+        const statusMap = statusWeightMap.get(source);
+        // Aggregate weight for same source+status combination
+        statusMap.set(status, (statusMap.get(status) || 0) + detail.weight);
+        allStatuses.add(status);
       }
     });
 
@@ -1559,10 +1731,10 @@ class ErrorDashboard extends HTMLElement {
     // Filter by selected statuses if any
     if (this.selectedStatuses.size > 0) {
       filteredResources = filteredResources.filter(res => {
-        const targets = targetMap.get(res.value);
-        if (!targets) return false;
-        // Check if any of the resource's targets match selected statuses
-        return Array.from(targets).some(t => this.selectedStatuses.has(t));
+        const statusMap = statusWeightMap.get(res.value);
+        if (!statusMap) return false;
+        // Check if any of the resource's statuses match selected statuses
+        return Array.from(statusMap.keys()).some(s => this.selectedStatuses.has(s));
       });
     }
 
@@ -1592,17 +1764,17 @@ class ErrorDashboard extends HTMLElement {
     // Update threshold legend (no duplication)
     this.updateThresholdLegend();
 
-    // Render as table
+    // Render as table with drilldown
     const tableHeader = `
       <table class="resources-table">
         <thead>
           <tr>
-            <th>#</th>
+            <th style="width: 40px;">#</th>
             <th>Resource URL</th>
-            <th>Type</th>
-            <th>Target / Status</th>
-            <th style="text-align: right;">Count</th>
-            <th style="text-align: right;">% of Views</th>
+            <th style="width: 80px;">Type</th>
+            <th style="width: 150px;">Status Codes</th>
+            <th style="text-align: right; width: 100px;">Count</th>
+            <th style="text-align: right; width: 90px;">% of Views</th>
           </tr>
         </thead>
         <tbody>
@@ -1618,44 +1790,63 @@ class ErrorDashboard extends HTMLElement {
       // Get resource type
       const resourceType = this.categorizeResource(resource.value);
       
-      // Get target/status info if available
-      const targets = targetMap.get(resource.value);
-      let targetDisplay = '-';
-      let hasStatus = false;
-      const rowId = `target-row-${index}`;
+      // Get status breakdown
+      const statusMap = statusWeightMap.get(resource.value);
+      const rowId = `drilldown-${index}`;
+      let statusDisplay = '-';
+      let drilldownRows = '';
+      let hasMultipleStatuses = false;
       
-      if (targets && targets.size > 0) {
-        const targetArray = Array.from(targets);
-        // Check if any target looks like an HTTP status
-        hasStatus = targetArray.some(t => /^[1-5]\d{2}$/.test(t) || t.includes('error') || t.includes('failed'));
+      if (statusMap && statusMap.size > 0) {
+        // Sort statuses by weight descending
+        const sortedStatuses = Array.from(statusMap.entries())
+          .sort((a, b) => b[1] - a[1]);
         
-        if (targetArray.length <= 2) {
-          targetDisplay = targetArray.map(t => this.escapeHtml(t)).join(', ');
-        } else {
-          // Show first 2 and make rest expandable
-          const visibleTargets = targetArray.slice(0, 2).map(t => this.escapeHtml(t)).join(', ');
-          const hiddenTargets = targetArray.slice(2).map(t => `<div class="target-list-item">${this.escapeHtml(t)}</div>`).join('');
-          const remainingCount = targetArray.length - 2;
-          
-          targetDisplay = `
-            ${visibleTargets}
-            <span class="target-expand-btn" data-target="${rowId}">(+${remainingCount} more)</span>
-            <div class="target-list" id="${rowId}">
-              ${hiddenTargets}
+        hasMultipleStatuses = sortedStatuses.length > 1;
+        
+        // Show primary status with expand button if multiple
+        const primaryStatus = sortedStatuses[0];
+        const isHttpStatus = /^[1-5]\d{2}$/.test(primaryStatus[0]);
+        const statusClass = this.getStatusClass(primaryStatus[0]);
+        
+        if (hasMultipleStatuses) {
+          statusDisplay = `
+            <div class="status-drilldown-toggle" data-row="${rowId}">
+              <span class="status-badge ${statusClass}">${this.escapeHtml(primaryStatus[0])}</span>
+              <span class="drilldown-indicator">▼ ${sortedStatuses.length} codes</span>
             </div>
           `;
+          
+          // Build drilldown rows - cleaner layout
+          drilldownRows = sortedStatuses.map(([status, weight], idx) => {
+            const statusPct = totalPageViews > 0 ? (weight / totalPageViews) * 100 : 0;
+            const sClass = this.getStatusClass(status);
+            return `
+              <tr class="drilldown-row ${rowId}">
+                <td class="drilldown-bullet">•</td>
+                <td colspan="2" class="drilldown-label">HTTP ${this.escapeHtml(status)}</td>
+                <td><span class="status-badge ${sClass}">${this.escapeHtml(status)}</span></td>
+                <td class="resource-count drilldown-count">${weight.toLocaleString()}</td>
+                <td class="resource-percentage">${statusPct.toFixed(1)}%</td>
+              </tr>
+            `;
+          }).join('');
+        } else {
+          // Single status - just show it
+          statusDisplay = `<span class="status-badge ${statusClass}">${this.escapeHtml(primaryStatus[0])}</span>`;
         }
       }
 
       return `
-        <tr class="${frequencyClass}">
+        <tr class="${frequencyClass} ${hasMultipleStatuses ? 'has-drilldown' : ''}" data-row-id="${rowId}">
           <td>${index + 1}</td>
           <td class="resource-url">${this.escapeHtml(resource.value)}</td>
           <td><span class="resource-type-badge ${resourceType}">${resourceType}</span></td>
-          <td class="resource-target ${hasStatus ? 'has-status' : ''}">${targetDisplay}</td>
+          <td class="resource-status">${statusDisplay}</td>
           <td class="resource-count ${countClass}">${resource.weight.toLocaleString()}</td>
           <td class="resource-percentage">${percentage.toFixed(1)}%</td>
         </tr>
+        ${drilldownRows}
       `;
     }).join('');
 
@@ -1666,17 +1857,64 @@ class ErrorDashboard extends HTMLElement {
 
     container.innerHTML = tableHeader + tableRows + tableFooter;
 
-    // Add click handlers for expandable targets
-    container.querySelectorAll('.target-expand-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const targetId = e.target.dataset.target;
-        const targetList = container.querySelector(`#${targetId}`);
-        if (targetList) {
-          const isExpanded = targetList.classList.toggle('expanded');
-          e.target.textContent = isExpanded ? '(collapse)' : e.target.textContent.replace('(collapse)', '');
+    // Add click handlers for entire row (single click to toggle, double click also toggles)
+    container.querySelectorAll('tr.has-drilldown').forEach(row => {
+      const rowId = row.dataset.rowId;
+      const toggle = row.querySelector('.status-drilldown-toggle');
+      
+      // Single click on row to expand/collapse
+      row.addEventListener('click', (e) => {
+        // Don't trigger if clicking on a link or button inside
+        if (e.target.closest('a, button')) return;
+        
+        const drilldownRows = container.querySelectorAll(`.drilldown-row.${rowId}`);
+        const isCurrentlyExpanded = row.classList.contains('expanded');
+        const newExpandedState = !isCurrentlyExpanded;
+        
+        row.classList.toggle('expanded', newExpandedState);
+        if (toggle) toggle.classList.toggle('expanded', newExpandedState);
+        
+        drilldownRows.forEach(dr => {
+          dr.classList.toggle('visible', newExpandedState);
+        });
+        
+        // Update indicator
+        const indicator = row.querySelector('.drilldown-indicator');
+        if (indicator) {
+          indicator.textContent = newExpandedState ? '▲ collapse' : `▼ ${drilldownRows.length} codes`;
+        }
+      });
+      
+      // Double click to collapse (if expanded)
+      row.addEventListener('dblclick', (e) => {
+        if (e.target.closest('a, button')) return;
+        
+        const drilldownRows = container.querySelectorAll(`.drilldown-row.${rowId}`);
+        
+        // Always collapse on double click
+        row.classList.remove('expanded');
+        if (toggle) toggle.classList.remove('expanded');
+        
+        drilldownRows.forEach(dr => {
+          dr.classList.remove('visible');
+        });
+        
+        // Update indicator to collapsed state
+        const indicator = row.querySelector('.drilldown-indicator');
+        if (indicator) {
+          indicator.textContent = `▼ ${drilldownRows.length} codes`;
         }
       });
     });
+  }
+
+  getStatusClass(status) {
+    if (/^5\d{2}$/.test(status)) return 'status-5xx';
+    if (/^4\d{2}$/.test(status)) return 'status-4xx';
+    if (/^3\d{2}$/.test(status)) return 'status-3xx';
+    if (/^2\d{2}$/.test(status)) return 'status-2xx';
+    if (status.toLowerCase().includes('error') || status.toLowerCase().includes('failed')) return 'status-error';
+    return 'status-other';
   }
 
   clearSelection() {

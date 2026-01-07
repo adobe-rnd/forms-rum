@@ -2,24 +2,53 @@ import { DataChunks, series, facets } from '@adobe/rum-distiller';
 
 /**
  * Categorize user agent string into device types
+ * Matches the User Agent pie chart categorization for consistency
  * @param {string} ua - User agent string
  * @returns {string} Device category
  */
 function categorizeDeviceType(ua) {
-  if (!ua) return 'Unknown';
+  if (!ua) return 'Others';
   const lowerUA = ua.toLowerCase();
   
-  // Mobile devices
-  if (lowerUA.includes('android')) return 'Mobile: Android';
-  if (lowerUA.includes('iphone') || lowerUA.includes('ipad') || lowerUA.includes('ipod')) return 'Mobile: iOS';
+  // Mobile: Android
+  if (lowerUA.includes('android')) {
+    return 'Mobile: Android';
+  }
   
-  // Desktop
-  if (lowerUA.includes('windows')) return 'Desktop: Windows';
-  if (lowerUA.includes('macintosh') || lowerUA.includes('mac os')) return 'Desktop: macOS';
-  if (lowerUA.includes('linux') && !lowerUA.includes('android')) return 'Desktop: Linux';
-  if (lowerUA.includes('cros')) return 'Desktop: ChromeOS';
+  // Mobile: iOS (iPhone, iPad, iPod, or "mobile:ios" format from RUM data)
+  if (lowerUA.includes('iphone') || lowerUA.includes('ipad') || lowerUA.includes('ipod') || 
+      lowerUA.includes('ios') || (lowerUA.includes('mac') && lowerUA.includes('mobile'))) {
+    return 'Mobile: iOS';
+  }
   
-  return 'Other';
+  // Desktop: Windows
+  if (lowerUA.includes('windows')) {
+    return 'Desktop: Windows';
+  }
+  
+  // Desktop: macOS
+  if (lowerUA.includes('macintosh') || lowerUA.includes('mac os') || 
+      (lowerUA.includes('mac') && !lowerUA.includes('mobile'))) {
+    return 'Desktop: macOS';
+  }
+  
+  // Desktop: Linux (but not Android which also contains 'linux')
+  if (lowerUA.includes('linux') && !lowerUA.includes('android')) {
+    return 'Desktop: Linux';
+  }
+  
+  // Desktop: Others (ChromeOS, generic desktop)
+  if (lowerUA.includes('cros') || lowerUA.includes('desktop')) {
+    return 'Desktop: Others';
+  }
+  
+  // Mobile: Others (generic mobile devices)
+  if (lowerUA.includes('mobile')) {
+    return 'Mobile: Others';
+  }
+  
+  // Fallback for completely unknown
+  return 'Others';
 }
 
 /**

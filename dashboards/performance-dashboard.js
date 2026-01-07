@@ -10,16 +10,39 @@ import '../charts/user-agent-pie-chart.js';
 import { performanceDataChunks } from '../datachunks.js';
 
 // Helper functions for filtering raw data
+// Matches User Agent pie chart categorization for consistency
 function categorizeDeviceType(ua) {
-  if (!ua) return 'Unknown';
+  if (!ua) return 'Others';
   const lowerUA = ua.toLowerCase();
+  
+  // Mobile: Android
   if (lowerUA.includes('android')) return 'Mobile: Android';
-  if (lowerUA.includes('iphone') || lowerUA.includes('ipad') || lowerUA.includes('ipod')) return 'Mobile: iOS';
+  
+  // Mobile: iOS (iPhone, iPad, iPod, or "mobile:ios" format from RUM data)
+  if (lowerUA.includes('iphone') || lowerUA.includes('ipad') || lowerUA.includes('ipod') || 
+      lowerUA.includes('ios') || (lowerUA.includes('mac') && lowerUA.includes('mobile'))) {
+    return 'Mobile: iOS';
+  }
+  
+  // Desktop: Windows
   if (lowerUA.includes('windows')) return 'Desktop: Windows';
-  if (lowerUA.includes('macintosh') || lowerUA.includes('mac os')) return 'Desktop: macOS';
+  
+  // Desktop: macOS
+  if (lowerUA.includes('macintosh') || lowerUA.includes('mac os') || 
+      (lowerUA.includes('mac') && !lowerUA.includes('mobile'))) {
+    return 'Desktop: macOS';
+  }
+  
+  // Desktop: Linux (but not Android)
   if (lowerUA.includes('linux') && !lowerUA.includes('android')) return 'Desktop: Linux';
-  if (lowerUA.includes('cros')) return 'Desktop: ChromeOS';
-  return 'Other';
+  
+  // Desktop: Others (ChromeOS, generic desktop)
+  if (lowerUA.includes('cros') || lowerUA.includes('desktop')) return 'Desktop: Others';
+  
+  // Mobile: Others (generic mobile devices)
+  if (lowerUA.includes('mobile')) return 'Mobile: Others';
+  
+  return 'Others';
 }
 
 function normalizeSourceValue(src) {
@@ -530,27 +553,28 @@ class PerformanceDashboard extends HTMLElement {
   populateTopFilters() {
     if (!this.dataChunks) return;
 
-    // Populate device type filter
+    // Populate device type filter - use weight for consistency with User Agent chart
     const deviceFilter = this.shadowRoot.getElementById('device-filter');
     const deviceTypes = this.dataChunks.facets.deviceType || [];
     
     deviceFilter.innerHTML = '<option value="">+ Add Device...</option>';
     deviceTypes
-      .sort((a, b) => b.count - a.count)
+      .sort((a, b) => b.weight - a.weight)
       .forEach(dt => {
         const option = document.createElement('option');
         option.value = dt.value;
-        option.textContent = `${dt.value} (${dt.count})`;
+        // Use weight (extrapolated page views) for consistency
+        option.textContent = `${dt.value} (${dt.weight.toLocaleString()})`;
         deviceFilter.appendChild(option);
       });
 
-    // Populate source filter
+    // Populate source filter - use weight for consistency
     const sourceFilter = this.shadowRoot.getElementById('source-filter');
     const sources = this.dataChunks.facets.source || [];
     
     sourceFilter.innerHTML = '<option value="">+ Add Source...</option>';
     sources
-      .sort((a, b) => b.count - a.count)
+      .sort((a, b) => b.weight - a.weight)
       .slice(0, 50)
       .forEach(src => {
         const option = document.createElement('option');
@@ -558,7 +582,8 @@ class PerformanceDashboard extends HTMLElement {
         const displayText = src.value.length > 60 
           ? src.value.substring(0, 57) + '...' 
           : src.value;
-        option.textContent = `${displayText} (${src.count})`;
+        // Use weight (extrapolated page views) for consistency
+        option.textContent = `${displayText} (${src.weight.toLocaleString()})`;
         sourceFilter.appendChild(option);
       });
 
@@ -680,9 +705,10 @@ class PerformanceDashboard extends HTMLElement {
     if (!this.dataChunks) return;
     const uaChart = this.shadowRoot.getElementById('user-agent-chart');
     if (!uaChart) return;
-    // Show user agent distribution for the filtered data
-    const userAgentFacets = this.dataChunks.facets.userAgent || [];
-    uaChart.setData(userAgentFacets);
+    // Use deviceType facet which is already aggregated and matches Total Page Views
+    const deviceTypeFacets = this.dataChunks.facets.deviceType || [];
+    const totalPageViews = this.dataChunks.totals.pageViews?.sum || 0;
+    uaChart.setData(deviceTypeFacets, totalPageViews);
   }
 
   updateChart() {
