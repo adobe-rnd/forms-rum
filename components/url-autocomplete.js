@@ -241,6 +241,7 @@ class URLAutocomplete extends HTMLElement {
         break;
 
       case 'Enter':
+      case 'Tab':
         e.preventDefault();
         if (this.selectedIndex >= 0 && this.selectedIndex < this.filteredUrls.length) {
           this.selectUrl(this.filteredUrls[this.selectedIndex]);
