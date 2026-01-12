@@ -20,6 +20,41 @@ const domainKey = await fetchDomainKey(domain);
 dataLoader.domainKey = domainKey;
 dataLoader.domain = domain;
 
+function formatLocalYMD(date) {
+  const dt = date instanceof Date ? date : new Date(date);
+  const y = dt.getFullYear();
+  const m = String(dt.getMonth() + 1).padStart(2, '0');
+  const d = String(dt.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
+function parseLocalYMD(dateString) {
+  if (!dateString || typeof dateString !== 'string') return null;
+  const m = dateString.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return null;
+  const y = Number(m[1]);
+  const mo = Number(m[2]) - 1;
+  const d = Number(m[3]);
+  const dt = new Date(y, mo, d);
+  if (dt.getFullYear() !== y || dt.getMonth() !== mo || dt.getDate() !== d) return null;
+  return dt;
+}
+
+// Convert a local YYYY-MM-DD to UTC ISO instants covering that local day.
+function localRangeToUTCISOs(startLocalYMD, endLocalYMD) {
+  const s = parseLocalYMD(startLocalYMD);
+  const e = parseLocalYMD(endLocalYMD);
+  if (!s || !e) return null;
+
+  const start = new Date(s);
+  start.setHours(0, 0, 0, 0);
+
+  const end = new Date(e);
+  end.setHours(23, 59, 59, 999);
+
+  return { startUTC: start.toISOString(), endUTC: end.toISOString() };
+}
+
 // URL Parameter Management
 function getURLParams() {
   const params = new URLSearchParams(window.location.search);
@@ -186,7 +221,12 @@ function normalizeSourceValue(src) {
 
 async function loadData(startDate, endDate) {
   await loadSourceAliasesOnce();
-  currentData = await dataLoader.fetchDateRange(startDate, endDate);
+  const utc = localRangeToUTCISOs(startDate, endDate);
+  if (!utc) {
+    currentData = [];
+    return;
+  }
+  currentData = await dataLoader.fetchDateRange(utc.startUTC, utc.endUTC);
   // Update the URLs autocomplete with new data
   const newDataChunks = new DataChunks();
   newDataChunks.load(currentData);
@@ -246,8 +286,12 @@ window.addEventListener('popstate', () => {
 setupEventListeners();
 const params = getURLParams();
 const dateRangePicker = document.getElementById('date-range-picker');
-const today = new Date().toISOString().split('T')[0];
-const oneWeekAgo = new Date(new Date().setDate(new Date().getDate() - 7)).toISOString().split('T')[0];
+const today = formatLocalYMD(new Date());
+const oneWeekAgo = (() => {
+  const d = new Date();
+  d.setDate(d.getDate() - 7);
+  return formatLocalYMD(d);
+})();
 dateRangePicker.setDates(oneWeekAgo, today);
 const urlAutocomplete = document.getElementById('url-autocomplete');
 const defaults = {

@@ -37,11 +37,10 @@ class DateRangePicker extends HTMLElement {
   }
 
   calculateDaysDifference(startDate, endDate) {
-    const start = new Date(startDate);
-    const end = new Date(endDate);
-    const diffTime = end - start;
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    return diffDays;
+    const startUtc = this.localDateStringToUTCMidnightMs(startDate);
+    const endUtc = this.localDateStringToUTCMidnightMs(endDate);
+    if (Number.isNaN(startUtc) || Number.isNaN(endUtc)) return NaN;
+    return Math.round((endUtc - startUtc) / (1000 * 60 * 60 * 24));
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -67,9 +66,7 @@ class DateRangePicker extends HTMLElement {
     const placeholder = this.getAttribute('placeholder') || 'Select date range';
     const startDate = this.getAttribute('start') || '';
     const endDate = this.getAttribute('end') || '';
-    const now = new Date();
-    const todayLocal = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    const maxDate = this.format(todayLocal);
+    const maxDate = this.formatLocalYMD(new Date());
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -277,9 +274,7 @@ class DateRangePicker extends HTMLElement {
   setupEventListeners() {
     const startDateInput = this.shadowRoot.getElementById('start-date');
     const endDateInput = this.shadowRoot.getElementById('end-date');
-    const now = new Date();
-    const todayLocal = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    const todayISO = this.format(todayLocal);
+    const todayISO = this.formatLocalYMD(new Date());
     // Enforce max selectable date as today
     startDateInput.max = todayISO;
     endDateInput.max = todayISO;
@@ -373,15 +368,17 @@ class DateRangePicker extends HTMLElement {
   }
 
   addDays(dateString, days) {
-    const date = new Date(dateString);
+    const date = this.parseLocalYMD(dateString);
+    if (!date) return dateString;
     date.setDate(date.getDate() + days);
-    return date.toISOString().split('T')[0];
+    return this.formatLocalYMD(date);
   }
 
   subtractDays(dateString, days) {
-    const date = new Date(dateString);
+    const date = this.parseLocalYMD(dateString);
+    if (!date) return dateString;
     date.setDate(date.getDate() - days);
-    return date.toISOString().split('T')[0];
+    return this.formatLocalYMD(date);
   }
 
   validateAndStoreDifference() {
@@ -438,11 +435,18 @@ class DateRangePicker extends HTMLElement {
       return { valid: false, message: 'Both dates are required' };
     }
 
-    const start = new Date(startDate);
-    const end = new Date(endDate);
+    const startMs = this.localDateStringToUTCMidnightMs(startDate);
+    const endMs = this.localDateStringToUTCMidnightMs(endDate);
+    if (Number.isNaN(startMs) || Number.isNaN(endMs)) {
+      startDateInput.classList.add('error');
+      endDateInput.classList.add('error');
+      errorMessage.textContent = 'Invalid date range';
+      errorMessage.classList.add('visible');
+      return { valid: false, message: 'Invalid date range' };
+    }
 
     // Check if end date is before start date
-    if (end < start) {
+    if (endMs < startMs) {
       startDateInput.classList.add('error');
       endDateInput.classList.add('error');
       errorMessage.textContent = 'End date must be after start date';
@@ -451,8 +455,7 @@ class DateRangePicker extends HTMLElement {
     }
 
     // Check if dates are more than 7 days apart
-    const diffTime = Math.abs(end - start);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const diffDays = Math.abs(Math.round((endMs - startMs) / (1000 * 60 * 60 * 24)));
 
     if (diffDays > 7) {
       startDateInput.classList.add('error');
@@ -483,9 +486,7 @@ class DateRangePicker extends HTMLElement {
   }
 
   setDates(startDate, endDate) {
-    const now = new Date();
-    const todayLocal = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    const todayISO = this.format(todayLocal);
+    const todayISO = this.formatLocalYMD(new Date());
     const safeStart = startDate && startDate > todayISO ? todayISO : startDate;
     const safeEnd = endDate && endDate > todayISO ? todayISO : endDate;
     this.setAttribute('start', safeStart);
@@ -511,16 +512,40 @@ class DateRangePicker extends HTMLElement {
   }
 
   // Helpers for presets
-  format(date) {
-    return date.toISOString().split('T')[0];
+  parseLocalYMD(dateString) {
+    if (!dateString || typeof dateString !== 'string') return null;
+    const m = dateString.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!m) return null;
+    const y = Number(m[1]);
+    const mo = Number(m[2]) - 1;
+    const d = Number(m[3]);
+    const dt = new Date(y, mo, d);
+    // Validate round-trip to avoid JS auto-corrections (e.g. 2026-02-31)
+    if (dt.getFullYear() !== y || dt.getMonth() !== mo || dt.getDate() !== d) return null;
+    return dt;
+  }
+
+  formatLocalYMD(date) {
+    const dt = date instanceof Date ? date : new Date(date);
+    const y = dt.getFullYear();
+    const m = String(dt.getMonth() + 1).padStart(2, '0');
+    const d = String(dt.getDate()).padStart(2, '0');
+    return `${y}-${m}-${d}`;
+  }
+
+  localDateStringToUTCMidnightMs(dateString) {
+    const m = dateString?.match?.(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!m) return NaN;
+    const y = Number(m[1]);
+    const mo = Number(m[2]) - 1;
+    const d = Number(m[3]);
+    return Date.UTC(y, mo, d);
   }
 
   clearDynamicBounds() {
     const startDateInput = this.shadowRoot.getElementById('start-date');
     const endDateInput = this.shadowRoot.getElementById('end-date');
-    const now = new Date();
-    const todayLocal = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    const todayISO = this.format(todayLocal);
+    const todayISO = this.formatLocalYMD(new Date());
     // Allow picking either side first; invalid combos will be corrected by validation
     startDateInput.min = '';
     startDateInput.max = todayISO;
@@ -529,25 +554,25 @@ class DateRangePicker extends HTMLElement {
   }
 
   getPresetDates(preset) {
-    const now = new Date();
     // Ensure we operate on local midnight boundaries
+    const now = new Date();
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
     if (preset === 'today') {
-      const d = this.format(today);
+      const d = this.formatLocalYMD(today);
       return { start: d, end: d };
     }
     if (preset === 'yesterday') {
       const y = new Date(today);
       y.setDate(y.getDate() - 1);
-      const d = this.format(y);
+      const d = this.formatLocalYMD(y);
       return { start: d, end: d };
     }
     if (preset === 'last7') {
-      const end = this.format(today);
+      const end = this.formatLocalYMD(today);
       const startDate = new Date(today);
       startDate.setDate(startDate.getDate() - 6); // inclusive range of 7 days
-      const start = this.format(startDate);
+      const start = this.formatLocalYMD(startDate);
       return { start, end };
     }
     return { start: null, end: null };
@@ -569,13 +594,13 @@ class DateRangePicker extends HTMLElement {
     if (!start || !end) return;
     const now = new Date();
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    const todayStr = this.format(today);
+    const todayStr = this.formatLocalYMD(today);
     const yesterday = new Date(today);
     yesterday.setDate(yesterday.getDate() - 1);
-    const yesterdayStr = this.format(yesterday);
+    const yesterdayStr = this.formatLocalYMD(yesterday);
     const last7Start = new Date(today);
     last7Start.setDate(last7Start.getDate() - 6);
-    const last7StartStr = this.format(last7Start);
+    const last7StartStr = this.formatLocalYMD(last7Start);
 
     if (start === todayStr && end === todayStr) {
       this.setActivePreset('today');
@@ -591,7 +616,7 @@ class DateRangePicker extends HTMLElement {
   // UX helpers
   formatHuman(dateString) {
     try {
-      const d = new Date(dateString);
+      const d = this.parseLocalYMD(dateString) || new Date(dateString);
       return d.toLocaleDateString(undefined, { day: '2-digit', month: 'short', year: 'numeric' });
     } catch (e) {
       return dateString;
@@ -607,10 +632,10 @@ class DateRangePicker extends HTMLElement {
       el.textContent = '';
       return;
     }
-    const startDate = new Date(start);
-    const endDate = new Date(end);
+    const startMs = this.localDateStringToUTCMidnightMs(start);
+    const endMs = this.localDateStringToUTCMidnightMs(end);
     const dayMs = 1000 * 60 * 60 * 24;
-    const diffDaysInclusive = Math.floor((endDate - startDate) / dayMs) + 1;
+    const diffDaysInclusive = Math.round((endMs - startMs) / dayMs) + 1;
     const daysText = diffDaysInclusive === 1 ? '1 day' : `${diffDaysInclusive} days`;
     el.textContent = `Selected: ${this.formatHuman(start)} → ${this.formatHuman(end)} (${daysText})`;
   }
