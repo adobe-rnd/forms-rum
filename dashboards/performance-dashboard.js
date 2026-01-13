@@ -73,7 +73,6 @@ class PerformanceDashboard extends HTMLElement {
     this.dataChunks = null;
     this.rawData = null; // Store raw data for re-filtering
     this.url = '';
-    this.isLoading = true;
     // Top-level filter state (both are multi-select, empty = all)
     this.selectedDeviceTypes = [];
     this.selectedSources = [];
@@ -103,39 +102,6 @@ class PerformanceDashboard extends HTMLElement {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           padding: 24px;
           margin-bottom: 20px;
-        }
-
-        .dashboard-loading-overlay {
-          position: absolute;
-          inset: 0;
-          display: ${this.isLoading ? 'flex' : 'none'};
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 12px;
-          background: rgba(255, 255, 255, 0.92);
-          border-radius: 8px;
-          z-index: 10;
-        }
-
-        .dashboard-loading-spinner {
-          width: 46px;
-          height: 46px;
-          border: 4px solid #f3f4f6;
-          border-top: 4px solid #2563eb;
-          border-radius: 50%;
-          animation: dashboardSpin 1s linear infinite;
-        }
-
-        @keyframes dashboardSpin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-
-        .dashboard-loading-text {
-          color: #6b7280;
-          font-size: 0.95rem;
-          font-weight: 600;
         }
 
         .dashboard-header {
@@ -450,10 +416,6 @@ class PerformanceDashboard extends HTMLElement {
       </style>
 
       <div class="dashboard-container">
-        <div id="dashboard-loading-overlay" class="dashboard-loading-overlay" aria-live="polite" aria-busy="${this.isLoading ? 'true' : 'false'}">
-          <div class="dashboard-loading-spinner"></div>
-          <div class="dashboard-loading-text">Loading Performance Dashboard…</div>
-        </div>
         <div class="top-filters-bar" id="top-filters-bar">
           <div class="filters-row">
             <div class="filter-column">
@@ -527,13 +489,6 @@ class PerformanceDashboard extends HTMLElement {
     `;
   }
 
-  updateLoadingOverlay() {
-    const overlay = this.shadowRoot?.getElementById('dashboard-loading-overlay');
-    if (!overlay) return;
-    overlay.style.display = this.isLoading ? 'flex' : 'none';
-    overlay.setAttribute('aria-busy', this.isLoading ? 'true' : 'false');
-  }
-
   setupEventListeners() {
     const statP50 = this.shadowRoot.getElementById('stat-p50');
     const statP75 = this.shadowRoot.getElementById('stat-p75');
@@ -594,8 +549,6 @@ class PerformanceDashboard extends HTMLElement {
     this.aliasMap = aliasMap || null;
     this.populateTopFilters();
     this.applyTopFilters();
-    this.isLoading = false;
-    this.updateLoadingOverlay();
   }
 
   populateTopFilters() {

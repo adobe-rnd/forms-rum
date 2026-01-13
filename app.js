@@ -8,6 +8,7 @@ import LoadDashboard from './dashboards/performance-dashboard.js';
 import EngagementDashboard from './dashboards/engagement-dashboard.js';
 import ResourceDashboard from './dashboards/resource-dashboard.js';
 import { errorDataChunks, performanceDataChunks, engagementDataChunks, resourceDataChunks } from './datachunks.js';
+import { formatLocalYMD, localRangeToUTCISOs } from './utils/date-utils.js';
 
 
 
@@ -19,41 +20,6 @@ const domainKey = await fetchDomainKey(domain);
 // updateURLParams({ domainKey });
 dataLoader.domainKey = domainKey;
 dataLoader.domain = domain;
-
-function formatLocalYMD(date) {
-  const dt = date instanceof Date ? date : new Date(date);
-  const y = dt.getFullYear();
-  const m = String(dt.getMonth() + 1).padStart(2, '0');
-  const d = String(dt.getDate()).padStart(2, '0');
-  return `${y}-${m}-${d}`;
-}
-
-function parseLocalYMD(dateString) {
-  if (!dateString || typeof dateString !== 'string') return null;
-  const m = dateString.match(/^(\d{4})-(\d{2})-(\d{2})$/);
-  if (!m) return null;
-  const y = Number(m[1]);
-  const mo = Number(m[2]) - 1;
-  const d = Number(m[3]);
-  const dt = new Date(y, mo, d);
-  if (dt.getFullYear() !== y || dt.getMonth() !== mo || dt.getDate() !== d) return null;
-  return dt;
-}
-
-// Convert a local YYYY-MM-DD to UTC ISO instants covering that local day.
-function localRangeToUTCISOs(startLocalYMD, endLocalYMD) {
-  const s = parseLocalYMD(startLocalYMD);
-  const e = parseLocalYMD(endLocalYMD);
-  if (!s || !e) return null;
-
-  const start = new Date(s);
-  start.setHours(0, 0, 0, 0);
-
-  const end = new Date(e);
-  end.setHours(23, 59, 59, 999);
-
-  return { startUTC: start.toISOString(), endUTC: end.toISOString() };
-}
 
 // URL Parameter Management
 function getURLParams() {
