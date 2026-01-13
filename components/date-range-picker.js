@@ -36,7 +36,7 @@ class DateRangePicker extends HTMLElement {
 
     if (startDate && endDate) {
       const diff = this.calculateDaysDifference(startDate, endDate);
-      if (diff >= 0 && diff <= 7) {
+      if (diff >= 1 && diff <= 7) {
         this.lastValidDifference = diff;
       }
     }
@@ -52,13 +52,13 @@ class DateRangePicker extends HTMLElement {
   attributeChangedCallback(name, oldValue, newValue) {
     // Guard: shadowRoot may not be rendered yet
     if (!this.shadowRoot) return;
-    
+
     const startDateInput = this.shadowRoot.getElementById('start-date');
     const endDateInput = this.shadowRoot.getElementById('end-date');
-    
+
     // Guard: elements may not exist yet if called before render()
     if (!startDateInput || !endDateInput) return;
-    
+
     if (name === 'start' || name === 'end') {
       if (name === 'start') {
         startDateInput.value = newValue || '';
@@ -239,7 +239,7 @@ class DateRangePicker extends HTMLElement {
 
       <div class="date-range-container">
         <div class="preset-bar">
-          <span class="preset-label">Choose a Date Range (Max 7 Days)</span>
+          <span class="preset-label">Choose a Date Range (1-7 Days)</span>
           <span id="selection-summary" class="selection-summary" aria-live="polite"></span>
         </div>
         <div class="presets" aria-label="Quick date ranges">
@@ -301,7 +301,7 @@ class DateRangePicker extends HTMLElement {
 
         // If range exceeds 7 days or end date is before start date, clamp to max 7 days
         if (currentDiff > 7 || currentDiff < 0) {
-          const daysUntilToday = Math.max(0, Math.ceil((new Date(todayISO) - new Date(startDateInput.value)) / (1000 * 60 * 60 * 24)));
+          const daysUntilToday = Math.max(1, Math.ceil((new Date(todayISO) - new Date(startDateInput.value)) / (1000 * 60 * 60 * 24)));
           const clamped = Math.min(7, daysUntilToday);
           const newEndDate = this.addDays(startDateInput.value, clamped);
           endDateInput.value = newEndDate;
