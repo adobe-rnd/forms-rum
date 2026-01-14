@@ -1,0 +1,1500 @@
+{
+  "url": "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_ccforms/forms/etb-bte/etb-balance-transfer-on-emi.html",
+  "urlKey": "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_ccforms/forms/etb-bte/etb-balance-transfer-on-emi.html",
+  "formName": "Balance Transfer on Credit Card EMI Online | HDFC Bank",
+  "ok": true,
+  "error": null,
+  "rows": [
+    {
+      "label": "Choose Loan Amount Credit Card Banner Text",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].chooseLoanAmountBannerText[0]"
+    },
+    {
+      "label": "Choose Loan Amount Credit Card Banner Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].chooseLoanAmountBannerText[0]"
+    },
+    {
+      "label": "Choose Loan Amount Credit Card Banner Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].chooseLoanAmountBannerText[0]"
+    },
+    {
+      "label": "Pre Execution Credit Card Banner Text",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-guidetextbox_351094360___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_351094360__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].preexecutionCreditCardBannerText[0]"
+    },
+    {
+      "label": "Pre Execution Credit Card Banner Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_351094360___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_351094360__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].preexecutionCreditCardBannerText[0]"
+    },
+    {
+      "label": "Pre Execution Credit Card Banner Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_351094360___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_351094360__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].preexecutionCreditCardBannerText[0]"
+    },
+    {
+      "label": "BTE Loan Fulfillment Banner Text",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-guidetextbox_496513356___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_496513356__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].LoanFulfilledCreditCardBannerText[0]"
+    },
+    {
+      "label": "BTE Loan Fulfillment Banner Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_496513356___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_496513356__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].LoanFulfilledCreditCardBannerText[0]"
+    },
+    {
+      "label": "BTE Loan Fulfillment Banner Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_496513356___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_496513356__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].LoanFulfilledCreditCardBannerText[0]"
+    },
+    {
+      "label": "Card Number",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_140517502___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_140517502__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].cardnumber[0]"
+    },
+    {
+      "label": "Card Number",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_140517502___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_140517502__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].cardnumber[0]"
+    },
+    {
+      "label": "Card Number",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_140517502___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_140517502__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].cardnumber[0]"
+    },
+    {
+      "label": "Card Type",
+      "selector": "form#guideContainerForm select#guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidedropdownlist___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidedropdownlist__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].cardtype[0]"
+    },
+    {
+      "label": "Card Type",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidedropdownlist___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidedropdownlist__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].cardtype[0]"
+    },
+    {
+      "label": "Card Type",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidedropdownlist___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidedropdownlist__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].cardtype[0]"
+    },
+    {
+      "label": "Credit component title",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_1986429552___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_1986429552__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].componentTitle[0]"
+    },
+    {
+      "label": "Credit component title",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_1986429552___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_1986429552__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].componentTitle[0]"
+    },
+    {
+      "label": "Credit component title",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_1986429552___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_1986429552__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].componentTitle[0]"
+    },
+    {
+      "label": "Welcome Note",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_473746325___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_473746325__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].welcomeNote[0]"
+    },
+    {
+      "label": "Welcome Note",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_473746325___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_473746325__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].welcomeNote[0]"
+    },
+    {
+      "label": "Welcome Note",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_473746325___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_473746325__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].welcomeNote[0]"
+    },
+    {
+      "label": "Eligible Text",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_506702963___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_506702963__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].eligibletext[0]"
+    },
+    {
+      "label": "Eligible Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_506702963___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_506702963__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].eligibletext[0]"
+    },
+    {
+      "label": "Eligible Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_506702963___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_506702963__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].eligibletext[0]"
+    },
+    {
+      "label": "Card Number Text",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_625253837___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_625253837__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].cardnumbertext[0]"
+    },
+    {
+      "label": "Card Number Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_625253837___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_625253837__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].cardnumbertext[0]"
+    },
+    {
+      "label": "Card Number Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_625253837___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_625253837__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].cardnumbertext[0]"
+    },
+    {
+      "label": "custname",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].custname[0]"
+    },
+    {
+      "label": "custname",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].custname[0]"
+    },
+    {
+      "label": "custname",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].custname[0]"
+    },
+    {
+      "label": "Card Amount",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_501571017___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_501571017__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].cardAmount[0]"
+    },
+    {
+      "label": "Card Amount",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_501571017___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_501571017__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].cardAmount[0]"
+    },
+    {
+      "label": "Card Amount",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_501571017___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_392416856_copy-panel_copy-guidetextbox_501571017__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].creditcardcomp[0].custdetails[0].cardAmount[0]"
+    },
+    {
+      "label": "+91",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596768258331-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596768258331-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].Phone-section[0].phoneNumber[0]"
+    },
+    {
+      "label": "+91",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596768258331-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596768258331-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].Phone-section[0].phoneNumber[0]"
+    },
+    {
+      "label": "+91",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596768258331-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596768258331-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].Phone-section[0].phoneNumber[0]"
+    },
+    {
+      "label": "CCDigit1",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox_1475___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox_1475__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].credit-card-number[0].creditcardnumberpanel[0].ccDigit1[0]"
+    },
+    {
+      "label": "CCDigit1",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox_1475___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox_1475__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].credit-card-number[0].creditcardnumberpanel[0].ccDigit1[0]"
+    },
+    {
+      "label": "CCDigit2",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox_1684___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox_1684__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].credit-card-number[0].creditcardnumberpanel[0].ccDigit2[0]"
+    },
+    {
+      "label": "CCDigit2",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox_1684___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox_1684__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].credit-card-number[0].creditcardnumberpanel[0].ccDigit2[0]"
+    },
+    {
+      "label": "CCDigit3",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox_1088___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox_1088__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].credit-card-number[0].creditcardnumberpanel[0].ccDigit3[0]"
+    },
+    {
+      "label": "CCDigit3",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox_1088___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox_1088__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].credit-card-number[0].creditcardnumberpanel[0].ccDigit3[0]"
+    },
+    {
+      "label": "CCDigit4",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].credit-card-number[0].creditcardnumberpanel[0].ccDigit4[0]"
+    },
+    {
+      "label": "CCDigit4",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].credit-card-number[0].creditcardnumberpanel[0].ccDigit4[0]"
+    },
+    {
+      "label": "Last 4 Credit Card Digits - Hidden",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-guidetextbox_1324233686___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-guidetextbox_1324233686__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].credit-card-number[0].last4CCNo[0]"
+    },
+    {
+      "label": "Last 4 Credit Card Digits - Hidden",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-guidetextbox_1324233686___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-guidetextbox_1324233686__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].credit-card-number[0].last4CCNo[0]"
+    },
+    {
+      "label": "Last 4 Credit Card Digits - Hidden",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-guidetextbox_1324233686___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-panel1596801892282-panel1596770469315-guidetextbox_1324233686__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phone-credit-number[0].credit-card-number[0].last4CCNo[0]"
+    },
+    {
+      "label": "Phone Number Title",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidetextbox_1133817___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidetextbox_1133817__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phoneNumberTitleHidden[0]"
+    },
+    {
+      "label": "Phone Number Title",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidetextbox_1133817___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidetextbox_1133817__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phoneNumberTitleHidden[0]"
+    },
+    {
+      "label": "Phone Number Title",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidetextbox_1133817___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidetextbox_1133817__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].phoneNumberTitleHidden[0]"
+    },
+    {
+      "label": "Privacy Policy Hidden Checkbox",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidecheckbox___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].privacyPolicyHiddenCheckbox[0]"
+    },
+    {
+      "label": "Privacy Policy Hidden Checkbox",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidecheckbox___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].privacyPolicyHiddenCheckbox[0]"
+    },
+    {
+      "label": "Privacy Policy Hidden Checkbox",
+      "selector": "form#guideContainerForm",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].privacyPolicyHiddenCheckbox[0]"
+    },
+    {
+      "label": "Privacy Policy Hidden Checkbox",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidecheckbox__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].privacyPolicyHiddenCheckbox[0]"
+    },
+    {
+      "label": "Get OTP to view offer>>  ",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidebutton_16248807___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidebutton_16248807__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].viewLoanEligibility[0]"
+    },
+    {
+      "label": "Get OTP to view offer>>  ",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidebutton_16248807___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel-guidebutton_16248807__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].WelcomePanel[0].viewLoanEligibility[0]"
+    },
+    {
+      "label": "Enter OTP Heading Text",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].EnterOTPHiddenText[0]"
+    },
+    {
+      "label": "Enter OTP Heading Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].EnterOTPHiddenText[0]"
+    },
+    {
+      "label": "Enter OTP Heading Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].EnterOTPHiddenText[0]"
+    },
+    {
+      "label": "OTP",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-panel1596683975354-panel-guidenumericbox_2076___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-panel1596683975354-panel-guidenumericbox_2076__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].EnterOTPIdentifyYourselfpanel[0].EnterOTP[1].otp[0]"
+    },
+    {
+      "label": "OTP",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-panel1596683975354-panel-guidenumericbox_2076___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-panel1596683975354-panel-guidenumericbox_2076__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].EnterOTPIdentifyYourselfpanel[0].EnterOTP[1].otp[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-panel1596683975354-panel_1963141018-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-panel1596683975354-panel_1963141018-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].EnterOTPIdentifyYourselfpanel[0].OTPpanel[0].seconds[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-panel1596683975354-panel_1963141018-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-panel1596683975354-panel_1963141018-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].EnterOTPIdentifyYourselfpanel[0].OTPpanel[0].seconds[0]"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-panel1596683975354-panel_1963141018-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-panel1596683975354-panel_1963141018-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].EnterOTPIdentifyYourselfpanel[0].OTPpanel[0].resendOTPButton[0]"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-panel1596683975354-panel_1963141018-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-panel1596683975354-panel_1963141018-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].EnterOTPIdentifyYourselfpanel[0].OTPpanel[0].resendOTPButton[0]"
+    },
+    {
+      "label": "View Offer>>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidebutton_56017444___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidebutton_56017444__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].authenticateButton1[0]"
+    },
+    {
+      "label": "View Offer>>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidebutton_56017444___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidebutton_56017444__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].authenticateButton1[0]"
+    },
+    {
+      "label": "Back",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].backButton1[0]"
+    },
+    {
+      "label": "Back",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596540636886-panel_107284393-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].IdentifyYourself[0].OTP1Section[0].backButton1[0]"
+    },
+    {
+      "label": "Minimum Processing Fee",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1612429026552-panel1596845257793_c-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1612429026552-panel1596845257793_c-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].LoanSliderAndDurationPanel[0].chooseBalanceTransferAmount[0].minProcessingFee[0]"
+    },
+    {
+      "label": "Minimum Processing Fee",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1612429026552-panel1596845257793_c-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1612429026552-panel1596845257793_c-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].LoanSliderAndDurationPanel[0].chooseBalanceTransferAmount[0].minProcessingFee[0]"
+    },
+    {
+      "label": "Minimum Processing Fee",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1612429026552-panel1596845257793_c-guidenumericbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1612429026552-panel1596845257793_c-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].LoanSliderAndDurationPanel[0].chooseBalanceTransferAmount[0].minProcessingFee[0]"
+    },
+    {
+      "label": "Minimum Loan Amount",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].minLoanAmount[0]"
+    },
+    {
+      "label": "Minimum Loan Amount",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].minLoanAmount[0]"
+    },
+    {
+      "label": "Minimum Loan Amount",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidenumericbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].minLoanAmount[0]"
+    },
+    {
+      "label": "Ineligible Message",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidetextbox_1471059391___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidetextbox_1471059391__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].ineligibleMessage[0]"
+    },
+    {
+      "label": "Ineligible Message",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidetextbox_1471059391___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidetextbox_1471059391__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].ineligibleMessage[0]"
+    },
+    {
+      "label": "Ineligible Message",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidetextbox_1471059391___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidetextbox_1471059391__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].ineligibleMessage[0]"
+    },
+    {
+      "label": "EMI Amount",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].monthlyEMI[0]"
+    },
+    {
+      "label": "EMI Amount",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].monthlyEMI[0]"
+    },
+    {
+      "label": "EMI Amount",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].monthlyEMI[0]"
+    },
+    {
+      "label": "Lowest Monthly Rate of Interest",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel_2055775555-rateofinterest_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel_2055775555-rateofinterest_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].roiAndProcessingPanel[0].rateOfInterestPanel[0].rateOfInterest[0]"
+    },
+    {
+      "label": "Lowest Monthly Rate of Interest",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel_2055775555-rateofinterest_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel_2055775555-rateofinterest_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].roiAndProcessingPanel[0].rateOfInterestPanel[0].rateOfInterest[0]"
+    },
+    {
+      "label": "Lowest Monthly Rate of Interest",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel_2055775555-rateofinterest_copy___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel_2055775555-rateofinterest_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].roiAndProcessingPanel[0].rateOfInterestPanel[0].rateOfInterest[0]"
+    },
+    {
+      "label": "Annual Rate Of Interest",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel_2055775555-guidetextdraw___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel_2055775555-guidetextdraw__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].roiAndProcessingPanel[0].rateOfInterestPanel[0].annualRateOfInterest[0]"
+    },
+    {
+      "label": "Annual Rate Of Interest",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel_2055775555-guidetextdraw___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel_2055775555-guidetextdraw__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].roiAndProcessingPanel[0].rateOfInterestPanel[0].annualRateOfInterest[0]"
+    },
+    {
+      "label": "Processing Fee",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel-processingfee___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel-processingfee__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].roiAndProcessingPanel[0].processingFeePanel[0].processingFee[0]"
+    },
+    {
+      "label": "Processing Fee",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel-processingfee___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel-processingfee__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].roiAndProcessingPanel[0].processingFeePanel[0].processingFee[0]"
+    },
+    {
+      "label": "Processing Fee",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel-processingfee___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1596830656882_c-panel-processingfee__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].roiAndProcessingPanel[0].processingFeePanel[0].processingFee[0]"
+    },
+    {
+      "label": "Net Amount Payable to your other bank Credit Card",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1597853023609_c-panel1597464779832-loaneligibility___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1597853023609_c-panel1597464779832-loaneligibility__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].loanAmountPanelMain[0].loanAmountPanel[0].netAmountPayable[0]"
+    },
+    {
+      "label": "Net Amount Payable to your other bank Credit Card",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1597853023609_c-panel1597464779832-loaneligibility___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1597853023609_c-panel1597464779832-loaneligibility__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].loanAmountPanelMain[0].loanAmountPanel[0].netAmountPayable[0]"
+    },
+    {
+      "label": "Net Amount Payable to your other bank Credit Card",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1597853023609_c-panel1597464779832-loaneligibility___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel1597853023609_c-panel1597464779832-loaneligibility__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].loanAmountPanelMain[0].loanAmountPanel[0].netAmountPayable[0]"
+    },
+    {
+      "label": "Other Bank List",
+      "selector": "form#guideContainerForm select#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidedropdownlist___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidedropdownlist__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].otherBankDropdown[0]"
+    },
+    {
+      "label": "Other Bank List",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidedropdownlist___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidedropdownlist__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].otherBankDropdown[0]"
+    },
+    {
+      "label": "Other Bank List",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidedropdownlist___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidedropdownlist__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].otherBankDropdown[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel-guidecheckbox___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].bankNamePanelOther[0].checkboxPanel[0].otherNotInList[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel-guidecheckbox___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].bankNamePanelOther[0].checkboxPanel[0].otherNotInList[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel-guidecheckbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].bankNamePanelOther[0].checkboxPanel[0].otherNotInList[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel-guidecheckbox__ > div:nth-of-type(2) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].bankNamePanelOther[0].checkboxPanel[0].otherNotInList[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel_95509611-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel_95509611-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].bankNamePanelOther[0].otherBankNameTypeaheadPanel[0].otherBankName[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel_95509611-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel_95509611-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].bankNamePanelOther[0].otherBankNameTypeaheadPanel[0].otherBankName[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel_95509611-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel_95509611-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].bankNamePanelOther[0].otherBankNameTypeaheadPanel[0].otherBankName[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel_95509611-guidetextbox_2003919___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel_95509611-guidetextbox_2003919__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].bankNamePanelOther[0].otherBankNameTypeaheadPanel[0].otherBankNameNotInList[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel_95509611-guidetextbox_2003919___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel_95509611-guidetextbox_2003919__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].bankNamePanelOther[0].otherBankNameTypeaheadPanel[0].otherBankNameNotInList[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel_95509611-guidetextbox_2003919___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-panel-panel_95509611-guidetextbox_2003919__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].bankNamePanelOther[0].otherBankNameTypeaheadPanel[0].otherBankNameNotInList[0]"
+    },
+    {
+      "label": "Other Bank Credit Card Number",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidetextbox_1385290___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidetextbox_1385290__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].otherBankCreditCardNumber[0]"
+    },
+    {
+      "label": "Other Bank Credit Card Number",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidetextbox_1385290___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidetextbox_1385290__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].otherBankCreditCardNumber[0]"
+    },
+    {
+      "label": "Other Bank Credit Card Number",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidetextbox_1385290___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidetextbox_1385290__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].otherBankCreditCardNumber[0]"
+    },
+    {
+      "label": "If HDFC Card Entered Error Message",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].notHDFCCardMessage[0]"
+    },
+    {
+      "label": "If HDFC Card Entered Error Message",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].notHDFCCardMessage[0]"
+    },
+    {
+      "label": "If HDFC Card Entered Error Message",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-panel1612437486775-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].bankDetailPanel[0].notHDFCCardMessage[0]"
+    },
+    {
+      "label": "Confirm Bank Credit Card Number",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-guidetextbox_1831944___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-guidetextbox_1831944__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].confirmBankCreditCardNumber[0]"
+    },
+    {
+      "label": "Confirm Bank Credit Card Number",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-guidetextbox_1831944___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-guidetextbox_1831944__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].confirmBankCreditCardNumber[0]"
+    },
+    {
+      "label": "Confirm Bank Credit Card Number",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-guidetextbox_1831944___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel1612435570697-guidetextbox_1831944__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].cardDetailSection[0].confirmBankCreditCardNumber[0]"
+    },
+    {
+      "label": "Issued to",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].demandDraftDetails[0].DDDetailsPanel[0].IssuedToPanel[0].issuedTo[0]"
+    },
+    {
+      "label": "Issued to",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].demandDraftDetails[0].DDDetailsPanel[0].IssuedToPanel[0].issuedTo[0]"
+    },
+    {
+      "label": "Issued to",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].demandDraftDetails[0].DDDetailsPanel[0].IssuedToPanel[0].issuedTo[0]"
+    },
+    {
+      "label": "Bank Name",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextbox_1041723___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextbox_1041723__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].demandDraftDetails[0].DDDetailsPanel[0].IssuedToPanel[0].bankNameDD[0]"
+    },
+    {
+      "label": "Bank Name",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextbox_1041723___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextbox_1041723__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].demandDraftDetails[0].DDDetailsPanel[0].IssuedToPanel[0].bankNameDD[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextdraw_188871___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextdraw_188871__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].demandDraftDetails[0].DDDetailsPanel[0].IssuedToPanel[0].cardNumberDD[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextdraw_188871___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextdraw_188871__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].demandDraftDetails[0].DDDetailsPanel[0].IssuedToPanel[0].cardNumberDD[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextdraw_188871___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel-guidetextdraw_188871__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].demandDraftDetails[0].DDDetailsPanel[0].IssuedToPanel[0].cardNumberDD[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel_1138587761-guidetextdraw_1272526337__ > p > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel-panel_516132271-panel_1961830444-panel-panel1612508573370-panel_1138587761-guidetextdraw_1272526337__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].chooseLoanAmountTenurePanel[0].otherCreditCardPanel[0].otherCreditCard[0].demandDraftDetails[0].DDDetailsPanel[0].deliveryAddressPanel[0].textdraw_12725263371617816620756[0]"
+    },
+    {
+      "label": "I was assisted by an HDFC Bank Employee",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-totaldisbursement____widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-totaldisbursement__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].AssistedByBankEmployee[0]"
+    },
+    {
+      "label": "I was assisted by an HDFC Bank Employee",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-totaldisbursement____widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-totaldisbursement__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].AssistedByBankEmployee[0]"
+    },
+    {
+      "label": "I was assisted by an HDFC Bank Employee",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-totaldisbursement___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-totaldisbursement__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].AssistedByBankEmployee[0]"
+    },
+    {
+      "label": "Please ask them for the LG Code",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel_copy-guidetextbox_735630427___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel_copy-guidetextbox_735630427__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].Assisted[0].lgCode[0]"
+    },
+    {
+      "label": "Please ask them for the LG Code",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel_copy-guidetextbox_735630427___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel_copy-guidetextbox_735630427__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].Assisted[0].lgCode[0]"
+    },
+    {
+      "label": "Please ask them for the LG Code",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel_copy-guidetextbox_735630427___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel_copy-guidetextbox_735630427__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].Assisted[0].lgCode[0]"
+    },
+    {
+      "label": "and the LC Code",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel_copy-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel_copy-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].Assisted[0].lcCode[0]"
+    },
+    {
+      "label": "and the LC Code",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel_copy-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel_copy-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].Assisted[0].lcCode[0]"
+    },
+    {
+      "label": "and the LC Code",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel_copy-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel_copy-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].Assisted[0].lcCode[0]"
+    },
+    {
+      "label": "Terms and Conditions",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidecheckbox___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].TermsAndConditionsPanel[0].termsAndConditions[0]"
+    },
+    {
+      "label": "Terms and Conditions",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidecheckbox___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].TermsAndConditionsPanel[0].termsAndConditions[0]"
+    },
+    {
+      "label": "Terms and Conditions",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidecheckbox__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].TermsAndConditionsPanel[0].termsAndConditions[0]"
+    },
+    {
+      "label": "Terms & Conditions",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].TermsAndConditionsPanel[0].TermsAndConditionsButton[0]"
+    },
+    {
+      "label": "Terms & Conditions",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].TermsAndConditionsPanel[0].TermsAndConditionsButton[0]"
+    },
+    {
+      "label": "Reset All",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].TermsAndConditionsPanel[0].resetAll[0]"
+    },
+    {
+      "label": "Reset All",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-panel1597631970388-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].TermsAndConditionsPanel[0].resetAll[0]"
+    },
+    {
+      "label": "Confirm >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].ConfirmButton[0]"
+    },
+    {
+      "label": "Confirm >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1840502327-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].ConfirmationPanel[0].ConfirmButton[0]"
+    },
+    {
+      "label": "Reenter OTP Title",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].ReenterOTPHiddenTitle[0]"
+    },
+    {
+      "label": "Reenter OTP Title",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].ReenterOTPHiddenTitle[0]"
+    },
+    {
+      "label": "Reenter OTP Title",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].ReenterOTPHiddenTitle[0]"
+    },
+    {
+      "label": "BTE Loan Fulfillment Endpoint",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidetextbox_910436695___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidetextbox_910436695__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].bteLoanFulfilmentEndpoint[0]"
+    },
+    {
+      "label": "BTE Loan Fulfillment Endpoint",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidetextbox_910436695___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidetextbox_910436695__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].bteLoanFulfilmentEndpoint[0]"
+    },
+    {
+      "label": "BTE Loan Fulfillment Endpoint",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidetextbox_910436695___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidetextbox_910436695__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].bteLoanFulfilmentEndpoint[0]"
+    },
+    {
+      "label": "ReenterOTP",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-panel-panel1596997992739-guidenumericbox_1493___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-panel-panel1596997992739-guidenumericbox_1493__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].ConfirmOTPPanel[0].ReEnterOTPPanel[0].reenterOTP[0]"
+    },
+    {
+      "label": "ReenterOTP",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-panel-panel1596997992739-guidenumericbox_1493___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-panel-panel1596997992739-guidenumericbox_1493__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].ConfirmOTPPanel[0].ReEnterOTPPanel[0].reenterOTP[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-panel-panel_1716923527-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-panel-panel_1716923527-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].ConfirmOTPPanel[0].OTPPanel2ndWizard[0].seconds2[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-panel-panel_1716923527-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-panel-panel_1716923527-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].ConfirmOTPPanel[0].OTPPanel2ndWizard[0].seconds2[0]"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-panel-panel_1716923527-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-panel-panel_1716923527-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].ConfirmOTPPanel[0].OTPPanel2ndWizard[0].resendOTPButton2[0]"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-panel-panel_1716923527-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-panel-panel_1716923527-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].ConfirmOTPPanel[0].OTPPanel2ndWizard[0].resendOTPButton2[0]"
+    },
+    {
+      "label": "Confirm",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidebutton_19157382___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidebutton_19157382__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].authenticateButton2[0]"
+    },
+    {
+      "label": "Confirm",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidebutton_19157382___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidebutton_19157382__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].authenticateButton2[0]"
+    },
+    {
+      "label": "Back",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].backButton2[0]"
+    },
+    {
+      "label": "Back",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel1596541656486-panel_1359912727-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].chooseLoanAmount[0].EnterOTPChooseAmountPanel[0].backButton2[0]"
+    },
+    {
+      "label": "BTE Reference Number",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-panel_945117412_copy-guidetextbox_2006387345___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-panel_945117412_copy-guidetextbox_2006387345__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].loanApproval[0].transactionDetails[0].bteReferenceNumber[0]"
+    },
+    {
+      "label": "BTE Reference Number",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-panel_945117412_copy-guidetextbox_2006387345___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-panel_945117412_copy-guidetextbox_2006387345__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].loanApproval[0].transactionDetails[0].bteReferenceNumber[0]"
+    },
+    {
+      "label": "Loan Amount",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-panel_945117412_copy-guidetextbox_1629562506___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-panel_945117412_copy-guidetextbox_1629562506__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].loanApproval[0].transactionDetails[0].loanAmount[0]"
+    },
+    {
+      "label": "Loan Amount",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-panel_945117412_copy-guidetextbox_1629562506___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-panel_945117412_copy-guidetextbox_1629562506__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].loanApproval[0].transactionDetails[0].loanAmount[0]"
+    },
+    {
+      "label": "EVA",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-panel1597311136153_c-panel_1676550957-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-panel1597311136153_c-panel_1676550957-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].loanApproval[0].ContactPanel[0].EvaPanel[0].EvaButton[0]"
+    },
+    {
+      "label": "EVA",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-panel1597311136153_c-panel_1676550957-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-panel1597311136153_c-panel_1676550957-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].loanApproval[0].ContactPanel[0].EvaPanel[0].EvaButton[0]"
+    },
+    {
+      "label": "ThankyouMessage for BTE",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].loanApproval[0].thankyouMessageBTE[0]"
+    },
+    {
+      "label": "ThankyouMessage for BTE",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].loanApproval[0].thankyouMessageBTE[0]"
+    },
+    {
+      "label": "ThankyouMessage for BTE",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].loanApproval[0].thankyouMessageBTE[0]"
+    },
+    {
+      "label": "Error Message BTE Loan Fulfilment",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-guidetextbox_434017338___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-guidetextbox_434017338__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].loanApproval[0].errorMessageBTELoanFulfilment[0]"
+    },
+    {
+      "label": "Error Message BTE Loan Fulfilment",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-guidetextbox_434017338___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-guidetextbox_434017338__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].loanApproval[0].errorMessageBTELoanFulfilment[0]"
+    },
+    {
+      "label": "Error Message BTE Loan Fulfilment",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-guidetextbox_434017338___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-InstaJumboForm1596539230375-panel-guidetextbox_434017338__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].etbBalanceTransfer[0].loanApproval[0].errorMessageBTELoanFulfilment[0]"
+    },
+    {
+      "label": "Know More",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].offersSection[0].subofferspanel[0].subofferspanel-2[0].knowmore[0]"
+    },
+    {
+      "label": "Know More",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].offersSection[0].subofferspanel[0].subofferspanel-2[0].knowmore[0]"
+    },
+    {
+      "label": "Know More",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290_cop-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290_cop-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].offersSection[0].subofferspanel[0].subofferspanel-2_copy_1[0].knowmore[0]"
+    },
+    {
+      "label": "Know More",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290_cop-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290_cop-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].offersSection[0].subofferspanel[0].subofferspanel-2_copy_1[0].knowmore[0]"
+    },
+    {
+      "label": "Know More",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290_cop_1391918775-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290_cop_1391918775-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].offersSection[0].subofferspanel[0].subofferspanel-2_copy_2[0].knowmore[0]"
+    },
+    {
+      "label": "Know More",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290_cop_1391918775-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290_cop_1391918775-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].offersSection[0].subofferspanel[0].subofferspanel-2_copy_2[0].knowmore[0]"
+    },
+    {
+      "label": "Know More",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290_cop_171053089-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290_cop_171053089-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].offersSection[0].subofferspanel[0].subofferspanel-2_copy_3[0].knowmore[0]"
+    },
+    {
+      "label": "Know More",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290_cop_171053089-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_1487744529-panel-panel_1990826290_cop_171053089-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].offersSection[0].subofferspanel[0].subofferspanel-2_copy_3[0].knowmore[0]"
+    },
+    {
+      "label": "Contact Us",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_923726421-panel-guidebutton_89040313___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_923726421-panel-guidebutton_89040313__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].inconvenienceSection[0].inConvenienceButtonsPanel[0].notNowButton[0]"
+    },
+    {
+      "label": "Contact Us",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_923726421-panel-guidebutton_89040313___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_923726421-panel-guidebutton_89040313__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].inconvenienceSection[0].inConvenienceButtonsPanel[0].notNowButton[0]"
+    },
+    {
+      "label": "Take Survey",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_923726421-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_923726421-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].inconvenienceSection[0].inConvenienceButtonsPanel[0].shareDetailsButton[0]"
+    },
+    {
+      "label": "Take Survey",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_923726421-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_923726421-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].inconvenienceSection[0].inConvenienceButtonsPanel[0].shareDetailsButton[0]"
+    },
+    {
+      "label": "Text Box",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_2028209220-panel-panel-panel1597301335168-guidetextbox_5970667___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_2028209220-panel-panel-panel1597301335168-guidetextbox_5970667__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].errorContainer[0].errorpanel[0].errordetailspanel[0].Error[0].errorMobileNumber[0]"
+    },
+    {
+      "label": "Text Box",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_2028209220-panel-panel-panel1597301335168-guidetextbox_5970667___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_2028209220-panel-panel-panel1597301335168-guidetextbox_5970667__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].errorContainer[0].errorpanel[0].errordetailspanel[0].Error[0].errorMobileNumber[0]"
+    },
+    {
+      "label": "Click to Start Again >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_2028209220-panel-panel1597304650107-guidebutton_11306976_665995353___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_2028209220-panel-panel1597304650107-guidebutton_11306976_665995353__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].errorContainer[0].errorpanel[0].TryAgain[0].tryagainbutton[0]"
+    },
+    {
+      "label": "Click to Start Again >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_2028209220-panel-panel1597304650107-guidebutton_11306976_665995353___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_2028209220-panel-panel1597304650107-guidebutton_11306976_665995353__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].errorContainer[0].errorpanel[0].TryAgain[0].tryagainbutton[0]"
+    },
+    {
+      "label": "EVA",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_2028209220-panel-panel1597305896568-guidebutton_17190161___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_2028209220-panel-panel1597305896568-guidebutton_17190161__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].errorContainer[0].errorpanel[0].EVAText[0].eva[0]"
+    },
+    {
+      "label": "EVA",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_2028209220-panel-panel1597305896568-guidebutton_17190161___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_2028209220-panel-panel1597305896568-guidebutton_17190161__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].errorContainer[0].errorpanel[0].EVAText[0].eva[0]"
+    },
+    {
+      "label": "Not now",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_2028209220-panel-panel_1117516427-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_2028209220-panel-panel_1117516427-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].errorContainer[0].errorpanel[0].targetpanel[0].notnow[0]"
+    },
+    {
+      "label": "Not now",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_2028209220-panel-panel_1117516427-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_2028209220-panel-panel_1117516427-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].errorContainer[0].errorpanel[0].targetpanel[0].notnow[0]"
+    },
+    {
+      "label": "Apply",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_2028209220-panel-panel_1117516427-guidebutton_1296603727___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_2028209220-panel-panel_1117516427-guidebutton_1296603727__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].errorContainer[0].errorpanel[0].targetpanel[0].apply[0]"
+    },
+    {
+      "label": "Apply",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_2028209220-panel-panel_1117516427-guidebutton_1296603727___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_2028209220-panel-panel_1117516427-guidebutton_1296603727__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].errorContainer[0].errorpanel[0].targetpanel[0].apply[0]"
+    },
+    {
+      "label": "Explore Now >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_2028209220-panel-panel_869928054-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_2028209220-panel-panel_869928054-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].errorContainer[0].errorpanel[0].ineligibleBlock[0].exploreNow[0]"
+    },
+    {
+      "label": "Explore Now >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_2028209220-panel-panel_869928054-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_2028209220-panel-panel_869928054-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].etbBalanceTransfer[0].errorContainer[0].errorpanel[0].ineligibleBlock[0].exploreNow[0]"
+    },
+    {
+      "label": "Error Popup Text",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1439978114-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1439978114-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].errorPopupSection[0].errorPopupText[0]"
+    },
+    {
+      "label": "Error Popup Text",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1439978114-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1439978114-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].errorPopupSection[0].errorPopupText[0]"
+    },
+    {
+      "label": "Data Security Public Key",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_841303912-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityPublicKey[0]"
+    },
+    {
+      "label": "Data Security Public Key",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_841303912-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityPublicKey[0]"
+    },
+    {
+      "label": "Data Security Public Key",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_841303912-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityPublicKey[0]"
+    },
+    {
+      "label": "Data Security Enabled",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_841303912-guidetextbox_1010916070___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_1010916070__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityEnabled[0]"
+    },
+    {
+      "label": "Data Security Enabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_841303912-guidetextbox_1010916070___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_1010916070__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityEnabled[0]"
+    },
+    {
+      "label": "Data Security Enabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_841303912-guidetextbox_1010916070___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_1010916070__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityEnabled[0]"
+    },
+    {
+      "label": "Journey ID",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_841303912-guidetextbox_171189644___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_171189644__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].journeyId[0]"
+    },
+    {
+      "label": "Journey ID",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_841303912-guidetextbox_171189644___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_171189644__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].journeyId[0]"
+    },
+    {
+      "label": "Journey ID",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_841303912-guidetextbox_171189644___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_171189644__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].journeyId[0]"
+    },
+    {
+      "label": "Prefill Status",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_841303912-guidetextbox_2136452802___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_2136452802__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].prefillStatus[0]"
+    },
+    {
+      "label": "Prefill Status",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_841303912-guidetextbox_2136452802___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_2136452802__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].prefillStatus[0]"
+    },
+    {
+      "label": "Prefill Status",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_841303912-guidetextbox_2136452802___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_2136452802__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].prefillStatus[0]"
+    },
+    {
+      "label": "captchaEnabled",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_841303912-guidetextbox_7366135___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_7366135__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaEnabled[0]"
+    },
+    {
+      "label": "captchaEnabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_841303912-guidetextbox_7366135___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_7366135__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaEnabled[0]"
+    },
+    {
+      "label": "captchaEnabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_841303912-guidetextbox_7366135___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_7366135__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaEnabled[0]"
+    },
+    {
+      "label": "captchaClientKey",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_841303912-guidetextbox_2855714___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_2855714__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaClientKey[0]"
+    },
+    {
+      "label": "captchaClientKey",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_841303912-guidetextbox_2855714___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_2855714__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaClientKey[0]"
+    },
+    {
+      "label": "captchaClientKey",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_841303912-guidetextbox_2855714___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_841303912-guidetextbox_2855714__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaClientKey[0]"
+    }
+  ]
+}

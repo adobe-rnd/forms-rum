@@ -1,0 +1,574 @@
+{
+  "https://applyonline.hdfcbank.com/credit-cards/credit-card-upgrade-form.html": {
+    "url": "https://applyonline.hdfcbank.com/credit-cards/credit-card-upgrade-form.html",
+    "urlKey": "https://applyonline.hdfcbank.com/credit-cards/credit-card-upgrade-form.html",
+    "file": "by-url/110c1293.selectors.json",
+    "formName": "Upgrade Credit Card Online - Enjoy Benefits by Upgrading Credit Card | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 211
+    }
+  },
+  "https://applyonline.hdfcbank.com/cards/credit-cards.html": {
+    "url": "https://applyonline.hdfcbank.com/cards/credit-cards.html",
+    "urlKey": "https://applyonline.hdfcbank.com/cards/credit-cards.html",
+    "file": "by-url/8894e1fd.selectors.json",
+    "formName": "HDFC Bank Credit Card",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 513
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan-against-assets/insta-jumbo-loan/insta-jumbo-form.html": {
+    "url": "https://applyonline.hdfcbank.com/loan-against-assets/insta-jumbo-loan/insta-jumbo-form.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan-against-assets/insta-jumbo-loan/insta-jumbo-form.html",
+    "file": "by-url/4cf85f56.selectors.json",
+    "formName": "Apply Online - Loan on Credit Card | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 688
+    }
+  },
+  "https://applyonline.hdfcbank.com/xpressway.html": {
+    "url": "https://applyonline.hdfcbank.com/xpressway.html",
+    "urlKey": "https://applyonline.hdfcbank.com/xpressway.html",
+    "file": "by-url/4c9cf7d2.selectors.json",
+    "formName": "Xpressway - Offers, Services & More",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 66
+    }
+  },
+  "https://applyonline.hdfcbank.com/personal-loans.html": {
+    "url": "https://applyonline.hdfcbank.com/personal-loans.html",
+    "urlKey": "https://applyonline.hdfcbank.com/personal-loans.html",
+    "file": "by-url/936d5b1f.selectors.json",
+    "formName": "PL Landing Page",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 169
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/personal-loan/existing-to-bank/apply-for-personal-loan-online.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/personal-loan/existing-to-bank/apply-for-personal-loan-online.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/personal-loan/existing-to-bank/apply-for-personal-loan-online.html",
+    "file": "by-url/92a25fe0.selectors.json",
+    "formName": "Apply Online for a Pre-Approved Personal Loan | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1710
+    }
+  },
+  "https://applyonline.hdfcbank.com/savings-account/insta-savings/open-instant-savings-account-online.html": {
+    "url": "https://applyonline.hdfcbank.com/savings-account/insta-savings/open-instant-savings-account-online.html",
+    "urlKey": "https://applyonline.hdfcbank.com/savings-account/insta-savings/open-instant-savings-account-online.html",
+    "file": "by-url/1de22d68.selectors.json",
+    "formName": "IS_UNIFIEDURL_FORM",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 296
+    }
+  },
+  "https://applyonline.hdfcbank.com/credit-cards/credit-card-limit-enhancement-form.html": {
+    "url": "https://applyonline.hdfcbank.com/credit-cards/credit-card-limit-enhancement-form.html",
+    "urlKey": "https://applyonline.hdfcbank.com/credit-cards/credit-card-limit-enhancement-form.html",
+    "file": "by-url/4604bfa9.selectors.json",
+    "formName": "Credit Card Limit Enhancement - Increase Credit Card Limit | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 202
+    }
+  },
+  "https://applyonline.hdfcbank.com/credit-cards/etb-pre-approved-credit-cards-without-offer.html": {
+    "url": "https://applyonline.hdfcbank.com/credit-cards/etb-pre-approved-credit-cards-without-offer.html",
+    "urlKey": "https://applyonline.hdfcbank.com/credit-cards/etb-pre-approved-credit-cards-without-offer.html",
+    "file": "by-url/ebe4a50b.selectors.json",
+    "formName": "HDFC Bank Credit Card",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 513
+    }
+  },
+  "https://applyonline.hdfcbank.com/credit-cards/pre-approved-credit-cards.html": {
+    "url": "https://applyonline.hdfcbank.com/credit-cards/pre-approved-credit-cards.html",
+    "urlKey": "https://applyonline.hdfcbank.com/credit-cards/pre-approved-credit-cards.html",
+    "file": "by-url/303ef1ce.selectors.json",
+    "formName": "HDFC Bank Credit Card",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 513
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/personal-loan/existing-to-bank/apply-for-personal-loan-top-up.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/personal-loan/existing-to-bank/apply-for-personal-loan-top-up.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/personal-loan/existing-to-bank/apply-for-personal-loan-top-up.html",
+    "file": "by-url/901dc190.selectors.json",
+    "formName": "Personal Loan Topup",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1721
+    }
+  },
+  "https://applyonline.hdfcbank.com/businessloans.html": {
+    "url": "https://applyonline.hdfcbank.com/businessloans.html",
+    "urlKey": "https://applyonline.hdfcbank.com/businessloans.html",
+    "file": "by-url/b2482b5e.selectors.json",
+    "formName": "BL Landing Form",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 178
+    }
+  },
+  "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_savings_forms/forms/insta_savings/instasavingsform.html": {
+    "url": "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_savings_forms/forms/insta_savings/instasavingsform.html",
+    "urlKey": "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_savings_forms/forms/insta_savings/instasavingsform.html",
+    "file": "by-url/741f9c44.selectors.json",
+    "formName": "Open Savings Account Instantly Online | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1929
+    }
+  },
+  "https://applyonline.hdfcbank.com/personal-loans/ntb.html": {
+    "url": "https://applyonline.hdfcbank.com/personal-loans/ntb.html",
+    "urlKey": "https://applyonline.hdfcbank.com/personal-loans/ntb.html",
+    "file": "by-url/0f1fddc4.selectors.json",
+    "formName": "PLNTB",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1037
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/gold-loan-form.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/gold-loan-form.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/gold-loan-form.html",
+    "file": "by-url/212a94ba.selectors.json",
+    "formName": "HDFC Gold Loan Form",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 184
+    }
+  },
+  "https://applyonline.hdfcbank.com/credit-cards/assisted-pre-approved-credit-cards.html": {
+    "url": "https://applyonline.hdfcbank.com/credit-cards/assisted-pre-approved-credit-cards.html",
+    "urlKey": "https://applyonline.hdfcbank.com/credit-cards/assisted-pre-approved-credit-cards.html",
+    "file": "by-url/9ac7c438.selectors.json",
+    "formName": "Assisted PACC Form",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1347
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/existing-to-bank/apply-for-two-wheeler-loan-online.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/existing-to-bank/apply-for-two-wheeler-loan-online.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/existing-to-bank/apply-for-two-wheeler-loan-online.html",
+    "file": "by-url/8914cbcc.selectors.json",
+    "formName": "Two Wheeler Loan",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 2122
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/personal-loan/asset-to-asset/personal-loan-forma2a.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/personal-loan/asset-to-asset/personal-loan-forma2a.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/personal-loan/asset-to-asset/personal-loan-forma2a.html",
+    "file": "by-url/b713fc18.selectors.json",
+    "formName": "Apply Online for a Pre-Approved Personal Loan | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1277
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan-against-assets/insta-jumbo-loan/assisted-insta-jumbo-form.html": {
+    "url": "https://applyonline.hdfcbank.com/loan-against-assets/insta-jumbo-loan/assisted-insta-jumbo-form.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan-against-assets/insta-jumbo-loan/assisted-insta-jumbo-form.html",
+    "file": "by-url/ada95a43.selectors.json",
+    "formName": "Assisted - Loan on Credit Card | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 664
+    }
+  },
+  "https://applyonline.hdfcbank.com/businessloans/ntb.html": {
+    "url": "https://applyonline.hdfcbank.com/businessloans/ntb.html",
+    "urlKey": "https://applyonline.hdfcbank.com/businessloans/ntb.html",
+    "file": "by-url/de7cc8be.selectors.json",
+    "formName": "BL-NTB",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1693
+    }
+  },
+  "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_etbsavings_forms/forms/etb_savings_form/etb_savings_form.html": {
+    "url": "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_etbsavings_forms/forms/etb_savings_form/etb_savings_form.html",
+    "urlKey": "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_etbsavings_forms/forms/etb_savings_form/etb_savings_form.html",
+    "file": "by-url/63709629.selectors.json",
+    "formName": "ETBSavingsForm",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1096
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/auto-loan/existing-to-bank/apply-for-auto-loan-top-up.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/auto-loan/existing-to-bank/apply-for-auto-loan-top-up.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/auto-loan/existing-to-bank/apply-for-auto-loan-top-up.html",
+    "file": "by-url/7dcad479.selectors.json",
+    "formName": "Apply Online for a Auto Loan Top-up | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 2006
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/asset-to-asset/two-wheeler-loan-top-up-forma2a.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/asset-to-asset/two-wheeler-loan-top-up-forma2a.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/asset-to-asset/two-wheeler-loan-top-up-forma2a.html",
+    "file": "by-url/7be9d622.selectors.json",
+    "formName": "Apply Online for a Two-Wheeler Loan Top-up | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 2668
+    }
+  },
+  "https://applyonline.hdfcbank.com/nri-fd-instant.html": {
+    "url": "https://applyonline.hdfcbank.com/nri-fd-instant.html",
+    "urlKey": "https://applyonline.hdfcbank.com/nri-fd-instant.html",
+    "file": "by-url/61501e68.selectors.json",
+    "formName": "Open Fixed Deposit Account Online For Existing Customers | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 481
+    }
+  },
+  "https://applyonline.hdfcbank.com/digital/nriaddonaccounts": {
+    "url": "https://applyonline.hdfcbank.com/digital/nriaddonaccounts",
+    "urlKey": "https://applyonline.hdfcbank.com/digital/nriaddonaccounts",
+    "file": "by-url/020e1b40.selectors.json",
+    "formName": "Account Opening NRE NRO",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 421
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/auto-loan/asset-to-asset/auto-loan-top-up-forma2a.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/auto-loan/asset-to-asset/auto-loan-top-up-forma2a.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/auto-loan/asset-to-asset/auto-loan-top-up-forma2a.html",
+    "file": "by-url/bf32db04.selectors.json",
+    "formName": "Apply Online for a Auto Loan Top-up | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 2429
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/existing-to-bank/agent-apply-for-two-wheeler-loan-top-up.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/existing-to-bank/agent-apply-for-two-wheeler-loan-top-up.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/existing-to-bank/agent-apply-for-two-wheeler-loan-top-up.html",
+    "file": "by-url/6f930ad7.selectors.json",
+    "formName": "Two Wheeler Loan Top Up Agent Form",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 2070
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/existing-to-bank/customer-apply-for-two-wheeler-loan-top-up.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/existing-to-bank/customer-apply-for-two-wheeler-loan-top-up.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/existing-to-bank/customer-apply-for-two-wheeler-loan-top-up.html",
+    "file": "by-url/4bc0a5ed.selectors.json",
+    "formName": "Two Wheeler Loan Top Up Customer Form",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 2075
+    }
+  },
+  "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_savings_vrm/forms/vrmform.html": {
+    "url": "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_savings_vrm/forms/vrmform.html",
+    "urlKey": "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_savings_vrm/forms/vrmform.html",
+    "file": "by-url/0e015aa6.selectors.json",
+    "formName": "VRMForm",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 708
+    }
+  },
+  "https://applyonline.hdfcbank.com/businessloans/pqgc.html": {
+    "url": "https://applyonline.hdfcbank.com/businessloans/pqgc.html",
+    "urlKey": "https://applyonline.hdfcbank.com/businessloans/pqgc.html",
+    "file": "by-url/8c19ad31.selectors.json",
+    "formName": "BL-PQGC",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1640
+    }
+  },
+  "https://applyonline.hdfcbank.com/businessloans/hl.html": {
+    "url": "https://applyonline.hdfcbank.com/businessloans/hl.html",
+    "urlKey": "https://applyonline.hdfcbank.com/businessloans/hl.html",
+    "file": "by-url/a1976947.selectors.json",
+    "formName": "BLETB-HL",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1639
+    }
+  },
+  "https://applyonline.hdfcbank.com/digital/corporate-credit-cards-application-form": {
+    "url": "https://applyonline.hdfcbank.com/digital/corporate-credit-cards-application-form",
+    "urlKey": "https://applyonline.hdfcbank.com/digital/corporate-credit-cards-application-form",
+    "file": "by-url/28469e94.selectors.json",
+    "formName": "HDFC_POC",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 342
+    }
+  },
+  "https://applyonline.hdfcbank.com/digital/fd-backed-cc": {
+    "url": "https://applyonline.hdfcbank.com/digital/fd-backed-cc",
+    "urlKey": "https://applyonline.hdfcbank.com/digital/fd-backed-cc",
+    "file": "by-url/7611ed74.selectors.json",
+    "formName": "HDFC_POC",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1632
+    }
+  },
+  "https://applyonline.hdfcbank.com/credit-cards/credit-card-upgrade-and-limit-enhancement.html": {
+    "url": "https://applyonline.hdfcbank.com/credit-cards/credit-card-upgrade-and-limit-enhancement.html",
+    "urlKey": "https://applyonline.hdfcbank.com/credit-cards/credit-card-upgrade-and-limit-enhancement.html",
+    "file": "by-url/25bf5c28.selectors.json",
+    "formName": "Credit Card Upgrade & Limit Enhancement | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 217
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/auto-loan/existing-to-bank/customer-apply-for-auto-loan-online.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/auto-loan/existing-to-bank/customer-apply-for-auto-loan-online.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/auto-loan/existing-to-bank/customer-apply-for-auto-loan-online.html",
+    "file": "by-url/19b06056.selectors.json",
+    "formName": "Auto Loan Customer Form",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 2350
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/eeg-form.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/eeg-form.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/eeg-form.html",
+    "file": "by-url/18650969.selectors.json",
+    "formName": "Apply for Emerging Enterprise Group Loan Online | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 220
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/home-loan-form.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/home-loan-form.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/home-loan-form.html",
+    "file": "by-url/02d1b719.selectors.json",
+    "formName": "Apply Online for Home Loan | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 297
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan-against-assets/smartemi/smartemi": {
+    "url": "https://applyonline.hdfcbank.com/loan-against-assets/smartemi/smartemi",
+    "urlKey": "https://applyonline.hdfcbank.com/loan-against-assets/smartemi/smartemi",
+    "file": "by-url/4c819d45.selectors.json",
+    "formName": "SMART EMI Form",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 656
+    }
+  },
+  "https://applyonline.hdfcbank.com/personal-loans/etbwo.html": {
+    "url": "https://applyonline.hdfcbank.com/personal-loans/etbwo.html",
+    "urlKey": "https://applyonline.hdfcbank.com/personal-loans/etbwo.html",
+    "file": "by-url/a1ae95bf.selectors.json",
+    "formName": "PLETB WO",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1193
+    }
+  },
+  "https://applyonline.hdfcbank.com/credit-cards/new-to-banking-users.html": {
+    "url": "https://applyonline.hdfcbank.com/credit-cards/new-to-banking-users.html",
+    "urlKey": "https://applyonline.hdfcbank.com/credit-cards/new-to-banking-users.html",
+    "file": "by-url/f4a50edd.selectors.json",
+    "formName": "HDFC Bank Credit Card",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 513
+    }
+  },
+  "https://applyonline.hdfcbank.com/fixed-deposits/existing-customers-open-fd-online": {
+    "url": "https://applyonline.hdfcbank.com/fixed-deposits/existing-customers-open-fd-online",
+    "urlKey": "https://applyonline.hdfcbank.com/fixed-deposits/existing-customers-open-fd-online",
+    "file": "by-url/49677122.selectors.json",
+    "formName": "HDFC_External_Funding",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1069
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/business-loan/existing-to-bank/apply-for-business-loan-online.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/business-loan/existing-to-bank/apply-for-business-loan-online.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/business-loan/existing-to-bank/apply-for-business-loan-online.html",
+    "file": "by-url/8a4f5f4e.selectors.json",
+    "formName": "Apply Online for a Business Loan Online | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 2298
+    }
+  },
+  "https://applyonline.hdfcbank.com/businessloans/etbwo.html": {
+    "url": "https://applyonline.hdfcbank.com/businessloans/etbwo.html",
+    "urlKey": "https://applyonline.hdfcbank.com/businessloans/etbwo.html",
+    "file": "by-url/07208fc1.selectors.json",
+    "formName": "BL-ETB-WO",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1865
+    }
+  },
+  "https://applyonline.hdfcbank.com/two-wheeler-unified.html": {
+    "url": "https://applyonline.hdfcbank.com/two-wheeler-unified.html",
+    "urlKey": "https://applyonline.hdfcbank.com/two-wheeler-unified.html",
+    "file": "by-url/cea0632a.selectors.json",
+    "formName": "Twl Landing Form",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 175
+    }
+  },
+  "https://applyonline.hdfcbank.com/digital/etb-fixed-deposit-cc": {
+    "url": "https://applyonline.hdfcbank.com/digital/etb-fixed-deposit-cc",
+    "urlKey": "https://applyonline.hdfcbank.com/digital/etb-fixed-deposit-cc",
+    "file": "by-url/333ccd6c.selectors.json",
+    "formName": "HDFC_POC",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 744
+    }
+  },
+  "https://applyonline.hdfcbank.com/two-wheeler-ntb-unified.html": {
+    "url": "https://applyonline.hdfcbank.com/two-wheeler-ntb-unified.html",
+    "urlKey": "https://applyonline.hdfcbank.com/two-wheeler-ntb-unified.html",
+    "file": "by-url/d945c667.selectors.json",
+    "formName": "Twl_NTB_FORM",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 523
+    }
+  },
+  "https://applyonline.hdfcbank.com/qr.html": {
+    "url": "https://applyonline.hdfcbank.com/qr.html",
+    "urlKey": "https://applyonline.hdfcbank.com/qr.html",
+    "file": "by-url/f2f3fbb3.selectors.json",
+    "formName": "Generate QR Code – Xpressway",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 145
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/existing-to-bank/apply-for-two-wheeler-loan-top-up.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/existing-to-bank/apply-for-two-wheeler-loan-top-up.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/two-wheeler-loan/existing-to-bank/apply-for-two-wheeler-loan-top-up.html",
+    "file": "by-url/c197527a.selectors.json",
+    "formName": "Apply Online for a Two-Wheeler Loan Top-up | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 2114
+    }
+  },
+  "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_ccforms/forms/etb-bte/etb-balance-transfer-on-emi.html": {
+    "url": "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_ccforms/forms/etb-bte/etb-balance-transfer-on-emi.html",
+    "urlKey": "https://applyonline.hdfcbank.com/content/forms/af/hdfc/hdfc_ccforms/forms/etb-bte/etb-balance-transfer-on-emi.html",
+    "file": "by-url/666de85c.selectors.json",
+    "formName": "Balance Transfer on Credit Card EMI Online | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 213
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/business-loan/asset-to-asset/business-loan-forma2a.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/business-loan/asset-to-asset/business-loan-forma2a.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/business-loan/asset-to-asset/business-loan-forma2a.html",
+    "file": "by-url/e0a0ac7a.selectors.json",
+    "formName": "Apply Online for a Business Loan | HDFC Bank",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 2550
+    }
+  },
+  "https://applyonline.hdfcbank.com/sme/trade/tradexpress.html": {
+    "url": "https://applyonline.hdfcbank.com/sme/trade/tradexpress.html",
+    "urlKey": "https://applyonline.hdfcbank.com/sme/trade/tradexpress.html",
+    "file": "by-url/ca1c5abb.selectors.json",
+    "formName": "HDFC TradeXpress Form",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 175
+    }
+  },
+  "https://applyonline.hdfcbank.com/loan/auto-loan/existing-to-bank/agent-apply-for-auto-loan-online.html": {
+    "url": "https://applyonline.hdfcbank.com/loan/auto-loan/existing-to-bank/agent-apply-for-auto-loan-online.html",
+    "urlKey": "https://applyonline.hdfcbank.com/loan/auto-loan/existing-to-bank/agent-apply-for-auto-loan-online.html",
+    "file": "by-url/c129694b.selectors.json",
+    "formName": "Auto Loan Agent Form",
+    "ok": true,
+    "error": null,
+    "counts": {
+      "rows": 1955
+    }
+  }
+}

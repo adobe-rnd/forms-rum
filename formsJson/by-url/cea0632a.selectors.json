@@ -1,0 +1,1234 @@
+{
+  "url": "https://applyonline.hdfcbank.com/two-wheeler-unified.html",
+  "urlKey": "https://applyonline.hdfcbank.com/two-wheeler-unified.html",
+  "formName": "Twl Landing Form",
+  "ok": true,
+  "error": null,
+  "rows": [
+    {
+      "label": "Mobile Number",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].phoneNumberSection[0].phoneNumber[0]"
+    },
+    {
+      "label": "Mobile Number",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].phoneNumberSection[0].phoneNumber[0]"
+    },
+    {
+      "label": "Mobile Number",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].phoneNumberSection[0].phoneNumber[0]"
+    },
+    {
+      "label": "Identify Using",
+      "selector": "form#guideContainerForm input[type='radio']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton__-1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].identifyUsingOption[0]"
+    },
+    {
+      "label": "Identify Using",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton__-1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].identifyUsingOption[0]"
+    },
+    {
+      "label": "Identify Using",
+      "selector": "form#guideContainerForm input[type='radio']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton__-2_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].identifyUsingOption[0]"
+    },
+    {
+      "label": "Identify Using",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton__-2_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].identifyUsingOption[0]"
+    },
+    {
+      "label": "Identify Using",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].identifyUsingOption[0]"
+    },
+    {
+      "label": "Identify Using",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton___input_label_1",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].identifyUsingOption[0]"
+    },
+    {
+      "label": "Identify Using",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton___input_label_2",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].identifyUsingOption[0]"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidedateinput___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidedateinput__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].dateOfBirthInputSec[0].dobInputPanel[0].dateofBirthTwl[0]"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidedateinput___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidedateinput__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].dateOfBirthInputSec[0].dobInputPanel[0].dateofBirthTwl[0]"
+    },
+    {
+      "label": "Minumum Age",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidenumericbox_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidenumericbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].dateOfBirthInputSec[0].dobInputPanel[0].minAge[0]"
+    },
+    {
+      "label": "Minumum Age",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidenumericbox_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidenumericbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].dateOfBirthInputSec[0].dobInputPanel[0].minAge[0]"
+    },
+    {
+      "label": "Minumum Age",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidenumericbox_copy___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidenumericbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].dateOfBirthInputSec[0].dobInputPanel[0].minAge[0]"
+    },
+    {
+      "label": "Maximum Age",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidenumericbox_1398___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidenumericbox_1398__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].dateOfBirthInputSec[0].dobInputPanel[0].maxAge[0]"
+    },
+    {
+      "label": "Maximum Age",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidenumericbox_1398___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidenumericbox_1398__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].dateOfBirthInputSec[0].dobInputPanel[0].maxAge[0]"
+    },
+    {
+      "label": "Maximum Age",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidenumericbox_1398___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel-panel-guidenumericbox_1398__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].dateOfBirthInputSec[0].dobInputPanel[0].maxAge[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel_1942396886-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel_1942396886-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].panSection[0].panNumber[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel_1942396886-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel_1942396886-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].panSection[0].panNumber[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel_1942396886-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-panel_1942396886-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].panSection[0].panNumber[0]"
+    },
+    {
+      "label": "Hidden DOB PAN",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].dobPanValue[0]"
+    },
+    {
+      "label": "Hidden DOB PAN",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].dobPanValue[0]"
+    },
+    {
+      "label": "Hidden DOB PAN",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_1612905054-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].identifierSection[0].dobPanValue[0]"
+    },
+    {
+      "label": "hiddenPersonalDataConsentCheckboxValue",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_co___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].hiddenPersonalDataConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalDataConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_co___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].hiddenPersonalDataConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalDataConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_co___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].hiddenPersonalDataConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalizedOffersConsentCheckboxValue",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_co_1211583489___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_co_1211583489__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].hiddenPersonalizedOffersConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalizedOffersConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_co_1211583489___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_co_1211583489__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].hiddenPersonalizedOffersConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalizedOffersConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_co_1211583489___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_co_1211583489__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].hiddenPersonalizedOffersConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenChannelDataConsentCheckboxValue",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_19___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_19__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].hiddenChannelDataConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenChannelDataConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_19___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_19__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].hiddenChannelDataConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenChannelDataConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_19___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy_19__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].hiddenChannelDataConsentCheckboxValue[0]"
+    },
+    {
+      "label": "HiddencurrentFormContextField",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_756292641___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_756292641__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].currentFormContextField[0]"
+    },
+    {
+      "label": "HiddencurrentFormContextField",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_756292641___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_756292641__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].currentFormContextField[0]"
+    },
+    {
+      "label": "HiddencurrentFormContextField",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_756292641___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_756292641__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].currentFormContextField[0]"
+    },
+    {
+      "label": "Store Demog Details",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].storeDemogDetails[0]"
+    },
+    {
+      "label": "Store Demog Details",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].storeDemogDetails[0]"
+    },
+    {
+      "label": "Store Demog Details",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].storeDemogDetails[0]"
+    },
+    {
+      "label": "requestProductConsentFlag",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].requestProductConsentFlag[0]"
+    },
+    {
+      "label": "requestProductConsentFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].requestProductConsentFlag[0]"
+    },
+    {
+      "label": "requestProductConsentFlag",
+      "selector": "form#guideContainerForm",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].requestProductConsentFlag[0]"
+    },
+    {
+      "label": "requestProductConsentFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].requestProductConsentFlag[0]"
+    },
+    {
+      "label": "otherProductConsentFlag",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_1828050814___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_1828050814__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].otherProductConsentFlag[0]"
+    },
+    {
+      "label": "otherProductConsentFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_1828050814___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_1828050814__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].otherProductConsentFlag[0]"
+    },
+    {
+      "label": "otherProductConsentFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_1828050814__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_1828050814__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].otherProductConsentFlag[0]"
+    },
+    {
+      "label": "override_DNC_NDNCConsentFlag",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_724505347___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_724505347__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].override_DNC_NDNCConsentFlag[0]"
+    },
+    {
+      "label": "override_DNC_NDNCConsentFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_724505347___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_724505347__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].override_DNC_NDNCConsentFlag[0]"
+    },
+    {
+      "label": "override_DNC_NDNCConsentFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_724505347__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_724505347__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].override_DNC_NDNCConsentFlag[0]"
+    },
+    {
+      "label": "privacyConsentFlag",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_458082114___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_458082114__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].privacyConsentFlag[0]"
+    },
+    {
+      "label": "privacyConsentFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_458082114___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_458082114__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].privacyConsentFlag[0]"
+    },
+    {
+      "label": "privacyConsentFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_458082114__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_204477_458082114__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].privacyConsentFlag[0]"
+    },
+    {
+      "label": "returnJourneyFlag",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_copy_c___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_copy_c__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].returnJourneyFlag[0]"
+    },
+    {
+      "label": "returnJourneyFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_copy_c___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_copy_c__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].returnJourneyFlag[0]"
+    },
+    {
+      "label": "returnJourneyFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_copy_c___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_copy_c__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].returnJourneyFlag[0]"
+    },
+    {
+      "label": "returnJourneyFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_copy_c__ > div:nth-of-type(2) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidecheckbox_copy_c__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].returnJourneyFlag[0]"
+    },
+    {
+      "label": "encUserId",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].encUserId[0]"
+    },
+    {
+      "label": "encUserId",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].encUserId[0]"
+    },
+    {
+      "label": "encUserId",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidetextbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].encUserId[0]"
+    },
+    {
+      "label": "Personal Data Capture Consent",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalDataConsentPanel[0].personalDataCaptureConsentPanel[0].personalDataCaptureConsent[0]"
+    },
+    {
+      "label": "Personal Data Capture Consent",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalDataConsentPanel[0].personalDataCaptureConsentPanel[0].personalDataCaptureConsent[0]"
+    },
+    {
+      "label": "Personal Data Capture Consent",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel-guidecheckbox_copy__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalDataConsentPanel[0].personalDataCaptureConsentPanel[0].personalDataCaptureConsent[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel_829589434-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel_829589434-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalDataConsentPanel[0].mandatoryDataPopupFormPanel[0].mandatoryDataPopup[0].mandatoryDataPopupCTA[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel_829589434-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel_829589434-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalDataConsentPanel[0].mandatoryDataPopupFormPanel[0].mandatoryDataPopup[0].mandatoryDataPopupCTA[0]"
+    },
+    {
+      "label": "I Agree and Continue",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel_210571971-panel_70616931-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel_210571971-panel_70616931-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalDataConsentPanel[0].personalDataCaptureConsentFormPopupPanel[0].PersonalDataConsentPopupNewPanel[0].personalDataCaptureConsentPopupPanel[0].personalDataCaptureConsentCTA[0]"
+    },
+    {
+      "label": "I Agree and Continue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel_210571971-panel_70616931-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel-panel_210571971-panel_70616931-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalDataConsentPanel[0].personalDataCaptureConsentFormPopupPanel[0].PersonalDataConsentPopupNewPanel[0].personalDataCaptureConsentPopupPanel[0].personalDataCaptureConsentCTA[0]"
+    },
+    {
+      "label": "Personalized Offers Capture Consent",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentPanel[0].personalizedOffersCaptureConsent[0]"
+    },
+    {
+      "label": "Personalized Offers Capture Consent",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentPanel[0].personalizedOffersCaptureConsent[0]"
+    },
+    {
+      "label": "Personalized Offers Capture Consent",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel-guidecheckbox_copy__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentPanel[0].personalizedOffersCaptureConsent[0]"
+    },
+    {
+      "label": "channelCaptureConsent",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentPanel[0].channelCaptureConsent[0]"
+    },
+    {
+      "label": "channelCaptureConsent",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentPanel[0].channelCaptureConsent[0]"
+    },
+    {
+      "label": "I Agree and Continue",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel_1311621086-panel-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel_1311621086-panel-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentFormPopupPanel[0].personalizedOffersCaptureConsentPopupPanel[0].personalizedOffersCaptureConsentCTA[0]"
+    },
+    {
+      "label": "I Agree and Continue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel_1311621086-panel-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-panel_2126142822_cop-panel_1311621086-panel-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentFormPopupPanel[0].personalizedOffersCaptureConsentPopupPanel[0].personalizedOffersCaptureConsentCTA[0]"
+    },
+    {
+      "label": "Continue >",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].consent_btn[0]"
+    },
+    {
+      "label": "Continue >",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1239757531-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consent_panel[0].consent_btn[0]"
+    },
+    {
+      "label": " Policy Checkbox",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel-guidecheckbox___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentLinks[0].privacyPolicy[0].privacyPolicyCheckbox[0]"
+    },
+    {
+      "label": " Policy Checkbox",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel-guidecheckbox___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentLinks[0].privacyPolicy[0].privacyPolicyCheckbox[0]"
+    },
+    {
+      "label": " Policy Checkbox",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel-guidecheckbox__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentLinks[0].privacyPolicy[0].privacyPolicyCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_672747063-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_672747063-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentLinks[0].relationToRequestedProduct[0].requestedProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_672747063-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_672747063-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentLinks[0].relationToRequestedProduct[0].requestedProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_672747063-guidecheckbox_copy__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_672747063-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentLinks[0].relationToRequestedProduct[0].requestedProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_2124238721-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_2124238721-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentLinks[0].representativesPanel[0].representativesCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_2124238721-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_2124238721-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentLinks[0].representativesPanel[0].representativesCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_2124238721-guidecheckbox_copy__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_2124238721-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentLinks[0].representativesPanel[0].representativesCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_489218883-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_489218883-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentLinks[0].relationToOtherProduct[0].otherProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_489218883-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_489218883-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentLinks[0].relationToOtherProduct[0].otherProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_489218883-guidecheckbox_copy__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel-panel_489218883-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentLinks[0].relationToOtherProduct[0].otherProductsCheckbox[0]"
+    },
+    {
+      "label": "X",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_987225188-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_987225188-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentTnCsection[0].requestedProductPopUp[0].cancelButton[0]"
+    },
+    {
+      "label": "X",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_987225188-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_987225188-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentTnCsection[0].requestedProductPopUp[0].cancelButton[0]"
+    },
+    {
+      "label": "I Agree and Accept>>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_987225188-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_987225188-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentTnCsection[0].requestedProductPopUp[0].requestedProductAgreeBtn[0]"
+    },
+    {
+      "label": "I Agree and Accept>>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_987225188-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_987225188-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentTnCsection[0].requestedProductPopUp[0].requestedProductAgreeBtn[0]"
+    },
+    {
+      "label": "X",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_306808287-guidebutton_copy_194328852___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_306808287-guidebutton_copy_194328852__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentTnCsection[0].otherProductPopUp[0].cancelButton[0]"
+    },
+    {
+      "label": "X",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_306808287-guidebutton_copy_194328852___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_306808287-guidebutton_copy_194328852__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentTnCsection[0].otherProductPopUp[0].cancelButton[0]"
+    },
+    {
+      "label": "I Agree and Accept>>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_306808287-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_306808287-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentTnCsection[0].otherProductPopUp[0].otherProductAgreeBtn[0]"
+    },
+    {
+      "label": "I Agree and Accept>>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_306808287-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469-panel_306808287-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentTnCsection[0].otherProductPopUp[0].otherProductAgreeBtn[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410_cop-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410_cop-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentMandatoryTnCsection[0].representativesMandatory[0].confirmationButton[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410_cop-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410_cop-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentMandatoryTnCsection[0].representativesMandatory[0].confirmationButton[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410_cop_926594583-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410_cop_926594583-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentMandatoryTnCsection[0].representativesMandatory[1].confirmationButton[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410_cop_926594583-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410_cop_926594583-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentMandatoryTnCsection[0].representativesMandatory[1].confirmationButton[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentMandatoryTnCsection[0].relationToRequestedProductMandatory[0].confirmationButton[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentMandatoryTnCsection[0].relationToRequestedProductMandatory[0].confirmationButton[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410_cop_1071733139-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410_cop_1071733139-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentMandatoryTnCsection[0].relationToOtherProductMandatory[0].confirmationButton[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410_cop_1071733139-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-panel_416998565-panel_1907386469_cop-panel_1995650410_cop_1071733139-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].consentSelection[0].consentMandatoryTnCsection[0].relationToOtherProductMandatory[0].confirmationButton[0]"
+    },
+    {
+      "label": "Get OTP >",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].getOtp[0]"
+    },
+    {
+      "label": "Get OTP >",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].identifyYourself[0].getOtp[0]"
+    },
+    {
+      "label": "HIDDEN",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].multipleCustId[0].multipleIdScreen[0].customerIdArray[0]"
+    },
+    {
+      "label": "HIDDEN",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].multipleCustId[0].multipleIdScreen[0].customerIdArray[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='radio']#guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton__-1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].multipleCustId[0].multipleIdScreen[0].customerIDList[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton__-1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].multipleCustId[0].multipleIdScreen[0].customerIDList[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='radio']#guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton__-2_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].multipleCustId[0].multipleIdScreen[0].customerIDList[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton__-2_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].multipleCustId[0].multipleIdScreen[0].customerIDList[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].multipleCustId[0].multipleIdScreen[0].customerIDList[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton___input_label_1",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].multipleCustId[0].multipleIdScreen[0].customerIDList[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton___input_label_2",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_914889175-panel-guideradiobutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].multipleCustId[0].multipleIdScreen[0].customerIDList[0]"
+    },
+    {
+      "label": "Continue >",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel_914889175-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_914889175-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].multipleCustId[0].continueMultiScreen[0]"
+    },
+    {
+      "label": "Continue >",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_914889175-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_914889175-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].multipleCustId[0].continueMultiScreen[0]"
+    },
+    {
+      "label": "Edit mobile number",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].editMobNumber[0]"
+    },
+    {
+      "label": "Edit mobile number",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].editMobNumber[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].otpSection[0].enterOTP[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].otpSection[0].enterOTP[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].otpSection[0].enterOTP[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1724226340884-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1724226340884-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].resendOtpSection[0].timerSection[0].resendTimer[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1724226340884-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1724226340884-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].resendOtpSection[0].timerSection[0].resendTimer[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1724226340884-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1724226340884-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].resendOtpSection[0].timerSection[0].resendTimer[0]"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1724226340884-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1724226340884-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].resendOtpSection[0].timerSection[0].resendOtpBtn[0]"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1724226340884-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1724226340884-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].resendOtpSection[0].timerSection[0].resendOtpBtn[0]"
+    },
+    {
+      "label": "atttemptTakenCnt",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1704274453599_c-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1704274453599_c-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].resendOtpSection[0].retryCntParentPanel[0].atttemptTakenCnt[0]"
+    },
+    {
+      "label": "atttemptTakenCnt",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1704274453599_c-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1704274453599_c-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].resendOtpSection[0].retryCntParentPanel[0].atttemptTakenCnt[0]"
+    },
+    {
+      "label": "Attempts Cnt Config",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1704274453599_c-guidetextbox_1815414591___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1704274453599_c-guidetextbox_1815414591__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].resendOtpSection[0].retryCntParentPanel[0].attemptsCntConfig[0]"
+    },
+    {
+      "label": "Attempts Cnt Config",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1704274453599_c-guidetextbox_1815414591___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-panel-panel_702362663-panel1704274453599_c-guidetextbox_1815414591__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].authenticateOtp[0].resendOtpSection[0].retryCntParentPanel[0].attemptsCntConfig[0]"
+    },
+    {
+      "label": "Submit >",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel_733989511-guidebutton_21154128___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-guidebutton_21154128__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].submitOtp[0]"
+    },
+    {
+      "label": "Submit >",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_733989511-guidebutton_21154128___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-guidebutton_21154128__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].submitOtp[0]"
+    },
+    {
+      "label": "Back",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel-panel_487684159-panel_733989511-guidebutton_16968311___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-guidebutton_16968311__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].backToLS[0]"
+    },
+    {
+      "label": "Back",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-panel_487684159-panel_733989511-guidebutton_16968311___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-panel_487684159-panel_733989511-guidebutton_16968311__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].twlPanel[0].twlScreenNavigation[0].otpValidationPanel[0].backToLS[0]"
+    },
+    {
+      "label": "X",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_747622700-panel-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_747622700-panel-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].returnJourneyPopup[0].rjPopUp[0].returnJourneyMain[0].journey-popup-close-btn[0]"
+    },
+    {
+      "label": "X",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_747622700-panel-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_747622700-panel-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].returnJourneyPopup[0].rjPopUp[0].returnJourneyMain[0].journey-popup-close-btn[0]"
+    },
+    {
+      "label": "Proceed >",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_747622700-panel-panel-panel1728409072469-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_747622700-panel-panel-panel1728409072469-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].returnJourneyPopup[0].rjPopUp[0].returnJourneyMain[0].journey-popup-button-group[0].rjProceed[0]"
+    },
+    {
+      "label": "Proceed >",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_747622700-panel-panel-panel1728409072469-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_747622700-panel-panel-panel1728409072469-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].returnJourneyPopup[0].rjPopUp[0].returnJourneyMain[0].journey-popup-button-group[0].rjProceed[0]"
+    },
+    {
+      "label": "Start new journey",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_747622700-panel-panel-panel1728409072469-guidebutton_1071619707___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_747622700-panel-panel-panel1728409072469-guidebutton_1071619707__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].returnJourneyPopup[0].rjPopUp[0].returnJourneyMain[0].journey-popup-button-group[0].rjNewJourney[0]"
+    },
+    {
+      "label": "Start new journey",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_747622700-panel-panel-panel1728409072469-guidebutton_1071619707___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_747622700-panel-panel-panel1728409072469-guidebutton_1071619707__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].returnJourneyPopup[0].rjPopUp[0].returnJourneyMain[0].journey-popup-button-group[0].rjNewJourney[0]"
+    },
+    {
+      "label": "X",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_366079488-panel-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_366079488-panel-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].refreshPopupPanel[0].refreshPopMain[0].refreshPopupMain[0].refreshPopup-close-btn[0]"
+    },
+    {
+      "label": "X",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_366079488-panel-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_366079488-panel-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].refreshPopupPanel[0].refreshPopMain[0].refreshPopupMain[0].refreshPopup-close-btn[0]"
+    },
+    {
+      "label": "Continue >",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_366079488-panel-panel-panel1728409072469-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_366079488-panel-panel-panel1728409072469-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].refreshPopupPanel[0].refreshPopMain[0].refreshPopupMain[0].refreshPopup-button-group[0].refreshPopupProceed[0]"
+    },
+    {
+      "label": "Continue >",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_366079488-panel-panel-panel1728409072469-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_366079488-panel-panel-panel1728409072469-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].refreshPopupPanel[0].refreshPopMain[0].refreshPopupMain[0].refreshPopup-button-group[0].refreshPopupProceed[0]"
+    },
+    {
+      "label": "Cancel",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_366079488-panel-panel-panel1728409072469-guidebutton_1071619707___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_366079488-panel-panel-panel1728409072469-guidebutton_1071619707__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].refreshPopupPanel[0].refreshPopMain[0].refreshPopupMain[0].refreshPopup-button-group[0].refreshPopupNewJourney[0]"
+    },
+    {
+      "label": "Cancel",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_366079488-panel-panel-panel1728409072469-guidebutton_1071619707___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_366079488-panel-panel-panel1728409072469-guidebutton_1071619707__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].refreshPopupPanel[0].refreshPopMain[0].refreshPopupMain[0].refreshPopup-button-group[0].refreshPopupNewJourney[0]"
+    },
+    {
+      "label": "Okay",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1379374817-panel-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1379374817-panel-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].errorContainerTwl[0].errorScreenPanel[0].errorScreenParentPanel[0].errorCta[0]"
+    },
+    {
+      "label": "Okay",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1379374817-panel-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1379374817-panel-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].errorContainerTwl[0].errorScreenPanel[0].errorScreenParentPanel[0].errorCta[0]"
+    },
+    {
+      "label": "Data Security Public Key",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_55274951-guidetextbox_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityPublicKey[0]"
+    },
+    {
+      "label": "Data Security Public Key",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityPublicKey[0]"
+    },
+    {
+      "label": "Data Security Public Key",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_copy___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityPublicKey[0]"
+    },
+    {
+      "label": "Data Security Enabled",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_55274951-guidetextbox_1010916___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_1010916__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityEnabled[0]"
+    },
+    {
+      "label": "Data Security Enabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_1010916___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_1010916__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityEnabled[0]"
+    },
+    {
+      "label": "Data Security Enabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_1010916___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_1010916__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityEnabled[0]"
+    },
+    {
+      "label": "Journey ID",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_55274951-guidetextbox_1711896___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_1711896__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].journeyId[0]"
+    },
+    {
+      "label": "Journey ID",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_1711896___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_1711896__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].journeyId[0]"
+    },
+    {
+      "label": "Journey ID",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_1711896___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_1711896__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].journeyId[0]"
+    },
+    {
+      "label": "Prefill Status",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_55274951-guidetextbox_2136452___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_2136452__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].prefillStatus[0]"
+    },
+    {
+      "label": "Prefill Status",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_2136452___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_2136452__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].prefillStatus[0]"
+    },
+    {
+      "label": "Prefill Status",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_2136452___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_2136452__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].prefillStatus[0]"
+    },
+    {
+      "label": "visitType",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_55274951-guidetextbox_copy_co___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].visitType[0]"
+    },
+    {
+      "label": "visitType",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_copy_co___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].visitType[0]"
+    },
+    {
+      "label": "visitType",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_copy_co___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].visitType[0]"
+    },
+    {
+      "label": "Last Transaction ID ",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_55274951-guidetextbox_7708933___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_7708933__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].lastTransactionId[0]"
+    },
+    {
+      "label": "Last Transaction ID ",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_7708933___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_7708933__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].lastTransactionId[0]"
+    },
+    {
+      "label": "Last Transaction ID ",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_7708933___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_7708933__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].lastTransactionId[0]"
+    },
+    {
+      "label": "captchaClientKey",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_55274951-guidetextbox_2855714___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_2855714__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaClientKey[0]"
+    },
+    {
+      "label": "captchaClientKey",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_2855714___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_2855714__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaClientKey[0]"
+    },
+    {
+      "label": "captchaClientKey",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_2855714___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_2855714__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaClientKey[0]"
+    },
+    {
+      "label": "captchaEnabled",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_55274951-guidetextbox_7366135___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_7366135__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaEnabled[0]"
+    },
+    {
+      "label": "captchaEnabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_7366135___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_7366135__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaEnabled[0]"
+    },
+    {
+      "label": "captchaEnabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_7366135___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_7366135__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaEnabled[0]"
+    },
+    {
+      "label": "rightClickEnabled",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_55274951-guidetextbox_7366135_1615877708___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_7366135_1615877708__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].rightClickEnabled[0]"
+    },
+    {
+      "label": "rightClickEnabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_7366135_1615877708___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_7366135_1615877708__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].rightClickEnabled[0]"
+    },
+    {
+      "label": "rightClickEnabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_55274951-guidetextbox_7366135_1615877708___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_55274951-guidetextbox_7366135_1615877708__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].rightClickEnabled[0]"
+    }
+  ]
+}

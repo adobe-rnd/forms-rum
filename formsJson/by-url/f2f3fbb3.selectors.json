@@ -1,0 +1,1024 @@
+{
+  "url": "https://applyonline.hdfcbank.com/qr.html",
+  "urlKey": "https://applyonline.hdfcbank.com/qr.html",
+  "formName": "Generate QR Code – Xpressway",
+  "ok": true,
+  "error": null,
+  "rows": [
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_1566824057-panel_1468628587-guidetextbox_5542018___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_1566824057-panel_1468628587-guidetextbox_5542018__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].phonePanel[0].numberPanel[0].mobilenumber[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_1566824057-panel_1468628587-guidetextbox_5542018___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_1566824057-panel_1468628587-guidetextbox_5542018__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].phonePanel[0].numberPanel[0].mobilenumber[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_1566824057-panel_1468628587-guidetextbox_5542018___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_1566824057-panel_1468628587-guidetextbox_5542018__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].phonePanel[0].numberPanel[0].mobilenumber[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy_177321071-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy_177321071-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].lgPanel[0].lgCodeInput[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy_177321071-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy_177321071-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].lgPanel[0].lgCodeInput[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy_177321071-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy_177321071-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].lgPanel[0].lgCodeInput[0]"
+    },
+    {
+      "label": "Enter OTP ",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-guidetextbox_copy_co___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].OTPpanel[0].otpField[0]"
+    },
+    {
+      "label": "Enter OTP ",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-guidetextbox_copy_co___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].OTPpanel[0].otpField[0]"
+    },
+    {
+      "label": "Enter OTP ",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-guidetextbox_copy_co___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].OTPpanel[0].otpField[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-panel_1872021706-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-panel_1872021706-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].OTPpanel[0].otppanelSubSection[0].timeSection[0].seconds[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-panel_1872021706-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-panel_1872021706-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].OTPpanel[0].otppanelSubSection[0].timeSection[0].seconds[0]"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].OTPpanel[0].resendOTPButton[0]"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-panel_574432135-panel_copy-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].employeeIdentificationPanel[0].OTPpanel[0].resendOTPButton[0]"
+    },
+    {
+      "label": "REQUEST OTP",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].requestOTP[0]"
+    },
+    {
+      "label": "REQUEST OTP",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].requestOTP[0]"
+    },
+    {
+      "label": "Login",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-guidebutton_1261645525___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-guidebutton_1261645525__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].submitOTP[0]"
+    },
+    {
+      "label": "Login",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-guidebutton_1261645525___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_605994297-panel_633258698-guidebutton_1261645525__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].submitOTP[0]"
+    },
+    {
+      "label": "RETURN HOME",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_36440611-panel-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_36440611-panel-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].errorSection[0].qrErrorPanel[0].startAgainButton[0]"
+    },
+    {
+      "label": "RETURN HOME",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_36440611-panel-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_36440611-panel-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].errorSection[0].qrErrorPanel[0].startAgainButton[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_147453959-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_147453959-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].lcCodePanel[0].LC_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_147453959-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_147453959-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].lcCodePanel[0].LC_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].smCodePanel[0].SM_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].smCodePanel[0].SM_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_132263799-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_132263799-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].seCodePanel[0].SE_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_132263799-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_132263799-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].seCodePanel[0].SE_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_499870232-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_499870232-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].dsaCodePanel[0].DSA[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_499870232-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_499870232-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].dsaCodePanel[0].DSA[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].branchCodePanel[0].BRANCH_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].branchCodePanel[0].BRANCH_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_688992673-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_688992673-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].tlCodePanel[0].TL[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_688992673-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_688992673-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].tlCodePanel[0].TL[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_426230613-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_426230613-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].tseCodePanel[0].TSE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_426230613-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_426230613-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].tseCodePanel[0].TSE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_193317289-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_193317289-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].brCodePanel[0].BR_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_193317289-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_193317289-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].brCodePanel[0].BR_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].lc2CodePanel[0].LC2_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].lc2CodePanel[0].LC2_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_1722539409-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_1722539409-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].channelCodePanel[0].channelCodeInput[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_1722539409-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_1722539409-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].channelCodePanel[0].channelCodeInput[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_1620056831-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_1620056831-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].merchantCodePanel[0].merchantCodeInput[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_1620056831-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_1620056831-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].merchantCodePanel[0].merchantCodeInput[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_354102316-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_354102316-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].teamCodePanel[0].teamCodeInput[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_354102316-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_354102316-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].teamCodePanel[0].teamCodeInput[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_538524405-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_538524405-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].salesPromoCodePanel[0].SALES_PROMO_CODE[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_538524405-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_538524405-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].salesPromoCodePanel[0].SALES_PROMO_CODE[0]"
+    },
+    {
+      "label": "Channel List",
+      "selector": "form#guideContainerForm select#guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_1600833290-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_1600833290-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].channelPanel[0].CHANNEL[0]"
+    },
+    {
+      "label": "Channel List",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_1600833290-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-panel_636112632-panel_copy_200411763_1600833290-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].BankUseSection[0].channelPanel[0].CHANNEL[0]"
+    },
+    {
+      "label": "CONTINUE",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_copy-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].generateQRCTA[0]"
+    },
+    {
+      "label": "CONTINUE",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_copy-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_copy-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeOtherDetailsSection[0].generateQRCTA[0]"
+    },
+    {
+      "label": "Data Security Public Key",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].dataSecurityPublicKey[0]"
+    },
+    {
+      "label": "Data Security Public Key",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].dataSecurityPublicKey[0]"
+    },
+    {
+      "label": "Data Security Public Key",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].dataSecurityPublicKey[0]"
+    },
+    {
+      "label": "Data Security Enabled",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_1010916070___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_1010916070__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].dataSecurityEnabled[0]"
+    },
+    {
+      "label": "Data Security Enabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_1010916070___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_1010916070__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].dataSecurityEnabled[0]"
+    },
+    {
+      "label": "Data Security Enabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_1010916070___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_1010916070__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].dataSecurityEnabled[0]"
+    },
+    {
+      "label": "Journey ID",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_171189644___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_171189644__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].journeyId[0]"
+    },
+    {
+      "label": "Journey ID",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_171189644___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_171189644__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].journeyId[0]"
+    },
+    {
+      "label": "Journey ID",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_171189644___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_171189644__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].journeyId[0]"
+    },
+    {
+      "label": "Prefill Status",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_2136452802___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_2136452802__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].prefillStatus[0]"
+    },
+    {
+      "label": "Prefill Status",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_2136452802___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_2136452802__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].prefillStatus[0]"
+    },
+    {
+      "label": "Prefill Status",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_2136452802___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_2136452802__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].prefillStatus[0]"
+    },
+    {
+      "label": "captchaClientKey",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_285571403___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_285571403__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].captchaClientKey[0]"
+    },
+    {
+      "label": "captchaClientKey",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_285571403___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_285571403__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].captchaClientKey[0]"
+    },
+    {
+      "label": "captchaClientKey",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_285571403___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_285571403__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].captchaClientKey[0]"
+    },
+    {
+      "label": "captchaEnabled",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_736613513___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_736613513__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].captchaEnabled[0]"
+    },
+    {
+      "label": "captchaEnabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_736613513___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_736613513__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].captchaEnabled[0]"
+    },
+    {
+      "label": "captchaEnabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_736613513___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_736613513__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].captchaEnabled[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_2139402___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_2139402__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].schemeCode[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_2139402___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_2139402__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].schemeCode[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_1677798___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_1677798__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].currentFormContext[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_1677798___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_1677798__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].currentFormContext[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_1677798___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_1608788079_cop-guidetextbox_1677798__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].formRenderingContext[0].currentFormContext[0]"
+    },
+    {
+      "label": "SHARE CODE",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel-panel_825704391-panel-guidebutton_14335169___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel-panel_825704391-panel-guidebutton_14335169__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].qrcodePanel[0].qrbtndescpanel[0].detailspanel[0].qrShare[0]"
+    },
+    {
+      "label": "SHARE CODE",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel-panel_825704391-panel-guidebutton_14335169___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel-panel_825704391-panel-guidebutton_14335169__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].qrcodePanel[0].qrbtndescpanel[0].detailspanel[0].qrShare[0]"
+    },
+    {
+      "label": "DOWNLOAD QR",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel-panel_825704391-panel_1678882746-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel-panel_825704391-panel_1678882746-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].qrcodePanel[0].qrbtndescpanel[0].actionButtons[0].downloadQR[0]"
+    },
+    {
+      "label": "DOWNLOAD QR",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel-panel_825704391-panel_1678882746-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel-panel_825704391-panel_1678882746-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].qrcodePanel[0].qrbtndescpanel[0].actionButtons[0].downloadQR[0]"
+    },
+    {
+      "label": "EDIT DETAILS",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel-panel_825704391-panel_1678882746-guidebutton_713770240___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel-panel_825704391-panel_1678882746-guidebutton_713770240__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].qrcodePanel[0].qrbtndescpanel[0].actionButtons[0].editdetails[0]"
+    },
+    {
+      "label": "EDIT DETAILS",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel-panel_825704391-panel_1678882746-guidebutton_713770240___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel-panel_825704391-panel_1678882746-guidebutton_713770240__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].qrcodePanel[0].qrbtndescpanel[0].actionButtons[0].editdetails[0]"
+    },
+    {
+      "label": "RETURN HOME",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1212437996-panel_36440611_copy-panel-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1212437996-panel_36440611_copy-panel-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].custerrorpanel[0].custerrorSection[0].qrErrorPanel[0].custAgainButton[0]"
+    },
+    {
+      "label": "RETURN HOME",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1212437996-panel_36440611_copy-panel-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1212437996-panel_36440611_copy-panel-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].custerrorpanel[0].custerrorSection[0].qrErrorPanel[0].custAgainButton[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].numberPanel[0].custloginmobilenum[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].numberPanel[0].custloginmobilenum[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel-guidenumericbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].numberPanel[0].custloginmobilenum[0]"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form#guideContainerForm input[type='tel']",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].dateofBirthInputField[0]"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form#guideContainerForm",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].dateofBirthInputField[0]"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput___widget > div:nth-of-type(1) > input",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].dateofBirthInputField[0]"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput___widget > div:nth-of-type(2) > input",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].dateofBirthInputField[0]"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput___widget > div:nth-of-type(3) > input",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].dateofBirthInputField[0]"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput___widget > div:nth-of-type(1) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].dateofBirthInputField[0]"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput___widget > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].dateofBirthInputField[0]"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput___widget > div:nth-of-type(3) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidedateinput__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].dateofBirthInputField[0]"
+    },
+    {
+      "label": "Minumum Age",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidenumericbox_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidenumericbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].minAge[0]"
+    },
+    {
+      "label": "Minumum Age",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidenumericbox_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidenumericbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].minAge[0]"
+    },
+    {
+      "label": "Minumum Age",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidenumericbox_copy___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidenumericbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].minAge[0]"
+    },
+    {
+      "label": "Maximum Age",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidenumericbox_1398___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidenumericbox_1398__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].maxAge[0]"
+    },
+    {
+      "label": "Maximum Age",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidenumericbox_1398___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidenumericbox_1398__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].maxAge[0]"
+    },
+    {
+      "label": "Maximum Age",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidenumericbox_1398___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_copy-panel_copy-guidenumericbox_1398__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].dobMainPanel[0].dobInputPanel[0].maxAge[0]"
+    },
+    {
+      "label": "Change to PAN",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_994999478-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_994999478-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].changetopanbtn[0].custlogin-custIDbtn[0]"
+    },
+    {
+      "label": "Change to PAN",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_994999478-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel_1778437688-panel_994999478-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].CustomerMobDobPanel[0].changetopanbtn[0].custlogin-custIDbtn[0]"
+    },
+    {
+      "label": "panInputField",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel-guidenumericbox_1808___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel-guidenumericbox_1808__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].panidpanel[0].panInputField[0]"
+    },
+    {
+      "label": "panInputField",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel-guidenumericbox_1808___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel-guidenumericbox_1808__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].panidpanel[0].panInputField[0]"
+    },
+    {
+      "label": "Change to DOB",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel-panel_copy-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel-panel_copy-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].panidpanel[0].changetodobcta[0].changetomobileno[0]"
+    },
+    {
+      "label": "Change to DOB",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel-panel_copy-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-panel-panel_copy-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].panidpanel[0].changetodobcta[0].changetomobileno[0]"
+    },
+    {
+      "label": "CONTINUE",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-guidebutton_15704552___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-guidebutton_15704552__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].custlogin-continuebtn[0]"
+    },
+    {
+      "label": "CONTINUE",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-guidebutton_15704552___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1080036366-panel_1730207211-guidebutton_15704552__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerLoginSection[0].customerIdentifiactionPanel[0].custlogin-continuebtn[0]"
+    },
+    {
+      "label": "NAME",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].Name[0]"
+    },
+    {
+      "label": "NAME",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].Name[0]"
+    },
+    {
+      "label": "NAME",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].Name[0]"
+    },
+    {
+      "label": "AGE",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].age[0]"
+    },
+    {
+      "label": "AGE",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].age[0]"
+    },
+    {
+      "label": "AGE",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].age[0]"
+    },
+    {
+      "label": "PLACE",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_73___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_73__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].place[0]"
+    },
+    {
+      "label": "PLACE",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_73___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_73__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].place[0]"
+    },
+    {
+      "label": "PLACE",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_73___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_73__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].place[0]"
+    },
+    {
+      "label": "Address Last Updated",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_53___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_53__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].adresslastupdated[0]"
+    },
+    {
+      "label": "Address Last Updated",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_53___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_53__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].adresslastupdated[0]"
+    },
+    {
+      "label": "Address Last Updated",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_53___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_53__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].adresslastupdated[0]"
+    },
+    {
+      "label": "Interest",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_15___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_15__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].Interest[0]"
+    },
+    {
+      "label": "Interest",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_15___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_15__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].Interest[0]"
+    },
+    {
+      "label": "Interest",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_15___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_15__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].Interest[0]"
+    },
+    {
+      "label": "Life Events",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_10___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_10__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].lifeevents[0]"
+    },
+    {
+      "label": "Life Events",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_10___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_10__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].lifeevents[0]"
+    },
+    {
+      "label": "Life Events",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_10___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop-panel_1635179523_cop_133054534-guidetextbox_copy_10__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].personalInformationPanel[0].personalInfoBodyPanel[0].lifeevents[0]"
+    },
+    {
+      "label": "Customer Category",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].financialsinformationpanel[0].financialsInfoBodyPanel[0].customercategory[0]"
+    },
+    {
+      "label": "Customer Category",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].financialsinformationpanel[0].financialsInfoBodyPanel[0].customercategory[0]"
+    },
+    {
+      "label": "Customer Category",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].financialsinformationpanel[0].financialsInfoBodyPanel[0].customercategory[0]"
+    },
+    {
+      "label": "Cibil Score",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_1532138915___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_1532138915__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].financialsinformationpanel[0].financialsInfoBodyPanel[0].cibilscore[0]"
+    },
+    {
+      "label": "Cibil Score",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_1532138915___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_1532138915__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].financialsinformationpanel[0].financialsInfoBodyPanel[0].cibilscore[0]"
+    },
+    {
+      "label": "Cibil Score",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_1532138915___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_1532138915__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].financialsinformationpanel[0].financialsInfoBodyPanel[0].cibilscore[0]"
+    },
+    {
+      "label": "Relationship Type",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_392031___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_392031__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].financialsinformationpanel[0].financialsInfoBodyPanel[0].relationshiptype[0]"
+    },
+    {
+      "label": "Relationship Type",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_392031___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_392031__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].financialsinformationpanel[0].financialsInfoBodyPanel[0].relationshiptype[0]"
+    },
+    {
+      "label": "Relationship Type",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_392031___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_392031__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].financialsinformationpanel[0].financialsInfoBodyPanel[0].relationshiptype[0]"
+    },
+    {
+      "label": "Current Holding",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_282477730___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_282477730__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].financialsinformationpanel[0].financialsInfoBodyPanel[0].currentholding[0]"
+    },
+    {
+      "label": "Current Holding",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_282477730___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_282477730__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].financialsinformationpanel[0].financialsInfoBodyPanel[0].currentholding[0]"
+    },
+    {
+      "label": "Current Holding",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_282477730___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_1635179523_cop_400161635-panel_copy-guidetextbox_copy_co_282477730__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].financialsinformationpanel[0].financialsInfoBodyPanel[0].currentholding[0]"
+    },
+    {
+      "label": "GET CUSTOMER DETAILS",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_116959036-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_116959036-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].getCustomerDetails[0].getCustomerDetailsCTA[0]"
+    },
+    {
+      "label": "GET CUSTOMER DETAILS",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_116959036-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1441289087-panel_116959036-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].customerinformationpage[0].getCustomerDetails[0].getCustomerDetailsCTA[0]"
+    },
+    {
+      "label": "CHECK EMAIL",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1596526209-panel-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1596526209-panel-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].cust_popup_panel[0].cust-details-popup[0].btnpanel[0].checkemailbtn[0]"
+    },
+    {
+      "label": "CHECK EMAIL",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1596526209-panel-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_1219344431-panel_1596526209-panel-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].CustomerLoginPanel[0].cust_popup_panel[0].cust-details-popup[0].btnpanel[0].checkemailbtn[0]"
+    },
+    {
+      "label": "Go Back",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_608562927-panel_691191987-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_608562927-panel_691191987-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].salesProfilePanel[0].performanceComingsoonPanel[0].performancebackbtn[0]"
+    },
+    {
+      "label": "Go Back",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_608562927-panel_691191987-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_608562927-panel_691191987-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].salesProfilePanel[0].performanceComingsoonPanel[0].performancebackbtn[0]"
+    },
+    {
+      "label": "Go Back",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_608562927-panel_1490880378-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_608562927-panel_1490880378-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].salesProfilePanel[0].leaderboardComingSoonPanel[0].leaderboardbackbtn[0]"
+    },
+    {
+      "label": "Go Back",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_608562927-panel_1490880378-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-panel_193089399-panel_948265493-panel_608562927-panel_1490880378-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].employeeDashbordPanel[0].employeeDashbordPanelTabs[0].salesProfilePanel[0].leaderboardComingSoonPanel[0].leaderboardbackbtn[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1274833878-guidetextbox_2139402___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-guidetextbox_2139402__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].schemeCode[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1274833878-guidetextbox_2139402___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1274833878-guidetextbox_2139402__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].wrapperPanel[0].schemeCode[0]"
+    }
+  ]
+}

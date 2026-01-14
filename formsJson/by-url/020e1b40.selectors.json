@@ -1,0 +1,2956 @@
+{
+  "url": "https://applyonline.hdfcbank.com/digital/nriaddonaccounts",
+  "urlKey": "https://applyonline.hdfcbank.com/digital/nriaddonaccounts",
+  "formName": "Account Opening NRE NRO",
+  "ok": true,
+  "error": null,
+  "rows": [
+    {
+      "label": "text1736429969877",
+      "selector": "form #text-2a419d1f18",
+      "kind": "unknown",
+      "id": "text-2a419d1f18",
+      "qname": "$form.bankLoginWrapper.bankLoginPanel.bankLoginPanel.text1736429969877"
+    },
+    {
+      "label": "Enter your Username",
+      "selector": "form input[type='text']#textinput-3bd16f4438",
+      "kind": "unknown",
+      "id": "textinput-3bd16f4438",
+      "qname": "$form.bankLoginWrapper.bankLoginPanel.bankLoginPanel.username"
+    },
+    {
+      "label": "Enter your Username",
+      "selector": "form #textinput-3bd16f4438",
+      "kind": "unknown",
+      "id": "textinput-3bd16f4438",
+      "qname": "$form.bankLoginWrapper.bankLoginPanel.bankLoginPanel.username"
+    },
+    {
+      "label": "Enter your Password",
+      "selector": "form input[type='text']#textinput-81036dbd5d",
+      "kind": "unknown",
+      "id": "textinput-81036dbd5d",
+      "qname": "$form.bankLoginWrapper.bankLoginPanel.bankLoginPanel.password"
+    },
+    {
+      "label": "Enter your Password",
+      "selector": "form #textinput-81036dbd5d",
+      "kind": "unknown",
+      "id": "textinput-81036dbd5d",
+      "qname": "$form.bankLoginWrapper.bankLoginPanel.bankLoginPanel.password"
+    },
+    {
+      "label": "LOGIN",
+      "selector": "form button[type='button']#button-9da18b9948",
+      "kind": "unknown",
+      "id": "button-9da18b9948",
+      "qname": "$form.bankLoginWrapper.bankLoginButton"
+    },
+    {
+      "label": "LOGIN",
+      "selector": "form #button-9da18b9948",
+      "kind": "unknown",
+      "id": "button-9da18b9948",
+      "qname": "$form.bankLoginWrapper.bankLoginButton"
+    },
+    {
+      "label": "letsGetStarted",
+      "selector": "form #text-cc6c7ea529",
+      "kind": "unknown",
+      "id": "text-cc6c7ea529",
+      "qname": "$form.parentLandingPagePanel.landingPanel.letsGetStarted"
+    },
+    {
+      "label": "Text Input",
+      "selector": "form input[type='text']#textinput-5417f7e938",
+      "kind": "unknown",
+      "id": "textinput-5417f7e938",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.mobilePanel.countryCode"
+    },
+    {
+      "label": "Text Input",
+      "selector": "form #textinput-5417f7e938",
+      "kind": "unknown",
+      "id": "textinput-5417f7e938",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.mobilePanel.countryCode"
+    },
+    {
+      "label": "Registered Mobile Number",
+      "selector": "form input[type='text']#textinput-164fb3897e",
+      "kind": "unknown",
+      "id": "textinput-164fb3897e",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.mobilePanel.registeredMobileNumber"
+    },
+    {
+      "label": "Registered Mobile Number",
+      "selector": "form #textinput-164fb3897e",
+      "kind": "unknown",
+      "id": "textinput-164fb3897e",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.mobilePanel.registeredMobileNumber"
+    },
+    {
+      "label": "Search Country Code",
+      "selector": "form input[type='text']#textinput-4c3b677297",
+      "kind": "unknown",
+      "id": "textinput-4c3b677297",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.mobilePanel.searchCode"
+    },
+    {
+      "label": "Search Country Code",
+      "selector": "form #textinput-4c3b677297",
+      "kind": "unknown",
+      "id": "textinput-4c3b677297",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.mobilePanel.searchCode"
+    },
+    {
+      "label": "registerMobileNumberError",
+      "selector": "form #text-56c5b0adb1",
+      "kind": "unknown",
+      "id": "text-56c5b0adb1",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.mobilePanel.registerMobileNumberError"
+    },
+    {
+      "label": "Mobile Number",
+      "selector": "form input[type='text']#textinput-1510ae674d",
+      "kind": "unknown",
+      "id": "textinput-1510ae674d",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.mobilePanel.maskedMobileNumber"
+    },
+    {
+      "label": "Mobile Number",
+      "selector": "form #textinput-1510ae674d",
+      "kind": "unknown",
+      "id": "textinput-1510ae674d",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.mobilePanel.maskedMobileNumber"
+    },
+    {
+      "label": "Identify Using",
+      "selector": "form fieldset#radiobutton-0b751c3105",
+      "kind": "unknown",
+      "id": "radiobutton-0b751c3105",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.panDobSelection"
+    },
+    {
+      "label": "Identify Using",
+      "selector": "form #radiobutton-0b751c3105",
+      "kind": "unknown",
+      "id": "radiobutton-0b751c3105",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.panDobSelection"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form input[type='text']#datepicker-4c753dda4c",
+      "kind": "unknown",
+      "id": "datepicker-4c753dda4c",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.dateOfBirth"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form #datepicker-4c753dda4c",
+      "kind": "unknown",
+      "id": "datepicker-4c753dda4c",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.dateOfBirth"
+    },
+    {
+      "label": "PAN",
+      "selector": "form input[type='text']#textinput-c6528e6359",
+      "kind": "unknown",
+      "id": "textinput-c6528e6359",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.pan"
+    },
+    {
+      "label": "PAN",
+      "selector": "form #textinput-c6528e6359",
+      "kind": "unknown",
+      "id": "textinput-c6528e6359",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.pan"
+    },
+    {
+      "label": "panErrorText",
+      "selector": "form #text-b33e838460",
+      "kind": "unknown",
+      "id": "text-b33e838460",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.panErrorText"
+    },
+    {
+      "label": "dobErrorText",
+      "selector": "form #text-8e75e8a4d4",
+      "kind": "unknown",
+      "id": "text-8e75e8a4d4",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.dobErrorText"
+    },
+    {
+      "label": "dobMaxErrorText",
+      "selector": "form #text-e934d04dac",
+      "kind": "unknown",
+      "id": "text-e934d04dac",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.dobMaxErrorText"
+    },
+    {
+      "label": "JourneyID",
+      "selector": "form input[type='text']#textinput-e50b08b064",
+      "kind": "unknown",
+      "id": "textinput-e50b08b064",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.journeyId"
+    },
+    {
+      "label": "JourneyID",
+      "selector": "form #textinput-e50b08b064",
+      "kind": "unknown",
+      "id": "textinput-e50b08b064",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.journeyId"
+    },
+    {
+      "label": "Journey Flag",
+      "selector": "form input[type='text']#textinput-e015b9909e",
+      "kind": "unknown",
+      "id": "textinput-e015b9909e",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.journeyFlag"
+    },
+    {
+      "label": "Journey Flag",
+      "selector": "form #textinput-e015b9909e",
+      "kind": "unknown",
+      "id": "textinput-e015b9909e",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.journeyFlag"
+    },
+    {
+      "label": "Journey Name",
+      "selector": "form input[type='text']#textinput-df6b807f88",
+      "kind": "unknown",
+      "id": "textinput-df6b807f88",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.journeyName"
+    },
+    {
+      "label": "Journey Name",
+      "selector": "form #textinput-df6b807f88",
+      "kind": "unknown",
+      "id": "textinput-df6b807f88",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.identifierPanel.journeyName"
+    },
+    {
+      "label": "Journey Name",
+      "selector": "form input[type='text']#textinput-ad052b8974",
+      "kind": "unknown",
+      "id": "textinput-ad052b8974",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.runtime.journeyName"
+    },
+    {
+      "label": "Journey Name",
+      "selector": "form #textinput-ad052b8974",
+      "kind": "unknown",
+      "id": "textinput-ad052b8974",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.runtime.journeyName"
+    },
+    {
+      "label": "JourneyID",
+      "selector": "form input[type='text']#textinput-6213c16f8b",
+      "kind": "unknown",
+      "id": "textinput-6213c16f8b",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.runtime.journeyId"
+    },
+    {
+      "label": "JourneyID",
+      "selector": "form #textinput-6213c16f8b",
+      "kind": "unknown",
+      "id": "textinput-6213c16f8b",
+      "qname": "$form.parentLandingPagePanel.landingPanel.loginFragmentNreNro.runtime.journeyId"
+    },
+    {
+      "label": "<p>I hereby consent to collection and processing of my data for availing this account and relevant services in the manner described in the notice&nbsp;<u><i>here</i></u></p>\n",
+      "selector": "form input[type='checkbox']#checkbox-3f2e6838f8",
+      "kind": "unknown",
+      "id": "checkbox-3f2e6838f8",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.checkboxConsent1Label"
+    },
+    {
+      "label": "<p>I hereby consent to collection and processing of my data for availing this account and relevant services in the manner described in the notice&nbsp;<u><i>here</i></u></p>\n",
+      "selector": "form #checkbox-3f2e6838f8",
+      "kind": "unknown",
+      "id": "checkbox-3f2e6838f8",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.checkboxConsent1Label"
+    },
+    {
+      "label": "Go To Bottom",
+      "selector": "form button[type='button']#button-05382f384f",
+      "kind": "unknown",
+      "id": "button-05382f384f",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.consentPanel1.goToBottom"
+    },
+    {
+      "label": "Go To Bottom",
+      "selector": "form #button-05382f384f",
+      "kind": "unknown",
+      "id": "button-05382f384f",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.consentPanel1.goToBottom"
+    },
+    {
+      "label": "checkboxConsent1Text",
+      "selector": "form #text-39d4c550fe",
+      "kind": "unknown",
+      "id": "text-39d4c550fe",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.consentPanel1.checkboxConsent1Text"
+    },
+    {
+      "label": "I Accept >",
+      "selector": "form button[type='button']#button-e7f4599157",
+      "kind": "unknown",
+      "id": "button-e7f4599157",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.consentPanel1.checkboxConsent1CTA"
+    },
+    {
+      "label": "I Accept >",
+      "selector": "form #button-e7f4599157",
+      "kind": "unknown",
+      "id": "button-e7f4599157",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.consentPanel1.checkboxConsent1CTA"
+    },
+    {
+      "label": "<p>I hereby consent to processing of my Data for sending me personalized offers on other products and services of HDFC Bank, its affiliates and partners through Call, SMS, WhatsApp, Email or other channels in the manner described in the notice&nbsp;<u><i>here</i></u></p>\n",
+      "selector": "form input[type='checkbox']#checkbox-a3d0b1c7e5",
+      "kind": "unknown",
+      "id": "checkbox-a3d0b1c7e5",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.checkboxConsent2Label"
+    },
+    {
+      "label": "<p>I hereby consent to processing of my Data for sending me personalized offers on other products and services of HDFC Bank, its affiliates and partners through Call, SMS, WhatsApp, Email or other channels in the manner described in the notice&nbsp;<u><i>here</i></u></p>\n",
+      "selector": "form #checkbox-a3d0b1c7e5",
+      "kind": "unknown",
+      "id": "checkbox-a3d0b1c7e5",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.checkboxConsent2Label"
+    },
+    {
+      "label": "Go To Bottom",
+      "selector": "form button[type='button']#button-7a94ed1602",
+      "kind": "unknown",
+      "id": "button-7a94ed1602",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.consentPanel2.goToBottom"
+    },
+    {
+      "label": "Go To Bottom",
+      "selector": "form #button-7a94ed1602",
+      "kind": "unknown",
+      "id": "button-7a94ed1602",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.consentPanel2.goToBottom"
+    },
+    {
+      "label": "checkboxConsent2Text",
+      "selector": "form #text-08ac39792a",
+      "kind": "unknown",
+      "id": "text-08ac39792a",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.consentPanel2.checkboxConsent2Text"
+    },
+    {
+      "label": "Okay >",
+      "selector": "form button[type='button']#button-b60e34c426",
+      "kind": "unknown",
+      "id": "button-b60e34c426",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.consentPanel2.checkboxConsent2CTA"
+    },
+    {
+      "label": "Okay >",
+      "selector": "form #button-b60e34c426",
+      "kind": "unknown",
+      "id": "button-b60e34c426",
+      "qname": "$form.parentLandingPagePanel.landingPanel.consentsFragmentNreNro.consentPanel2.checkboxConsent2CTA"
+    },
+    {
+      "label": "Nre Nro Page Redirected Resp",
+      "selector": "form input[type='text']#textinput-3e76208a15",
+      "kind": "unknown",
+      "id": "textinput-3e76208a15",
+      "qname": "$form.parentLandingPagePanel.landingPanel.nreNroPageRedirectedResp"
+    },
+    {
+      "label": "Nre Nro Page Redirected Resp",
+      "selector": "form #textinput-3e76208a15",
+      "kind": "unknown",
+      "id": "textinput-3e76208a15",
+      "qname": "$form.parentLandingPagePanel.landingPanel.nreNroPageRedirectedResp"
+    },
+    {
+      "label": "Functionality To Perform",
+      "selector": "form input[type='text']#textinput-8475cdd626",
+      "kind": "unknown",
+      "id": "textinput-8475cdd626",
+      "qname": "$form.parentLandingPagePanel.landingPanel.toDo"
+    },
+    {
+      "label": "Functionality To Perform",
+      "selector": "form #textinput-8475cdd626",
+      "kind": "unknown",
+      "id": "textinput-8475cdd626",
+      "qname": "$form.parentLandingPagePanel.landingPanel.toDo"
+    },
+    {
+      "label": "InitHiddenField",
+      "selector": "form input[type='text']#textinput-c2a7d3c882",
+      "kind": "unknown",
+      "id": "textinput-c2a7d3c882",
+      "qname": "$form.parentLandingPagePanel.landingPanel.init_hidden_field"
+    },
+    {
+      "label": "InitHiddenField",
+      "selector": "form #textinput-c2a7d3c882",
+      "kind": "unknown",
+      "id": "textinput-c2a7d3c882",
+      "qname": "$form.parentLandingPagePanel.landingPanel.init_hidden_field"
+    },
+    {
+      "label": "Page To Show Variable",
+      "selector": "form input[type='text']#textinput-a4465143de",
+      "kind": "unknown",
+      "id": "textinput-a4465143de",
+      "qname": "$form.parentLandingPagePanel.landingPanel.page_to_show_variable"
+    },
+    {
+      "label": "Page To Show Variable",
+      "selector": "form #textinput-a4465143de",
+      "kind": "unknown",
+      "id": "textinput-a4465143de",
+      "qname": "$form.parentLandingPagePanel.landingPanel.page_to_show_variable"
+    },
+    {
+      "label": "Fatca JWT Id Token",
+      "selector": "form input[type='text']#textinput-a25d2206fd",
+      "kind": "unknown",
+      "id": "textinput-a25d2206fd",
+      "qname": "$form.parentLandingPagePanel.landingPanel.fatca_jwt_id_token"
+    },
+    {
+      "label": "Fatca JWT Id Token",
+      "selector": "form #textinput-a25d2206fd",
+      "kind": "unknown",
+      "id": "textinput-a25d2206fd",
+      "qname": "$form.parentLandingPagePanel.landingPanel.fatca_jwt_id_token"
+    },
+    {
+      "label": "Idcom Token",
+      "selector": "form input[type='text']#textinput-9e897d6b09",
+      "kind": "unknown",
+      "id": "textinput-9e897d6b09",
+      "qname": "$form.parentLandingPagePanel.landingPanel.idcom_token"
+    },
+    {
+      "label": "Idcom Token",
+      "selector": "form #textinput-9e897d6b09",
+      "kind": "unknown",
+      "id": "textinput-9e897d6b09",
+      "qname": "$form.parentLandingPagePanel.landingPanel.idcom_token"
+    },
+    {
+      "label": "CRM Lead ID",
+      "selector": "form input[type='text']#textinput-0176fb5736",
+      "kind": "unknown",
+      "id": "textinput-0176fb5736",
+      "qname": "$form.parentLandingPagePanel.landingPanel.crm_leadId"
+    },
+    {
+      "label": "CRM Lead ID",
+      "selector": "form #textinput-0176fb5736",
+      "kind": "unknown",
+      "id": "textinput-0176fb5736",
+      "qname": "$form.parentLandingPagePanel.landingPanel.crm_leadId"
+    },
+    {
+      "label": "CRM Lead Number",
+      "selector": "form input[type='text']#textinput-e0a19a0a61",
+      "kind": "unknown",
+      "id": "textinput-e0a19a0a61",
+      "qname": "$form.parentLandingPagePanel.landingPanel.crm_leadNumber"
+    },
+    {
+      "label": "CRM Lead Number",
+      "selector": "form #textinput-e0a19a0a61",
+      "kind": "unknown",
+      "id": "textinput-e0a19a0a61",
+      "qname": "$form.parentLandingPagePanel.landingPanel.crm_leadNumber"
+    },
+    {
+      "label": "User Selected Product Name",
+      "selector": "form input[type='text']#textinput-75f6bb75af",
+      "kind": "unknown",
+      "id": "textinput-75f6bb75af",
+      "qname": "$form.parentLandingPagePanel.landingPanel.userSelectedProductDetails.userSelectedProductName"
+    },
+    {
+      "label": "User Selected Product Name",
+      "selector": "form #textinput-75f6bb75af",
+      "kind": "unknown",
+      "id": "textinput-75f6bb75af",
+      "qname": "$form.parentLandingPagePanel.landingPanel.userSelectedProductDetails.userSelectedProductName"
+    },
+    {
+      "label": "User Selected Product Account Type",
+      "selector": "form input[type='text']#textinput-3aed0fc6e4",
+      "kind": "unknown",
+      "id": "textinput-3aed0fc6e4",
+      "qname": "$form.parentLandingPagePanel.landingPanel.userSelectedProductDetails.userSelectedProductAccountType"
+    },
+    {
+      "label": "User Selected Product Account Type",
+      "selector": "form #textinput-3aed0fc6e4",
+      "kind": "unknown",
+      "id": "textinput-3aed0fc6e4",
+      "qname": "$form.parentLandingPagePanel.landingPanel.userSelectedProductDetails.userSelectedProductAccountType"
+    },
+    {
+      "label": "User Selected Product Category",
+      "selector": "form input[type='text']#textinput-be4426d6ce",
+      "kind": "unknown",
+      "id": "textinput-be4426d6ce",
+      "qname": "$form.parentLandingPagePanel.landingPanel.userSelectedProductDetails.userSelectedProductCatogery"
+    },
+    {
+      "label": "User Selected Product Category",
+      "selector": "form #textinput-be4426d6ce",
+      "kind": "unknown",
+      "id": "textinput-be4426d6ce",
+      "qname": "$form.parentLandingPagePanel.landingPanel.userSelectedProductDetails.userSelectedProductCatogery"
+    },
+    {
+      "label": "User Selected Product Category ID",
+      "selector": "form input[type='text']#textinput-1cf6ff23e6",
+      "kind": "unknown",
+      "id": "textinput-1cf6ff23e6",
+      "qname": "$form.parentLandingPagePanel.landingPanel.userSelectedProductDetails.userSelectedProductCatogeryID"
+    },
+    {
+      "label": "User Selected Product Category ID",
+      "selector": "form #textinput-1cf6ff23e6",
+      "kind": "unknown",
+      "id": "textinput-1cf6ff23e6",
+      "qname": "$form.parentLandingPagePanel.landingPanel.userSelectedProductDetails.userSelectedProductCatogeryID"
+    },
+    {
+      "label": "User Selected Product Key",
+      "selector": "form input[type='text']#textinput-0733386311",
+      "kind": "unknown",
+      "id": "textinput-0733386311",
+      "qname": "$form.parentLandingPagePanel.landingPanel.userSelectedProductDetails.userSelectedProductKey"
+    },
+    {
+      "label": "User Selected Product Key",
+      "selector": "form #textinput-0733386311",
+      "kind": "unknown",
+      "id": "textinput-0733386311",
+      "qname": "$form.parentLandingPagePanel.landingPanel.userSelectedProductDetails.userSelectedProductKey"
+    },
+    {
+      "label": "User Selected Account Name",
+      "selector": "form input[type='text']#textinput-24b3883ff4",
+      "kind": "unknown",
+      "id": "textinput-24b3883ff4",
+      "qname": "$form.parentLandingPagePanel.landingPanel.userSelectedProductDetails.userSelectedAccountName"
+    },
+    {
+      "label": "User Selected Account Name",
+      "selector": "form #textinput-24b3883ff4",
+      "kind": "unknown",
+      "id": "textinput-24b3883ff4",
+      "qname": "$form.parentLandingPagePanel.landingPanel.userSelectedProductDetails.userSelectedAccountName"
+    },
+    {
+      "label": "Get OTP",
+      "selector": "form button[type='button']#button-752014f45a",
+      "kind": "unknown",
+      "id": "button-752014f45a",
+      "qname": "$form.parentLandingPagePanel.getOTPbutton"
+    },
+    {
+      "label": "Get OTP",
+      "selector": "form #button-752014f45a",
+      "kind": "unknown",
+      "id": "button-752014f45a",
+      "qname": "$form.parentLandingPagePanel.getOTPbutton"
+    },
+    {
+      "label": "stepstofollowTitle",
+      "selector": "form #text-3b67bb6527",
+      "kind": "unknown",
+      "id": "text-3b67bb6527",
+      "qname": "$form.parentLandingPagePanel.stepstofollow-additionalInfoPanel.stepstofollowFragment.stepstofollowTitle"
+    },
+    {
+      "label": "step1Text",
+      "selector": "form #text-3627e3cd4d",
+      "kind": "unknown",
+      "id": "text-3627e3cd4d",
+      "qname": "$form.parentLandingPagePanel.stepstofollow-additionalInfoPanel.stepstofollowFragment.stepsToFollow.step1Panel.step1Text"
+    },
+    {
+      "label": "step2Text",
+      "selector": "form #text-a1953b50bd",
+      "kind": "unknown",
+      "id": "text-a1953b50bd",
+      "qname": "$form.parentLandingPagePanel.stepstofollow-additionalInfoPanel.stepstofollowFragment.stepsToFollow.step2Panel.step2Text"
+    },
+    {
+      "label": "step3Text",
+      "selector": "form #text-e170301bf5",
+      "kind": "unknown",
+      "id": "text-e170301bf5",
+      "qname": "$form.parentLandingPagePanel.stepstofollow-additionalInfoPanel.stepstofollowFragment.stepsToFollow.step3Panel.step3Text"
+    },
+    {
+      "label": "step4Text",
+      "selector": "form #text-9094f2029a",
+      "kind": "unknown",
+      "id": "text-9094f2029a",
+      "qname": "$form.parentLandingPagePanel.stepstofollow-additionalInfoPanel.stepstofollowFragment.stepsToFollow.step4Panel.step4Text"
+    },
+    {
+      "label": "step5Text",
+      "selector": "form #text-3d47b3dd37",
+      "kind": "unknown",
+      "id": "text-3d47b3dd37",
+      "qname": "$form.parentLandingPagePanel.stepstofollow-additionalInfoPanel.stepstofollowFragment.stepsToFollow.step5Panel.step5Text"
+    },
+    {
+      "label": "text",
+      "selector": "form #text-879b32768e",
+      "kind": "unknown",
+      "id": "text-879b32768e",
+      "qname": "$form.parentLandingPagePanel.stepstofollow-additionalInfoPanel.requirementsInformationFragment.basicRequirements.text"
+    },
+    {
+      "label": "text",
+      "selector": "form #text-0076f78582",
+      "kind": "unknown",
+      "id": "text-0076f78582",
+      "qname": "$form.parentLandingPagePanel.stepstofollow-additionalInfoPanel.requirementsInformationFragment.additionalInformation.text"
+    },
+    {
+      "label": "incorrectOTPText",
+      "selector": "form #text-d03ebe255e",
+      "kind": "unknown",
+      "id": "text-d03ebe255e",
+      "qname": "$form.otppanelwrapper.otpFragment.incorrectOTPText"
+    },
+    {
+      "label": "otpHelpText",
+      "selector": "form #text-21406bb2b3",
+      "kind": "unknown",
+      "id": "text-21406bb2b3",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.otpHelpText"
+    },
+    {
+      "label": "otpNumber",
+      "selector": "form input[type='password']#telephoneinput-4bad4f3f45",
+      "kind": "unknown",
+      "id": "telephoneinput-4bad4f3f45",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.otpNumber"
+    },
+    {
+      "label": "otpNumber",
+      "selector": "form #telephoneinput-4bad4f3f45",
+      "kind": "unknown",
+      "id": "telephoneinput-4bad4f3f45",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.otpNumber"
+    },
+    {
+      "label": "resendOTPlabel",
+      "selector": "form #text-de168685e2",
+      "kind": "unknown",
+      "id": "text-de168685e2",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.secondsPanel.resendOTPlabel"
+    },
+    {
+      "label": "seconds",
+      "selector": "form input[type='text']#textinput-c0a1c30f52",
+      "kind": "unknown",
+      "id": "textinput-c0a1c30f52",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.secondsPanel.seconds"
+    },
+    {
+      "label": "seconds",
+      "selector": "form #textinput-c0a1c30f52",
+      "kind": "unknown",
+      "id": "textinput-c0a1c30f52",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.secondsPanel.seconds"
+    },
+    {
+      "label": "secText",
+      "selector": "form #text-f800ef672f",
+      "kind": "unknown",
+      "id": "text-f800ef672f",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.secondsPanel.secText"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form button[type='button']#button-50549f214d",
+      "kind": "unknown",
+      "id": "button-50549f214d",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.otpResend"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form #button-50549f214d",
+      "kind": "unknown",
+      "id": "button-50549f214d",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.otpResend"
+    },
+    {
+      "label": "maxAttemptMessage",
+      "selector": "form #text-8fc58612be",
+      "kind": "unknown",
+      "id": "text-8fc58612be",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.maxAttemptMessage"
+    },
+    {
+      "label": "numRetries",
+      "selector": "form input[type='text']#textinput-75fe60b064",
+      "kind": "unknown",
+      "id": "textinput-75fe60b064",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.otpSubPanel.numRetries"
+    },
+    {
+      "label": "numRetries",
+      "selector": "form #textinput-75fe60b064",
+      "kind": "unknown",
+      "id": "textinput-75fe60b064",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.otpSubPanel.numRetries"
+    },
+    {
+      "label": "attempts",
+      "selector": "form #text-b81deb0c94",
+      "kind": "unknown",
+      "id": "text-b81deb0c94",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.otpSubPanel.attempts"
+    },
+    {
+      "label": "hiddenMaxCount",
+      "selector": "form input[type='number']#numberinput-0bd48785f7",
+      "kind": "unknown",
+      "id": "numberinput-0bd48785f7",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.otpSubPanel.hiddenMaxCount"
+    },
+    {
+      "label": "hiddenMaxCount",
+      "selector": "form #numberinput-0bd48785f7",
+      "kind": "unknown",
+      "id": "numberinput-0bd48785f7",
+      "qname": "$form.otppanelwrapper.otpFragment.otpPanel.otpSubPanel.hiddenMaxCount"
+    },
+    {
+      "label": "Submit",
+      "selector": "form button[type='button']#button-437ae69bd9",
+      "kind": "unknown",
+      "id": "button-437ae69bd9",
+      "qname": "$form.otppanelwrapper.submitOTP"
+    },
+    {
+      "label": "Submit",
+      "selector": "form #button-437ae69bd9",
+      "kind": "unknown",
+      "id": "button-437ae69bd9",
+      "qname": "$form.otppanelwrapper.submitOTP"
+    },
+    {
+      "label": "wizardTitle",
+      "selector": "form #text-7636176500",
+      "kind": "unknown",
+      "id": "text-7636176500",
+      "qname": "$form.wizardPanel.wizardFragment.wizardTitle"
+    },
+    {
+      "label": "accountsuccessMsg",
+      "selector": "form #text-dde0a0908f",
+      "kind": "unknown",
+      "id": "text-dde0a0908f",
+      "qname": "$form.wizardPanel.wizardFragment.accountsuccessMsg"
+    },
+    {
+      "label": "Hey,",
+      "selector": "form input[type='text']#textinput-5852e58169",
+      "kind": "unknown",
+      "id": "textinput-5852e58169",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.customerName"
+    },
+    {
+      "label": "Hey,",
+      "selector": "form #textinput-5852e58169",
+      "kind": "unknown",
+      "id": "textinput-5852e58169",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.customerName"
+    },
+    {
+      "label": "text",
+      "selector": "form #text-dad29f2aad",
+      "kind": "unknown",
+      "id": "text-dad29f2aad",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.text"
+    },
+    {
+      "label": "Cust ID without Masking",
+      "selector": "form input[type='text']#textinput-28ffb47336",
+      "kind": "unknown",
+      "id": "textinput-28ffb47336",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.custIDWithoutMasking"
+    },
+    {
+      "label": "Cust ID without Masking",
+      "selector": "form #textinput-28ffb47336",
+      "kind": "unknown",
+      "id": "textinput-28ffb47336",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.custIDWithoutMasking"
+    },
+    {
+      "label": "Customer ID",
+      "selector": "form input[type='text']#textinput-dd119f614e",
+      "kind": "unknown",
+      "id": "textinput-dd119f614e",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.customerID"
+    },
+    {
+      "label": "Customer ID",
+      "selector": "form #textinput-dd119f614e",
+      "kind": "unknown",
+      "id": "textinput-dd119f614e",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.customerID"
+    },
+    {
+      "label": "Customer ID",
+      "selector": "form input[type='text']#textinput-f451b4b462",
+      "kind": "unknown",
+      "id": "textinput-f451b4b462",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.singleAccount.customerID"
+    },
+    {
+      "label": "Customer ID",
+      "selector": "form #textinput-f451b4b462",
+      "kind": "unknown",
+      "id": "textinput-f451b4b462",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.singleAccount.customerID"
+    },
+    {
+      "label": "Account Number",
+      "selector": "form input[type='text']#textinput-51528a5a74",
+      "kind": "unknown",
+      "id": "textinput-51528a5a74",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.singleAccount.accountNumber"
+    },
+    {
+      "label": "Account Number",
+      "selector": "form #textinput-51528a5a74",
+      "kind": "unknown",
+      "id": "textinput-51528a5a74",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.singleAccount.accountNumber"
+    },
+    {
+      "label": "Account Type",
+      "selector": "form input[type='text']#textinput-4cd4459905",
+      "kind": "unknown",
+      "id": "textinput-4cd4459905",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.singleAccount.accountType"
+    },
+    {
+      "label": "Account Type",
+      "selector": "form #textinput-4cd4459905",
+      "kind": "unknown",
+      "id": "textinput-4cd4459905",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.singleAccount.accountType"
+    },
+    {
+      "label": "IFSC",
+      "selector": "form input[type='text']#textinput-0dd96d6bb8",
+      "kind": "unknown",
+      "id": "textinput-0dd96d6bb8",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.singleAccount.ifsc"
+    },
+    {
+      "label": "IFSC",
+      "selector": "form #textinput-0dd96d6bb8",
+      "kind": "unknown",
+      "id": "textinput-0dd96d6bb8",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.singleAccount.ifsc"
+    },
+    {
+      "label": "Branch",
+      "selector": "form textarea#textinput-2c89957b90",
+      "kind": "unknown",
+      "id": "textinput-2c89957b90",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.singleAccount.branch"
+    },
+    {
+      "label": "Branch",
+      "selector": "form #textinput-2c89957b90",
+      "kind": "unknown",
+      "id": "textinput-2c89957b90",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.singleAccount.branch"
+    },
+    {
+      "label": "Customer ID",
+      "selector": "form input[type='text']#textinput-b8db909c40",
+      "kind": "unknown",
+      "id": "textinput-b8db909c40",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.customerID"
+    },
+    {
+      "label": "Customer ID",
+      "selector": "form #textinput-b8db909c40",
+      "kind": "unknown",
+      "id": "textinput-b8db909c40",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.customerID"
+    },
+    {
+      "label": "multiSelectAccountHeading",
+      "selector": "form #text-9454a4b8a8",
+      "kind": "unknown",
+      "id": "text-9454a4b8a8",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multiSelectAccountHeading"
+    },
+    {
+      "label": "multiSelectAccountText",
+      "selector": "form #text-e948f50dff",
+      "kind": "unknown",
+      "id": "text-e948f50dff",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multiSelectAccountText"
+    },
+    {
+      "label": "multipleCustIDAccount",
+      "selector": "form fieldset#radiobutton-2cb05d6df4",
+      "kind": "unknown",
+      "id": "radiobutton-2cb05d6df4",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multipleAccountRepeatable[0].multiSubPanel.multipleCustIDAccount"
+    },
+    {
+      "label": "multipleCustIDAccount",
+      "selector": "form #radiobutton-2cb05d6df4",
+      "kind": "unknown",
+      "id": "radiobutton-2cb05d6df4",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multipleAccountRepeatable[0].multiSubPanel.multipleCustIDAccount"
+    },
+    {
+      "label": "Account Type",
+      "selector": "form input[type='text']#textinput-f4c12582d1",
+      "kind": "unknown",
+      "id": "textinput-f4c12582d1",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multipleAccountRepeatable[0].multiSubPanel.accountType"
+    },
+    {
+      "label": "Account Type",
+      "selector": "form #textinput-f4c12582d1",
+      "kind": "unknown",
+      "id": "textinput-f4c12582d1",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multipleAccountRepeatable[0].multiSubPanel.accountType"
+    },
+    {
+      "label": "AccountNumber",
+      "selector": "form input[type='text']#textinput-1abcb0629c",
+      "kind": "unknown",
+      "id": "textinput-1abcb0629c",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multipleAccountRepeatable[0].accountNumber"
+    },
+    {
+      "label": "AccountNumber",
+      "selector": "form #textinput-1abcb0629c",
+      "kind": "unknown",
+      "id": "textinput-1abcb0629c",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multipleAccountRepeatable[0].accountNumber"
+    },
+    {
+      "label": "Branch :",
+      "selector": "form textarea#textinput-989801879b",
+      "kind": "unknown",
+      "id": "textinput-989801879b",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multipleAccountRepeatable[0].multiIFSCBranchPanel.branch"
+    },
+    {
+      "label": "Branch :",
+      "selector": "form #textinput-989801879b",
+      "kind": "unknown",
+      "id": "textinput-989801879b",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multipleAccountRepeatable[0].multiIFSCBranchPanel.branch"
+    },
+    {
+      "label": "IFSC :",
+      "selector": "form input[type='text']#textinput-ec2061b245",
+      "kind": "unknown",
+      "id": "textinput-ec2061b245",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multipleAccountRepeatable[0].multiIFSCBranchPanel.ifscCode"
+    },
+    {
+      "label": "IFSC :",
+      "selector": "form #textinput-ec2061b245",
+      "kind": "unknown",
+      "id": "textinput-ec2061b245",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multipleAccountRepeatable[0].multiIFSCBranchPanel.ifscCode"
+    },
+    {
+      "label": "hiddenBranch",
+      "selector": "form #text-0e70638be7",
+      "kind": "unknown",
+      "id": "text-0e70638be7",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.multipleAccounts.multipleAccountRepeatable[0].multiIFSCBranchPanel.hiddenBranch"
+    },
+    {
+      "label": "text1745843665480",
+      "selector": "form #text-6937adb65e",
+      "kind": "unknown",
+      "id": "text-6937adb65e",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_addon_accounts_type_panel.text1745843665480"
+    },
+    {
+      "label": "NRE - CASA Account",
+      "selector": "form input[type='checkbox']#checkbox-fc160844ef",
+      "kind": "unknown",
+      "id": "checkbox-fc160844ef",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_addon_accounts_type_panel.nreCasaAccountPanel.nreCasaAccount"
+    },
+    {
+      "label": "NRE - CASA Account",
+      "selector": "form #checkbox-fc160844ef",
+      "kind": "unknown",
+      "id": "checkbox-fc160844ef",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_addon_accounts_type_panel.nreCasaAccountPanel.nreCasaAccount"
+    },
+    {
+      "label": "text1745846547311",
+      "selector": "form #text-56aa91a141",
+      "kind": "unknown",
+      "id": "text-56aa91a141",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_addon_accounts_type_panel.nreCasaAccountPanel.text1745846547311"
+    },
+    {
+      "label": "NRO Special Securities Account",
+      "selector": "form input[type='checkbox']#checkbox-0497c1e587",
+      "kind": "unknown",
+      "id": "checkbox-0497c1e587",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_addon_accounts_type_panel.nroSpecialSecuritiesAccountPanel.nroSpecialSecuritiesAccount"
+    },
+    {
+      "label": "NRO Special Securities Account",
+      "selector": "form #checkbox-0497c1e587",
+      "kind": "unknown",
+      "id": "checkbox-0497c1e587",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_addon_accounts_type_panel.nroSpecialSecuritiesAccountPanel.nroSpecialSecuritiesAccount"
+    },
+    {
+      "label": "text1745846298470",
+      "selector": "form #text-0a90c8d323",
+      "kind": "unknown",
+      "id": "text-0a90c8d323",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_addon_accounts_type_panel.nroSpecialSecuritiesAccountPanel.text1745846298470"
+    },
+    {
+      "label": "text1745843991566",
+      "selector": "form #text-6fdbf7ad12",
+      "kind": "unknown",
+      "id": "text-6fdbf7ad12",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_addon_account_type_pannel.text1745843991566"
+    },
+    {
+      "label": "NRO - CASA Account",
+      "selector": "form input[type='checkbox']#checkbox-663d5459bd",
+      "kind": "unknown",
+      "id": "checkbox-663d5459bd",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_addon_account_type_pannel.nroCasaAccountPanel.nroCasaAccount"
+    },
+    {
+      "label": "NRO - CASA Account",
+      "selector": "form #checkbox-663d5459bd",
+      "kind": "unknown",
+      "id": "checkbox-663d5459bd",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_addon_account_type_pannel.nroCasaAccountPanel.nroCasaAccount"
+    },
+    {
+      "label": "text1745845645952",
+      "selector": "form #text-81fbd390e4",
+      "kind": "unknown",
+      "id": "text-81fbd390e4",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_addon_account_type_pannel.nroCasaAccountPanel.text1745845645952"
+    },
+    {
+      "label": "NRE PIS Savings Account",
+      "selector": "form input[type='checkbox']#checkbox-f3e0869525",
+      "kind": "unknown",
+      "id": "checkbox-f3e0869525",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_addon_account_type_pannel.nrePisAccountPanel.nrePisAccount"
+    },
+    {
+      "label": "NRE PIS Savings Account",
+      "selector": "form #checkbox-f3e0869525",
+      "kind": "unknown",
+      "id": "checkbox-f3e0869525",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_addon_account_type_pannel.nrePisAccountPanel.nrePisAccount"
+    },
+    {
+      "label": "text1745846774159",
+      "selector": "form #text-6d90bf9989",
+      "kind": "unknown",
+      "id": "text-6d90bf9989",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_addon_account_type_pannel.nrePisAccountPanel.text1745846774159"
+    },
+    {
+      "label": "text1724823424519",
+      "selector": "form #text-4df1428483",
+      "kind": "unknown",
+      "id": "text-4df1428483",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_account_type_pannel.text1724823424519"
+    },
+    {
+      "label": "NRO - Elite Savings Account",
+      "selector": "form input[type='checkbox']#checkbox-5313954170",
+      "kind": "unknown",
+      "id": "checkbox-5313954170",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_account_type_pannel.eliteSavingsAccountPanel.eliteSavingsAccount"
+    },
+    {
+      "label": "NRO - Elite Savings Account",
+      "selector": "form #checkbox-5313954170",
+      "kind": "unknown",
+      "id": "checkbox-5313954170",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_account_type_pannel.eliteSavingsAccountPanel.eliteSavingsAccount"
+    },
+    {
+      "label": "text_15140503791724824531815",
+      "selector": "form #text-853102bff5",
+      "kind": "unknown",
+      "id": "text-853102bff5",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_account_type_pannel.eliteSavingsAccountPanel.text_15140503791724824531815"
+    },
+    {
+      "label": "NRO - Regular Savings Account",
+      "selector": "form input[type='checkbox']#checkbox-0fff9d80ca",
+      "kind": "unknown",
+      "id": "checkbox-0fff9d80ca",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_account_type_pannel.regularSavingsAccountPanel.regularSavingsAccount"
+    },
+    {
+      "label": "NRO - Regular Savings Account",
+      "selector": "form #checkbox-0fff9d80ca",
+      "kind": "unknown",
+      "id": "checkbox-0fff9d80ca",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_account_type_pannel.regularSavingsAccountPanel.regularSavingsAccount"
+    },
+    {
+      "label": "text_2019912551724825462350",
+      "selector": "form #text-d76b805d7f",
+      "kind": "unknown",
+      "id": "text-d76b805d7f",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_account_type_pannel.regularSavingsAccountPanel.text_2019912551724825462350"
+    },
+    {
+      "label": "NRO - Current Account",
+      "selector": "form input[type='checkbox']#checkbox-3c1eee450a",
+      "kind": "unknown",
+      "id": "checkbox-3c1eee450a",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_account_type_pannel.currentAccountPanel.currentAccount"
+    },
+    {
+      "label": "NRO - Current Account",
+      "selector": "form #checkbox-3c1eee450a",
+      "kind": "unknown",
+      "id": "checkbox-3c1eee450a",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_account_type_pannel.currentAccountPanel.currentAccount"
+    },
+    {
+      "label": "text_14418705761724825452674",
+      "selector": "form #text-8759e68870",
+      "kind": "unknown",
+      "id": "text-8759e68870",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nro_account_type_pannel.currentAccountPanel.text_14418705761724825452674"
+    },
+    {
+      "label": "NRE - Elite Savings Account",
+      "selector": "form input[type='checkbox']#checkbox-105c4a281a",
+      "kind": "unknown",
+      "id": "checkbox-105c4a281a",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_account_type_pannel.nreeliteSavingsAccountPanel.eliteSavingsAccount"
+    },
+    {
+      "label": "NRE - Elite Savings Account",
+      "selector": "form #checkbox-105c4a281a",
+      "kind": "unknown",
+      "id": "checkbox-105c4a281a",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_account_type_pannel.nreeliteSavingsAccountPanel.eliteSavingsAccount"
+    },
+    {
+      "label": "text_15140503791724824531815",
+      "selector": "form #text-8fd6a9127f",
+      "kind": "unknown",
+      "id": "text-8fd6a9127f",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_account_type_pannel.nreeliteSavingsAccountPanel.text_15140503791724824531815"
+    },
+    {
+      "label": "NRE - Regular Savings Account",
+      "selector": "form input[type='checkbox']#checkbox-01544c33b1",
+      "kind": "unknown",
+      "id": "checkbox-01544c33b1",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_account_type_pannel.NreregularSavingsAccountPanel.regularSavingsAccount"
+    },
+    {
+      "label": "NRE - Regular Savings Account",
+      "selector": "form #checkbox-01544c33b1",
+      "kind": "unknown",
+      "id": "checkbox-01544c33b1",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_account_type_pannel.NreregularSavingsAccountPanel.regularSavingsAccount"
+    },
+    {
+      "label": "text_2019912551724825462350",
+      "selector": "form #text-de3f979003",
+      "kind": "unknown",
+      "id": "text-de3f979003",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_account_type_pannel.NreregularSavingsAccountPanel.text_2019912551724825462350"
+    },
+    {
+      "label": "NRE - Current Account",
+      "selector": "form input[type='checkbox']#checkbox-79bfe608de",
+      "kind": "unknown",
+      "id": "checkbox-79bfe608de",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_account_type_pannel.nreCurrentAccountPanel.currentAccount"
+    },
+    {
+      "label": "NRE - Current Account",
+      "selector": "form #checkbox-79bfe608de",
+      "kind": "unknown",
+      "id": "checkbox-79bfe608de",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_account_type_pannel.nreCurrentAccountPanel.currentAccount"
+    },
+    {
+      "label": "text_14418705761724825452674",
+      "selector": "form #text-cefa63d354",
+      "kind": "unknown",
+      "id": "text-cefa63d354",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.selectAccount.nre_account_type_pannel.nreCurrentAccountPanel.text_14418705761724825452674"
+    },
+    {
+      "label": "Full Name",
+      "selector": "form input[type='text']#textinput-ae61f1169b",
+      "kind": "unknown",
+      "id": "textinput-ae61f1169b",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.fullName"
+    },
+    {
+      "label": "Full Name",
+      "selector": "form #textinput-ae61f1169b",
+      "kind": "unknown",
+      "id": "textinput-ae61f1169b",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.fullName"
+    },
+    {
+      "label": "Mobile Number",
+      "selector": "form input[type='text']#textinput-0b7b25d6fb",
+      "kind": "unknown",
+      "id": "textinput-0b7b25d6fb",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.mobileNumber"
+    },
+    {
+      "label": "Mobile Number",
+      "selector": "form #textinput-0b7b25d6fb",
+      "kind": "unknown",
+      "id": "textinput-0b7b25d6fb",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.mobileNumber"
+    },
+    {
+      "label": "Email ID",
+      "selector": "form textarea#textinput-b774dfe5b2",
+      "kind": "unknown",
+      "id": "textinput-b774dfe5b2",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.emailID"
+    },
+    {
+      "label": "Email ID",
+      "selector": "form #textinput-b774dfe5b2",
+      "kind": "unknown",
+      "id": "textinput-b774dfe5b2",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.emailID"
+    },
+    {
+      "label": "Pan",
+      "selector": "form input[type='text']#textinput-0e4a202684",
+      "kind": "unknown",
+      "id": "textinput-0e4a202684",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.pan"
+    },
+    {
+      "label": "Pan",
+      "selector": "form #textinput-0e4a202684",
+      "kind": "unknown",
+      "id": "textinput-0e4a202684",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.pan"
+    },
+    {
+      "label": "Communication Address",
+      "selector": "form textarea#textinput-d55a4edbf7",
+      "kind": "unknown",
+      "id": "textinput-d55a4edbf7",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.communicationAddress"
+    },
+    {
+      "label": "Communication Address",
+      "selector": "form #textinput-d55a4edbf7",
+      "kind": "unknown",
+      "id": "textinput-d55a4edbf7",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.communicationAddress"
+    },
+    {
+      "label": "Permanent Address",
+      "selector": "form textarea#textinput-0595154a26",
+      "kind": "unknown",
+      "id": "textinput-0595154a26",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.permanentAddress"
+    },
+    {
+      "label": "Permanent Address",
+      "selector": "form #textinput-0595154a26",
+      "kind": "unknown",
+      "id": "textinput-0595154a26",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.permanentAddress"
+    },
+    {
+      "label": "Telephone Number",
+      "selector": "form input[type='text']#textinput-2aac699d18",
+      "kind": "unknown",
+      "id": "textinput-2aac699d18",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.telephoneNumber"
+    },
+    {
+      "label": "Telephone Number",
+      "selector": "form #textinput-2aac699d18",
+      "kind": "unknown",
+      "id": "textinput-2aac699d18",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.personalDetails.telephoneNumber"
+    },
+    {
+      "label": "Nationality",
+      "selector": "form input[type='text']#textinput-060cd88a0c",
+      "kind": "unknown",
+      "id": "textinput-060cd88a0c",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.nationality"
+    },
+    {
+      "label": "Nationality",
+      "selector": "form #textinput-060cd88a0c",
+      "kind": "unknown",
+      "id": "textinput-060cd88a0c",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.nationality"
+    },
+    {
+      "label": "Country Tax Residence",
+      "selector": "form input[type='text']#textinput-c58350daa4",
+      "kind": "unknown",
+      "id": "textinput-c58350daa4",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.countryTaxResidence"
+    },
+    {
+      "label": "Country Tax Residence",
+      "selector": "form #textinput-c58350daa4",
+      "kind": "unknown",
+      "id": "textinput-c58350daa4",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.countryTaxResidence"
+    },
+    {
+      "label": "Tax ID Number",
+      "selector": "form input[type='text']#textinput-2046e14517",
+      "kind": "unknown",
+      "id": "textinput-2046e14517",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.taxIdNumber"
+    },
+    {
+      "label": "Tax ID Number",
+      "selector": "form #textinput-2046e14517",
+      "kind": "unknown",
+      "id": "textinput-2046e14517",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.taxIdNumber"
+    },
+    {
+      "label": "Tax ID Type",
+      "selector": "form input[type='text']#textinput-7e6b335a2c",
+      "kind": "unknown",
+      "id": "textinput-7e6b335a2c",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.taxIdType"
+    },
+    {
+      "label": "Tax ID Type",
+      "selector": "form #textinput-7e6b335a2c",
+      "kind": "unknown",
+      "id": "textinput-7e6b335a2c",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.taxIdType"
+    },
+    {
+      "label": "City Of Birth",
+      "selector": "form input[type='text']#textinput-d461e064f0",
+      "kind": "unknown",
+      "id": "textinput-d461e064f0",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.cityOfBirth"
+    },
+    {
+      "label": "City Of Birth",
+      "selector": "form #textinput-d461e064f0",
+      "kind": "unknown",
+      "id": "textinput-d461e064f0",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.cityOfBirth"
+    },
+    {
+      "label": "Country Of Birth",
+      "selector": "form input[type='text']#textinput-aa40b77799",
+      "kind": "unknown",
+      "id": "textinput-aa40b77799",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.countryOfBirth"
+    },
+    {
+      "label": "Country Of Birth",
+      "selector": "form #textinput-aa40b77799",
+      "kind": "unknown",
+      "id": "textinput-aa40b77799",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.countryOfBirth"
+    },
+    {
+      "label": "Father's Name",
+      "selector": "form input[type='text']#textinput-978f4675b1",
+      "kind": "unknown",
+      "id": "textinput-978f4675b1",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.fathersName"
+    },
+    {
+      "label": "Father's Name",
+      "selector": "form #textinput-978f4675b1",
+      "kind": "unknown",
+      "id": "textinput-978f4675b1",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.fathersName"
+    },
+    {
+      "label": "Mother's Name",
+      "selector": "form input[type='text']#textinput-43d742cfe7",
+      "kind": "unknown",
+      "id": "textinput-43d742cfe7",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.mothersName"
+    },
+    {
+      "label": "Mother's Name",
+      "selector": "form #textinput-43d742cfe7",
+      "kind": "unknown",
+      "id": "textinput-43d742cfe7",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.mothersName"
+    },
+    {
+      "label": "Spouse's Name",
+      "selector": "form input[type='text']#textinput-8e329d7d91",
+      "kind": "unknown",
+      "id": "textinput-8e329d7d91",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.spousesName"
+    },
+    {
+      "label": "Spouse's Name",
+      "selector": "form #textinput-8e329d7d91",
+      "kind": "unknown",
+      "id": "textinput-8e329d7d91",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.spousesName"
+    },
+    {
+      "label": "Address For Tax Purpose",
+      "selector": "form input[type='text']#textinput-f93990388c",
+      "kind": "unknown",
+      "id": "textinput-f93990388c",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.addressForTaxPurpose"
+    },
+    {
+      "label": "Address For Tax Purpose",
+      "selector": "form #textinput-f93990388c",
+      "kind": "unknown",
+      "id": "textinput-f93990388c",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.fatcaDetails.addressForTaxPurpose"
+    },
+    {
+      "label": "Source Of Funds",
+      "selector": "form input[type='text']#textinput-221cb3e009",
+      "kind": "unknown",
+      "id": "textinput-221cb3e009",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.sourceOfFunds"
+    },
+    {
+      "label": "Source Of Funds",
+      "selector": "form #textinput-221cb3e009",
+      "kind": "unknown",
+      "id": "textinput-221cb3e009",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.sourceOfFunds"
+    },
+    {
+      "label": "Occupation",
+      "selector": "form input[type='text']#textinput-5789ccef01",
+      "kind": "unknown",
+      "id": "textinput-5789ccef01",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.occupation"
+    },
+    {
+      "label": "Occupation",
+      "selector": "form #textinput-5789ccef01",
+      "kind": "unknown",
+      "id": "textinput-5789ccef01",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.occupation"
+    },
+    {
+      "label": "Occupation Dropdown",
+      "selector": "form select#dropdown-f2981138cd",
+      "kind": "unknown",
+      "id": "dropdown-f2981138cd",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.occupationDropdown"
+    },
+    {
+      "label": "Occupation Dropdown",
+      "selector": "form #dropdown-f2981138cd",
+      "kind": "unknown",
+      "id": "dropdown-f2981138cd",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.occupationDropdown"
+    },
+    {
+      "label": "Employer Name",
+      "selector": "form input[type='text']#textinput-0f38b4b7c5",
+      "kind": "unknown",
+      "id": "textinput-0f38b4b7c5",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.employeerName"
+    },
+    {
+      "label": "Employer Name",
+      "selector": "form #textinput-0f38b4b7c5",
+      "kind": "unknown",
+      "id": "textinput-0f38b4b7c5",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.employeerName"
+    },
+    {
+      "label": "Self-employed Professional",
+      "selector": "form input[type='text']#textinput-8f9ebdefc5",
+      "kind": "unknown",
+      "id": "textinput-8f9ebdefc5",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.selfEmployedProfessional"
+    },
+    {
+      "label": "Self-employed Professional",
+      "selector": "form #textinput-8f9ebdefc5",
+      "kind": "unknown",
+      "id": "textinput-8f9ebdefc5",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.selfEmployedProfessional"
+    },
+    {
+      "label": "Self-employed Since",
+      "selector": "form input[type='text']#textinput-dcd75e1d50",
+      "kind": "unknown",
+      "id": "textinput-dcd75e1d50",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.selfEmployedSince"
+    },
+    {
+      "label": "Self-employed Since",
+      "selector": "form #textinput-dcd75e1d50",
+      "kind": "unknown",
+      "id": "textinput-dcd75e1d50",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.selfEmployedSince"
+    },
+    {
+      "label": "Date of Incorporation",
+      "selector": "form input[type='text']#textinput-c743bda928",
+      "kind": "unknown",
+      "id": "textinput-c743bda928",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.dateOfIncorporation"
+    },
+    {
+      "label": "Date of Incorporation",
+      "selector": "form #textinput-c743bda928",
+      "kind": "unknown",
+      "id": "textinput-c743bda928",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.dateOfIncorporation"
+    },
+    {
+      "label": "Nature Of Business",
+      "selector": "form input[type='text']#textinput-0ce4922463",
+      "kind": "unknown",
+      "id": "textinput-0ce4922463",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.natureOfBusiness"
+    },
+    {
+      "label": "Nature Of Business",
+      "selector": "form #textinput-0ce4922463",
+      "kind": "unknown",
+      "id": "textinput-0ce4922463",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.natureOfBusiness"
+    },
+    {
+      "label": "Type of Compoany/firm",
+      "selector": "form input[type='text']#textinput-5c255473a5",
+      "kind": "unknown",
+      "id": "textinput-5c255473a5",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.typeOfCompoanyFirm"
+    },
+    {
+      "label": "Type of Compoany/firm",
+      "selector": "form #textinput-5c255473a5",
+      "kind": "unknown",
+      "id": "textinput-5c255473a5",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.typeOfCompoanyFirm"
+    },
+    {
+      "label": "Residence Type",
+      "selector": "form input[type='text']#textinput-e6830386d6",
+      "kind": "unknown",
+      "id": "textinput-e6830386d6",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.residenceType"
+    },
+    {
+      "label": "Residence Type",
+      "selector": "form #textinput-e6830386d6",
+      "kind": "unknown",
+      "id": "textinput-e6830386d6",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.residenceType"
+    },
+    {
+      "label": "Currency Name",
+      "selector": "form input[type='text']#textinput-ceab5276c4",
+      "kind": "unknown",
+      "id": "textinput-ceab5276c4",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.currencyName"
+    },
+    {
+      "label": "Currency Name",
+      "selector": "form #textinput-ceab5276c4",
+      "kind": "unknown",
+      "id": "textinput-ceab5276c4",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.currencyName"
+    },
+    {
+      "label": "Gross Annual Income",
+      "selector": "form input[type='text']#textinput-5acaaccddc",
+      "kind": "unknown",
+      "id": "textinput-5acaaccddc",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.grossAnnualIncome"
+    },
+    {
+      "label": "Gross Annual Income",
+      "selector": "form #textinput-5acaaccddc",
+      "kind": "unknown",
+      "id": "textinput-5acaaccddc",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.grossAnnualIncome"
+    },
+    {
+      "label": "PEP Declaration",
+      "selector": "form input[type='text']#textinput-205053ecce",
+      "kind": "unknown",
+      "id": "textinput-205053ecce",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.pepDeclaration"
+    },
+    {
+      "label": "PEP Declaration",
+      "selector": "form #textinput-205053ecce",
+      "kind": "unknown",
+      "id": "textinput-205053ecce",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.pepDeclaration"
+    },
+    {
+      "label": "Employer Category",
+      "selector": "form input[type='text']#textinput-2cce779f46",
+      "kind": "unknown",
+      "id": "textinput-2cce779f46",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.employerCategory"
+    },
+    {
+      "label": "Employer Category",
+      "selector": "form #textinput-2cce779f46",
+      "kind": "unknown",
+      "id": "textinput-2cce779f46",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.employerCategory"
+    },
+    {
+      "label": "Type Of Company Mapping",
+      "selector": "form select#dropdown-c4519411c3",
+      "kind": "unknown",
+      "id": "dropdown-c4519411c3",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.typeOfCompanyMapping"
+    },
+    {
+      "label": "Type Of Company Mapping",
+      "selector": "form #dropdown-c4519411c3",
+      "kind": "unknown",
+      "id": "dropdown-c4519411c3",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.typeOfCompanyMapping"
+    },
+    {
+      "label": "Nature Of BusinessMapping",
+      "selector": "form select#dropdown-ab34ea78e1",
+      "kind": "unknown",
+      "id": "dropdown-ab34ea78e1",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.natureOfBusinessMapping"
+    },
+    {
+      "label": "Nature Of BusinessMapping",
+      "selector": "form #dropdown-ab34ea78e1",
+      "kind": "unknown",
+      "id": "dropdown-ab34ea78e1",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.natureOfBusinessMapping"
+    },
+    {
+      "label": "Source Of Fund Mapping",
+      "selector": "form select#dropdown-0bf20d4749",
+      "kind": "unknown",
+      "id": "dropdown-0bf20d4749",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.sourceOfFundMapping"
+    },
+    {
+      "label": "Source Of Fund Mapping",
+      "selector": "form #dropdown-0bf20d4749",
+      "kind": "unknown",
+      "id": "dropdown-0bf20d4749",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.sourceOfFundMapping"
+    },
+    {
+      "label": "Gross Annual Income Mapping",
+      "selector": "form select#dropdown-076c93a10f",
+      "kind": "unknown",
+      "id": "dropdown-076c93a10f",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.grossAnnualIncomeMapping"
+    },
+    {
+      "label": "Gross Annual Income Mapping",
+      "selector": "form #dropdown-076c93a10f",
+      "kind": "unknown",
+      "id": "dropdown-076c93a10f",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.grossAnnualIncomeMapping"
+    },
+    {
+      "label": "Residence Type Mapping",
+      "selector": "form select#dropdown-5cf3333bd6",
+      "kind": "unknown",
+      "id": "dropdown-5cf3333bd6",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.residenceTypeMapping"
+    },
+    {
+      "label": "Residence Type Mapping",
+      "selector": "form #dropdown-5cf3333bd6",
+      "kind": "unknown",
+      "id": "dropdown-5cf3333bd6",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.residenceTypeMapping"
+    },
+    {
+      "label": "Self Employed Professional Mapping",
+      "selector": "form select#dropdown-46ce54ab6e",
+      "kind": "unknown",
+      "id": "dropdown-46ce54ab6e",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.selfEmployedProfMapping"
+    },
+    {
+      "label": "Self Employed Professional Mapping",
+      "selector": "form #dropdown-46ce54ab6e",
+      "kind": "unknown",
+      "id": "dropdown-46ce54ab6e",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.selfEmployedProfMapping"
+    },
+    {
+      "label": "Employer Category Mapping",
+      "selector": "form select#dropdown-fc22c359ad",
+      "kind": "unknown",
+      "id": "dropdown-fc22c359ad",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.employerCategoryMapping"
+    },
+    {
+      "label": "Employer Category Mapping",
+      "selector": "form #dropdown-fc22c359ad",
+      "kind": "unknown",
+      "id": "dropdown-fc22c359ad",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.financialDetails.employerCategoryMapping"
+    },
+    {
+      "label": "textnominee",
+      "selector": "form #text-c63ab29b06",
+      "kind": "unknown",
+      "id": "text-c63ab29b06",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.nomineeDetails.nomineePanel.textnominee"
+    },
+    {
+      "label": "Relation Ship Dropdown",
+      "selector": "form select#dropdown-bd37a34f34",
+      "kind": "unknown",
+      "id": "dropdown-bd37a34f34",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.nomineeDetails.nomineePanel.relationShipDropdown"
+    },
+    {
+      "label": "Relation Ship Dropdown",
+      "selector": "form #dropdown-bd37a34f34",
+      "kind": "unknown",
+      "id": "dropdown-bd37a34f34",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.nomineeDetails.nomineePanel.relationShipDropdown"
+    },
+    {
+      "label": "Nominee Name",
+      "selector": "form input[type='text']#textinput-ee5df7db06",
+      "kind": "unknown",
+      "id": "textinput-ee5df7db06",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.nomineeDetails.nomineePanel.nomineeSubpanel.nomineeName"
+    },
+    {
+      "label": "Nominee Name",
+      "selector": "form #textinput-ee5df7db06",
+      "kind": "unknown",
+      "id": "textinput-ee5df7db06",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.nomineeDetails.nomineePanel.nomineeSubpanel.nomineeName"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form input[type='text']#textinput-a490014c09",
+      "kind": "unknown",
+      "id": "textinput-a490014c09",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.nomineeDetails.nomineePanel.nomineeSubpanel.nomineedob"
+    },
+    {
+      "label": "Date of Birth",
+      "selector": "form #textinput-a490014c09",
+      "kind": "unknown",
+      "id": "textinput-a490014c09",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.nomineeDetails.nomineePanel.nomineeSubpanel.nomineedob"
+    },
+    {
+      "label": "Relation",
+      "selector": "form input[type='text']#textinput-56a214543f",
+      "kind": "unknown",
+      "id": "textinput-56a214543f",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.nomineeDetails.nomineePanel.nomineeSubpanel.relation"
+    },
+    {
+      "label": "Relation",
+      "selector": "form #textinput-56a214543f",
+      "kind": "unknown",
+      "id": "textinput-56a214543f",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.nomineeDetails.nomineePanel.nomineeSubpanel.relation"
+    },
+    {
+      "label": "nonomineeText",
+      "selector": "form #text-d987157674",
+      "kind": "unknown",
+      "id": "text-d987157674",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.nomineeDetails.nonomineeText"
+    },
+    {
+      "label": "No, I/We declare that I do not wish to make a nomination in my/our account",
+      "selector": "form input[type='checkbox']#checkbox-ca56abdca5",
+      "kind": "unknown",
+      "id": "checkbox-ca56abdca5",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.nomineeDetails.noNomineeDetailsCheckbox"
+    },
+    {
+      "label": "No, I/We declare that I do not wish to make a nomination in my/our account",
+      "selector": "form #checkbox-ca56abdca5",
+      "kind": "unknown",
+      "id": "checkbox-ca56abdca5",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.nomineeDetails.noNomineeDetailsCheckbox"
+    },
+    {
+      "label": "Broker Name",
+      "selector": "form input[type='text']#textinput-e9eeb8d9ff",
+      "kind": "unknown",
+      "id": "textinput-e9eeb8d9ff",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.brokerDetails.brokerNameInput"
+    },
+    {
+      "label": "Broker Name",
+      "selector": "form #textinput-e9eeb8d9ff",
+      "kind": "unknown",
+      "id": "textinput-e9eeb8d9ff",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.brokerDetails.brokerNameInput"
+    },
+    {
+      "label": "State",
+      "selector": "form select#dropdown-6f081e80c5",
+      "kind": "unknown",
+      "id": "dropdown-6f081e80c5",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.pisDesignatedBranchDetails.stateDropdown"
+    },
+    {
+      "label": "State",
+      "selector": "form #dropdown-6f081e80c5",
+      "kind": "unknown",
+      "id": "dropdown-6f081e80c5",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.pisDesignatedBranchDetails.stateDropdown"
+    },
+    {
+      "label": "City",
+      "selector": "form select#dropdown-5903af1031",
+      "kind": "unknown",
+      "id": "dropdown-5903af1031",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.pisDesignatedBranchDetails.cityDropdown"
+    },
+    {
+      "label": "City",
+      "selector": "form #dropdown-5903af1031",
+      "kind": "unknown",
+      "id": "dropdown-5903af1031",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.pisDesignatedBranchDetails.cityDropdown"
+    },
+    {
+      "label": "Select Branch",
+      "selector": "form select#dropdown-4c9929e3d2",
+      "kind": "unknown",
+      "id": "dropdown-4c9929e3d2",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.pisDesignatedBranchDetails.selectBranchDropdown"
+    },
+    {
+      "label": "Select Branch",
+      "selector": "form #dropdown-4c9929e3d2",
+      "kind": "unknown",
+      "id": "dropdown-4c9929e3d2",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.confirmDetailsAccordion.pisDesignatedBranchDetails.selectBranchDropdown"
+    },
+    {
+      "label": "noNomineeHeadingPopupText",
+      "selector": "form #text-4c9f3c26f2",
+      "kind": "unknown",
+      "id": "text-4c9f3c26f2",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.noNomineePopupWrapper.noNomineeSection.noNomineeDetailsWrapper.noNomineeHeadingPopupText"
+    },
+    {
+      "label": "noNomineePopupText",
+      "selector": "form #text-81e2324f7f",
+      "kind": "unknown",
+      "id": "text-81e2324f7f",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.noNomineePopupWrapper.noNomineeSection.noNomineeDetailsWrapper.noNomineePopupText"
+    },
+    {
+      "label": "<p>I / We hereby confirm that I / We do not wish to appoint any nominee(s) in my / our trading / demat account and understand the issues involved in non-appointment of nominee(s) and further are aware that in case of death of all the account holder(s), my / our legal heirs would need to submit all the requisite documents / information for claiming of assets held in my / our trading / demat account, which may also include documents issues by Court or other such competent authority, based on the value of assets held in the trading / demat account.</p><p>Read More...</p>",
+      "selector": "form input[type='checkbox']#checkbox-a45c8c364b",
+      "kind": "unknown",
+      "id": "checkbox-a45c8c364b",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.noNomineePopupWrapper.noNomineeSection.noNomineeDetailsWrapper.noNomineeDetailsPanel.noNomineeDetailsPopupCheckbox"
+    },
+    {
+      "label": "<p>I / We hereby confirm that I / We do not wish to appoint any nominee(s) in my / our trading / demat account and understand the issues involved in non-appointment of nominee(s) and further are aware that in case of death of all the account holder(s), my / our legal heirs would need to submit all the requisite documents / information for claiming of assets held in my / our trading / demat account, which may also include documents issues by Court or other such competent authority, based on the value of assets held in the trading / demat account.</p><p>Read More...</p>",
+      "selector": "form #checkbox-a45c8c364b",
+      "kind": "unknown",
+      "id": "checkbox-a45c8c364b",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.noNomineePopupWrapper.noNomineeSection.noNomineeDetailsWrapper.noNomineeDetailsPanel.noNomineeDetailsPopupCheckbox"
+    },
+    {
+      "label": "readMoreText",
+      "selector": "form #text-a9ece476fc",
+      "kind": "unknown",
+      "id": "text-a9ece476fc",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.noNomineePopupWrapper.noNomineeSection.noNomineeDetailsWrapper.noNomineeDetailsPanel.readMoreText"
+    },
+    {
+      "label": "noNomineePopupCloseButton",
+      "selector": "form button[type='button']#button-a82379545a",
+      "kind": "unknown",
+      "id": "button-a82379545a",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.noNomineePopupWrapper.nomineeButtonSection.noNomineePopupCloseButton"
+    },
+    {
+      "label": "noNomineePopupCloseButton",
+      "selector": "form #button-a82379545a",
+      "kind": "unknown",
+      "id": "button-a82379545a",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.noNomineePopupWrapper.nomineeButtonSection.noNomineePopupCloseButton"
+    },
+    {
+      "label": "Proceed Without Nominee",
+      "selector": "form button[type='button']#button-c49ed106ec",
+      "kind": "unknown",
+      "id": "button-c49ed106ec",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.noNomineePopupWrapper.nomineeButtonSection.noNomineeConfirmButton"
+    },
+    {
+      "label": "Proceed Without Nominee",
+      "selector": "form #button-c49ed106ec",
+      "kind": "unknown",
+      "id": "button-c49ed106ec",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.noNomineePopupWrapper.nomineeButtonSection.noNomineeConfirmButton"
+    },
+    {
+      "label": "Did someone from HDFC Bank help you?",
+      "selector": "form input[type='checkbox']#checkbox-a41dc9cd62",
+      "kind": "unknown",
+      "id": "checkbox-a41dc9cd62",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.bankUseFragment.mainBankUsePanel.bankUseToggle"
+    },
+    {
+      "label": "Did someone from HDFC Bank help you?",
+      "selector": "form #checkbox-a41dc9cd62",
+      "kind": "unknown",
+      "id": "checkbox-a41dc9cd62",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.bankUseFragment.mainBankUsePanel.bankUseToggle"
+    },
+    {
+      "label": "LG Code",
+      "selector": "form input[type='text']#textinput-4f11dacd79",
+      "kind": "unknown",
+      "id": "textinput-4f11dacd79",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.bankUseFragment.mainBankUsePanel.lgCode"
+    },
+    {
+      "label": "LG Code",
+      "selector": "form #textinput-4f11dacd79",
+      "kind": "unknown",
+      "id": "textinput-4f11dacd79",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.bankUseFragment.mainBankUsePanel.lgCode"
+    },
+    {
+      "label": "LC Code",
+      "selector": "form input[type='text']#textinput-02ce338eea",
+      "kind": "unknown",
+      "id": "textinput-02ce338eea",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.bankUseFragment.mainBankUsePanel.lcCode"
+    },
+    {
+      "label": "LC Code",
+      "selector": "form #textinput-02ce338eea",
+      "kind": "unknown",
+      "id": "textinput-02ce338eea",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.bankUseFragment.mainBankUsePanel.lcCode"
+    },
+    {
+      "label": "Reset All",
+      "selector": "form button[type='button']#button-bd8a9fc279",
+      "kind": "unknown",
+      "id": "button-bd8a9fc279",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.bankUseFragment.mainBankUsePanel.resetAllBtn"
+    },
+    {
+      "label": "Reset All",
+      "selector": "form #button-bd8a9fc279",
+      "kind": "unknown",
+      "id": "button-bd8a9fc279",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.bankUseFragment.mainBankUsePanel.resetAllBtn"
+    },
+    {
+      "label": "I confirm that all the above details are correct.",
+      "selector": "form input[type='checkbox']#checkbox-a9cdd50c45",
+      "kind": "unknown",
+      "id": "checkbox-a9cdd50c45",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.confirmDetailsConsent1"
+    },
+    {
+      "label": "I confirm that all the above details are correct.",
+      "selector": "form #checkbox-a9cdd50c45",
+      "kind": "unknown",
+      "id": "checkbox-a9cdd50c45",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.confirmDetailsConsent1"
+    },
+    {
+      "label": "<p>I hereby agree to the <a href=\"https://www.hdfcbank.com/personal/useful-links/terms-and-conditions\" target=\"_blank\" data-clickable-id=\"clickable-4\">terms &amp; conditions</a> related to the issuance of cheque book, debit card &amp; charges related to the same</p>\n",
+      "selector": "form input[type='checkbox']#checkbox-41e5ea61f7",
+      "kind": "unknown",
+      "id": "checkbox-41e5ea61f7",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.confirmDetailsConsent2"
+    },
+    {
+      "label": "<p>I hereby agree to the <a href=\"https://www.hdfcbank.com/personal/useful-links/terms-and-conditions\" target=\"_blank\" data-clickable-id=\"clickable-4\">terms &amp; conditions</a> related to the issuance of cheque book, debit card &amp; charges related to the same</p>\n",
+      "selector": "form #checkbox-41e5ea61f7",
+      "kind": "unknown",
+      "id": "checkbox-41e5ea61f7",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.confirmDetailsConsent2"
+    },
+    {
+      "label": "<p>I confirm to open my additional NRE PIS account/NRO Special Securities account by giving extension to my existing NRE PIS permission/NRO ledger held with HDFC Bank (if any) to deal with different stockbrokers.</p>",
+      "selector": "form input[type='checkbox']#checkbox-6d03037d8a",
+      "kind": "unknown",
+      "id": "checkbox-6d03037d8a",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.pisConfirmDetailsPanel.pisConfirmDetailsConsent1"
+    },
+    {
+      "label": "<p>I confirm to open my additional NRE PIS account/NRO Special Securities account by giving extension to my existing NRE PIS permission/NRO ledger held with HDFC Bank (if any) to deal with different stockbrokers.</p>",
+      "selector": "form #checkbox-6d03037d8a",
+      "kind": "unknown",
+      "id": "checkbox-6d03037d8a",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.pisConfirmDetailsPanel.pisConfirmDetailsConsent1"
+    },
+    {
+      "label": "<p>I do not have NRE PIS account/NRE PIS permission with any other bank. In case of transfer from another bank, I will submit the NOC (No Objection Certificate) from previous bank &amp; list of holding seperately containing the acquisition details of share holdings. In case of NRO holdings I will submit acquisition details seperately in banks prescribed format.</p>",
+      "selector": "form input[type='checkbox']#checkbox-44ef513c39",
+      "kind": "unknown",
+      "id": "checkbox-44ef513c39",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.pisConfirmDetailsPanel.pisConfirmDetailsConsent2"
+    },
+    {
+      "label": "<p>I do not have NRE PIS account/NRE PIS permission with any other bank. In case of transfer from another bank, I will submit the NOC (No Objection Certificate) from previous bank &amp; list of holding seperately containing the acquisition details of share holdings. In case of NRO holdings I will submit acquisition details seperately in banks prescribed format.</p>",
+      "selector": "form #checkbox-44ef513c39",
+      "kind": "unknown",
+      "id": "checkbox-44ef513c39",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.pisConfirmDetailsPanel.pisConfirmDetailsConsent2"
+    },
+    {
+      "label": "<p>I/We confirm to read and accept detailed tariff sheet and Important <a href=\"https://www.hdfcbank.com/nri-banking/invest/portfolio-investment-schemes/terms-and-conditions\" target=\"_blank\">Terms &amp; Conditions</a></p>",
+      "selector": "form input[type='checkbox']#checkbox-63f1e3af5b",
+      "kind": "unknown",
+      "id": "checkbox-63f1e3af5b",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.pisConfirmDetailsPanel.pisConfirmDetailsConsent3"
+    },
+    {
+      "label": "<p>I/We confirm to read and accept detailed tariff sheet and Important <a href=\"https://www.hdfcbank.com/nri-banking/invest/portfolio-investment-schemes/terms-and-conditions\" target=\"_blank\">Terms &amp; Conditions</a></p>",
+      "selector": "form #checkbox-63f1e3af5b",
+      "kind": "unknown",
+      "id": "checkbox-63f1e3af5b",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.pisConfirmDetailsPanel.pisConfirmDetailsConsent3"
+    },
+    {
+      "label": "<p>I authorize HDFC Bank to debit my NRE PIS / NRO Special Securities Account for payment against contract note for purchase of securities through the stockbroker(s) selected by me. I also confirm to opt-in for the sweep-in facility between my PIS &amp; Non-PIS account. Further, I authorize HDFC Bank to add my NRE PIS / NRO Securities Account under the Enet Domain for viewing facility to the stockbroker(s) selected by me in the journey.</p>\n",
+      "selector": "form input[type='checkbox']#checkbox-10723b7543",
+      "kind": "unknown",
+      "id": "checkbox-10723b7543",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.pisConfirmDetailsPanel.pisConfirmDetailsConsent4"
+    },
+    {
+      "label": "<p>I authorize HDFC Bank to debit my NRE PIS / NRO Special Securities Account for payment against contract note for purchase of securities through the stockbroker(s) selected by me. I also confirm to opt-in for the sweep-in facility between my PIS &amp; Non-PIS account. Further, I authorize HDFC Bank to add my NRE PIS / NRO Securities Account under the Enet Domain for viewing facility to the stockbroker(s) selected by me in the journey.</p>\n",
+      "selector": "form #checkbox-10723b7543",
+      "kind": "unknown",
+      "id": "checkbox-10723b7543",
+      "qname": "$form.wizardPanel.wizardFragment.wizardNreNro.confirmDetails.needBankHelp.pisConfirmDetailsPanel.pisConfirmDetailsConsent4"
+    },
+    {
+      "label": "Continue",
+      "selector": "form button[type='button']#button-a3208fb62c",
+      "kind": "unknown",
+      "id": "button-a3208fb62c",
+      "qname": "$form.wizardPanel.singleAccountContinue"
+    },
+    {
+      "label": "Continue",
+      "selector": "form #button-a3208fb62c",
+      "kind": "unknown",
+      "id": "button-a3208fb62c",
+      "qname": "$form.wizardPanel.singleAccountContinue"
+    },
+    {
+      "label": "Continue",
+      "selector": "form button[type='button']#button-9460e60cbf",
+      "kind": "unknown",
+      "id": "button-9460e60cbf",
+      "qname": "$form.wizardPanel.MultiAccoCountinue"
+    },
+    {
+      "label": "Continue",
+      "selector": "form #button-9460e60cbf",
+      "kind": "unknown",
+      "id": "button-9460e60cbf",
+      "qname": "$form.wizardPanel.MultiAccoCountinue"
+    },
+    {
+      "label": "Continue",
+      "selector": "form button[type='button']#button-6ddcd7302f",
+      "kind": "unknown",
+      "id": "button-6ddcd7302f",
+      "qname": "$form.wizardPanel.continue"
+    },
+    {
+      "label": "Continue",
+      "selector": "form #button-6ddcd7302f",
+      "kind": "unknown",
+      "id": "button-6ddcd7302f",
+      "qname": "$form.wizardPanel.continue"
+    },
+    {
+      "label": "Confirm",
+      "selector": "form button[type='button']#button-e48e178ba0",
+      "kind": "unknown",
+      "id": "button-e48e178ba0",
+      "qname": "$form.wizardPanel.confirmButton"
+    },
+    {
+      "label": "Confirm",
+      "selector": "form #button-e48e178ba0",
+      "kind": "unknown",
+      "id": "button-e48e178ba0",
+      "qname": "$form.wizardPanel.confirmButton"
+    },
+    {
+      "label": "Verify & Confirm",
+      "selector": "form button[type='button']#button-cb166dbbbe",
+      "kind": "unknown",
+      "id": "button-cb166dbbbe",
+      "qname": "$form.wizardPanel.pisConfirmButton"
+    },
+    {
+      "label": "Verify & Confirm",
+      "selector": "form #button-cb166dbbbe",
+      "kind": "unknown",
+      "id": "button-cb166dbbbe",
+      "qname": "$form.wizardPanel.pisConfirmButton"
+    },
+    {
+      "label": "brokerPopupCloseButton",
+      "selector": "form button[type='button']#button-f4f5140f4d",
+      "kind": "unknown",
+      "id": "button-f4f5140f4d",
+      "qname": "$form.wizardPanel.brokerDetailsPopup.brokerPopupCloseButton"
+    },
+    {
+      "label": "brokerPopupCloseButton",
+      "selector": "form #button-f4f5140f4d",
+      "kind": "unknown",
+      "id": "button-f4f5140f4d",
+      "qname": "$form.wizardPanel.brokerDetailsPopup.brokerPopupCloseButton"
+    },
+    {
+      "label": "brokerDetailsPopupText",
+      "selector": "form #text-4a7bf60baa",
+      "kind": "unknown",
+      "id": "text-4a7bf60baa",
+      "qname": "$form.wizardPanel.brokerDetailsPopup.brokerDetailsPopupText"
+    },
+    {
+      "label": "Broker Name -",
+      "selector": "form input[type='text']#textinput-31a974d969",
+      "kind": "unknown",
+      "id": "textinput-31a974d969",
+      "qname": "$form.wizardPanel.brokerDetailsPopup.brokerNamePopupText"
+    },
+    {
+      "label": "Broker Name -",
+      "selector": "form #textinput-31a974d969",
+      "kind": "unknown",
+      "id": "textinput-31a974d969",
+      "qname": "$form.wizardPanel.brokerDetailsPopup.brokerNamePopupText"
+    },
+    {
+      "label": "Branch -",
+      "selector": "form input[type='text']#textinput-c076972c2e",
+      "kind": "unknown",
+      "id": "textinput-c076972c2e",
+      "qname": "$form.wizardPanel.brokerDetailsPopup.branchNamePopupText"
+    },
+    {
+      "label": "Branch -",
+      "selector": "form #textinput-c076972c2e",
+      "kind": "unknown",
+      "id": "textinput-c076972c2e",
+      "qname": "$form.wizardPanel.brokerDetailsPopup.branchNamePopupText"
+    },
+    {
+      "label": "Please Confirm",
+      "selector": "form button[type='button']#button-9d64b78dfa",
+      "kind": "unknown",
+      "id": "button-9d64b78dfa",
+      "qname": "$form.wizardPanel.brokerDetailsPopup.confirmButtonPopup"
+    },
+    {
+      "label": "Please Confirm",
+      "selector": "form #button-9d64b78dfa",
+      "kind": "unknown",
+      "id": "button-9d64b78dfa",
+      "qname": "$form.wizardPanel.brokerDetailsPopup.confirmButtonPopup"
+    },
+    {
+      "label": "Status",
+      "selector": "form input[type='text']#textinput-f4c14c61fb",
+      "kind": "unknown",
+      "id": "textinput-f4c14c61fb",
+      "qname": "$form.apiDetails.status"
+    },
+    {
+      "label": "Status",
+      "selector": "form #textinput-f4c14c61fb",
+      "kind": "unknown",
+      "id": "textinput-f4c14c61fb",
+      "qname": "$form.apiDetails.status"
+    },
+    {
+      "label": "Error Code",
+      "selector": "form input[type='text']#textinput-2fdd0c2e6c",
+      "kind": "unknown",
+      "id": "textinput-2fdd0c2e6c",
+      "qname": "$form.apiDetails.errorCode"
+    },
+    {
+      "label": "Error Code",
+      "selector": "form #textinput-2fdd0c2e6c",
+      "kind": "unknown",
+      "id": "textinput-2fdd0c2e6c",
+      "qname": "$form.apiDetails.errorCode"
+    },
+    {
+      "label": "Error Message",
+      "selector": "form input[type='text']#textinput-e9c9400b54",
+      "kind": "unknown",
+      "id": "textinput-e9c9400b54",
+      "qname": "$form.apiDetails.errorMessage"
+    },
+    {
+      "label": "Error Message",
+      "selector": "form #textinput-e9c9400b54",
+      "kind": "unknown",
+      "id": "textinput-e9c9400b54",
+      "qname": "$form.apiDetails.errorMessage"
+    },
+    {
+      "label": "API Name",
+      "selector": "form input[type='text']#textinput-bec63395c2",
+      "kind": "unknown",
+      "id": "textinput-bec63395c2",
+      "qname": "$form.apiDetails.apiName"
+    },
+    {
+      "label": "API Name",
+      "selector": "form #textinput-bec63395c2",
+      "kind": "unknown",
+      "id": "textinput-bec63395c2",
+      "qname": "$form.apiDetails.apiName"
+    },
+    {
+      "label": "thankyoupageTitle",
+      "selector": "form #text-8915564080",
+      "kind": "unknown",
+      "id": "text-8915564080",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyoupageTitle"
+    },
+    {
+      "label": "rateAboveNine",
+      "selector": "form #text-1059fad80f",
+      "kind": "unknown",
+      "id": "text-1059fad80f",
+      "qname": "$form.thankYouPanel.thankYoufragment.successPanel.rateAboveNine"
+    },
+    {
+      "label": "belowEight",
+      "selector": "form #text-53c710d184",
+      "kind": "unknown",
+      "id": "text-53c710d184",
+      "qname": "$form.thankYouPanel.thankYoufragment.successPanel.belowEight"
+    },
+    {
+      "label": "successfullyText",
+      "selector": "form #text-db232576be",
+      "kind": "unknown",
+      "id": "text-db232576be",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.successfullyText"
+    },
+    {
+      "label": "Account Number",
+      "selector": "form input[type='text']#textinput-cb632eb48b",
+      "kind": "unknown",
+      "id": "textinput-cb632eb48b",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountNumber.accountNumber"
+    },
+    {
+      "label": "Account Number",
+      "selector": "form #textinput-cb632eb48b",
+      "kind": "unknown",
+      "id": "textinput-cb632eb48b",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountNumber.accountNumber"
+    },
+    {
+      "label": "PIS Account Number",
+      "selector": "form input[type='text']#textinput-c254abd04e",
+      "kind": "unknown",
+      "id": "textinput-c254abd04e",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountNumber.pisAccountNumber"
+    },
+    {
+      "label": "PIS Account Number",
+      "selector": "form #textinput-c254abd04e",
+      "kind": "unknown",
+      "id": "textinput-c254abd04e",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountNumber.pisAccountNumber"
+    },
+    {
+      "label": "Your Reference Number is:",
+      "selector": "form input[type='text']#textinput-0571947675",
+      "kind": "unknown",
+      "id": "textinput-0571947675",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountNumber.leadId_number"
+    },
+    {
+      "label": "Your Reference Number is:",
+      "selector": "form #textinput-0571947675",
+      "kind": "unknown",
+      "id": "textinput-0571947675",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountNumber.leadId_number"
+    },
+    {
+      "label": "confirmText",
+      "selector": "form #text-ed3f781085",
+      "kind": "unknown",
+      "id": "text-ed3f781085",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountNumber.confirmText"
+    },
+    {
+      "label": "accountDetails",
+      "selector": "form #text-90888b73af",
+      "kind": "unknown",
+      "id": "text-90888b73af",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.accountDetails"
+    },
+    {
+      "label": "Account Type",
+      "selector": "form input[type='text']#textinput-edd50777b5",
+      "kind": "unknown",
+      "id": "textinput-edd50777b5",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.accounttype"
+    },
+    {
+      "label": "Account Type",
+      "selector": "form #textinput-edd50777b5",
+      "kind": "unknown",
+      "id": "textinput-edd50777b5",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.accounttype"
+    },
+    {
+      "label": "Branch",
+      "selector": "form input[type='text']#textinput-63489ae0ed",
+      "kind": "unknown",
+      "id": "textinput-63489ae0ed",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.homeBranch"
+    },
+    {
+      "label": "Branch",
+      "selector": "form #textinput-63489ae0ed",
+      "kind": "unknown",
+      "id": "textinput-63489ae0ed",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.homeBranch"
+    },
+    {
+      "label": "Branch Code",
+      "selector": "form input[type='text']#textinput-fd63d226cb",
+      "kind": "unknown",
+      "id": "textinput-fd63d226cb",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.branchCode"
+    },
+    {
+      "label": "Branch Code",
+      "selector": "form #textinput-fd63d226cb",
+      "kind": "unknown",
+      "id": "textinput-fd63d226cb",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.branchCode"
+    },
+    {
+      "label": "IFSC",
+      "selector": "form input[type='text']#textinput-3a00f0bc66",
+      "kind": "unknown",
+      "id": "textinput-3a00f0bc66",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.ifsc"
+    },
+    {
+      "label": "IFSC",
+      "selector": "form #textinput-3a00f0bc66",
+      "kind": "unknown",
+      "id": "textinput-3a00f0bc66",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.ifsc"
+    },
+    {
+      "label": "Branch Address",
+      "selector": "form textarea#textinput-2716b290b2",
+      "kind": "unknown",
+      "id": "textinput-2716b290b2",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.branchAddress"
+    },
+    {
+      "label": "Branch Address",
+      "selector": "form #textinput-2716b290b2",
+      "kind": "unknown",
+      "id": "textinput-2716b290b2",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.branchAddress"
+    },
+    {
+      "label": "Registerd Communication Address",
+      "selector": "form textarea#textinput-1315485a78",
+      "kind": "unknown",
+      "id": "textinput-1315485a78",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.communicationAddress"
+    },
+    {
+      "label": "Registerd Communication Address",
+      "selector": "form #textinput-1315485a78",
+      "kind": "unknown",
+      "id": "textinput-1315485a78",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.accountSummary.communicationAddress"
+    },
+    {
+      "label": "checkbookInfo",
+      "selector": "form #text-216e204a80",
+      "kind": "unknown",
+      "id": "text-216e204a80",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.checkbookInfo"
+    },
+    {
+      "label": "pisInfo",
+      "selector": "form #text-ca9bb548ca",
+      "kind": "unknown",
+      "id": "text-ca9bb548ca",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.pisInfo"
+    },
+    {
+      "label": "onlineService",
+      "selector": "form #text-cf77bc4773",
+      "kind": "unknown",
+      "id": "text-cf77bc4773",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.onlineService"
+    },
+    {
+      "label": "0",
+      "selector": "form button[type='button']#button-7f840cf504",
+      "kind": "unknown",
+      "id": "button-7f840cf504",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating0"
+    },
+    {
+      "label": "0",
+      "selector": "form #button-7f840cf504",
+      "kind": "unknown",
+      "id": "button-7f840cf504",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating0"
+    },
+    {
+      "label": "1",
+      "selector": "form button[type='button']#button-b13499ec49",
+      "kind": "unknown",
+      "id": "button-b13499ec49",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating1"
+    },
+    {
+      "label": "1",
+      "selector": "form #button-b13499ec49",
+      "kind": "unknown",
+      "id": "button-b13499ec49",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating1"
+    },
+    {
+      "label": "2",
+      "selector": "form button[type='button']#button-168537e9bc",
+      "kind": "unknown",
+      "id": "button-168537e9bc",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating2"
+    },
+    {
+      "label": "2",
+      "selector": "form #button-168537e9bc",
+      "kind": "unknown",
+      "id": "button-168537e9bc",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating2"
+    },
+    {
+      "label": "3",
+      "selector": "form button[type='button']#button-89fc5806b2",
+      "kind": "unknown",
+      "id": "button-89fc5806b2",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating3"
+    },
+    {
+      "label": "3",
+      "selector": "form #button-89fc5806b2",
+      "kind": "unknown",
+      "id": "button-89fc5806b2",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating3"
+    },
+    {
+      "label": "4",
+      "selector": "form button[type='button']#button-f19dc4592a",
+      "kind": "unknown",
+      "id": "button-f19dc4592a",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating4"
+    },
+    {
+      "label": "4",
+      "selector": "form #button-f19dc4592a",
+      "kind": "unknown",
+      "id": "button-f19dc4592a",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating4"
+    },
+    {
+      "label": "5",
+      "selector": "form button[type='button']#button-61512c14f4",
+      "kind": "unknown",
+      "id": "button-61512c14f4",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating5"
+    },
+    {
+      "label": "5",
+      "selector": "form #button-61512c14f4",
+      "kind": "unknown",
+      "id": "button-61512c14f4",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating5"
+    },
+    {
+      "label": "6",
+      "selector": "form button[type='button']#button-a1b96a8bf0",
+      "kind": "unknown",
+      "id": "button-a1b96a8bf0",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating6"
+    },
+    {
+      "label": "6",
+      "selector": "form #button-a1b96a8bf0",
+      "kind": "unknown",
+      "id": "button-a1b96a8bf0",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating6"
+    },
+    {
+      "label": "7",
+      "selector": "form button[type='button']#button-61960bca94",
+      "kind": "unknown",
+      "id": "button-61960bca94",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating7"
+    },
+    {
+      "label": "7",
+      "selector": "form #button-61960bca94",
+      "kind": "unknown",
+      "id": "button-61960bca94",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating7"
+    },
+    {
+      "label": "8",
+      "selector": "form button[type='button']#button-00bd60e7ad",
+      "kind": "unknown",
+      "id": "button-00bd60e7ad",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating8"
+    },
+    {
+      "label": "8",
+      "selector": "form #button-00bd60e7ad",
+      "kind": "unknown",
+      "id": "button-00bd60e7ad",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating8"
+    },
+    {
+      "label": "9",
+      "selector": "form button[type='button']#button-bb490f8564",
+      "kind": "unknown",
+      "id": "button-bb490f8564",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating9"
+    },
+    {
+      "label": "9",
+      "selector": "form #button-bb490f8564",
+      "kind": "unknown",
+      "id": "button-bb490f8564",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating9"
+    },
+    {
+      "label": "10",
+      "selector": "form button[type='button']#button-b77ca07f4e",
+      "kind": "unknown",
+      "id": "button-b77ca07f4e",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating10"
+    },
+    {
+      "label": "10",
+      "selector": "form #button-b77ca07f4e",
+      "kind": "unknown",
+      "id": "button-b77ca07f4e",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingButtons.rating10"
+    },
+    {
+      "label": "notLikelyText",
+      "selector": "form #text-a27fc77b6e",
+      "kind": "unknown",
+      "id": "text-a27fc77b6e",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingColorCodes.notLikelyText"
+    },
+    {
+      "label": "mayBeText",
+      "selector": "form #text-d6fb80cb9b",
+      "kind": "unknown",
+      "id": "text-d6fb80cb9b",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingColorCodes.mayBeText"
+    },
+    {
+      "label": "veryLikelyText",
+      "selector": "form #text-42ef958934",
+      "kind": "unknown",
+      "id": "text-42ef958934",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.ratingColorCodes.veryLikelyText"
+    },
+    {
+      "label": "Facing any Issue with the service?",
+      "selector": "form fieldset#radiobutton-85f7e69fe5",
+      "kind": "unknown",
+      "id": "radiobutton-85f7e69fe5",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.issuePanel.issuesRadio"
+    },
+    {
+      "label": "Facing any Issue with the service?",
+      "selector": "form #radiobutton-85f7e69fe5",
+      "kind": "unknown",
+      "id": "radiobutton-85f7e69fe5",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.issuePanel.issuesRadio"
+    },
+    {
+      "label": "describeIssueifYes",
+      "selector": "form #text-39b9c27172",
+      "kind": "unknown",
+      "id": "text-39b9c27172",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.issuePanel.describeIssueifYes"
+    },
+    {
+      "label": "describeIssueifNo",
+      "selector": "form #text-cd102d70cd",
+      "kind": "unknown",
+      "id": "text-cd102d70cd",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.issuePanel.describeIssueifNo"
+    },
+    {
+      "label": "describeIssue",
+      "selector": "form textarea#textinput-98fc23b616",
+      "kind": "unknown",
+      "id": "textinput-98fc23b616",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.issuePanel.describeIssue"
+    },
+    {
+      "label": "describeIssue",
+      "selector": "form #textinput-98fc23b616",
+      "kind": "unknown",
+      "id": "textinput-98fc23b616",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.issuePanel.describeIssue"
+    },
+    {
+      "label": "Submit",
+      "selector": "form button[type='button']#button-2e72cc1203",
+      "kind": "unknown",
+      "id": "button-2e72cc1203",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.issuePanel.tqSubmitButton"
+    },
+    {
+      "label": "Submit",
+      "selector": "form #button-2e72cc1203",
+      "kind": "unknown",
+      "id": "button-2e72cc1203",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.issuePanel.tqSubmitButton"
+    },
+    {
+      "label": "Rating Value",
+      "selector": "form input[type='text']#textinput-9ce50ad522",
+      "kind": "unknown",
+      "id": "textinput-9ce50ad522",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.tqSubmitWrapper.ratingValue"
+    },
+    {
+      "label": "Rating Value",
+      "selector": "form #textinput-9ce50ad522",
+      "kind": "unknown",
+      "id": "textinput-9ce50ad522",
+      "qname": "$form.thankYouPanel.thankYoufragment.thankyouLeftPanel.feedbackConfirmation.tqSubmitWrapper.ratingValue"
+    },
+    {
+      "label": "applyfora",
+      "selector": "form #text-8c8611b0c3",
+      "kind": "unknown",
+      "id": "text-8c8611b0c3",
+      "qname": "$form.thankYouPanel.thankYoufragment.personalizedDebitCard.applyfora"
+    },
+    {
+      "label": "applyingDebitCard",
+      "selector": "form #text-25d9e6341a",
+      "kind": "unknown",
+      "id": "text-25d9e6341a",
+      "qname": "$form.thankYouPanel.thankYoufragment.personalizedDebitCard.applyingDebitCard"
+    },
+    {
+      "label": "hdfcBankWebsite",
+      "selector": "form #text-abf67536d1",
+      "kind": "unknown",
+      "id": "text-abf67536d1",
+      "qname": "$form.thankYouPanel.thankYoufragment.hdfcBankWebsite"
+    },
+    {
+      "label": "journeyId",
+      "selector": "form input[type='text']#textinput-9db3cdd9cb",
+      "kind": "unknown",
+      "id": "textinput-9db3cdd9cb",
+      "qname": "$form.runtime.journeyId"
+    },
+    {
+      "label": "journeyId",
+      "selector": "form #textinput-9db3cdd9cb",
+      "kind": "unknown",
+      "id": "textinput-9db3cdd9cb",
+      "qname": "$form.runtime.journeyId"
+    },
+    {
+      "label": "Journey Name",
+      "selector": "form input[type='text']#textinput-0d531a5789",
+      "kind": "unknown",
+      "id": "textinput-0d531a5789",
+      "qname": "$form.runtime.journeyName"
+    },
+    {
+      "label": "Journey Name",
+      "selector": "form #textinput-0d531a5789",
+      "kind": "unknown",
+      "id": "textinput-0d531a5789",
+      "qname": "$form.runtime.journeyName"
+    },
+    {
+      "label": "leadProifileId",
+      "selector": "form input[type='text']#textinput-33859ac495",
+      "kind": "unknown",
+      "id": "textinput-33859ac495",
+      "qname": "$form.runtime.leadProifileId"
+    },
+    {
+      "label": "leadProifileId",
+      "selector": "form #textinput-33859ac495",
+      "kind": "unknown",
+      "id": "textinput-33859ac495",
+      "qname": "$form.runtime.leadProifileId"
+    },
+    {
+      "label": "analytics",
+      "selector": "form input[type='text']#textinput-494a6d7af0",
+      "kind": "unknown",
+      "id": "textinput-494a6d7af0",
+      "qname": "$form.runtime.analytics"
+    },
+    {
+      "label": "analytics",
+      "selector": "form #textinput-494a6d7af0",
+      "kind": "unknown",
+      "id": "textinput-494a6d7af0",
+      "qname": "$form.runtime.analytics"
+    },
+    {
+      "label": "Fatca Response",
+      "selector": "form input[type='text']#textinput-863801faf4",
+      "kind": "unknown",
+      "id": "textinput-863801faf4",
+      "qname": "$form.runtime.fatca_response"
+    },
+    {
+      "label": "Fatca Response",
+      "selector": "form #textinput-863801faf4",
+      "kind": "unknown",
+      "id": "textinput-863801faf4",
+      "qname": "$form.runtime.fatca_response"
+    },
+    {
+      "label": "Product Name",
+      "selector": "form input[type='text']#textinput-8c5477508c",
+      "kind": "unknown",
+      "id": "textinput-8c5477508c",
+      "qname": "$form.crmProductPanel.productName"
+    },
+    {
+      "label": "Product Name",
+      "selector": "form #textinput-8c5477508c",
+      "kind": "unknown",
+      "id": "textinput-8c5477508c",
+      "qname": "$form.crmProductPanel.productName"
+    },
+    {
+      "label": "Product Category",
+      "selector": "form input[type='text']#textinput-439615eed2",
+      "kind": "unknown",
+      "id": "textinput-439615eed2",
+      "qname": "$form.crmProductPanel.productCategory"
+    },
+    {
+      "label": "Product Category",
+      "selector": "form #textinput-439615eed2",
+      "kind": "unknown",
+      "id": "textinput-439615eed2",
+      "qname": "$form.crmProductPanel.productCategory"
+    },
+    {
+      "label": "Product CategoryID",
+      "selector": "form input[type='text']#textinput-913a1ead14",
+      "kind": "unknown",
+      "id": "textinput-913a1ead14",
+      "qname": "$form.crmProductPanel.productCategoryID"
+    },
+    {
+      "label": "Product CategoryID",
+      "selector": "form #textinput-913a1ead14",
+      "kind": "unknown",
+      "id": "textinput-913a1ead14",
+      "qname": "$form.crmProductPanel.productCategoryID"
+    },
+    {
+      "label": "Product Key",
+      "selector": "form input[type='text']#textinput-2df82fd445",
+      "kind": "unknown",
+      "id": "textinput-2df82fd445",
+      "qname": "$form.crmProductPanel.productKey"
+    },
+    {
+      "label": "Product Key",
+      "selector": "form #textinput-2df82fd445",
+      "kind": "unknown",
+      "id": "textinput-2df82fd445",
+      "qname": "$form.crmProductPanel.productKey"
+    },
+    {
+      "label": "errorMsg1",
+      "selector": "form #text-423d475fbc",
+      "kind": "unknown",
+      "id": "text-423d475fbc",
+      "qname": "$form.errorPanel.errorresults.itsNotYouPanel.errorMsg1"
+    },
+    {
+      "label": "errorMsg2",
+      "selector": "form #text-2bfbbf7c3a",
+      "kind": "unknown",
+      "id": "text-2bfbbf7c3a",
+      "qname": "$form.errorPanel.errorresults.itsNotYouPanel.errorMsg2"
+    },
+    {
+      "label": "verificationFailedTitle",
+      "selector": "form #text-7150c41925",
+      "kind": "unknown",
+      "id": "text-7150c41925",
+      "qname": "$form.errorPanel.errorresults.incorrectOTPPanel.verificationFailedTitle"
+    },
+    {
+      "label": "verificationFaildDes",
+      "selector": "form #text-8b068bb7ed",
+      "kind": "unknown",
+      "id": "text-8b068bb7ed",
+      "qname": "$form.errorPanel.errorresults.incorrectOTPPanel.verificationFaildDes"
+    },
+    {
+      "label": "text_21466384761727151866632",
+      "selector": "form #text-a2d6198b00",
+      "kind": "unknown",
+      "id": "text-a2d6198b00",
+      "qname": "$form.errorPanel.errorresults.incorrectOTPPanel.text_21466384761727151866632"
+    },
+    {
+      "label": "youcan",
+      "selector": "form #text-626aa9f82c",
+      "kind": "unknown",
+      "id": "text-626aa9f82c",
+      "qname": "$form.errorPanel.errorresults.incorrectOTPPanel.youcan"
+    },
+    {
+      "label": "text_9238719291727151973910",
+      "selector": "form #text-bd28c8e895",
+      "kind": "unknown",
+      "id": "text-bd28c8e895",
+      "qname": "$form.errorPanel.errorresults.incorrectOTPPanel.text_9238719291727151973910"
+    },
+    {
+      "label": "errorCodeTitle",
+      "selector": "form #text-f9e7733b3b",
+      "kind": "unknown",
+      "id": "text-f9e7733b3b",
+      "qname": "$form.errorPanel.errorresults.differentErrorCodes.errorCodeTitle"
+    },
+    {
+      "label": "errorcodeDes",
+      "selector": "form #text-7cbab18068",
+      "kind": "unknown",
+      "id": "text-7cbab18068",
+      "qname": "$form.errorPanel.errorresults.differentErrorCodes.errorcodeDes"
+    },
+    {
+      "label": "ErrorconnectionTitle",
+      "selector": "form #text-a228c28aae",
+      "kind": "unknown",
+      "id": "text-a228c28aae",
+      "qname": "$form.errorPanel.errorresults.errorConnection.ErrorconnectionTitle"
+    },
+    {
+      "label": "errorConnectionDesc",
+      "selector": "form #text-a053ce41f5",
+      "kind": "unknown",
+      "id": "text-a053ce41f5",
+      "qname": "$form.errorPanel.errorresults.errorConnection.errorConnectionDesc"
+    },
+    {
+      "label": "Okay",
+      "selector": "form button[type='button']#button-6b96ea4e06",
+      "kind": "unknown",
+      "id": "button-6b96ea4e06",
+      "qname": "$form.errorPanel.errorresults.errorConnection.okayButton"
+    },
+    {
+      "label": "Okay",
+      "selector": "form #button-6b96ea4e06",
+      "kind": "unknown",
+      "id": "button-6b96ea4e06",
+      "qname": "$form.errorPanel.errorresults.errorConnection.okayButton"
+    }
+  ]
+}

@@ -1,0 +1,1255 @@
+{
+  "url": "https://applyonline.hdfcbank.com/businessloans.html",
+  "urlKey": "https://applyonline.hdfcbank.com/businessloans.html",
+  "formName": "BL Landing Form",
+  "ok": true,
+  "error": null,
+  "rows": [
+    {
+      "label": "+91",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].phoneSection[0].phoneNumber[0]"
+    },
+    {
+      "label": "+91",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].phoneSection[0].phoneNumber[0]"
+    },
+    {
+      "label": "+91",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel-guidenumericbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].phoneSection[0].phoneNumber[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panNumber[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panNumber[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panNumber[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419769___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419769__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField1[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419769___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419769__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField1[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField2[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField2[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_1856875849___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_1856875849__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField3[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_1856875849___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_1856875849__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField3[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_408962325___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_408962325__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField4[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_408962325___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_408962325__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField4[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_1871374539___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_1871374539__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField5[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_1871374539___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_1871374539__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField5[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField6[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField6[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox_2069071921___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox_2069071921__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField7[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox_2069071921___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox_2069071921__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField7[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox_1529594740___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox_1529594740__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField8[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox_1529594740___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox_1529594740__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField8[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox_854756202___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox_854756202__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField9[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox_854756202___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidenumericbox_854756202__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField9[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_297629069___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_297629069__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField10[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_297629069___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel-panel-panel_1508583939-panel-guidetextbox_1447419_297629069__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].CustomerLoginDetailsPanel[0].otpDetailsWrapper[0].panPanel[0].panInputPanel[0].panField10[0]"
+    },
+    {
+      "label": "Personal Data Perfios Capture Consent",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalDataConsentCaptureFormPanel[0].personalDataPerfiosCaptureConsentPanel[0].personalDataPerfiosCaptureConsent[0]"
+    },
+    {
+      "label": "Personal Data Perfios Capture Consent",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalDataConsentCaptureFormPanel[0].personalDataPerfiosCaptureConsentPanel[0].personalDataPerfiosCaptureConsent[0]"
+    },
+    {
+      "label": "Personal Data Perfios Capture Consent",
+      "selector": "form#guideContainerForm",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalDataConsentCaptureFormPanel[0].personalDataPerfiosCaptureConsentPanel[0].personalDataPerfiosCaptureConsent[0]"
+    },
+    {
+      "label": "Personal Data Perfios Capture Consent",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidecheckbox_copy__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalDataConsentCaptureFormPanel[0].personalDataPerfiosCaptureConsentPanel[0].personalDataPerfiosCaptureConsent[0]"
+    },
+    {
+      "label": "personalDataCaptureConsent",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalDataConsentCaptureFormPanel[0].personalDataPerfiosCaptureConsentPanel[0].personalDataCaptureConsent[0]"
+    },
+    {
+      "label": "personalDataCaptureConsent",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalDataConsentCaptureFormPanel[0].personalDataPerfiosCaptureConsentPanel[0].personalDataCaptureConsent[0]"
+    },
+    {
+      "label": "personalDataCaptureConsent",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalDataConsentCaptureFormPanel[0].personalDataPerfiosCaptureConsentPanel[0].personalDataCaptureConsent[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel_829589434_copy-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel_829589434_copy-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalDataConsentCaptureFormPanel[0].mandatoryDataPopupFormPanel[0].mandatoryDataPopup[0].mandatoryDataPopupCTA[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel_829589434_copy-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel_829589434_copy-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalDataConsentCaptureFormPanel[0].mandatoryDataPopupFormPanel[0].mandatoryDataPopup[0].mandatoryDataPopupCTA[0]"
+    },
+    {
+      "label": "I Agree and Continue",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel_210571971-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel_210571971-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalDataConsentCaptureFormPanel[0].personalDataPerfiosCaptureConsentFormPopupPanel[0].personalDataPerfiosCaptureConsentPopupPanel[0].personalDataPerfiosCaptureConsentCTA[0]"
+    },
+    {
+      "label": "I Agree and Continue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel_210571971-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_759844051_copy-panel_210571971-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalDataConsentCaptureFormPanel[0].personalDataPerfiosCaptureConsentFormPopupPanel[0].personalDataPerfiosCaptureConsentPopupPanel[0].personalDataPerfiosCaptureConsentCTA[0]"
+    },
+    {
+      "label": "Personalized Offers Capture Consent",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentPanel[0].personalizedOffersCaptureConsent[0]"
+    },
+    {
+      "label": "Personalized Offers Capture Consent",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel-guidecheckbox_copy___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentPanel[0].personalizedOffersCaptureConsent[0]"
+    },
+    {
+      "label": "Personalized Offers Capture Consent",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel-guidecheckbox_copy__ > div:nth-of-type(1) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel-guidecheckbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentPanel[0].personalizedOffersCaptureConsent[0]"
+    },
+    {
+      "label": "channelCaptureConsent",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentPanel[0].channelCaptureConsent[0]"
+    },
+    {
+      "label": "channelCaptureConsent",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentPanel[0].channelCaptureConsent[0]"
+    },
+    {
+      "label": "I Agree and Continue",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel_1311621086-panel-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel_1311621086-panel-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentFormPopupPanel[0].personalizedOffersCaptureConsentPopupPanel[0].personalizedOffersCaptureConsentCTA[0]"
+    },
+    {
+      "label": "I Agree and Continue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel_1311621086-panel-guidebutton_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-panel_2126142822_cop-panel_1311621086-panel-guidebutton_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].personalizedOffersCaptureConsentFormPanel[0].personalizedOffersCaptureConsentFormPopupPanel[0].personalizedOffersCaptureConsentPopupPanel[0].personalizedOffersCaptureConsentCTA[0]"
+    },
+    {
+      "label": "Apply here >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-guidebutton_copy_cop___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-guidebutton_copy_cop__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].consent_btn[0]"
+    },
+    {
+      "label": "Apply here >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-guidebutton_copy_cop___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_2069687252-guidebutton_copy_cop__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].consent_panel[0].consent_btn[0]"
+    },
+    {
+      "label": "hiddenPersonalDataPerfiosConsentCheckboxValue",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].hiddenPersonalDataPerfiosConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalDataPerfiosConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].hiddenPersonalDataPerfiosConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalDataPerfiosConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].hiddenPersonalDataPerfiosConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalDataConsentCheckboxValue",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_1183187___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_1183187__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].hiddenPersonalDataConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalDataConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_1183187___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_1183187__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].hiddenPersonalDataConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalDataConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_1183187___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_1183187__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].hiddenPersonalDataConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalizedOffersConsentCheckboxValue",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy_co___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].hiddenPersonalizedOffersConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalizedOffersConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy_co___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].hiddenPersonalizedOffersConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenPersonalizedOffersConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy_co___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy_co__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].hiddenPersonalizedOffersConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenChannelDataConsentCheckboxValue",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy_49___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy_49__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].hiddenChannelDataConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenChannelDataConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy_49___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy_49__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].hiddenChannelDataConsentCheckboxValue[0]"
+    },
+    {
+      "label": "hiddenChannelDataConsentCheckboxValue",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy_49___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidetextbox_copy_49__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].hiddenChannelDataConsentCheckboxValue[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006100846-guidecheckbox___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006100846-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].privacyPolicyPanel[0].privacyPolicyCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006100846-guidecheckbox___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006100846-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].privacyPolicyPanel[0].privacyPolicyCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006100846-guidecheckbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006100846-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].privacyPolicyPanel[0].privacyPolicyCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006100846-guidecheckbox__ > div:nth-of-type(2) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006100846-guidecheckbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].privacyPolicyPanel[0].privacyPolicyCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006143814-guidecheckbox_1024563670___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006143814-guidecheckbox_1024563670__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].requestedProductsPanel[0].requestedProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006143814-guidecheckbox_1024563670___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006143814-guidecheckbox_1024563670__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].requestedProductsPanel[0].requestedProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006143814-guidecheckbox_1024563670___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006143814-guidecheckbox_1024563670__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].requestedProductsPanel[0].requestedProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006143814-guidecheckbox_1024563670__ > div:nth-of-type(2) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006143814-guidecheckbox_1024563670__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].requestedProductsPanel[0].requestedProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006178151-guidecheckbox_115022115___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006178151-guidecheckbox_115022115__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].otherProductsPanel[0].otherProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006178151-guidecheckbox_115022115___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006178151-guidecheckbox_115022115__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].otherProductsPanel[0].otherProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006178151-guidecheckbox_115022115___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006178151-guidecheckbox_115022115__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].otherProductsPanel[0].otherProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006178151-guidecheckbox_115022115__ > div:nth-of-type(2) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006178151-guidecheckbox_115022115__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].otherProductsPanel[0].otherProductsCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='checkbox']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006213213-guidecheckbox_1196306050___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006213213-guidecheckbox_1196306050__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].representativesPanel[0].representativesCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006213213-guidecheckbox_1196306050___1_widget",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006213213-guidecheckbox_1196306050__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].representativesPanel[0].representativesCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006213213-guidecheckbox_1196306050___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006213213-guidecheckbox_1196306050__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].representativesPanel[0].representativesCheckbox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006213213-guidecheckbox_1196306050__ > div:nth-of-type(2) > div > div:nth-of-type(2) > label",
+      "kind": "unknown",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel1675945631280-panel1676006213213-guidecheckbox_1196306050__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].consentHyperlinks[0].representativesPanel[0].representativesCheckbox[0]"
+    },
+    {
+      "label": "I Agree and Accept >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].privacyPolicyConsentPopup[0].privacyPolicyAgreeBtn[0]"
+    },
+    {
+      "label": "I Agree and Accept >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].privacyPolicyConsentPopup[0].privacyPolicyAgreeBtn[0]"
+    },
+    {
+      "label": "X",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1045015001-guidebutton_487317564___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1045015001-guidebutton_487317564__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].requestedProductPopUp[0].cancelButton[0]"
+    },
+    {
+      "label": "X",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1045015001-guidebutton_487317564___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1045015001-guidebutton_487317564__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].requestedProductPopUp[0].cancelButton[0]"
+    },
+    {
+      "label": "I Agree and Accept >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1045015001-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1045015001-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].requestedProductPopUp[0].requestedProductAgreeBtn[0]"
+    },
+    {
+      "label": "I Agree and Accept >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1045015001-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1045015001-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].requestedProductPopUp[0].requestedProductAgreeBtn[0]"
+    },
+    {
+      "label": "X",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1049968718-guidebutton_48731756___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1049968718-guidebutton_48731756__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].otherProductPopUp[0].cancelButton[0]"
+    },
+    {
+      "label": "X",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1049968718-guidebutton_48731756___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1049968718-guidebutton_48731756__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].otherProductPopUp[0].cancelButton[0]"
+    },
+    {
+      "label": "I Agree and Accept >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1049968718-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1049968718-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].otherProductPopUp[0].representativesPopUp[0]"
+    },
+    {
+      "label": "I Agree and Accept >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1049968718-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_1049968718-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].otherProductPopUp[0].representativesPopUp[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_2053345242-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_2053345242-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].requestedProdcutPopupUnConsentText[0].representativePopup[0]"
+    },
+    {
+      "label": "OK >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_2053345242-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-panel_2053345242-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].requestedProdcutPopupUnConsentText[0].representativePopup[0]"
+    },
+    {
+      "label": "requestProductConsentFlag",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].requestProductConsentFlag[0]"
+    },
+    {
+      "label": "requestProductConsentFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].requestProductConsentFlag[0]"
+    },
+    {
+      "label": "otherProductConsentFlag",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_472473829___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_472473829__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].otherProductConsentFlag[0]"
+    },
+    {
+      "label": "otherProductConsentFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_472473829___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_472473829__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].otherProductConsentFlag[0]"
+    },
+    {
+      "label": "override_DNC_NDNCConsentFlag",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_376489725___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_376489725__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].override_DNC_NDNCConsentFlag[0]"
+    },
+    {
+      "label": "override_DNC_NDNCConsentFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_376489725___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_376489725__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].override_DNC_NDNCConsentFlag[0]"
+    },
+    {
+      "label": "privacyConsentFlag",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_449664901___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_449664901__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].privacyConsentFlag[0]"
+    },
+    {
+      "label": "privacyConsentFlag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_449664901___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_449664901__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].privacyConsentFlag[0]"
+    },
+    {
+      "label": "perfiosConsentMerged",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_1104035269___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_1104035269__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].perfiosConsentMerged[0]"
+    },
+    {
+      "label": "perfiosConsentMerged",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_1104035269___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-panel_1981701431-guidetextbox_1104035269__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ConsentMechanism[0].perfiosConsentMerged[0]"
+    },
+    {
+      "label": "View Loan Eligibility >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ViewLoanEligibilityBtn[0]"
+    },
+    {
+      "label": "View Loan Eligibility >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].WelcomePanel[0].ViewLoanEligibilityBtn[0]"
+    },
+    {
+      "label": "OTPno",
+      "selector": "form#guideContainerForm input[type='tel']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-panel_copy_copy-panel-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-panel_copy_copy-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].identifyYourselfOTPSection[0].identifyYourselfOTPPanel[0].EnterOTP[0].otpNo[0]"
+    },
+    {
+      "label": "OTPno",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-panel_copy_copy-panel-guidenumericbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-panel_copy_copy-panel-guidenumericbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].identifyYourselfOTPSection[0].identifyYourselfOTPPanel[0].EnterOTP[0].otpNo[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-panel_copy_copy-panel_675535747-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-panel_copy_copy-panel_675535747-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].identifyYourselfOTPSection[0].identifyYourselfOTPPanel[0].OTPpanel[0].seconds[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-panel_copy_copy-panel_675535747-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-panel_copy_copy-panel_675535747-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].identifyYourselfOTPSection[0].identifyYourselfOTPPanel[0].OTPpanel[0].seconds[0]"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-panel_copy_copy-panel_675535747-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-panel_copy_copy-panel_675535747-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].identifyYourselfOTPSection[0].identifyYourselfOTPPanel[0].OTPpanel[0].resendOTPButton[0]"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-panel_copy_copy-panel_675535747-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-panel_copy_copy-panel_675535747-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].identifyYourselfOTPSection[0].identifyYourselfOTPPanel[0].OTPpanel[0].resendOTPButton[0]"
+    },
+    {
+      "label": "Identify Yourself >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].identifyYourselfOTPSection[0].authenticateButton1[0]"
+    },
+    {
+      "label": "Identify Yourself >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].identifyYourselfOTPSection[0].authenticateButton1[0]"
+    },
+    {
+      "label": "Back",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-guidebutton_1297223158___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-guidebutton_1297223158__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].identifyYourselfOTPSection[0].backButton1[0]"
+    },
+    {
+      "label": "Back",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-guidebutton_1297223158___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_copy-panel_228593536-panel_1977099575-panel_798372048-guidebutton_1297223158__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].BLpanel[0].BLNTBNavigationPanel[0].IdentifyYourselfPanel[0].identifyYourselfOTPSection[0].backButton1[0]"
+    },
+    {
+      "label": "Connect With Us",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel-panel_1786291245-panel_1539719667-panel1730707939538-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel-panel_1786291245-panel_1539719667-panel1730707939538-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].beginDisbursement[0].beginDisbursementParent[0].beginDisbursementChild[0].disbursementBody[0].disbursementXBL[0].cntctBankSupport[0].connectWithUs[0]"
+    },
+    {
+      "label": "Connect With Us",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel-panel_1786291245-panel_1539719667-panel1730707939538-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel-panel_1786291245-panel_1539719667-panel1730707939538-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].beginDisbursement[0].beginDisbursementParent[0].beginDisbursementChild[0].disbursementBody[0].disbursementXBL[0].cntctBankSupport[0].connectWithUs[0]"
+    },
+    {
+      "label": "Apply for new loan",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel-panel_1786291245-panel_1539719667-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel-panel_1786291245-panel_1539719667-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].beginDisbursement[0].beginDisbursementParent[0].beginDisbursementChild[0].disbursementBody[0].disbursementXBL[0].applyForNewLoan[0]"
+    },
+    {
+      "label": "Apply for new loan",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel-panel_1786291245-panel_1539719667-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel-panel_1786291245-panel_1539719667-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].beginDisbursement[0].beginDisbursementParent[0].beginDisbursementChild[0].disbursementBody[0].disbursementXBL[0].applyForNewLoan[0]"
+    },
+    {
+      "label": "Begin Disbursement",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel-panel_1786291245-panel_1539719667-guidebutton_70218232___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel-panel_1786291245-panel_1539719667-guidebutton_70218232__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].beginDisbursement[0].beginDisbursementParent[0].beginDisbursementChild[0].disbursementBody[0].disbursementXBL[0].beginDisbursementButton[0]"
+    },
+    {
+      "label": "Begin Disbursement",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel-panel_1786291245-panel_1539719667-guidebutton_70218232___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel-panel_1786291245-panel_1539719667-guidebutton_70218232__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].beginDisbursement[0].beginDisbursementParent[0].beginDisbursementChild[0].disbursementBody[0].disbursementXBL[0].beginDisbursementButton[0]"
+    },
+    {
+      "label": "Proceed ",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel_699714602-panel-panel_1840677760-panel-guidebutton_2120971188___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel_699714602-panel-panel_1840677760-panel-guidebutton_2120971188__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].beginDisbursement[0].beginDisbursementParent[0].disbursementPopup[0].pnlPopup[0].proceedNewLoanChildOverlay[0].proceedNewLoanChild[0].proceedPnl[0]"
+    },
+    {
+      "label": "Proceed ",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel_699714602-panel-panel_1840677760-panel-guidebutton_2120971188___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel_699714602-panel-panel_1840677760-panel-guidebutton_2120971188__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].beginDisbursement[0].beginDisbursementParent[0].disbursementPopup[0].pnlPopup[0].proceedNewLoanChildOverlay[0].proceedNewLoanChild[0].proceedPnl[0]"
+    },
+    {
+      "label": "Cancel",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel_699714602-panel-panel_1840677760-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel_699714602-panel-panel_1840677760-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].beginDisbursement[0].beginDisbursementParent[0].disbursementPopup[0].pnlPopup[0].proceedNewLoanChildOverlay[0].proceedNewLoanChild[0].cancelPnl[0]"
+    },
+    {
+      "label": "Cancel",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel_699714602-panel-panel_1840677760-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel_699714602-panel-panel_1840677760-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].beginDisbursement[0].beginDisbursementParent[0].disbursementPopup[0].pnlPopup[0].proceedNewLoanChildOverlay[0].proceedNewLoanChild[0].cancelPnl[0]"
+    },
+    {
+      "label": "Okay",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel_1265423395-panel-panel_1840677760-panel-guidebutton_2120971188___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel_1265423395-panel-panel_1840677760-panel-guidebutton_2120971188__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].beginDisbursement[0].beginDisbursementParent[0].contactUsPopup[0].cntPopup[0].contactUsChildOverlay[0].contactUsChild[0].okayPnl[0]"
+    },
+    {
+      "label": "Okay",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel_1265423395-panel-panel_1840677760-panel-guidebutton_2120971188___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1751764931-panel_1000959512-panel_1265423395-panel-panel_1840677760-panel-guidebutton_2120971188__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].beginDisbursement[0].beginDisbursementParent[0].contactUsPopup[0].cntPopup[0].contactUsChildOverlay[0].contactUsChild[0].okayPnl[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].phoneNumHiddenTextBox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].phoneNumHiddenTextBox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].phoneNumHiddenTextBox[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox_2026942317___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_2026942317__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].panHiddenField[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_2026942317___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_2026942317__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].panHiddenField[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1641405610___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1641405610__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].customerNameHiddenField[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1641405610___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1641405610__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].customerNameHiddenField[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox_970214616___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_970214616__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].customerIDHiddenField[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_970214616___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_970214616__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].customerIDHiddenField[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408758___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408758__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].custTypeHidden[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408758___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408758__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].custTypeHidden[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].offerTypeHidden[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].offerTypeHidden[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].offerTypeHidden[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408_260883227___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408_260883227__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].pqgcOfferFlagHidden[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408_260883227___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408_260883227__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].pqgcOfferFlagHidden[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408_260883227___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408_260883227__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].pqgcOfferFlagHidden[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408_1887916746___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408_1887916746__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].kycFlagHidden[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408_1887916746___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408_1887916746__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].kycFlagHidden[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408_1887916746___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1486408_1887916746__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].kycFlagHidden[0]"
+    },
+    {
+      "label": "Current Form Context",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1031241158___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1031241158__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].currentFormContextField[0]"
+    },
+    {
+      "label": "Current Form Context",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1031241158___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1031241158__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].currentFormContextField[0]"
+    },
+    {
+      "label": "Bank JourneyId",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].bankJourneyID[0]"
+    },
+    {
+      "label": "Bank JourneyId",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].bankJourneyID[0]"
+    },
+    {
+      "label": "returningJourneyId",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428_874127156___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428_874127156__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].returningJourneyId_copy_2[0]"
+    },
+    {
+      "label": "returningJourneyId",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428_874127156___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428_874127156__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].returningJourneyId_copy_2[0]"
+    },
+    {
+      "label": "Offer Available",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428_286504840___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428_286504840__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].offerAvailable[0]"
+    },
+    {
+      "label": "Offer Available",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428_286504840___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428_286504840__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].offerAvailable[0]"
+    },
+    {
+      "label": "ETB Flag",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428577___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428577__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].ETBFlag[0]"
+    },
+    {
+      "label": "ETB Flag",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428577___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_370845934_copy-guidetextbox_1269428577__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].hiddenFields[0].ETBFlag[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel_1555196200-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1555196200-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].autrorableHiddenFields[0].minLoanAmount[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1555196200-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_1555196200-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].autrorableHiddenFields[0].minLoanAmount[0]"
+    },
+    {
+      "label": "",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_1555196200-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel_1555196200-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].autrorableHiddenFields[0].minLoanAmount[0]"
+    },
+    {
+      "label": "Click to Start Again >>",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_928099266_copy-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_928099266_copy-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].errorContainer[0].errorMainPanel[0].startAgainButtn[0]"
+    },
+    {
+      "label": "Click to Start Again >>",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_928099266_copy-panel-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_928099266_copy-panel-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].errorContainer[0].errorMainPanel[0].startAgainButtn[0]"
+    },
+    {
+      "label": "Retry",
+      "selector": "form#guideContainerForm button[type='button']#guideContainer-rootPanel-panel_760838962-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_760838962-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].errorPopup[0].retryOtpBtn[0]"
+    },
+    {
+      "label": "Retry",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel_760838962-guidebutton___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel_760838962-guidebutton__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].errorPopup[0].retryOtpBtn[0]"
+    },
+    {
+      "label": "Data Security Public Key",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityPublicKey[0]"
+    },
+    {
+      "label": "Data Security Public Key",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityPublicKey[0]"
+    },
+    {
+      "label": "Data Security Public Key",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-guidetextbox__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityPublicKey[0]"
+    },
+    {
+      "label": "Data Security Enabled",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-guidetextbox_1010916070___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_1010916070__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityEnabled[0]"
+    },
+    {
+      "label": "Data Security Enabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_1010916070___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_1010916070__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityEnabled[0]"
+    },
+    {
+      "label": "Data Security Enabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_1010916070___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_1010916070__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].dataSecurityEnabled[0]"
+    },
+    {
+      "label": "Journey ID",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-guidetextbox_171189644___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_171189644__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].journeyId[0]"
+    },
+    {
+      "label": "Journey ID",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_171189644___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_171189644__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].journeyId[0]"
+    },
+    {
+      "label": "Journey ID",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_171189644___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_171189644__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].journeyId[0]"
+    },
+    {
+      "label": "Prefill Status",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-guidetextbox_2136452802___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_2136452802__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].prefillStatus[0]"
+    },
+    {
+      "label": "Prefill Status",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_2136452802___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_2136452802__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].prefillStatus[0]"
+    },
+    {
+      "label": "Prefill Status",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_2136452802___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_2136452802__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].prefillStatus[0]"
+    },
+    {
+      "label": "captchaEnabled",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-guidetextbox_7366135___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_7366135__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaEnabled[0]"
+    },
+    {
+      "label": "captchaEnabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_7366135___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_7366135__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaEnabled[0]"
+    },
+    {
+      "label": "captchaEnabled",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_7366135___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_7366135__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaEnabled[0]"
+    },
+    {
+      "label": "captchaClientKey",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-guidetextbox_2855714___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_2855714__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaClientKey[0]"
+    },
+    {
+      "label": "captchaClientKey",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_2855714___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_2855714__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaClientKey[0]"
+    },
+    {
+      "label": "captchaClientKey",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_2855714___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_2855714__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].captchaClientKey[0]"
+    },
+    {
+      "label": "visitType",
+      "selector": "form#guideContainerForm input[type='text']#guideContainer-rootPanel-panel-guidetextbox_1458356___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_1458356__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].visitType[0]"
+    },
+    {
+      "label": "visitType",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_1458356___widget",
+      "kind": "widget",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_1458356__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].visitType[0]"
+    },
+    {
+      "label": "visitType",
+      "selector": "form#guideContainerForm #guideContainer-rootPanel-panel-guidetextbox_1458356___label",
+      "kind": "label",
+      "id": "guideContainer-rootPanel-panel-guidetextbox_1458356__",
+      "qname": "guide[0].guide1[0].guideRootPanel[0].formRenderingContext[0].visitType[0]"
+    }
+  ]
+}
