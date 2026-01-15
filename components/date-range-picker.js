@@ -3,6 +3,12 @@
  * Allows users to select a start and end date with validation
  * Ensures dates are not more than 1 week apart
  */
+import {
+  formatLocalYMD,
+  parseLocalYMD,
+  localDateStringToUTCMidnightMs,
+} from '../utils/date-utils.js';
+
 class DateRangePicker extends HTMLElement {
   constructor() {
     super();
@@ -37,11 +43,10 @@ class DateRangePicker extends HTMLElement {
   }
 
   calculateDaysDifference(startDate, endDate) {
-    const start = new Date(startDate);
-    const end = new Date(endDate);
-    const diffTime = end - start;
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    return diffDays;
+    const startUtc = this.localDateStringToUTCMidnightMs(startDate);
+    const endUtc = this.localDateStringToUTCMidnightMs(endDate);
+    if (Number.isNaN(startUtc) || Number.isNaN(endUtc)) return NaN;
+    return Math.round((endUtc - startUtc) / (1000 * 60 * 60 * 24));
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -67,10 +72,7 @@ class DateRangePicker extends HTMLElement {
     const placeholder = this.getAttribute('placeholder') || 'Select date range';
     const startDate = this.getAttribute('start') || '';
     const endDate = this.getAttribute('end') || '';
-    const now = new Date();
-    const today = this.format(now);
-    const maxStartDate = today;
-    const maxEndDate = this.addDays(today, 1);
+    const maxDate = this.formatLocalYMD(new Date());
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -253,7 +255,7 @@ class DateRangePicker extends HTMLElement {
               type="date"
               id="start-date"
               value="${startDate}"
-              max="${maxStartDate}"
+              max="${maxDate}"
               required
             />
           </div>
@@ -264,13 +266,13 @@ class DateRangePicker extends HTMLElement {
               type="date"
               id="end-date"
               value="${endDate}"
-              max="${maxEndDate}"
+              max="${maxDate}"
               required
             />
           </div>
         </div>
         <div class="error-message" id="error-message"></div>
-        <div class="date-info">End date must be at least 1 day after start date (Max: 7 days)</div>
+        <div class="date-info">Maximum 7 days between dates</div>
       </div>
     `;
   }
@@ -278,9 +280,10 @@ class DateRangePicker extends HTMLElement {
   setupEventListeners() {
     const startDateInput = this.shadowRoot.getElementById('start-date');
     const endDateInput = this.shadowRoot.getElementById('end-date');
-    const now = new Date();
-    const todayISO = this.format(now);
-    endDateInput.max = this.addDays(todayISO, 1);
+    const todayISO = this.formatLocalYMD(new Date());
+    // Enforce max selectable date as today
+    startDateInput.max = todayISO;
+    endDateInput.max = todayISO;
 
     // Handle start date changes with smart adjustment
     startDateInput.addEventListener('change', () => {
@@ -296,18 +299,16 @@ class DateRangePicker extends HTMLElement {
       if (endDateInput.value) {
         const currentDiff = this.calculateDaysDifference(startDateInput.value, endDateInput.value);
 
-        // If range exceeds 7 days or end date is not after start date, clamp to max 7 days
-        if (currentDiff > 7 || currentDiff < 1) {
+        // If range exceeds 7 days or end date is before start date, clamp to max 7 days
+        if (currentDiff > 7 || currentDiff < 0) {
           const daysUntilToday = Math.max(1, Math.ceil((new Date(todayISO) - new Date(startDateInput.value)) / (1000 * 60 * 60 * 24)));
           const clamped = Math.min(7, daysUntilToday);
           const newEndDate = this.addDays(startDateInput.value, clamped);
           endDateInput.value = newEndDate;
         }
       } else {
-        // If no end date, default to 1 day after start
-        const daysUntilToday = Math.ceil((new Date(todayISO) - new Date(startDateInput.value)) / (1000 * 60 * 60 * 24));
-        const offset = Math.min(1, Math.max(0, daysUntilToday));
-        endDateInput.value = this.addDays(startDateInput.value, offset === 0 ? 1 : 1);
+        // If no end date, default to same day as start
+        endDateInput.value = startDateInput.value;
       }
 
       this.validateAndStoreDifference();
@@ -329,14 +330,14 @@ class DateRangePicker extends HTMLElement {
       if (startDateInput.value) {
         const currentDiff = this.calculateDaysDifference(startDateInput.value, endDateInput.value);
 
-        // If range exceeds 7 days or end date is not after start date, clamp to max 7 days
-        if (currentDiff > 7 || currentDiff < 1) {
+        // If range exceeds 7 days or end date is before start date, clamp to max 7 days
+        if (currentDiff > 7 || currentDiff < 0) {
           const newStartDate = this.subtractDays(endDateInput.value, 7);
           startDateInput.value = newStartDate;
         }
       } else {
-        // If no start date, default to 1 day before end
-        startDateInput.value = this.subtractDays(endDateInput.value, 1);
+        // If no start date, default to same day as end
+        startDateInput.value = endDateInput.value;
       }
 
       this.validateAndStoreDifference();
@@ -373,15 +374,17 @@ class DateRangePicker extends HTMLElement {
   }
 
   addDays(dateString, days) {
-    const date = new Date(dateString);
+    const date = this.parseLocalYMD(dateString);
+    if (!date) return dateString;
     date.setDate(date.getDate() + days);
-    return date.toISOString().split('T')[0];
+    return this.formatLocalYMD(date);
   }
 
   subtractDays(dateString, days) {
-    const date = new Date(dateString);
+    const date = this.parseLocalYMD(dateString);
+    if (!date) return dateString;
     date.setDate(date.getDate() - days);
-    return date.toISOString().split('T')[0];
+    return this.formatLocalYMD(date);
   }
 
   validateAndStoreDifference() {
@@ -438,21 +441,27 @@ class DateRangePicker extends HTMLElement {
       return { valid: false, message: 'Both dates are required' };
     }
 
-    const start = new Date(startDate);
-    const end = new Date(endDate);
-
-    // Check if end date is before or equal to start date
-    if (end <= start) {
+    const startMs = this.localDateStringToUTCMidnightMs(startDate);
+    const endMs = this.localDateStringToUTCMidnightMs(endDate);
+    if (Number.isNaN(startMs) || Number.isNaN(endMs)) {
       startDateInput.classList.add('error');
       endDateInput.classList.add('error');
-      errorMessage.textContent = 'End date must be at least 1 day after start date';
+      errorMessage.textContent = 'Invalid date range';
       errorMessage.classList.add('visible');
-      return { valid: false, message: 'End date must be at least 1 day after start date' };
+      return { valid: false, message: 'Invalid date range' };
+    }
+
+    // Check if end date is before start date
+    if (endMs < startMs) {
+      startDateInput.classList.add('error');
+      endDateInput.classList.add('error');
+      errorMessage.textContent = 'End date must be after start date';
+      errorMessage.classList.add('visible');
+      return { valid: false, message: 'End date must be after start date' };
     }
 
     // Check if dates are more than 7 days apart
-    const diffTime = Math.abs(end - start);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const diffDays = Math.abs(Math.round((endMs - startMs) / (1000 * 60 * 60 * 24)));
 
     if (diffDays > 7) {
       startDateInput.classList.add('error');
@@ -460,15 +469,6 @@ class DateRangePicker extends HTMLElement {
       errorMessage.textContent = `Date range too large: ${diffDays} days. Maximum allowed is 7 days.`;
       errorMessage.classList.add('visible');
       return { valid: false, message: `Date range cannot exceed 7 days (selected: ${diffDays} days)` };
-    }
-
-    // Additional check: ensure minimum 1 day difference
-    if (diffDays < 1) {
-      startDateInput.classList.add('error');
-      endDateInput.classList.add('error');
-      errorMessage.textContent = 'End date must be at least 1 day after start date';
-      errorMessage.classList.add('visible');
-      return { valid: false, message: 'End date must be at least 1 day after start date' };
     }
 
     return { valid: true, message: '' };
@@ -492,11 +492,9 @@ class DateRangePicker extends HTMLElement {
   }
 
   setDates(startDate, endDate) {
-    const now = new Date();
-    const todayISO = this.format(now);
-    const tomorrowISO = this.addDays(todayISO, 1);
+    const todayISO = this.formatLocalYMD(new Date());
     const safeStart = startDate && startDate > todayISO ? todayISO : startDate;
-    const safeEnd = endDate && endDate > tomorrowISO ? tomorrowISO : endDate;
+    const safeEnd = endDate && endDate > todayISO ? todayISO : endDate;
     this.setAttribute('start', safeStart);
     this.setAttribute('end', safeEnd);
     this.validateDates();
@@ -520,40 +518,49 @@ class DateRangePicker extends HTMLElement {
   }
 
   // Helpers for presets
-  format(date) {
-    return date.toISOString().split('T')[0];
+  parseLocalYMD(dateString) {
+    return parseLocalYMD(dateString);
+  }
+
+  formatLocalYMD(date) {
+    return formatLocalYMD(date);
+  }
+
+  localDateStringToUTCMidnightMs(dateString) {
+    return localDateStringToUTCMidnightMs(dateString);
   }
 
   clearDynamicBounds() {
     const startDateInput = this.shadowRoot.getElementById('start-date');
     const endDateInput = this.shadowRoot.getElementById('end-date');
-    const now = new Date();
-    const todayISO = this.format(now);
-    const tomorrowISO = this.addDays(todayISO, 1);
+    const todayISO = this.formatLocalYMD(new Date());
     // Allow picking either side first; invalid combos will be corrected by validation
     startDateInput.min = '';
     startDateInput.max = todayISO;
     endDateInput.min = '';
-    endDateInput.max = tomorrowISO;
+    endDateInput.max = todayISO;
   }
 
   getPresetDates(preset) {
-    const now = new Date();
     // Ensure we operate on local midnight boundaries
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
     if (preset === 'today') {
-      const end = this.addDays(this.format(now), 1);
-      const start = this.format(now);
-      return { start, end };
+      const d = this.formatLocalYMD(today);
+      return { start: d, end: d };
     }
     if (preset === 'yesterday') {
-      const end = this.subtractDays(this.format(now));
-      const start = this.subtractDays(this.format(now), 1);
-      return { start, end };
+      const y = new Date(today);
+      y.setDate(y.getDate() - 1);
+      const d = this.formatLocalYMD(y);
+      return { start: d, end: d };
     }
     if (preset === 'last7') {
-      const end = this.format(now);
-      const start = this.subtractDays(this.format(now), 7);
+      const end = this.formatLocalYMD(today);
+      const startDate = new Date(today);
+      startDate.setDate(startDate.getDate() - 6); // inclusive range of 7 days
+      const start = this.formatLocalYMD(startDate);
       return { start, end };
     }
     return { start: null, end: null };
@@ -575,20 +582,17 @@ class DateRangePicker extends HTMLElement {
     if (!start || !end) return;
     const now = new Date();
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    const todayStr = this.format(today);
+    const todayStr = this.formatLocalYMD(today);
     const yesterday = new Date(today);
     yesterday.setDate(yesterday.getDate() - 1);
-    const yesterdayStr = this.format(yesterday);
-    const twoDaysAgo = new Date(today);
-    twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
-    const twoDaysAgoStr = this.format(twoDaysAgo);
+    const yesterdayStr = this.formatLocalYMD(yesterday);
     const last7Start = new Date(today);
-    last7Start.setDate(last7Start.getDate() - 7);
-    const last7StartStr = this.format(last7Start);
+    last7Start.setDate(last7Start.getDate() - 6);
+    const last7StartStr = this.formatLocalYMD(last7Start);
 
-    if (start === yesterdayStr && end === todayStr) {
+    if (start === todayStr && end === todayStr) {
       this.setActivePreset('today');
-    } else if (start === twoDaysAgoStr && end === yesterdayStr) {
+    } else if (start === yesterdayStr && end === yesterdayStr) {
       this.setActivePreset('yesterday');
     } else if (start === last7StartStr && end === todayStr) {
       this.setActivePreset('last7');
@@ -600,7 +604,7 @@ class DateRangePicker extends HTMLElement {
   // UX helpers
   formatHuman(dateString) {
     try {
-      const d = new Date(dateString);
+      const d = this.parseLocalYMD(dateString) || new Date(dateString);
       return d.toLocaleDateString(undefined, { day: '2-digit', month: 'short', year: 'numeric' });
     } catch (e) {
       return dateString;
@@ -616,11 +620,11 @@ class DateRangePicker extends HTMLElement {
       el.textContent = '';
       return;
     }
-    const startDate = new Date(start);
-    const endDate = new Date(end);
+    const startMs = this.localDateStringToUTCMidnightMs(start);
+    const endMs = this.localDateStringToUTCMidnightMs(end);
     const dayMs = 1000 * 60 * 60 * 24;
-    const diffDays = Math.ceil((endDate - startDate) / dayMs);
-    const daysText = diffDays === 1 ? '1 day' : `${diffDays} days`;
+    const diffDaysInclusive = Math.round((endMs - startMs) / dayMs) + 1;
+    const daysText = diffDaysInclusive === 1 ? '1 day' : `${diffDaysInclusive} days`;
     el.textContent = `Selected: ${this.formatHuman(start)} → ${this.formatHuman(end)} (${daysText})`;
   }
 }
