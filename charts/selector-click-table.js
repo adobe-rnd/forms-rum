@@ -14,6 +14,10 @@ class SelectorClickTable extends HTMLElement {
     this.bundles = [];
     this.url = '';
 
+    // Instance-scoped caches (avoid shared state across multiple component instances)
+    this.selectorIndex = null; // urlKey -> { file, ... }
+    this.perUrlCache = new Map(); // urlKey -> payload from formsJson/by-url/...
+
     this.sortColumn = 'clicks';
     this.sortDirection = 'desc';
     this.searchTerm = '';
@@ -21,9 +25,6 @@ class SelectorClickTable extends HTMLElement {
 
     this.rows = []; // [{label, selector, kind, clicks}]
   }
-
-  static selectorIndex = null; // urlKey -> { file, ... }
-  static perUrlCache = new Map(); // urlKey -> { rows, ... }
 
   connectedCallback() {
     this.render();
@@ -256,6 +257,18 @@ class SelectorClickTable extends HTMLElement {
     return '';
   }
 
+  static addGuideTailVariants(keys, raw) {
+    const tail = SelectorClickTable.extractGuideTail(raw);
+    if (!tail) return;
+    keys.add(tail);
+    if (tail.startsWith('#')) keys.add(tail.slice(1));
+    const tailBase = tail.replace(/___(widget|label)$/, '');
+    if (tailBase && tailBase !== tail) {
+      keys.add(tailBase);
+      if (tailBase.startsWith('#')) keys.add(tailBase.slice(1));
+    }
+  }
+
   static selectorKeysForRow(rawSelector) {
     const keys = new Set();
     const norm = SelectorClickTable.normalizeSelector(rawSelector);
@@ -270,16 +283,7 @@ class SelectorClickTable extends HTMLElement {
 
     // Also index by the "#guideContainer-..." tail so RUM selectors that include extra prefixes
     // like "form#... input[type=...]#guideContainer-..." can be matched reliably.
-    const tail = SelectorClickTable.extractGuideTail(rawSelector);
-    if (tail) {
-      keys.add(tail);
-      if (tail.startsWith('#')) keys.add(tail.slice(1));
-      const tailBase = tail.replace(/___(widget|label)$/, '');
-      if (tailBase && tailBase !== tail) {
-        keys.add(tailBase);
-        if (tailBase.startsWith('#')) keys.add(tailBase.slice(1));
-      }
-    }
+    SelectorClickTable.addGuideTailVariants(keys, rawSelector);
     return Array.from(keys);
   }
 
@@ -289,16 +293,7 @@ class SelectorClickTable extends HTMLElement {
     if (!t) return [];
     keys.add(t);
     keys.add(SelectorClickTable.normalizeSelector(t));
-    const tail = SelectorClickTable.extractGuideTail(t);
-    if (tail) {
-      keys.add(tail);
-      if (tail.startsWith('#')) keys.add(tail.slice(1));
-      const tailBase = tail.replace(/___(widget|label)$/, '');
-      if (tailBase && tailBase !== tail) {
-        keys.add(tailBase);
-        if (tailBase.startsWith('#')) keys.add(tailBase.slice(1));
-      }
-    }
+    SelectorClickTable.addGuideTailVariants(keys, t);
     // If they give an id without '#', also try '#id'
     if (!t.startsWith('#') && /^[A-Za-z_][\w\-\:\.]*$/.test(t)) keys.add(`#${t}`);
     const norm = SelectorClickTable.normalizeSelector(t);
@@ -306,22 +301,46 @@ class SelectorClickTable extends HTMLElement {
     return Array.from(keys).map((k) => String(k || '').trim()).filter(Boolean);
   }
 
-  static async loadSelectorIndex() {
-    if (SelectorClickTable.selectorIndex) return SelectorClickTable.selectorIndex;
-    const resp = await fetch('/formsJson/index.json');
-    const json = await resp.json();
-    SelectorClickTable.selectorIndex = json || {};
-    return SelectorClickTable.selectorIndex;
+  static toPlainTextLabel(label) {
+    const v = String(label ?? '').trim();
+    if (!v) return '';
+    // Fast path for plain text
+    if (!v.includes('<') && !v.includes('>') && !v.includes('&nbsp;')) return v;
+    try {
+      const doc = new DOMParser().parseFromString(v, 'text/html');
+      return String(doc?.body?.textContent || '').replace(/\s+/g, ' ').trim();
+    } catch (e) {
+      // Fallback: best-effort strip tags/entities
+      return v
+        .replace(/<[^>]*>/g, ' ')
+        .replace(/&nbsp;/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
   }
 
-  static async loadSelectorsForUrl(urlKey) {
-    if (SelectorClickTable.perUrlCache.has(urlKey)) return SelectorClickTable.perUrlCache.get(urlKey);
-    const idx = await SelectorClickTable.loadSelectorIndex();
+  static escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = String(text ?? '');
+    return div.innerHTML;
+  }
+
+  async loadSelectorIndex() {
+    if (this.selectorIndex) return this.selectorIndex;
+    const resp = await fetch('/formsJson/index.json');
+    const json = await resp.json();
+    this.selectorIndex = json || {};
+    return this.selectorIndex;
+  }
+
+  async loadSelectorsForUrl(urlKey) {
+    if (this.perUrlCache.has(urlKey)) return this.perUrlCache.get(urlKey);
+    const idx = await this.loadSelectorIndex();
     const entry = idx[urlKey];
     if (!entry || !entry.file) return null;
     const resp = await fetch(`/formsJson/${entry.file}`);
     const json = await resp.json();
-    SelectorClickTable.perUrlCache.set(urlKey, json);
+    this.perUrlCache.set(urlKey, json);
     return json;
   }
 
@@ -361,10 +380,9 @@ class SelectorClickTable extends HTMLElement {
     // Keep subtitle concise. Never dump long extraction errors into the UI.
     subtitle.textContent = `URL: ${urlKey}`;
 
-    const selectorPayload = await SelectorClickTable.loadSelectorsForUrl(urlKey);
+    const selectorPayload = await this.loadSelectorsForUrl(urlKey);
     if (!selectorPayload || !selectorPayload.ok) {
       // Still keep UI clean; log details for debugging.
-      // eslint-disable-next-line no-console
       console.warn('Selector map unavailable for URL', { urlKey, error: selectorPayload?.error || null });
       subtitle.textContent = `URL: ${urlKey} — selector map unavailable`;
       this.rows = [];
@@ -379,8 +397,14 @@ class SelectorClickTable extends HTMLElement {
     selectorRows.forEach((r) => {
       const keys = SelectorClickTable.selectorKeysForRow(r.selector);
       keys.forEach((k) => {
-        if (!knownKeySet.has(k)) {
-          knownKeySet.add(k);
+        knownKeySet.add(k);
+        const existing = keyToRow.get(k);
+        const existingLabel = SelectorClickTable.toPlainTextLabel(existing?.label);
+        const nextLabel = SelectorClickTable.toPlainTextLabel(r?.label);
+        // Prefer rows with non-empty labels; secondarily prefer kind=label.
+        if (!existing
+          || (!existingLabel && nextLabel)
+          || (existingLabel && nextLabel && existing?.kind !== 'label' && r?.kind === 'label')) {
           keyToRow.set(k, r);
         }
       });
@@ -391,7 +415,7 @@ class SelectorClickTable extends HTMLElement {
     // Build output ONLY for matched selectors (as requested)
     const out = Array.from(counts.entries()).map(([selectorKey, clicks]) => {
       const r = keyToRow.get(selectorKey);
-      const label = r?.label || '(no label)';
+      const label = SelectorClickTable.toPlainTextLabel(r?.label) || '(no label)';
       const selector = r?.selector || selectorKey;
       const kind = r?.kind || 'unknown';
       return { label, selector, kind, clicks };
@@ -448,18 +472,12 @@ class SelectorClickTable extends HTMLElement {
 
     tbody.innerHTML = data.map((r) => `
       <tr>
-        <td>${this.escapeHtml(r.label)}</td>
-        <td class="mono">${this.escapeHtml(r.selector)}</td>
-        <td><span class="badge">${this.escapeHtml(r.kind)}</span></td>
+        <td>${SelectorClickTable.escapeHtml(r.label)}</td>
+        <td class="mono">${SelectorClickTable.escapeHtml(r.selector)}</td>
+        <td><span class="badge">${SelectorClickTable.escapeHtml(r.kind)}</span></td>
         <td><span class="badge">${Number(r.clicks || 0).toLocaleString()}</span></td>
       </tr>
     `).join('');
-  }
-
-  escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = String(text ?? '');
-    return div.innerHTML;
   }
 
   reset() {
