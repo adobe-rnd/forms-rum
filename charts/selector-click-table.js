@@ -398,13 +398,15 @@ class SelectorClickTable extends HTMLElement {
       const keys = SelectorClickTable.selectorKeysForRow(r.selector);
       keys.forEach((k) => {
         knownKeySet.add(k);
-        const existing = keyToRow.get(k);
-        const existingLabel = SelectorClickTable.toPlainTextLabel(existing?.label);
+        const existingRow = keyToRow.get(k);
+        const existingLabel = SelectorClickTable.toPlainTextLabel(existingRow?.label);
         const nextLabel = SelectorClickTable.toPlainTextLabel(r?.label);
-        // Prefer rows with non-empty labels; secondarily prefer kind=label.
-        if (!existing
+
+        // Prefer rows with labels over those without (review comment).
+        // If both have labels, prefer kind=label as a tiebreaker.
+        if (!existingRow
           || (!existingLabel && nextLabel)
-          || (existingLabel && nextLabel && existing?.kind !== 'label' && r?.kind === 'label')) {
+          || (existingLabel && nextLabel && existingRow?.kind !== 'label' && r?.kind === 'label')) {
           keyToRow.set(k, r);
         }
       });
