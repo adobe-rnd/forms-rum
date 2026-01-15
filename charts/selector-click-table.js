@@ -181,12 +181,11 @@ class SelectorClickTable extends HTMLElement {
               <tr>
                 <th class="sortable" data-column="label">Label</th>
                 <th class="sortable" data-column="selector">Selector</th>
-                <th class="sortable" data-column="kind">Type</th>
                 <th class="sortable" data-column="clicks">Click Count</th>
               </tr>
             </thead>
             <tbody id="tbody">
-              <tr><td colspan="4" class="no-data">No selector click data yet</td></tr>
+              <tr><td colspan="3" class="no-data">No selector click data yet</td></tr>
             </tbody>
           </table>
         </div>
@@ -432,14 +431,16 @@ class SelectorClickTable extends HTMLElement {
     const tbody = this.shadowRoot.getElementById('tbody');
     if (!tbody) return;
 
+    // If a previous version persisted "kind" sorting, normalize to a visible column.
+    if (this.sortColumn === 'kind') this.sortColumn = 'clicks';
+
     let data = Array.isArray(this.rows) ? [...this.rows] : [];
 
     if (this.searchTerm) {
       const q = this.searchTerm;
       data = data.filter((r) =>
         String(r.label || '').toLowerCase().includes(q) ||
-        String(r.selector || '').toLowerCase().includes(q) ||
-        String(r.kind || '').toLowerCase().includes(q)
+        String(r.selector || '').toLowerCase().includes(q)
       );
     }
 
@@ -468,7 +469,7 @@ class SelectorClickTable extends HTMLElement {
     });
 
     if (!data.length) {
-      tbody.innerHTML = '<tr><td colspan="4" class="no-data">No matching selectors</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="3" class="no-data">No matching selectors</td></tr>';
       return;
     }
 
@@ -476,7 +477,6 @@ class SelectorClickTable extends HTMLElement {
       <tr>
         <td>${SelectorClickTable.escapeHtml(r.label)}</td>
         <td class="mono">${SelectorClickTable.escapeHtml(r.selector)}</td>
-        <td><span class="badge">${SelectorClickTable.escapeHtml(r.kind)}</span></td>
         <td><span class="badge">${Number(r.clicks || 0).toLocaleString()}</span></td>
       </tr>
     `).join('');
