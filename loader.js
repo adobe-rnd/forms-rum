@@ -329,8 +329,16 @@ export default class DataLoader {
 
     // Fetch from API if not cached
     const resp = await fetch(apiRequestURL);
-    const json = await resp.json();
-    const { rumBundles } = json;
+    if (!resp.ok) {
+      return { date, rumBundles: [] };
+    }
+    let json;
+    try {
+      json = await resp.json();
+    } catch (e) {
+      return { date, rumBundles: [] };
+    }
+    const { rumBundles } = json || { rumBundles: [] };
     rumBundles.forEach((bundle) => addCalculatedProps(bundle));
 
     // Store in cache (don't await to avoid blocking)
@@ -356,8 +364,16 @@ export default class DataLoader {
 
     // Fetch from API if not cached
     const resp = await fetch(apiRequestURL);
-    const json = await resp.json();
-    const { rumBundles } = json;
+    if (!resp.ok) {
+      return { date, rumBundles: [] };
+    }
+    let json;
+    try {
+      json = await resp.json();
+    } catch (e) {
+      return { date, rumBundles: [] };
+    }
+    const { rumBundles } = json || { rumBundles: [] };
     rumBundles.forEach((bundle) => addCalculatedProps(bundle));
 
     // Store in cache (don't await to avoid blocking)
@@ -384,8 +400,16 @@ export default class DataLoader {
 
     // Fetch from API if not cached
     const resp = await fetch(apiRequestURL);
-    const json = await resp.json();
-    const { rumBundles } = json;
+    if (!resp.ok) {
+      return { date, hour, rumBundles: [] };
+    }
+    let json;
+    try {
+      json = await resp.json();
+    } catch (e) {
+      return { date, hour, rumBundles: [] };
+    }
+    const { rumBundles } = json || { rumBundles: [] };
     rumBundles.forEach((bundle) => addCalculatedProps(bundle));
 
     // do not cache if the date is today

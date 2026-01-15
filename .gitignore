@@ -2,6 +2,10 @@
 node_modules/
 package-lock.json
 
+# Local tooling artifacts
+.playwright-browsers/
+hdfc-form-selectors-raw/
+
 # Build outputs
 dist/
 build/

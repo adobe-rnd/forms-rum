@@ -7,7 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "selectors:extract:hdfc": "node scripts/extract-hdfc-form-selectors.mjs --headful --out ./hdfc-form-selectors-raw",
+    "selectors:organize:hdfc": "node scripts/organize-hdfc-form-selectors.mjs --in ./hdfc-form-selectors-raw --out ./formsJson",
+    "selectors:refresh:hdfc": "rm -rf ./hdfc-form-selectors-raw ./formsJson.new && node scripts/extract-hdfc-form-selectors.mjs --headful --out ./hdfc-form-selectors-raw && node scripts/organize-hdfc-form-selectors.mjs --in ./hdfc-form-selectors-raw --out ./formsJson.new && rm -rf ./formsJson && mv ./formsJson.new ./formsJson && rm -rf ./hdfc-form-selectors-raw"
   },
   "keywords": [],
   "author": "",
