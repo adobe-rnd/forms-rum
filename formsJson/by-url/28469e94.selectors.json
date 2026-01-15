@@ -1,0 +1,2403 @@
+{
+  "url": "https://applyonline.hdfcbank.com/digital/corporate-credit-cards-application-form",
+  "urlKey": "https://applyonline.hdfcbank.com/digital/corporate-credit-cards-application-form",
+  "formName": "HDFC_POC",
+  "ok": true,
+  "error": null,
+  "rows": [
+    {
+      "label": "welcomeText",
+      "selector": "form #text-83aca52f39",
+      "kind": "unknown",
+      "id": "text-83aca52f39",
+      "qname": "$form.welcomeText"
+    },
+    {
+      "label": "text12343",
+      "selector": "form #text-500c79f6e8",
+      "kind": "unknown",
+      "id": "text-500c79f6e8",
+      "qname": "$form.loginPanel.mobilePanel.text12343"
+    },
+    {
+      "label": "Text Input",
+      "selector": "form input[type='text']#textinput-ab46476ae3",
+      "kind": "unknown",
+      "id": "textinput-ab46476ae3",
+      "qname": "$form.loginPanel.mobilePanel.registeredMobileNumber"
+    },
+    {
+      "label": "Text Input",
+      "selector": "form #textinput-ab46476ae3",
+      "kind": "unknown",
+      "id": "textinput-ab46476ae3",
+      "qname": "$form.loginPanel.mobilePanel.registeredMobileNumber"
+    },
+    {
+      "label": "Mobile Number",
+      "selector": "form input[type='text']#textinput-509d982584",
+      "kind": "unknown",
+      "id": "textinput-509d982584",
+      "qname": "$form.loginPanel.mobilePanel.maskedMobileNumber"
+    },
+    {
+      "label": "Mobile Number",
+      "selector": "form #textinput-509d982584",
+      "kind": "unknown",
+      "id": "textinput-509d982584",
+      "qname": "$form.loginPanel.mobilePanel.maskedMobileNumber"
+    },
+    {
+      "label": "Validate Using",
+      "selector": "form fieldset#radiobutton-f59c558fbd",
+      "kind": "unknown",
+      "id": "radiobutton-f59c558fbd",
+      "qname": "$form.loginPanel.identifierPanel.panDobSelection"
+    },
+    {
+      "label": "Validate Using",
+      "selector": "form #radiobutton-f59c558fbd",
+      "kind": "unknown",
+      "id": "radiobutton-f59c558fbd",
+      "qname": "$form.loginPanel.identifierPanel.panDobSelection"
+    },
+    {
+      "label": "Date Of Birth",
+      "selector": "form input[type='text']#datepicker-fdd6b469a5",
+      "kind": "unknown",
+      "id": "datepicker-fdd6b469a5",
+      "qname": "$form.loginPanel.identifierPanel.dateOfBirth"
+    },
+    {
+      "label": "Date Of Birth",
+      "selector": "form #datepicker-fdd6b469a5",
+      "kind": "unknown",
+      "id": "datepicker-fdd6b469a5",
+      "qname": "$form.loginPanel.identifierPanel.dateOfBirth"
+    },
+    {
+      "label": "Enter PAN Number",
+      "selector": "form input[type='text']#textinput-4df79f1790",
+      "kind": "unknown",
+      "id": "textinput-4df79f1790",
+      "qname": "$form.loginPanel.identifierPanel.pan"
+    },
+    {
+      "label": "Enter PAN Number",
+      "selector": "form #textinput-4df79f1790",
+      "kind": "unknown",
+      "id": "textinput-4df79f1790",
+      "qname": "$form.loginPanel.identifierPanel.pan"
+    },
+    {
+      "label": "JourneyId1",
+      "selector": "form input[type='text']#textinput-c4bfcad3f7",
+      "kind": "unknown",
+      "id": "textinput-c4bfcad3f7",
+      "qname": "$form.loginPanel.identifierPanel.journeyId1"
+    },
+    {
+      "label": "JourneyId1",
+      "selector": "form #textinput-c4bfcad3f7",
+      "kind": "unknown",
+      "id": "textinput-c4bfcad3f7",
+      "qname": "$form.loginPanel.identifierPanel.journeyId1"
+    },
+    {
+      "label": "<p>I hereby consent to collection and processing of my data for availing this card and relevant services in the manner described in the notice&nbsp;<b><u>here.</u></b></p>\n",
+      "selector": "form input[type='checkbox']#checkbox-ad4f1dd4a6",
+      "kind": "unknown",
+      "id": "checkbox-ad4f1dd4a6",
+      "qname": "$form.consentFragment.checkboxConsent1Label"
+    },
+    {
+      "label": "<p>I hereby consent to collection and processing of my data for availing this card and relevant services in the manner described in the notice&nbsp;<b><u>here.</u></b></p>\n",
+      "selector": "form #checkbox-ad4f1dd4a6",
+      "kind": "unknown",
+      "id": "checkbox-ad4f1dd4a6",
+      "qname": "$form.consentFragment.checkboxConsent1Label"
+    },
+    {
+      "label": "checkboxConsent1Text",
+      "selector": "form #text-75447bf404",
+      "kind": "unknown",
+      "id": "text-75447bf404",
+      "qname": "$form.consentFragment.consentPanel1.checkboxConsent1Text"
+    },
+    {
+      "label": "I Agree  >>",
+      "selector": "form button[type='button']#button-65cc9c0d2a",
+      "kind": "unknown",
+      "id": "button-65cc9c0d2a",
+      "qname": "$form.consentFragment.consentPanel1.checkboxConsent1CTA"
+    },
+    {
+      "label": "I Agree  >>",
+      "selector": "form #button-65cc9c0d2a",
+      "kind": "unknown",
+      "id": "button-65cc9c0d2a",
+      "qname": "$form.consentFragment.consentPanel1.checkboxConsent1CTA"
+    },
+    {
+      "label": "<p>I hereby consent to processing of my Data for sending me personalized offers on other products and services of HDFC Bank, its affiliates and partners through Call, SMS, WhatsApp, Email or other channels in the manner described in the notice&nbsp;<b style=\"font-size: 0.8125rem;\"><u>here.</u></b><br>\n</p>\n",
+      "selector": "form input[type='checkbox']#checkbox-e357fb6ea9",
+      "kind": "unknown",
+      "id": "checkbox-e357fb6ea9",
+      "qname": "$form.consentFragment.checkboxConsent2Label"
+    },
+    {
+      "label": "<p>I hereby consent to processing of my Data for sending me personalized offers on other products and services of HDFC Bank, its affiliates and partners through Call, SMS, WhatsApp, Email or other channels in the manner described in the notice&nbsp;<b style=\"font-size: 0.8125rem;\"><u>here.</u></b><br>\n</p>\n",
+      "selector": "form #checkbox-e357fb6ea9",
+      "kind": "unknown",
+      "id": "checkbox-e357fb6ea9",
+      "qname": "$form.consentFragment.checkboxConsent2Label"
+    },
+    {
+      "label": "checkboxConsent2Text",
+      "selector": "form #text-93d7524bca",
+      "kind": "unknown",
+      "id": "text-93d7524bca",
+      "qname": "$form.consentFragment.consentPanel2.checkboxConsent2Text"
+    },
+    {
+      "label": "Done >>",
+      "selector": "form button[type='button']#button-0e8ec17231",
+      "kind": "unknown",
+      "id": "button-0e8ec17231",
+      "qname": "$form.consentFragment.consentPanel2.checkboxConsent2CTA"
+    },
+    {
+      "label": "Done >>",
+      "selector": "form #button-0e8ec17231",
+      "kind": "unknown",
+      "id": "button-0e8ec17231",
+      "qname": "$form.consentFragment.consentPanel2.checkboxConsent2CTA"
+    },
+    {
+      "label": "Get OTP > ",
+      "selector": "form button[type='button']#button-109cd76abf",
+      "kind": "unknown",
+      "id": "button-109cd76abf",
+      "qname": "$form.getOTPbutton"
+    },
+    {
+      "label": "Get OTP > ",
+      "selector": "form #button-109cd76abf",
+      "kind": "unknown",
+      "id": "button-109cd76abf",
+      "qname": "$form.getOTPbutton"
+    },
+    {
+      "label": "incorrectOTPText",
+      "selector": "form #text-576f0ce9f6",
+      "kind": "unknown",
+      "id": "text-576f0ce9f6",
+      "qname": "$form.otpPanel.incorrectOTPText"
+    },
+    {
+      "label": "otpHelpText",
+      "selector": "form #text-c382a3d9eb",
+      "kind": "unknown",
+      "id": "text-c382a3d9eb",
+      "qname": "$form.otpPanel.otpPanel.otpHelpText"
+    },
+    {
+      "label": "otpNumber",
+      "selector": "form input[type='password']#telephoneinput-2ac76969b4",
+      "kind": "unknown",
+      "id": "telephoneinput-2ac76969b4",
+      "qname": "$form.otpPanel.otpPanel.otpNumber"
+    },
+    {
+      "label": "otpNumber",
+      "selector": "form #telephoneinput-2ac76969b4",
+      "kind": "unknown",
+      "id": "telephoneinput-2ac76969b4",
+      "qname": "$form.otpPanel.otpPanel.otpNumber"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form button[type='button']#button-2ec6b12527",
+      "kind": "unknown",
+      "id": "button-2ec6b12527",
+      "qname": "$form.otpPanel.otpPanel.otpResend"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form #button-2ec6b12527",
+      "kind": "unknown",
+      "id": "button-2ec6b12527",
+      "qname": "$form.otpPanel.otpPanel.otpResend"
+    },
+    {
+      "label": "maximum",
+      "selector": "form #text-7cefedd521",
+      "kind": "unknown",
+      "id": "text-7cefedd521",
+      "qname": "$form.otpPanel.otpPanel.otpSubPanel.maximum"
+    },
+    {
+      "label": "maxAttemptText",
+      "selector": "form input[type='number']#numberinput-6bc0e46b61",
+      "kind": "unknown",
+      "id": "numberinput-6bc0e46b61",
+      "qname": "$form.otpPanel.otpPanel.otpSubPanel.numRetries"
+    },
+    {
+      "label": "maxAttemptText",
+      "selector": "form #numberinput-6bc0e46b61",
+      "kind": "unknown",
+      "id": "numberinput-6bc0e46b61",
+      "qname": "$form.otpPanel.otpPanel.otpSubPanel.numRetries"
+    },
+    {
+      "label": "attempts",
+      "selector": "form #text-299a5f3717",
+      "kind": "unknown",
+      "id": "text-299a5f3717",
+      "qname": "$form.otpPanel.otpPanel.otpSubPanel.attempts"
+    },
+    {
+      "label": "remaining",
+      "selector": "form #text-a75b816a06",
+      "kind": "unknown",
+      "id": "text-a75b816a06",
+      "qname": "$form.otpPanel.otpPanel.otpSubPanel.remaining"
+    },
+    {
+      "label": "Confirm",
+      "selector": "form button[type='button']#button-c268cec7de",
+      "kind": "unknown",
+      "id": "button-c268cec7de",
+      "qname": "$form.submitOTP"
+    },
+    {
+      "label": "Confirm",
+      "selector": "form #button-c268cec7de",
+      "kind": "unknown",
+      "id": "button-c268cec7de",
+      "qname": "$form.submitOTP"
+    },
+    {
+      "label": "First Name",
+      "selector": "form input[type='text']#textinput-80c2b21c9c",
+      "kind": "unknown",
+      "id": "textinput-80c2b21c9c",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.firstName"
+    },
+    {
+      "label": "First Name",
+      "selector": "form #textinput-80c2b21c9c",
+      "kind": "unknown",
+      "id": "textinput-80c2b21c9c",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.firstName"
+    },
+    {
+      "label": "<p>Middle Name&nbsp;<i>(Optional)</i></p>",
+      "selector": "form input[type='text']#textinput-944eb6246e",
+      "kind": "unknown",
+      "id": "textinput-944eb6246e",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.middleName"
+    },
+    {
+      "label": "<p>Middle Name&nbsp;<i>(Optional)</i></p>",
+      "selector": "form #textinput-944eb6246e",
+      "kind": "unknown",
+      "id": "textinput-944eb6246e",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.middleName"
+    },
+    {
+      "label": "Last Name",
+      "selector": "form input[type='text']#textinput-3c34d1848c",
+      "kind": "unknown",
+      "id": "textinput-3c34d1848c",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.lastName"
+    },
+    {
+      "label": "Last Name",
+      "selector": "form #textinput-3c34d1848c",
+      "kind": "unknown",
+      "id": "textinput-3c34d1848c",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.lastName"
+    },
+    {
+      "label": "Gender",
+      "selector": "form select#dropdown-f036ee7d85",
+      "kind": "unknown",
+      "id": "dropdown-f036ee7d85",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.gender"
+    },
+    {
+      "label": "Gender",
+      "selector": "form #dropdown-f036ee7d85",
+      "kind": "unknown",
+      "id": "dropdown-f036ee7d85",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.gender"
+    },
+    {
+      "label": "Your Date of Birth",
+      "selector": "form input[type='text']#datepicker-e18673ef9b",
+      "kind": "unknown",
+      "id": "datepicker-e18673ef9b",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.dobPersonalDetails"
+    },
+    {
+      "label": "Your Date of Birth",
+      "selector": "form #datepicker-e18673ef9b",
+      "kind": "unknown",
+      "id": "datepicker-e18673ef9b",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.dobPersonalDetails"
+    },
+    {
+      "label": "Enter PAN Number",
+      "selector": "form input[type='text']#textinput-df86b3a8f2",
+      "kind": "unknown",
+      "id": "textinput-df86b3a8f2",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.panNumberPersonalDetails"
+    },
+    {
+      "label": "Enter PAN Number",
+      "selector": "form #textinput-df86b3a8f2",
+      "kind": "unknown",
+      "id": "textinput-df86b3a8f2",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.panNumberPersonalDetails"
+    },
+    {
+      "label": "Personal Email Address",
+      "selector": "form input[type='email']#emailinput-a2b4fbe712",
+      "kind": "unknown",
+      "id": "emailinput-a2b4fbe712",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.personalEmailAddress"
+    },
+    {
+      "label": "Personal Email Address",
+      "selector": "form #emailinput-a2b4fbe712",
+      "kind": "unknown",
+      "id": "emailinput-a2b4fbe712",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.personalDetails.personalEmailAddress"
+    },
+    {
+      "label": "Address Line 1",
+      "selector": "form input[type='text']#textinput-36d2829252",
+      "kind": "unknown",
+      "id": "textinput-36d2829252",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.addressLine1"
+    },
+    {
+      "label": "Address Line 1",
+      "selector": "form #textinput-36d2829252",
+      "kind": "unknown",
+      "id": "textinput-36d2829252",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.addressLine1"
+    },
+    {
+      "label": "Address Line 2",
+      "selector": "form input[type='text']#textinput-3540c58bb3",
+      "kind": "unknown",
+      "id": "textinput-3540c58bb3",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.addressLine2"
+    },
+    {
+      "label": "Address Line 2",
+      "selector": "form #textinput-3540c58bb3",
+      "kind": "unknown",
+      "id": "textinput-3540c58bb3",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.addressLine2"
+    },
+    {
+      "label": "<p>Address Line3<i> (Optional)</i></p>",
+      "selector": "form input[type='text']#textinput-17078edaa3",
+      "kind": "unknown",
+      "id": "textinput-17078edaa3",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.addressLine3"
+    },
+    {
+      "label": "<p>Address Line3<i> (Optional)</i></p>",
+      "selector": "form #textinput-17078edaa3",
+      "kind": "unknown",
+      "id": "textinput-17078edaa3",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.addressLine3"
+    },
+    {
+      "label": "Pincode",
+      "selector": "form input[type='text']#telephoneinput-ed23dc36e2",
+      "kind": "unknown",
+      "id": "telephoneinput-ed23dc36e2",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.currentAddresPincodeNTB"
+    },
+    {
+      "label": "Pincode",
+      "selector": "form #telephoneinput-ed23dc36e2",
+      "kind": "unknown",
+      "id": "telephoneinput-ed23dc36e2",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.currentAddresPincodeNTB"
+    },
+    {
+      "label": "City",
+      "selector": "form input[type='text']#textinput-6a5c3ad998",
+      "kind": "unknown",
+      "id": "textinput-6a5c3ad998",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.city"
+    },
+    {
+      "label": "City",
+      "selector": "form #textinput-6a5c3ad998",
+      "kind": "unknown",
+      "id": "textinput-6a5c3ad998",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.city"
+    },
+    {
+      "label": "State",
+      "selector": "form input[type='text']#textinput-483baad0a2",
+      "kind": "unknown",
+      "id": "textinput-483baad0a2",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.state"
+    },
+    {
+      "label": "State",
+      "selector": "form #textinput-483baad0a2",
+      "kind": "unknown",
+      "id": "textinput-483baad0a2",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.state"
+    },
+    {
+      "label": "Same as current address",
+      "selector": "form input[type='checkbox']#checkbox-b8dcb9aaab",
+      "kind": "unknown",
+      "id": "checkbox-b8dcb9aaab",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressToggle"
+    },
+    {
+      "label": "Same as current address",
+      "selector": "form #checkbox-b8dcb9aaab",
+      "kind": "unknown",
+      "id": "checkbox-b8dcb9aaab",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressToggle"
+    },
+    {
+      "label": "Address Line 1",
+      "selector": "form input[type='text']#textinput-7e1f55b6ce",
+      "kind": "unknown",
+      "id": "textinput-7e1f55b6ce",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressPanel.permanentAddressLine1"
+    },
+    {
+      "label": "Address Line 1",
+      "selector": "form #textinput-7e1f55b6ce",
+      "kind": "unknown",
+      "id": "textinput-7e1f55b6ce",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressPanel.permanentAddressLine1"
+    },
+    {
+      "label": "Address Line 2",
+      "selector": "form input[type='text']#textinput-d70efbd5f3",
+      "kind": "unknown",
+      "id": "textinput-d70efbd5f3",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressPanel.permanentAddressLine2"
+    },
+    {
+      "label": "Address Line 2",
+      "selector": "form #textinput-d70efbd5f3",
+      "kind": "unknown",
+      "id": "textinput-d70efbd5f3",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressPanel.permanentAddressLine2"
+    },
+    {
+      "label": "<p>Address Line 3<i> (Optional)</i></p>",
+      "selector": "form input[type='text']#textinput-bfacadbd6b",
+      "kind": "unknown",
+      "id": "textinput-bfacadbd6b",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressPanel.permanentAddressLine3"
+    },
+    {
+      "label": "<p>Address Line 3<i> (Optional)</i></p>",
+      "selector": "form #textinput-bfacadbd6b",
+      "kind": "unknown",
+      "id": "textinput-bfacadbd6b",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressPanel.permanentAddressLine3"
+    },
+    {
+      "label": "Pincode",
+      "selector": "form input[type='text']#telephoneinput-6e9aa33ef1",
+      "kind": "unknown",
+      "id": "telephoneinput-6e9aa33ef1",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressPanel.permanentAddressPincode"
+    },
+    {
+      "label": "Pincode",
+      "selector": "form #telephoneinput-6e9aa33ef1",
+      "kind": "unknown",
+      "id": "telephoneinput-6e9aa33ef1",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressPanel.permanentAddressPincode"
+    },
+    {
+      "label": "City",
+      "selector": "form input[type='text']#textinput-2dbc8ece1a",
+      "kind": "unknown",
+      "id": "textinput-2dbc8ece1a",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressPanel.permanentAddressCity"
+    },
+    {
+      "label": "City",
+      "selector": "form #textinput-2dbc8ece1a",
+      "kind": "unknown",
+      "id": "textinput-2dbc8ece1a",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressPanel.permanentAddressCity"
+    },
+    {
+      "label": "State",
+      "selector": "form input[type='text']#textinput-3ca2da1c28",
+      "kind": "unknown",
+      "id": "textinput-3ca2da1c28",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressPanel.permanentAddressState"
+    },
+    {
+      "label": "State",
+      "selector": "form #textinput-3ca2da1c28",
+      "kind": "unknown",
+      "id": "textinput-3ca2da1c28",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressNTB.permanentAddress.permanentAddressPanel.permanentAddressState"
+    },
+    {
+      "label": "Do you want to change your current address?",
+      "selector": "form input[type='checkbox']#checkbox-1199d52b74",
+      "kind": "unknown",
+      "id": "checkbox-1199d52b74",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.currentAddressToggle"
+    },
+    {
+      "label": "Do you want to change your current address?",
+      "selector": "form #checkbox-1199d52b74",
+      "kind": "unknown",
+      "id": "checkbox-1199d52b74",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.currentAddressToggle"
+    },
+    {
+      "label": "prefilledCurrentAdddress",
+      "selector": "form textarea#textinput-139e2f5280",
+      "kind": "unknown",
+      "id": "textinput-139e2f5280",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.prefilledCurrentAdddress"
+    },
+    {
+      "label": "prefilledCurrentAdddress",
+      "selector": "form #textinput-139e2f5280",
+      "kind": "unknown",
+      "id": "textinput-139e2f5280",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.prefilledCurrentAdddress"
+    },
+    {
+      "label": "Address Line 1",
+      "selector": "form input[type='text']#textinput-132450792e",
+      "kind": "unknown",
+      "id": "textinput-132450792e",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.newCurentAddressPanel.newCurentAddressLine1"
+    },
+    {
+      "label": "Address Line 1",
+      "selector": "form #textinput-132450792e",
+      "kind": "unknown",
+      "id": "textinput-132450792e",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.newCurentAddressPanel.newCurentAddressLine1"
+    },
+    {
+      "label": "Address Line 2",
+      "selector": "form input[type='text']#textinput-288180cc31",
+      "kind": "unknown",
+      "id": "textinput-288180cc31",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.newCurentAddressPanel.newCurentAddressLine2"
+    },
+    {
+      "label": "Address Line 2",
+      "selector": "form #textinput-288180cc31",
+      "kind": "unknown",
+      "id": "textinput-288180cc31",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.newCurentAddressPanel.newCurentAddressLine2"
+    },
+    {
+      "label": "<p>Address Line 3<i> (Optional)</i></p>",
+      "selector": "form input[type='text']#textinput-2fedad142d",
+      "kind": "unknown",
+      "id": "textinput-2fedad142d",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.newCurentAddressPanel.newCurentAddressLine3"
+    },
+    {
+      "label": "<p>Address Line 3<i> (Optional)</i></p>",
+      "selector": "form #textinput-2fedad142d",
+      "kind": "unknown",
+      "id": "textinput-2fedad142d",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.newCurentAddressPanel.newCurentAddressLine3"
+    },
+    {
+      "label": "Pincode",
+      "selector": "form input[type='text']#telephoneinput-6ef1c7915a",
+      "kind": "unknown",
+      "id": "telephoneinput-6ef1c7915a",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.newCurentAddressPanel.newCurentAddressPin"
+    },
+    {
+      "label": "Pincode",
+      "selector": "form #telephoneinput-6ef1c7915a",
+      "kind": "unknown",
+      "id": "telephoneinput-6ef1c7915a",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.newCurentAddressPanel.newCurentAddressPin"
+    },
+    {
+      "label": "City",
+      "selector": "form input[type='text']#textinput-5b472e3d77",
+      "kind": "unknown",
+      "id": "textinput-5b472e3d77",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.newCurentAddressPanel.newCurentAddressCity"
+    },
+    {
+      "label": "City",
+      "selector": "form #textinput-5b472e3d77",
+      "kind": "unknown",
+      "id": "textinput-5b472e3d77",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.newCurentAddressPanel.newCurentAddressCity"
+    },
+    {
+      "label": "State",
+      "selector": "form input[type='text']#textinput-086f838474",
+      "kind": "unknown",
+      "id": "textinput-086f838474",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.newCurentAddressPanel.newCurentAddressState"
+    },
+    {
+      "label": "State",
+      "selector": "form #textinput-086f838474",
+      "kind": "unknown",
+      "id": "textinput-086f838474",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.currentDetails.currentAddressETB.newCurentAddressPanel.newCurentAddressState"
+    },
+    {
+      "label": "Company Name",
+      "selector": "form input[type='text']#textinput-79a89511b3",
+      "kind": "unknown",
+      "id": "textinput-79a89511b3",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.companyName"
+    },
+    {
+      "label": "Company Name",
+      "selector": "form #textinput-79a89511b3",
+      "kind": "unknown",
+      "id": "textinput-79a89511b3",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.companyName"
+    },
+    {
+      "label": "Employment Type",
+      "selector": "form input[type='text']#textinput-bfcd55ee20",
+      "kind": "unknown",
+      "id": "textinput-bfcd55ee20",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.employmentType"
+    },
+    {
+      "label": "Employment Type",
+      "selector": "form #textinput-bfcd55ee20",
+      "kind": "unknown",
+      "id": "textinput-bfcd55ee20",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.employmentType"
+    },
+    {
+      "label": "Employee Code",
+      "selector": "form input[type='text']#textinput-69fa838f31",
+      "kind": "unknown",
+      "id": "textinput-69fa838f31",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.employeeCode"
+    },
+    {
+      "label": "Employee Code",
+      "selector": "form #textinput-69fa838f31",
+      "kind": "unknown",
+      "id": "textinput-69fa838f31",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.employeeCode"
+    },
+    {
+      "label": "Relationship Number",
+      "selector": "form input[type='text']#textinput-2747f4af6f",
+      "kind": "unknown",
+      "id": "textinput-2747f4af6f",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.relationshipNumber"
+    },
+    {
+      "label": "Relationship Number",
+      "selector": "form #textinput-2747f4af6f",
+      "kind": "unknown",
+      "id": "textinput-2747f4af6f",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.relationshipNumber"
+    },
+    {
+      "label": "Employed From",
+      "selector": "form input[type='text']#datepicker-914cf7924c",
+      "kind": "unknown",
+      "id": "datepicker-914cf7924c",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.employedFrom"
+    },
+    {
+      "label": "Employed From",
+      "selector": "form #datepicker-914cf7924c",
+      "kind": "unknown",
+      "id": "datepicker-914cf7924c",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.employedFrom"
+    },
+    {
+      "label": "Designation",
+      "selector": "form input[type='text']#textinput-2ecb4c9fab",
+      "kind": "unknown",
+      "id": "textinput-2ecb4c9fab",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.designation"
+    },
+    {
+      "label": "Designation",
+      "selector": "form #textinput-2ecb4c9fab",
+      "kind": "unknown",
+      "id": "textinput-2ecb4c9fab",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.designation"
+    },
+    {
+      "label": "Work Email Address",
+      "selector": "form input[type='email']#emailinput-9bf5dbdb2d",
+      "kind": "unknown",
+      "id": "emailinput-9bf5dbdb2d",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.workEmailAddress"
+    },
+    {
+      "label": "Work Email Address",
+      "selector": "form #emailinput-9bf5dbdb2d",
+      "kind": "unknown",
+      "id": "emailinput-9bf5dbdb2d",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.prefilledEmploymentDetails.workEmailAddress"
+    },
+    {
+      "label": "officeAddressLabel",
+      "selector": "form #text-6ecf54ba43",
+      "kind": "unknown",
+      "id": "text-6ecf54ba43",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressLabel"
+    },
+    {
+      "label": "Office Address Line 1",
+      "selector": "form input[type='text']#textinput-15530a2d89",
+      "kind": "unknown",
+      "id": "textinput-15530a2d89",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressLine1"
+    },
+    {
+      "label": "Office Address Line 1",
+      "selector": "form #textinput-15530a2d89",
+      "kind": "unknown",
+      "id": "textinput-15530a2d89",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressLine1"
+    },
+    {
+      "label": "Office Address Line 2",
+      "selector": "form input[type='text']#textinput-ad6f0d4fd3",
+      "kind": "unknown",
+      "id": "textinput-ad6f0d4fd3",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressLine2"
+    },
+    {
+      "label": "Office Address Line 2",
+      "selector": "form #textinput-ad6f0d4fd3",
+      "kind": "unknown",
+      "id": "textinput-ad6f0d4fd3",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressLine2"
+    },
+    {
+      "label": "<p>Office Address Line 3 <i>(Optional)</i></p>",
+      "selector": "form input[type='text']#textinput-c83686f81d",
+      "kind": "unknown",
+      "id": "textinput-c83686f81d",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressLine3"
+    },
+    {
+      "label": "<p>Office Address Line 3 <i>(Optional)</i></p>",
+      "selector": "form #textinput-c83686f81d",
+      "kind": "unknown",
+      "id": "textinput-c83686f81d",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressLine3"
+    },
+    {
+      "label": "Pincode",
+      "selector": "form input[type='text']#telephoneinput-46c88fce1b",
+      "kind": "unknown",
+      "id": "telephoneinput-46c88fce1b",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressPincode"
+    },
+    {
+      "label": "Pincode",
+      "selector": "form #telephoneinput-46c88fce1b",
+      "kind": "unknown",
+      "id": "telephoneinput-46c88fce1b",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressPincode"
+    },
+    {
+      "label": "City",
+      "selector": "form input[type='text']#textinput-532d6ef4d8",
+      "kind": "unknown",
+      "id": "textinput-532d6ef4d8",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressCity"
+    },
+    {
+      "label": "City",
+      "selector": "form #textinput-532d6ef4d8",
+      "kind": "unknown",
+      "id": "textinput-532d6ef4d8",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressCity"
+    },
+    {
+      "label": "State",
+      "selector": "form input[type='text']#textinput-66bcc3fe8f",
+      "kind": "unknown",
+      "id": "textinput-66bcc3fe8f",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressState"
+    },
+    {
+      "label": "State",
+      "selector": "form #textinput-66bcc3fe8f",
+      "kind": "unknown",
+      "id": "textinput-66bcc3fe8f",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.employmentDetails.officeAddressState"
+    },
+    {
+      "label": "Mother's First Name",
+      "selector": "form input[type='text']#textinput-4e711d31cf",
+      "kind": "unknown",
+      "id": "textinput-4e711d31cf",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.motherDetails.mothersFirstName"
+    },
+    {
+      "label": "Mother's First Name",
+      "selector": "form #textinput-4e711d31cf",
+      "kind": "unknown",
+      "id": "textinput-4e711d31cf",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.motherDetails.mothersFirstName"
+    },
+    {
+      "label": "<p>Mother's Middle Name <i>(Optional)</i></p>",
+      "selector": "form input[type='text']#textinput-24bf27d535",
+      "kind": "unknown",
+      "id": "textinput-24bf27d535",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.motherDetails.ckycMiddleName"
+    },
+    {
+      "label": "<p>Mother's Middle Name <i>(Optional)</i></p>",
+      "selector": "form #textinput-24bf27d535",
+      "kind": "unknown",
+      "id": "textinput-24bf27d535",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.motherDetails.ckycMiddleName"
+    },
+    {
+      "label": "Mother's Last Name",
+      "selector": "form input[type='text']#textinput-b94f132eae",
+      "kind": "unknown",
+      "id": "textinput-b94f132eae",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.motherDetails.ckycLastName"
+    },
+    {
+      "label": "Mother's Last Name",
+      "selector": "form #textinput-b94f132eae",
+      "kind": "unknown",
+      "id": "textinput-b94f132eae",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.motherDetails.ckycLastName"
+    },
+    {
+      "label": "differentlyAbledOptionTitle",
+      "selector": "form #text-09cfbeb6af",
+      "kind": "unknown",
+      "id": "text-09cfbeb6af",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.differentlyAbledFragment.differentlyAbledPanel.differentlyAbledHeadingPanel.differentlyAbledOptionTitle"
+    },
+    {
+      "label": "Do you identify as a differently abled person?",
+      "selector": "form fieldset#radiobutton-ab683dfdd8",
+      "kind": "unknown",
+      "id": "radiobutton-ab683dfdd8",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.differentlyAbledFragment.differentlyAbledPanel.differentlyAbledHeadingPanel.differentlyAbledOption"
+    },
+    {
+      "label": "Do you identify as a differently abled person?",
+      "selector": "form #radiobutton-ab683dfdd8",
+      "kind": "unknown",
+      "id": "radiobutton-ab683dfdd8",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.differentlyAbledFragment.differentlyAbledPanel.differentlyAbledHeadingPanel.differentlyAbledOption"
+    },
+    {
+      "label": "Type of Impairment",
+      "selector": "form select#dropdown-97f6f97881",
+      "kind": "unknown",
+      "id": "dropdown-97f6f97881",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.differentlyAbledFragment.differentlyAbledPanel.differentlyAbledAcceptPanel.impairmentType"
+    },
+    {
+      "label": "Type of Impairment",
+      "selector": "form #dropdown-97f6f97881",
+      "kind": "unknown",
+      "id": "dropdown-97f6f97881",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.differentlyAbledFragment.differentlyAbledPanel.differentlyAbledAcceptPanel.impairmentType"
+    },
+    {
+      "label": "Percentage of Impairment",
+      "selector": "form input[type='text']#textinput-39a88efa14",
+      "kind": "unknown",
+      "id": "textinput-39a88efa14",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.differentlyAbledFragment.differentlyAbledPanel.differentlyAbledAcceptPanel.impairmentPercentage"
+    },
+    {
+      "label": "Percentage of Impairment",
+      "selector": "form #textinput-39a88efa14",
+      "kind": "unknown",
+      "id": "textinput-39a88efa14",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.differentlyAbledFragment.differentlyAbledPanel.differentlyAbledAcceptPanel.impairmentPercentage"
+    },
+    {
+      "label": "UDID Number",
+      "selector": "form input[type='text']#textinput-707f7a9c7b",
+      "kind": "unknown",
+      "id": "textinput-707f7a9c7b",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.differentlyAbledFragment.differentlyAbledPanel.differentlyAbledAcceptPanel.differentlyUDID"
+    },
+    {
+      "label": "UDID Number",
+      "selector": "form #textinput-707f7a9c7b",
+      "kind": "unknown",
+      "id": "textinput-707f7a9c7b",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.differentlyAbledFragment.differentlyAbledPanel.differentlyAbledAcceptPanel.differentlyUDID"
+    },
+    {
+      "label": "Click and Upload-",
+      "selector": "form input[type='file']#fileinput-8a451e4e8a",
+      "kind": "unknown",
+      "id": "fileinput-8a451e4e8a",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.differentlyAbledFragment.differentlyAbledPanel.udidDocUploadpanel.docUploadPanel.udidCertificate"
+    },
+    {
+      "label": "Click and Upload-",
+      "selector": "form #fileinput-8a451e4e8a",
+      "kind": "unknown",
+      "id": "fileinput-8a451e4e8a",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsPage.additionalDetails.differentlyAbledFragment.differentlyAbledPanel.udidDocUploadpanel.docUploadPanel.udidCertificate"
+    },
+    {
+      "label": "etbFlowSelected",
+      "selector": "form input[type='checkbox']#checkbox-d0fd9bfc85",
+      "kind": "unknown",
+      "id": "checkbox-d0fd9bfc85",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.etbFlowSelected"
+    },
+    {
+      "label": "etbFlowSelected",
+      "selector": "form #checkbox-d0fd9bfc85",
+      "kind": "unknown",
+      "id": "checkbox-d0fd9bfc85",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.etbFlowSelected"
+    },
+    {
+      "label": "panRetryAttempts",
+      "selector": "form input[type='number']#numberinput-4b998a18be",
+      "kind": "unknown",
+      "id": "numberinput-4b998a18be",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.panRetryAttempts"
+    },
+    {
+      "label": "panRetryAttempts",
+      "selector": "form #numberinput-4b998a18be",
+      "kind": "unknown",
+      "id": "numberinput-4b998a18be",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.panRetryAttempts"
+    },
+    {
+      "label": "I hereby give my consent to use the above information to check my eligibility & agree to abide by the Terms and Conditions laid down by the bank",
+      "selector": "form input[type='checkbox']#checkbox-cbae4ef5e2",
+      "kind": "unknown",
+      "id": "checkbox-cbae4ef5e2",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsConsent"
+    },
+    {
+      "label": "I hereby give my consent to use the above information to check my eligibility & agree to abide by the Terms and Conditions laid down by the bank",
+      "selector": "form #checkbox-cbae4ef5e2",
+      "kind": "unknown",
+      "id": "checkbox-cbae4ef5e2",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.yourDetailsConsent"
+    },
+    {
+      "label": "Check Offer >",
+      "selector": "form button[type='button']#button-4aec582293",
+      "kind": "unknown",
+      "id": "button-4aec582293",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.checkOfferButton"
+    },
+    {
+      "label": "Check Offer >",
+      "selector": "form #button-4aec582293",
+      "kind": "unknown",
+      "id": "button-4aec582293",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.checkOfferButton"
+    },
+    {
+      "label": "discrepancyMsg",
+      "selector": "form #text-a031983f83",
+      "kind": "unknown",
+      "id": "text-a031983f83",
+      "qname": "$form.corporateCardWizardView.yourDetailsPanel.discrepancyMsg"
+    },
+    {
+      "label": "cardNameTitle",
+      "selector": "form #text-5b1fc3e861",
+      "kind": "unknown",
+      "id": "text-5b1fc3e861",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardNameTitle"
+    },
+    {
+      "label": "cardTagline",
+      "selector": "form #text-1b251ac0bf",
+      "kind": "unknown",
+      "id": "text-1b251ac0bf",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardTagline"
+    },
+    {
+      "label": "Name on Card",
+      "selector": "form select#dropdown-ff5c0f9ac9",
+      "kind": "unknown",
+      "id": "dropdown-ff5c0f9ac9",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.CorporatetImageAndNamePanel.nameOnCardDropdown"
+    },
+    {
+      "label": "Name on Card",
+      "selector": "form #dropdown-ff5c0f9ac9",
+      "kind": "unknown",
+      "id": "dropdown-ff5c0f9ac9",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.CorporatetImageAndNamePanel.nameOnCardDropdown"
+    },
+    {
+      "label": "name",
+      "selector": "form #text-ff3cff33bf",
+      "kind": "unknown",
+      "id": "text-ff3cff33bf",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.CorporatetImageAndNamePanel.name"
+    },
+    {
+      "label": "cardBenefitsLabel",
+      "selector": "form #text-85f11c17b3",
+      "kind": "unknown",
+      "id": "text-85f11c17b3",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.cardBenefitsFeaturesPanel.cardBenefitsLabel"
+    },
+    {
+      "label": "View all",
+      "selector": "form button[type='button']#button-31652665a2",
+      "kind": "unknown",
+      "id": "button-31652665a2",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.cardBenefitsFeaturesPanel.viewAllCardBenefits"
+    },
+    {
+      "label": "View all",
+      "selector": "form #button-31652665a2",
+      "kind": "unknown",
+      "id": "button-31652665a2",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.cardBenefitsFeaturesPanel.viewAllCardBenefits"
+    },
+    {
+      "label": "keyBenefitsText0",
+      "selector": "form #text-01491906ff",
+      "kind": "unknown",
+      "id": "text-01491906ff",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.cardBenefitsFeaturesPanel.keyBenefitsText0"
+    },
+    {
+      "label": "keyBenefitsText1",
+      "selector": "form #text-c75632070d",
+      "kind": "unknown",
+      "id": "text-c75632070d",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.cardBenefitsFeaturesPanel.keyBenefitsText1"
+    },
+    {
+      "label": "keyBenefitsText2",
+      "selector": "form #text-de463a4989",
+      "kind": "unknown",
+      "id": "text-de463a4989",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.cardBenefitsFeaturesPanel.keyBenefitsText2"
+    },
+    {
+      "label": "keyBenefitsText3",
+      "selector": "form #text-920598f548",
+      "kind": "unknown",
+      "id": "text-920598f548",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.cardBenefitsFeaturesPanel.keyBenefitsText3"
+    },
+    {
+      "label": "Joining / Renewal/ Annual Fees",
+      "selector": "form input[type='text']#textinput-30b2f477a4",
+      "kind": "unknown",
+      "id": "textinput-30b2f477a4",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.cardBenefitsFeaturesPanel.joiningRenewalFee"
+    },
+    {
+      "label": "Joining / Renewal/ Annual Fees",
+      "selector": "form #textinput-30b2f477a4",
+      "kind": "unknown",
+      "id": "textinput-30b2f477a4",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.cardBenefitsFeaturesPanel.joiningRenewalFee"
+    },
+    {
+      "label": "I confirm that I've read,understood and agree to the card price and features",
+      "selector": "form input[type='checkbox']#checkbox-f50489fd0d",
+      "kind": "unknown",
+      "id": "checkbox-f50489fd0d",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.cardBenefitsAgreeCheckbox"
+    },
+    {
+      "label": "I confirm that I've read,understood and agree to the card price and features",
+      "selector": "form #checkbox-f50489fd0d",
+      "kind": "unknown",
+      "id": "checkbox-f50489fd0d",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.cardBenefitsPanel.cardBenefitsAgreeCheckbox"
+    },
+    {
+      "label": "Get this Card >",
+      "selector": "form button[type='button']#button-145f647baf",
+      "kind": "unknown",
+      "id": "button-145f647baf",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.getThisCardButton"
+    },
+    {
+      "label": "Get this Card >",
+      "selector": "form #button-145f647baf",
+      "kind": "unknown",
+      "id": "button-145f647baf",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.getThisCardButton"
+    },
+    {
+      "label": "< Back",
+      "selector": "form button[type='button']#button-a30b4f8a13",
+      "kind": "unknown",
+      "id": "button-a30b4f8a13",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.viewAllCardBenefitsPanel.backLinkCardBenefits"
+    },
+    {
+      "label": "< Back",
+      "selector": "form #button-a30b4f8a13",
+      "kind": "unknown",
+      "id": "button-a30b4f8a13",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.viewAllCardBenefitsPanel.backLinkCardBenefits"
+    },
+    {
+      "label": "cardBenefitsText",
+      "selector": "form #text-f200ef8fe8",
+      "kind": "unknown",
+      "id": "text-f200ef8fe8",
+      "qname": "$form.corporateCardWizardView.confirmCardPanel.viewAllCardBenefitsPanel.cardBenefitsText"
+    },
+    {
+      "label": "selectIdentityVerificationLabel",
+      "selector": "form #text-cdd543eda0",
+      "kind": "unknown",
+      "id": "text-cdd543eda0",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.selectIdentityVerificationLabel"
+    },
+    {
+      "label": "Recommended - Online and easy ",
+      "selector": "form fieldset#radiobutton-90a42bbb92",
+      "kind": "unknown",
+      "id": "radiobutton-90a42bbb92",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.selectKYCMethodOption1.aadharEKYCVerification"
+    },
+    {
+      "label": "Recommended - Online and easy ",
+      "selector": "form #radiobutton-90a42bbb92",
+      "kind": "unknown",
+      "id": "radiobutton-90a42bbb92",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.selectKYCMethodOption1.aadharEKYCVerification"
+    },
+    {
+      "label": "IdentityVerificationText1",
+      "selector": "form #text-a8640fb5f2",
+      "kind": "unknown",
+      "id": "text-a8640fb5f2",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.selectKYCMethodOption1.IdentityVerificationText1"
+    },
+    {
+      "label": "Offline",
+      "selector": "form fieldset#radiobutton-175e9f3d72",
+      "kind": "unknown",
+      "id": "radiobutton-175e9f3d72",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.selectKYCMethodOption2.aadharBiometricVerification"
+    },
+    {
+      "label": "Offline",
+      "selector": "form #radiobutton-175e9f3d72",
+      "kind": "unknown",
+      "id": "radiobutton-175e9f3d72",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.selectKYCMethodOption2.aadharBiometricVerification"
+    },
+    {
+      "label": "IdentityVerificationText2",
+      "selector": "form #text-533a77e615",
+      "kind": "unknown",
+      "id": "text-533a77e615",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.selectKYCMethodOption2.IdentityVerificationText2"
+    },
+    {
+      "label": "Offline",
+      "selector": "form fieldset#radiobutton-fb981d30ba",
+      "kind": "unknown",
+      "id": "radiobutton-fb981d30ba",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.selectKYCMethodOption3.officiallyValidDocumentsMethod"
+    },
+    {
+      "label": "Offline",
+      "selector": "form #radiobutton-fb981d30ba",
+      "kind": "unknown",
+      "id": "radiobutton-fb981d30ba",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.selectKYCMethodOption3.officiallyValidDocumentsMethod"
+    },
+    {
+      "label": "IdentityVerificationText3",
+      "selector": "form #text-84a6de07e9",
+      "kind": "unknown",
+      "id": "text-84a6de07e9",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.selectKYCMethodOption3.IdentityVerificationText3"
+    },
+    {
+      "label": "biometricHidden",
+      "selector": "form input[type='checkbox']#checkbox-d2bbffa8aa",
+      "kind": "unknown",
+      "id": "checkbox-d2bbffa8aa",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.ckycDetailsContinueETBPanel.biometricHidden"
+    },
+    {
+      "label": "biometricHidden",
+      "selector": "form #checkbox-d2bbffa8aa",
+      "kind": "unknown",
+      "id": "checkbox-d2bbffa8aa",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.ckycDetailsContinueETBPanel.biometricHidden"
+    },
+    {
+      "label": "triggerAadharAPI_hidden",
+      "selector": "form input[type='number']#numberinput-63823be78b",
+      "kind": "unknown",
+      "id": "numberinput-63823be78b",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.ckycDetailsContinueETBPanel.triggerAadharAPI"
+    },
+    {
+      "label": "triggerAadharAPI_hidden",
+      "selector": "form #numberinput-63823be78b",
+      "kind": "unknown",
+      "id": "numberinput-63823be78b",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.ckycDetailsContinueETBPanel.triggerAadharAPI"
+    },
+    {
+      "label": "Continue",
+      "selector": "form button[type='button']#button-3e7ddc3e22",
+      "kind": "unknown",
+      "id": "button-3e7ddc3e22",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.ckycDetailsContinueETBPanel.ckycDetailsContinueETBAadhar"
+    },
+    {
+      "label": "Continue",
+      "selector": "form #button-3e7ddc3e22",
+      "kind": "unknown",
+      "id": "button-3e7ddc3e22",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.ckycDetailsContinueETBPanel.ckycDetailsContinueETBAadhar"
+    },
+    {
+      "label": "Continue",
+      "selector": "form button[type='button']#button-65fbc54c24",
+      "kind": "unknown",
+      "id": "button-65fbc54c24",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.ckycDetailsContinueETBPanel.ckycDetailsContinueETBBiometric"
+    },
+    {
+      "label": "Continue",
+      "selector": "form #button-65fbc54c24",
+      "kind": "unknown",
+      "id": "button-65fbc54c24",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.ckycDetailsContinueETBPanel.ckycDetailsContinueETBBiometric"
+    },
+    {
+      "label": "Continue",
+      "selector": "form button[type='button']#button-aae64849c1",
+      "kind": "unknown",
+      "id": "button-aae64849c1",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.ckycDetailsContinueETBPanel.ckycDetailsContinueETBOVD"
+    },
+    {
+      "label": "Continue",
+      "selector": "form #button-aae64849c1",
+      "kind": "unknown",
+      "id": "button-aae64849c1",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.selectKYCOptionsPanel.ckycDetailsContinueETBPanel.ckycDetailsContinueETBOVD"
+    },
+    {
+      "label": "aadharConsentLabel",
+      "selector": "form #text-2059e5475a",
+      "kind": "unknown",
+      "id": "text-2059e5475a",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsentLabel"
+    },
+    {
+      "label": "Select language",
+      "selector": "form select#dropdown-80f2134a88",
+      "kind": "unknown",
+      "id": "dropdown-80f2134a88",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.selectLanguage"
+    },
+    {
+      "label": "Select language",
+      "selector": "form #dropdown-80f2134a88",
+      "kind": "unknown",
+      "id": "dropdown-80f2134a88",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.selectLanguage"
+    },
+    {
+      "label": "aadharConsentText_English",
+      "selector": "form #text-7c5e0e9437",
+      "kind": "unknown",
+      "id": "text-7c5e0e9437",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_English.aadharConsentText_English"
+    },
+    {
+      "label": "aadharConsentHelp_English",
+      "selector": "form #text-effa33e8fd",
+      "kind": "unknown",
+      "id": "text-effa33e8fd",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_English.aadharConsentHelp_English"
+    },
+    {
+      "label": "aadharConsentText_Hindi",
+      "selector": "form #text-f9d77460af",
+      "kind": "unknown",
+      "id": "text-f9d77460af",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Hindi.aadharConsentText_Hindi"
+    },
+    {
+      "label": "aadharConsentHelp_Hindi",
+      "selector": "form #text-b1f0f40a71",
+      "kind": "unknown",
+      "id": "text-b1f0f40a71",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Hindi.aadharConsentHelp_Hindi"
+    },
+    {
+      "label": "aadharConsentText_Assamese",
+      "selector": "form #text-02e3db6e3f",
+      "kind": "unknown",
+      "id": "text-02e3db6e3f",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Assamese.aadharConsentText_Assamese"
+    },
+    {
+      "label": "aadharConsentHelp_Assamese",
+      "selector": "form #text-8fd04fe49b",
+      "kind": "unknown",
+      "id": "text-8fd04fe49b",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Assamese.aadharConsentHelp_Assamese"
+    },
+    {
+      "label": "aadharConsentText_Bengali",
+      "selector": "form #text-fc98a2f68b",
+      "kind": "unknown",
+      "id": "text-fc98a2f68b",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Bengali.aadharConsentText_Bengali"
+    },
+    {
+      "label": "aadharConsentHelp_Bengali",
+      "selector": "form #text-257595d8a7",
+      "kind": "unknown",
+      "id": "text-257595d8a7",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Bengali.aadharConsentHelp_Bengali"
+    },
+    {
+      "label": "aadharConsentText_Gujarati",
+      "selector": "form #text-39a6298e17",
+      "kind": "unknown",
+      "id": "text-39a6298e17",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Gujarati.aadharConsentText_Gujarati"
+    },
+    {
+      "label": "aadharConsentHelp_Gujarati",
+      "selector": "form #text-9750b85139",
+      "kind": "unknown",
+      "id": "text-9750b85139",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Gujarati.aadharConsentHelp_Gujarati"
+    },
+    {
+      "label": "aadharConsentText_Kannada",
+      "selector": "form #text-5aa865eee8",
+      "kind": "unknown",
+      "id": "text-5aa865eee8",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Kannada.aadharConsentText_Kannada"
+    },
+    {
+      "label": "aadharConsentHelp_Kannada",
+      "selector": "form #text-2f9750c0d2",
+      "kind": "unknown",
+      "id": "text-2f9750c0d2",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Kannada.aadharConsentHelp_Kannada"
+    },
+    {
+      "label": "aadharConsentText_Kashmiri",
+      "selector": "form #text-23c48add60",
+      "kind": "unknown",
+      "id": "text-23c48add60",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Kashmiri.aadharConsentText_Kashmiri"
+    },
+    {
+      "label": "aadharConsentHelp_Kashmiri",
+      "selector": "form #text-371a737cfc",
+      "kind": "unknown",
+      "id": "text-371a737cfc",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Kashmiri.aadharConsentHelp_Kashmiri"
+    },
+    {
+      "label": "aadharConsentText_Konkani",
+      "selector": "form #text-8c1b7757e4",
+      "kind": "unknown",
+      "id": "text-8c1b7757e4",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Konkani.aadharConsentText_Konkani"
+    },
+    {
+      "label": "aadharConsentHelp_Konkani",
+      "selector": "form #text-7fe459accb",
+      "kind": "unknown",
+      "id": "text-7fe459accb",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Konkani.aadharConsentHelp_Konkani"
+    },
+    {
+      "label": "aadharConsentText_Malayalam",
+      "selector": "form #text-5fb2127cbb",
+      "kind": "unknown",
+      "id": "text-5fb2127cbb",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Malayalam.aadharConsentText_Malayalam"
+    },
+    {
+      "label": "aadharConsentHelp_Malayalam",
+      "selector": "form #text-6f4a080c10",
+      "kind": "unknown",
+      "id": "text-6f4a080c10",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Malayalam.aadharConsentHelp_Malayalam"
+    },
+    {
+      "label": "aadharConsentText_Manipuri",
+      "selector": "form #text-db00228129",
+      "kind": "unknown",
+      "id": "text-db00228129",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Manipuri.aadharConsentText_Manipuri"
+    },
+    {
+      "label": "aadharConsentHelp_Manipuri",
+      "selector": "form #text-0a7eb8f0d4",
+      "kind": "unknown",
+      "id": "text-0a7eb8f0d4",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Manipuri.aadharConsentHelp_Manipuri"
+    },
+    {
+      "label": "aadharConsentText_Marathi",
+      "selector": "form #text-b0a99d9264",
+      "kind": "unknown",
+      "id": "text-b0a99d9264",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Marathi.aadharConsentText_Marathi"
+    },
+    {
+      "label": "aadharConsentHelp_Marathi",
+      "selector": "form #text-070c0b5ab0",
+      "kind": "unknown",
+      "id": "text-070c0b5ab0",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Marathi.aadharConsentHelp_Marathi"
+    },
+    {
+      "label": "aadharConsentText_Odiya",
+      "selector": "form #text-eab28b510f",
+      "kind": "unknown",
+      "id": "text-eab28b510f",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Odiya.aadharConsentText_Odiya"
+    },
+    {
+      "label": "aadharConsentHelp_Odiya",
+      "selector": "form #text-5f76ebd8b2",
+      "kind": "unknown",
+      "id": "text-5f76ebd8b2",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Odiya.aadharConsentHelp_Odiya"
+    },
+    {
+      "label": "aadharConsentText_Punjabi",
+      "selector": "form #text-a9302e3fbb",
+      "kind": "unknown",
+      "id": "text-a9302e3fbb",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Punjabi.aadharConsentText_Punjabi"
+    },
+    {
+      "label": "aadharConsentHelp_Punjabi",
+      "selector": "form #text-0797e13bae",
+      "kind": "unknown",
+      "id": "text-0797e13bae",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Punjabi.aadharConsentHelp_Punjabi"
+    },
+    {
+      "label": "aadharConsentText_Tamil",
+      "selector": "form #text-ac277a9b50",
+      "kind": "unknown",
+      "id": "text-ac277a9b50",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Tamil.aadharConsentText_Tamil"
+    },
+    {
+      "label": "aadharConsentHelp_Tamil",
+      "selector": "form #text-6c18cd9977",
+      "kind": "unknown",
+      "id": "text-6c18cd9977",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Tamil.aadharConsentHelp_Tamil"
+    },
+    {
+      "label": "aadharConsentText_Telugu",
+      "selector": "form #text-d538742f2e",
+      "kind": "unknown",
+      "id": "text-d538742f2e",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Telugu.aadharConsentText_Telugu"
+    },
+    {
+      "label": "aadharConsentHelp_Telugu",
+      "selector": "form #text-f9462b6d53",
+      "kind": "unknown",
+      "id": "text-f9462b6d53",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Telugu.aadharConsentHelp_Telugu"
+    },
+    {
+      "label": "aadharConsentText_Urdu",
+      "selector": "form #text-a1aa3d5104",
+      "kind": "unknown",
+      "id": "text-a1aa3d5104",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Urdu.aadharConsentText_Urdu"
+    },
+    {
+      "label": "aadharConsentHelp_Urdu",
+      "selector": "form #text-d2676248be",
+      "kind": "unknown",
+      "id": "text-d2676248be",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsent_Urdu.aadharConsentHelp_Urdu"
+    },
+    {
+      "label": "I Agree",
+      "selector": "form button[type='button']#button-640bf6cf7d",
+      "kind": "unknown",
+      "id": "button-640bf6cf7d",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsentAgree"
+    },
+    {
+      "label": "I Agree",
+      "selector": "form #button-640bf6cf7d",
+      "kind": "unknown",
+      "id": "button-640bf6cf7d",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.aadharConsent.aadharConsentPopup.aadharConsentAgree"
+    },
+    {
+      "label": "ckycToggle",
+      "selector": "form #text-58bf7301e9",
+      "kind": "unknown",
+      "id": "text-58bf7301e9",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.ckycDetailsPanel.ckycToggle"
+    },
+    {
+      "label": "CKYC Number",
+      "selector": "form input[type='text']#textinput-c00b30f6e3",
+      "kind": "unknown",
+      "id": "textinput-c00b30f6e3",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.ckycDetailsPanel.ckycNumber"
+    },
+    {
+      "label": "CKYC Number",
+      "selector": "form #textinput-c00b30f6e3",
+      "kind": "unknown",
+      "id": "textinput-c00b30f6e3",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.ckycDetailsPanel.ckycNumber"
+    },
+    {
+      "label": "Continue",
+      "selector": "form button[type='button']#button-8091b3e567",
+      "kind": "unknown",
+      "id": "button-8091b3e567",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.ckycDetailsPanel.ckycDetailsContinueNTBAadhar"
+    },
+    {
+      "label": "Continue",
+      "selector": "form #button-8091b3e567",
+      "kind": "unknown",
+      "id": "button-8091b3e567",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.ckycDetailsPanel.ckycDetailsContinueNTBAadhar"
+    },
+    {
+      "label": "Continue",
+      "selector": "form button[type='button']#button-15c45b456f",
+      "kind": "unknown",
+      "id": "button-15c45b456f",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.ckycDetailsPanel.ckycDetailsContinueNTBBiometric"
+    },
+    {
+      "label": "Continue",
+      "selector": "form #button-15c45b456f",
+      "kind": "unknown",
+      "id": "button-15c45b456f",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.ckycDetailsPanel.ckycDetailsContinueNTBBiometric"
+    },
+    {
+      "label": "Continue",
+      "selector": "form button[type='button']#button-a4a7298671",
+      "kind": "unknown",
+      "id": "button-a4a7298671",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.ckycDetailsPanel.ckycDetailsContinueNTBOVD"
+    },
+    {
+      "label": "Continue",
+      "selector": "form #button-a4a7298671",
+      "kind": "unknown",
+      "id": "button-a4a7298671",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.ckycDetailsPanel.ckycDetailsContinueNTBOVD"
+    },
+    {
+      "label": "docUploadLabel",
+      "selector": "form #text-6bb947f60d",
+      "kind": "unknown",
+      "id": "text-6bb947f60d",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.docUploadETBFlow.docUploadLabel"
+    },
+    {
+      "label": "Select Document Type",
+      "selector": "form input[type='text']#textinput-e546ef7114",
+      "kind": "unknown",
+      "id": "textinput-e546ef7114",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.docUploadETBFlow.panDoc"
+    },
+    {
+      "label": "Select Document Type",
+      "selector": "form #textinput-e546ef7114",
+      "kind": "unknown",
+      "id": "textinput-e546ef7114",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.docUploadETBFlow.panDoc"
+    },
+    {
+      "label": "Select Document Type",
+      "selector": "form select#dropdown-9e41aed47c",
+      "kind": "unknown",
+      "id": "dropdown-9e41aed47c",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.docUploadETBFlow.docUploadDropdown"
+    },
+    {
+      "label": "Select Document Type",
+      "selector": "form #dropdown-9e41aed47c",
+      "kind": "unknown",
+      "id": "dropdown-9e41aed47c",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.docUploadETBFlow.docUploadDropdown"
+    },
+    {
+      "label": "DocUploadFront",
+      "selector": "form input[type='file']#fileinput-89f48cc583",
+      "kind": "unknown",
+      "id": "fileinput-89f48cc583",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.docUploadETBFlow.DocUploadFront"
+    },
+    {
+      "label": "DocUploadFront",
+      "selector": "form #fileinput-89f48cc583",
+      "kind": "unknown",
+      "id": "fileinput-89f48cc583",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.docUploadETBFlow.DocUploadFront"
+    },
+    {
+      "label": "DocUploadBack",
+      "selector": "form input[type='file']#fileinput-d39b318ef3",
+      "kind": "unknown",
+      "id": "fileinput-d39b318ef3",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.docUploadETBFlow.DocUploadBack"
+    },
+    {
+      "label": "DocUploadBack",
+      "selector": "form #fileinput-d39b318ef3",
+      "kind": "unknown",
+      "id": "fileinput-d39b318ef3",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.docUploadETBFlow.DocUploadBack"
+    },
+    {
+      "label": "Continue >",
+      "selector": "form button[type='button']#button-d7aac24993",
+      "kind": "unknown",
+      "id": "button-d7aac24993",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.docUploadETBFlow.docUploadOVDButton"
+    },
+    {
+      "label": "Continue >",
+      "selector": "form #button-d7aac24993",
+      "kind": "unknown",
+      "id": "button-d7aac24993",
+      "qname": "$form.corporateCardWizardView.selectKycPanel.docUploadETBFlow.docUploadOVDButton"
+    },
+    {
+      "label": "addressDeclarationText1",
+      "selector": "form #text-6ebccf57ef",
+      "kind": "unknown",
+      "id": "text-6ebccf57ef",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.addressDeclarationText1"
+    },
+    {
+      "label": "addressDeclarationText2",
+      "selector": "form #text-497648bfb1",
+      "kind": "unknown",
+      "id": "text-497648bfb1",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.addressDeclarationText2"
+    },
+    {
+      "label": "aadharAddressCKYC",
+      "selector": "form #text-f739240085",
+      "kind": "unknown",
+      "id": "text-f739240085",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.AddressDeclarationAadhar.aadharAddressCKYC"
+    },
+    {
+      "label": "aadharAddressSelectKYC",
+      "selector": "form #text-c563993dc7",
+      "kind": "unknown",
+      "id": "text-c563993dc7",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.AddressDeclarationAadhar.aadharAddressSelectKYC"
+    },
+    {
+      "label": "Is this your current residence address?",
+      "selector": "form fieldset#radiobutton-80c77bb06e",
+      "kind": "unknown",
+      "id": "radiobutton-80c77bb06e",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.AddressDeclarationAadhar.currentAddressToggleConfirmpage"
+    },
+    {
+      "label": "Is this your current residence address?",
+      "selector": "form #radiobutton-80c77bb06e",
+      "kind": "unknown",
+      "id": "radiobutton-80c77bb06e",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.AddressDeclarationAadhar.currentAddressToggleConfirmpage"
+    },
+    {
+      "label": "currentResidenceAddressCKYC",
+      "selector": "form #text-606b6de895",
+      "kind": "unknown",
+      "id": "text-606b6de895",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.CurrentAddressDeclaration.currentResidenceAddressCKYC"
+    },
+    {
+      "label": "currentResidenceAddress",
+      "selector": "form #text-6875141c47",
+      "kind": "unknown",
+      "id": "text-6875141c47",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.CurrentAddressDeclaration.currentResidenceAddress"
+    },
+    {
+      "label": "My current address is different from the Aadhaar address and I hereby self-declare my current address and stated above.",
+      "selector": "form input[type='checkbox']#checkbox-a06f7342c6",
+      "kind": "unknown",
+      "id": "checkbox-a06f7342c6",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.CurrentAddressDeclaration.currentResidenceAddressDeclaration"
+    },
+    {
+      "label": "My current address is different from the Aadhaar address and I hereby self-declare my current address and stated above.",
+      "selector": "form #checkbox-a06f7342c6",
+      "kind": "unknown",
+      "id": "checkbox-a06f7342c6",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.CurrentAddressDeclaration.currentResidenceAddressDeclaration"
+    },
+    {
+      "label": "currentResidenceAddressBiometricLabel",
+      "selector": "form #text-5ea88c4bdc",
+      "kind": "unknown",
+      "id": "text-5ea88c4bdc",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.currentAddressBiometric.currentResidenceAddressBiometricLabel"
+    },
+    {
+      "label": "currentResidenceAddressBiometricText",
+      "selector": "form #text-d4e8d15e5f",
+      "kind": "unknown",
+      "id": "text-d4e8d15e5f",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.currentAddressBiometric.currentResidenceAddressBiometricText"
+    },
+    {
+      "label": "Is this your Aadhaar address?",
+      "selector": "form fieldset#radiobutton-780d2456cb",
+      "kind": "unknown",
+      "id": "radiobutton-780d2456cb",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.currentAddressBiometric.currentResidenceAddressBiometricquestion"
+    },
+    {
+      "label": "Is this your Aadhaar address?",
+      "selector": "form #radiobutton-780d2456cb",
+      "kind": "unknown",
+      "id": "radiobutton-780d2456cb",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.currentAddressBiometric.currentResidenceAddressBiometricquestion"
+    },
+    {
+      "label": "officeAddressLabelCKYC",
+      "selector": "form #text-5433e0269b",
+      "kind": "unknown",
+      "id": "text-5433e0269b",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.addressDeclarationOffice.officeAddressLabelCKYC"
+    },
+    {
+      "label": "officeAddressSelectKYC",
+      "selector": "form #text-50d4937e52",
+      "kind": "unknown",
+      "id": "text-50d4937e52",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.addressDeclarationOffice.officeAddressSelectKYC"
+    },
+    {
+      "label": "cardDeliveryAddressLabelOVD",
+      "selector": "form #text-16ecb0fef8",
+      "kind": "unknown",
+      "id": "text-16ecb0fef8",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.addressDeclarationOVD.cardDeliveryAddressLabelOVD"
+    },
+    {
+      "label": "currentAddressOVDOption",
+      "selector": "form fieldset#radiobutton-818925a98e",
+      "kind": "unknown",
+      "id": "radiobutton-818925a98e",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.addressDeclarationOVD.currentAddressOVD.currentAddressOVDOption"
+    },
+    {
+      "label": "currentAddressOVDOption",
+      "selector": "form #radiobutton-818925a98e",
+      "kind": "unknown",
+      "id": "radiobutton-818925a98e",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.addressDeclarationOVD.currentAddressOVD.currentAddressOVDOption"
+    },
+    {
+      "label": "currentAddressOVDAddress",
+      "selector": "form #text-17f293ddea",
+      "kind": "unknown",
+      "id": "text-17f293ddea",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.addressDeclarationOVD.currentAddressOVD.currentAddressOVDAddress"
+    },
+    {
+      "label": "officeAddressOVDOption",
+      "selector": "form fieldset#radiobutton-e9bb0e1737",
+      "kind": "unknown",
+      "id": "radiobutton-e9bb0e1737",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.addressDeclarationOVD.officeAddressOVD.officeAddressOVDOption"
+    },
+    {
+      "label": "officeAddressOVDOption",
+      "selector": "form #radiobutton-e9bb0e1737",
+      "kind": "unknown",
+      "id": "radiobutton-e9bb0e1737",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.addressDeclarationOVD.officeAddressOVD.officeAddressOVDOption"
+    },
+    {
+      "label": "officeAddressOVDAddress",
+      "selector": "form #text-b71b3ac446",
+      "kind": "unknown",
+      "id": "text-b71b3ac446",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.addressDeclarationOVD.officeAddressOVD.officeAddressOVDAddress"
+    },
+    {
+      "label": "cardDeliveryAddressLabel",
+      "selector": "form #text-efe1d5652e",
+      "kind": "unknown",
+      "id": "text-efe1d5652e",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.cardDeliveryAddressPanel.cardDeliveryAddressLabel"
+    },
+    {
+      "label": "cardDeliveryAddressOption1",
+      "selector": "form fieldset#radiobutton-746401a769",
+      "kind": "unknown",
+      "id": "radiobutton-746401a769",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.cardDeliveryAddressPanel.cardDeliveryAddressOption1"
+    },
+    {
+      "label": "cardDeliveryAddressOption1",
+      "selector": "form #radiobutton-746401a769",
+      "kind": "unknown",
+      "id": "radiobutton-746401a769",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.cardDeliveryAddressPanel.cardDeliveryAddressOption1"
+    },
+    {
+      "label": "cardDeliveryAddressOption2",
+      "selector": "form fieldset#radiobutton-fb1f7d52ce",
+      "kind": "unknown",
+      "id": "radiobutton-fb1f7d52ce",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.cardDeliveryAddressPanel.cardDeliveryAddressOption2"
+    },
+    {
+      "label": "cardDeliveryAddressOption2",
+      "selector": "form #radiobutton-fb1f7d52ce",
+      "kind": "unknown",
+      "id": "radiobutton-fb1f7d52ce",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.cardDeliveryAddressPanel.cardDeliveryAddressOption2"
+    },
+    {
+      "label": "<p>I have read, understood and agress to the :</p><ul><li><a href=\"https://www.hdfcbank.com/personal/pay/cards/commercial-credit-cards/individual-application-form\" data-clickable-id=\"clickable-10\" target=\"_blank\"><u>Consent Terms and General Terms and Conditions</u></a></li><li><a href=\"https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=/Personal/Pay/Cards/Credit%20Card/Credit%20Card%20Landing%20Page/Credit%20Cards/Commercial/SAP%20Concur%20Black%20Corporate%20Credit%20Card/Corporate_Card_Eng_15%20Feb.pdf\" data-clickable-id=\"clickable-11\" target=\"_blank\"><u>Most Important Terms and Conditions</u></a></li><li><a href=\"https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=/Personal/Pay/Cards/Credit%20Card/Credit%20Card%20Landing%20Page/Credit%20Cards/Commercial/Cardmember-Agreement-Corp-Cards.pdf\" data-clickable-id=\"clickable-12\" target=\"_blank\"><u>Card Member Agreement</u></a></li><li><a href=\"https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=/Personal/Pay/Cards/Credit%20Card/Credit%20Card%20Landing%20Page/Credit%20Cards/Commercial/KEY-FACT-STATEMENT-Corp-Card.pdf\" data-clickable-id=\"clickable-13\" target=\"_blank\"><u>Key Fact Statement</u></a></li></ul>",
+      "selector": "form input[type='checkbox']#checkbox-8c5c0b2b66",
+      "kind": "unknown",
+      "id": "checkbox-8c5c0b2b66",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.tandCPanelConfirmAndSubmit.confirmAndSubmitTC1.TCCheckbox1"
+    },
+    {
+      "label": "<p>I have read, understood and agress to the :</p><ul><li><a href=\"https://www.hdfcbank.com/personal/pay/cards/commercial-credit-cards/individual-application-form\" data-clickable-id=\"clickable-10\" target=\"_blank\"><u>Consent Terms and General Terms and Conditions</u></a></li><li><a href=\"https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=/Personal/Pay/Cards/Credit%20Card/Credit%20Card%20Landing%20Page/Credit%20Cards/Commercial/SAP%20Concur%20Black%20Corporate%20Credit%20Card/Corporate_Card_Eng_15%20Feb.pdf\" data-clickable-id=\"clickable-11\" target=\"_blank\"><u>Most Important Terms and Conditions</u></a></li><li><a href=\"https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=/Personal/Pay/Cards/Credit%20Card/Credit%20Card%20Landing%20Page/Credit%20Cards/Commercial/Cardmember-Agreement-Corp-Cards.pdf\" data-clickable-id=\"clickable-12\" target=\"_blank\"><u>Card Member Agreement</u></a></li><li><a href=\"https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=/Personal/Pay/Cards/Credit%20Card/Credit%20Card%20Landing%20Page/Credit%20Cards/Commercial/KEY-FACT-STATEMENT-Corp-Card.pdf\" data-clickable-id=\"clickable-13\" target=\"_blank\"><u>Key Fact Statement</u></a></li></ul>",
+      "selector": "form #checkbox-8c5c0b2b66",
+      "kind": "unknown",
+      "id": "checkbox-8c5c0b2b66",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.tandCPanelConfirmAndSubmit.confirmAndSubmitTC1.TCCheckbox1"
+    },
+    {
+      "label": "<p>I hereby give my consent as per the Terms and Conditions of HDFC Bank Limited to complete my KYC through the Video based Customer Identification Process (V-CIP) as prescribed by RBI</p>\n",
+      "selector": "form input[type='checkbox']#checkbox-9bc65e50af",
+      "kind": "unknown",
+      "id": "checkbox-9bc65e50af",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.tandCPanelConfirmAndSubmit.confirmAndSubmitTC2.TCCheckbox2"
+    },
+    {
+      "label": "<p>I hereby give my consent as per the Terms and Conditions of HDFC Bank Limited to complete my KYC through the Video based Customer Identification Process (V-CIP) as prescribed by RBI</p>\n",
+      "selector": "form #checkbox-9bc65e50af",
+      "kind": "unknown",
+      "id": "checkbox-9bc65e50af",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.tandCPanelConfirmAndSubmit.confirmAndSubmitTC2.TCCheckbox2"
+    },
+    {
+      "label": "Submit >",
+      "selector": "form button[type='button']#button-b858b221bf",
+      "kind": "unknown",
+      "id": "button-b858b221bf",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.tandCPanelConfirmAndSubmit.submitAndConfirmButton"
+    },
+    {
+      "label": "Submit >",
+      "selector": "form #button-b858b221bf",
+      "kind": "unknown",
+      "id": "button-b858b221bf",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.tandCPanelConfirmAndSubmit.submitAndConfirmButton"
+    },
+    {
+      "label": "Submit >",
+      "selector": "form button[type='button']#button-013c87e82f",
+      "kind": "unknown",
+      "id": "button-013c87e82f",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.tandCPanelConfirmAndSubmit.continueToIDCOM"
+    },
+    {
+      "label": "Submit >",
+      "selector": "form #button-013c87e82f",
+      "kind": "unknown",
+      "id": "button-013c87e82f",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.tandCPanelConfirmAndSubmit.continueToIDCOM"
+    },
+    {
+      "label": "Submit >",
+      "selector": "form button[type='button']#button-bddad2512b",
+      "kind": "unknown",
+      "id": "button-bddad2512b",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.tandCPanelConfirmAndSubmit.continueToDocUpload"
+    },
+    {
+      "label": "Submit >",
+      "selector": "form #button-bddad2512b",
+      "kind": "unknown",
+      "id": "button-bddad2512b",
+      "qname": "$form.corporateCardWizardView.confirmAndSubmitPanel.addressDeclarationPanel.tandCPanelConfirmAndSubmit.continueToDocUpload"
+    },
+    {
+      "label": "Continue >>",
+      "selector": "form button[type='button']#button-6c5dfd9d38",
+      "kind": "unknown",
+      "id": "button-6c5dfd9d38",
+      "qname": "$form.confirmResult"
+    },
+    {
+      "label": "Continue >>",
+      "selector": "form #button-6c5dfd9d38",
+      "kind": "unknown",
+      "id": "button-6c5dfd9d38",
+      "qname": "$form.confirmResult"
+    },
+    {
+      "label": "errorMessageText",
+      "selector": "form #text-cddd4238d0",
+      "kind": "unknown",
+      "id": "text-cddd4238d0",
+      "qname": "$form.resultPanel.errorResultPanel.errorMessageText"
+    },
+    {
+      "label": "Please Try Again >",
+      "selector": "form button[type='button']#button-dfd00dd381",
+      "kind": "unknown",
+      "id": "button-dfd00dd381",
+      "qname": "$form.resultPanel.errorResultPanel.tryAgainButtonErrorPanel"
+    },
+    {
+      "label": "Please Try Again >",
+      "selector": "form #button-dfd00dd381",
+      "kind": "unknown",
+      "id": "button-dfd00dd381",
+      "qname": "$form.resultPanel.errorResultPanel.tryAgainButtonErrorPanel"
+    },
+    {
+      "label": "successResultTextLabel",
+      "selector": "form #text-a6aa315c97",
+      "kind": "unknown",
+      "id": "text-a6aa315c97",
+      "qname": "$form.resultPanel.successResultPanel.successResultTextLabel"
+    },
+    {
+      "label": "arnRefNumLabel",
+      "selector": "form #text-59439dc0b4",
+      "kind": "unknown",
+      "id": "text-59439dc0b4",
+      "qname": "$form.resultPanel.successResultPanel.arnRefNumPanel.arnRefNumLabel"
+    },
+    {
+      "label": "newARNNumber",
+      "selector": "form #text-49686e596d",
+      "kind": "unknown",
+      "id": "text-49686e596d",
+      "qname": "$form.resultPanel.successResultPanel.arnRefNumPanel.newARNNumber"
+    },
+    {
+      "label": "vkycText1",
+      "selector": "form #text-bb92243393",
+      "kind": "unknown",
+      "id": "text-bb92243393",
+      "qname": "$form.resultPanel.successResultPanel.vkycConfirmationPanelCCC.vkycConfirmationPointsPanel.vkycText1"
+    },
+    {
+      "label": "vkycText2",
+      "selector": "form #text-2245350750",
+      "kind": "unknown",
+      "id": "text-2245350750",
+      "qname": "$form.resultPanel.successResultPanel.vkycConfirmationPanelCCC.vkycConfirmationPointsPanel.vkycText2"
+    },
+    {
+      "label": "vkycText3",
+      "selector": "form #text-2dffd31555",
+      "kind": "unknown",
+      "id": "text-2dffd31555",
+      "qname": "$form.resultPanel.successResultPanel.vkycConfirmationPanelCCC.vkycConfirmationPointsPanel.vkycText3"
+    },
+    {
+      "label": "Complete vKYC >",
+      "selector": "form button[type='button']#button-3077b72908",
+      "kind": "unknown",
+      "id": "button-3077b72908",
+      "qname": "$form.resultPanel.successResultPanel.vkycConfirmationPanelCCC.vkycConfirmationRightPanel.vkycRedirectionPopUpOpen"
+    },
+    {
+      "label": "Complete vKYC >",
+      "selector": "form #button-3077b72908",
+      "kind": "unknown",
+      "id": "button-3077b72908",
+      "qname": "$form.resultPanel.successResultPanel.vkycConfirmationPanelCCC.vkycConfirmationRightPanel.vkycRedirectionPopUpOpen"
+    },
+    {
+      "label": "vkycSuccessSecText1",
+      "selector": "form #text-49c0d034bf",
+      "kind": "unknown",
+      "id": "text-49c0d034bf",
+      "qname": "$form.resultPanel.successResultPanel.vkycConfirmationPanelCCC.vkycConfirmationRightPanel.vkycSuccessSecText1"
+    },
+    {
+      "label": "vkycSuccessSecTimer",
+      "selector": "form input[type='text']#textinput-a211b9777a",
+      "kind": "unknown",
+      "id": "textinput-a211b9777a",
+      "qname": "$form.resultPanel.successResultPanel.vkycConfirmationPanelCCC.vkycConfirmationRightPanel.vkycSuccessSecTimer"
+    },
+    {
+      "label": "vkycSuccessSecTimer",
+      "selector": "form #textinput-a211b9777a",
+      "kind": "unknown",
+      "id": "textinput-a211b9777a",
+      "qname": "$form.resultPanel.successResultPanel.vkycConfirmationPanelCCC.vkycConfirmationRightPanel.vkycSuccessSecTimer"
+    },
+    {
+      "label": "vkycSuccessSecText2",
+      "selector": "form #text-b4661e1e48",
+      "kind": "unknown",
+      "id": "text-b4661e1e48",
+      "qname": "$form.resultPanel.successResultPanel.vkycConfirmationPanelCCC.vkycConfirmationRightPanel.vkycSuccessSecText2"
+    },
+    {
+      "label": "thankYouPrivacyPolicy",
+      "selector": "form #text-e2b865315a",
+      "kind": "unknown",
+      "id": "text-e2b865315a",
+      "qname": "$form.resultPanel.successResultPanel.thankYouPrivacyPolicy"
+    },
+    {
+      "label": "panAadhaarLinkText",
+      "selector": "form #text-d476b956bc",
+      "kind": "unknown",
+      "id": "text-d476b956bc",
+      "qname": "$form.resultPanel.successResultPanel.panAadhaarLinkThankYouPanel.panAadhaarLinkText"
+    },
+    {
+      "label": "thankYouTrackApplication",
+      "selector": "form #text-281f338714",
+      "kind": "unknown",
+      "id": "text-281f338714",
+      "qname": "$form.resultPanel.successResultPanel.thankYouTrackApplication"
+    },
+    {
+      "label": "vkycRedirectionPopUpTitle",
+      "selector": "form #text-293d5fa982",
+      "kind": "unknown",
+      "id": "text-293d5fa982",
+      "qname": "$form.resultPanel.successResultPanel.vkycThankYouPopUpPanel.vkycRedirectionPopUpTitle"
+    },
+    {
+      "label": "vkycRedirectionPopUpMsg",
+      "selector": "form #text-c3ab03fffd",
+      "kind": "unknown",
+      "id": "text-c3ab03fffd",
+      "qname": "$form.resultPanel.successResultPanel.vkycThankYouPopUpPanel.vkycRedirectionPopUpMsg"
+    },
+    {
+      "label": "vkycRedirectionPopUpText",
+      "selector": "form #text-5646d401d8",
+      "kind": "unknown",
+      "id": "text-5646d401d8",
+      "qname": "$form.resultPanel.successResultPanel.vkycThankYouPopUpPanel.vkycRedirectionPopUpText"
+    },
+    {
+      "label": "Exit Anyway",
+      "selector": "form button[type='button']#button-068bb4669c",
+      "kind": "unknown",
+      "id": "button-068bb4669c",
+      "qname": "$form.resultPanel.successResultPanel.vkycThankYouPopUpPanel.vkycRedirectionExit"
+    },
+    {
+      "label": "Exit Anyway",
+      "selector": "form #button-068bb4669c",
+      "kind": "unknown",
+      "id": "button-068bb4669c",
+      "qname": "$form.resultPanel.successResultPanel.vkycThankYouPopUpPanel.vkycRedirectionExit"
+    },
+    {
+      "label": "Proceed to VKYC >",
+      "selector": "form button[type='button']#button-2e9d956bed",
+      "kind": "unknown",
+      "id": "button-2e9d956bed",
+      "qname": "$form.resultPanel.successResultPanel.vkycThankYouPopUpPanel.vkycRedirectionPopUpProceed"
+    },
+    {
+      "label": "Proceed to VKYC >",
+      "selector": "form #button-2e9d956bed",
+      "kind": "unknown",
+      "id": "button-2e9d956bed",
+      "qname": "$form.resultPanel.successResultPanel.vkycThankYouPopUpPanel.vkycRedirectionPopUpProceed"
+    },
+    {
+      "label": "vkycConfirmationText",
+      "selector": "form #text-5a22686ca4",
+      "kind": "unknown",
+      "id": "text-5a22686ca4",
+      "qname": "$form.resultPanel.successResultPanel.vkycConfirmationText"
+    },
+    {
+      "label": "offersLink",
+      "selector": "form #text-bd94d0fa37",
+      "kind": "unknown",
+      "id": "text-bd94d0fa37",
+      "qname": "$form.resultPanel.successResultPanel.offersLink"
+    },
+    {
+      "label": "cameraConfirmationPanelInstruction",
+      "selector": "form #text-96e64a3c10",
+      "kind": "unknown",
+      "id": "text-96e64a3c10",
+      "qname": "$form.resultPanel.successResultPanel.cameraConfirmationPanelInstruction"
+    },
+    {
+      "label": "cameraAccess1",
+      "selector": "form #text-ae07ba212b",
+      "kind": "unknown",
+      "id": "text-ae07ba212b",
+      "qname": "$form.resultPanel.successResultPanel.vkycCameraConfirmation.cameraAccess1"
+    },
+    {
+      "label": "cameraAccess2",
+      "selector": "form #text-f201da5295",
+      "kind": "unknown",
+      "id": "text-f201da5295",
+      "qname": "$form.resultPanel.successResultPanel.vkycCameraConfirmation.cameraAccess2"
+    },
+    {
+      "label": "cameraAccess3",
+      "selector": "form #text-1c4f1dbd0d",
+      "kind": "unknown",
+      "id": "text-1c4f1dbd0d",
+      "qname": "$form.resultPanel.successResultPanel.vkycCameraConfirmation.cameraAccess3"
+    },
+    {
+      "label": "Start vKYC >",
+      "selector": "form button[type='button']#button-23f800b0d6",
+      "kind": "unknown",
+      "id": "button-23f800b0d6",
+      "qname": "$form.resultPanel.successResultPanel.vkycProceedButton"
+    },
+    {
+      "label": "Start vKYC >",
+      "selector": "form #button-23f800b0d6",
+      "kind": "unknown",
+      "id": "button-23f800b0d6",
+      "qname": "$form.resultPanel.successResultPanel.vkycProceedButton"
+    },
+    {
+      "label": "ratingLabel",
+      "selector": "form #text-819d8b40df",
+      "kind": "unknown",
+      "id": "text-819d8b40df",
+      "qname": "$form.resultPanel.successResultPanel.ratingFragment.ratingPanel.ratingLabel"
+    },
+    {
+      "label": "<p><b>We would love your feedback</b></p>",
+      "selector": "form input[type='number']#numberinput-f696d0438b",
+      "kind": "unknown",
+      "id": "numberinput-f696d0438b",
+      "qname": "$form.resultPanel.successResultPanel.ratingFragment.ratingPanel.rating"
+    },
+    {
+      "label": "<p><b>We would love your feedback</b></p>",
+      "selector": "form #numberinput-f696d0438b",
+      "kind": "unknown",
+      "id": "numberinput-f696d0438b",
+      "qname": "$form.resultPanel.successResultPanel.ratingFragment.ratingPanel.rating"
+    },
+    {
+      "label": "ratingvalue",
+      "selector": "form input[type='number']#numberinput-8d1b7005b0",
+      "kind": "unknown",
+      "id": "numberinput-8d1b7005b0",
+      "qname": "$form.resultPanel.successResultPanel.ratingFragment.ratingPanel.ratingvalue"
+    },
+    {
+      "label": "ratingvalue",
+      "selector": "form #numberinput-8d1b7005b0",
+      "kind": "unknown",
+      "id": "numberinput-8d1b7005b0",
+      "qname": "$form.resultPanel.successResultPanel.ratingFragment.ratingPanel.ratingvalue"
+    },
+    {
+      "label": "Submit Feedback",
+      "selector": "form button[type='button']#button-5aaf947fc5",
+      "kind": "unknown",
+      "id": "button-5aaf947fc5",
+      "qname": "$form.resultPanel.successResultPanel.ratingFragment.ratingPanel.submitFeedback"
+    },
+    {
+      "label": "Submit Feedback",
+      "selector": "form #button-5aaf947fc5",
+      "kind": "unknown",
+      "id": "button-5aaf947fc5",
+      "qname": "$form.resultPanel.successResultPanel.ratingFragment.ratingPanel.submitFeedback"
+    },
+    {
+      "label": "journeyId",
+      "selector": "form input[type='text']#textinput-b154d8b12b",
+      "kind": "unknown",
+      "id": "textinput-b154d8b12b",
+      "qname": "$form.runtime.journeyId"
+    },
+    {
+      "label": "journeyId",
+      "selector": "form #textinput-b154d8b12b",
+      "kind": "unknown",
+      "id": "textinput-b154d8b12b",
+      "qname": "$form.runtime.journeyId"
+    },
+    {
+      "label": "leadProifileId",
+      "selector": "form input[type='text']#textinput-27f7dd6dc7",
+      "kind": "unknown",
+      "id": "textinput-27f7dd6dc7",
+      "qname": "$form.runtime.leadProifileId"
+    },
+    {
+      "label": "leadProifileId",
+      "selector": "form #textinput-27f7dd6dc7",
+      "kind": "unknown",
+      "id": "textinput-27f7dd6dc7",
+      "qname": "$form.runtime.leadProifileId"
+    },
+    {
+      "label": "hideElement",
+      "selector": "form input[type='text']#textinput-1ab7babfd5",
+      "kind": "unknown",
+      "id": "textinput-1ab7babfd5",
+      "qname": "$form.runtime.hideElement"
+    },
+    {
+      "label": "hideElement",
+      "selector": "form #textinput-1ab7babfd5",
+      "kind": "unknown",
+      "id": "textinput-1ab7babfd5",
+      "qname": "$form.runtime.hideElement"
+    },
+    {
+      "label": "analytics",
+      "selector": "form textarea#textinput-ba4685fffc",
+      "kind": "unknown",
+      "id": "textinput-ba4685fffc",
+      "qname": "$form.runtime.analytics"
+    },
+    {
+      "label": "analytics",
+      "selector": "form #textinput-ba4685fffc",
+      "kind": "unknown",
+      "id": "textinput-ba4685fffc",
+      "qname": "$form.runtime.analytics"
+    },
+    {
+      "label": "showElement",
+      "selector": "form input[type='text']#textinput-0336c1ecc8",
+      "kind": "unknown",
+      "id": "textinput-0336c1ecc8",
+      "qname": "$form.runtime.showElement"
+    },
+    {
+      "label": "showElement",
+      "selector": "form #textinput-0336c1ecc8",
+      "kind": "unknown",
+      "id": "textinput-0336c1ecc8",
+      "qname": "$form.runtime.showElement"
+    },
+    {
+      "label": "father name flag",
+      "selector": "form input[type='text']#textinput-bd4a282bba",
+      "kind": "unknown",
+      "id": "textinput-bd4a282bba",
+      "qname": "$form.runtime.fatherNameFlag"
+    },
+    {
+      "label": "father name flag",
+      "selector": "form #textinput-bd4a282bba",
+      "kind": "unknown",
+      "id": "textinput-bd4a282bba",
+      "qname": "$form.runtime.fatherNameFlag"
+    },
+    {
+      "label": "aadhar ekyc flag for lastname",
+      "selector": "form input[type='text']#textinput-12c714b367",
+      "kind": "unknown",
+      "id": "textinput-12c714b367",
+      "qname": "$form.runtime.aadharKycUploadLastname"
+    },
+    {
+      "label": "aadhar ekyc flag for lastname",
+      "selector": "form #textinput-12c714b367",
+      "kind": "unknown",
+      "id": "textinput-12c714b367",
+      "qname": "$form.runtime.aadharKycUploadLastname"
+    },
+    {
+      "label": "pan Aadhaar Link Flag",
+      "selector": "form input[type='text']#textinput-670ba444c7",
+      "kind": "unknown",
+      "id": "textinput-670ba444c7",
+      "qname": "$form.runtime.panAadhaarLinkFlag"
+    },
+    {
+      "label": "pan Aadhaar Link Flag",
+      "selector": "form #textinput-670ba444c7",
+      "kind": "unknown",
+      "id": "textinput-670ba444c7",
+      "qname": "$form.runtime.panAadhaarLinkFlag"
+    }
+  ]
+}

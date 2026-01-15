@@ -1,0 +1,4601 @@
+{
+  "url": "https://applyonline.hdfcbank.com/loan-against-assets/smartemi/smartemi",
+  "urlKey": "https://applyonline.hdfcbank.com/loan-against-assets/smartemi/smartemi",
+  "formName": "SMART EMI Form",
+  "ok": true,
+  "error": null,
+  "rows": [
+    {
+      "label": "aem_customerNameLabel",
+      "selector": "form.semi-form-wrapper #text-a26bc24d04",
+      "kind": "unknown",
+      "id": "text-a26bc24d04",
+      "qname": "$form.aem_semicreditCardDisplay.aem_semicreditCardContent.aem_customerNameLabel"
+    },
+    {
+      "label": "aem_customerNameLabel",
+      "selector": "form #text-a26bc24d04",
+      "kind": "unknown",
+      "id": "text-a26bc24d04",
+      "qname": "$form.aem_semicreditCardDisplay.aem_semicreditCardContent.aem_customerNameLabel"
+    },
+    {
+      "label": "aem_outStandingLabel",
+      "selector": "form.semi-form-wrapper #text-9f10420932",
+      "kind": "unknown",
+      "id": "text-9f10420932",
+      "qname": "$form.aem_semicreditCardDisplay.aem_semicreditCardContent.aem_outStandingLabel"
+    },
+    {
+      "label": "aem_outStandingLabel",
+      "selector": "form #text-9f10420932",
+      "kind": "unknown",
+      "id": "text-9f10420932",
+      "qname": "$form.aem_semicreditCardDisplay.aem_semicreditCardContent.aem_outStandingLabel"
+    },
+    {
+      "label": "aem_outStandingAmt",
+      "selector": "form.semi-form-wrapper #text-cb2ebe7225",
+      "kind": "unknown",
+      "id": "text-cb2ebe7225",
+      "qname": "$form.aem_semicreditCardDisplay.aem_semicreditCardContent.aem_outStandingAmt"
+    },
+    {
+      "label": "aem_outStandingAmt",
+      "selector": "form #text-cb2ebe7225",
+      "kind": "unknown",
+      "id": "text-cb2ebe7225",
+      "qname": "$form.aem_semicreditCardDisplay.aem_semicreditCardContent.aem_outStandingAmt"
+    },
+    {
+      "label": "cardFaciaCardNo",
+      "selector": "form.semi-form-wrapper #text-00ad3c3ed2",
+      "kind": "unknown",
+      "id": "text-00ad3c3ed2",
+      "qname": "$form.aem_semicreditCardDisplay.cardFaciaCardNo"
+    },
+    {
+      "label": "cardFaciaCardNo",
+      "selector": "form #text-00ad3c3ed2",
+      "kind": "unknown",
+      "id": "text-00ad3c3ed2",
+      "qname": "$form.aem_semicreditCardDisplay.cardFaciaCardNo"
+    },
+    {
+      "label": "cardFaciaCardName",
+      "selector": "form.semi-form-wrapper #text-33533c13b5",
+      "kind": "unknown",
+      "id": "text-33533c13b5",
+      "qname": "$form.aem_semicreditCardDisplay.cardFaciaCardName"
+    },
+    {
+      "label": "cardFaciaCardName",
+      "selector": "form #text-33533c13b5",
+      "kind": "unknown",
+      "id": "text-33533c13b5",
+      "qname": "$form.aem_semicreditCardDisplay.cardFaciaCardName"
+    },
+    {
+      "label": "aem_welcomeText",
+      "selector": "form.semi-form-wrapper #text-fb50974a9e",
+      "kind": "unknown",
+      "id": "text-fb50974a9e",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_welcomeText"
+    },
+    {
+      "label": "aem_welcomeText",
+      "selector": "form #text-fb50974a9e",
+      "kind": "unknown",
+      "id": "text-fb50974a9e",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_welcomeText"
+    },
+    {
+      "label": "countryCode",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-80c705df6b",
+      "kind": "unknown",
+      "id": "textinput-80c705df6b",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_loginPanel.mobilePanel.aem_countryCode"
+    },
+    {
+      "label": "countryCode",
+      "selector": "form.semi-form-wrapper #textinput-80c705df6b",
+      "kind": "unknown",
+      "id": "textinput-80c705df6b",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_loginPanel.mobilePanel.aem_countryCode"
+    },
+    {
+      "label": "countryCode",
+      "selector": "form #textinput-80c705df6b",
+      "kind": "unknown",
+      "id": "textinput-80c705df6b",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_loginPanel.mobilePanel.aem_countryCode"
+    },
+    {
+      "label": "Mobile Number Registered with bank",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-b09cb44c79",
+      "kind": "unknown",
+      "id": "textinput-b09cb44c79",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_loginPanel.mobilePanel.aem_mobileNum"
+    },
+    {
+      "label": "Mobile Number Registered with bank",
+      "selector": "form.semi-form-wrapper #textinput-b09cb44c79",
+      "kind": "unknown",
+      "id": "textinput-b09cb44c79",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_loginPanel.mobilePanel.aem_mobileNum"
+    },
+    {
+      "label": "Mobile Number Registered with bank",
+      "selector": "form #textinput-b09cb44c79",
+      "kind": "unknown",
+      "id": "textinput-b09cb44c79",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_loginPanel.mobilePanel.aem_mobileNum"
+    },
+    {
+      "label": "Last 4 Digits Of Credit Card",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-ca73d19cac",
+      "kind": "unknown",
+      "id": "textinput-ca73d19cac",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_loginPanel.aem_cardNo"
+    },
+    {
+      "label": "Last 4 Digits Of Credit Card",
+      "selector": "form.semi-form-wrapper #textinput-ca73d19cac",
+      "kind": "unknown",
+      "id": "textinput-ca73d19cac",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_loginPanel.aem_cardNo"
+    },
+    {
+      "label": "Last 4 Digits Of Credit Card",
+      "selector": "form #textinput-ca73d19cac",
+      "kind": "unknown",
+      "id": "textinput-ca73d19cac",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_loginPanel.aem_cardNo"
+    },
+    {
+      "label": "aem_wrontCCNumberCountInFlows",
+      "selector": "form.semi-form-wrapper input[type='number']#numberinput-dfa4f50858",
+      "kind": "unknown",
+      "id": "numberinput-dfa4f50858",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_wrontCCNumberCountInFlows"
+    },
+    {
+      "label": "aem_wrontCCNumberCountInFlows",
+      "selector": "form.semi-form-wrapper #numberinput-dfa4f50858",
+      "kind": "unknown",
+      "id": "numberinput-dfa4f50858",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_wrontCCNumberCountInFlows"
+    },
+    {
+      "label": "aem_wrontCCNumberCountInFlows",
+      "selector": "form #numberinput-dfa4f50858",
+      "kind": "unknown",
+      "id": "numberinput-dfa4f50858",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_wrontCCNumberCountInFlows"
+    },
+    {
+      "label": "<p>I hereby consent to collection and processing of my data for availing this card and relevant services in the manner described in the notice&nbsp;<b><u>here.</u></b></p>\n",
+      "selector": "form.semi-form-wrapper input[type='checkbox']#checkbox-ad4f1dd4a6",
+      "kind": "unknown",
+      "id": "checkbox-ad4f1dd4a6",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.checkboxConsent1Label"
+    },
+    {
+      "label": "<p>I hereby consent to collection and processing of my data for availing this card and relevant services in the manner described in the notice&nbsp;<b><u>here.</u></b></p>\n",
+      "selector": "form.semi-form-wrapper #checkbox-ad4f1dd4a6",
+      "kind": "unknown",
+      "id": "checkbox-ad4f1dd4a6",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.checkboxConsent1Label"
+    },
+    {
+      "label": "<p>I hereby consent to collection and processing of my data for availing this card and relevant services in the manner described in the notice&nbsp;<b><u>here.</u></b></p>\n",
+      "selector": "form #checkbox-ad4f1dd4a6",
+      "kind": "unknown",
+      "id": "checkbox-ad4f1dd4a6",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.checkboxConsent1Label"
+    },
+    {
+      "label": "checkboxConsent1Text",
+      "selector": "form.semi-form-wrapper #text-75447bf404",
+      "kind": "unknown",
+      "id": "text-75447bf404",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.consentPanel1.checkboxConsent1Text"
+    },
+    {
+      "label": "checkboxConsent1Text",
+      "selector": "form #text-75447bf404",
+      "kind": "unknown",
+      "id": "text-75447bf404",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.consentPanel1.checkboxConsent1Text"
+    },
+    {
+      "label": "I Agree  >>",
+      "selector": "form.semi-form-wrapper button[type='button']#button-65cc9c0d2a",
+      "kind": "unknown",
+      "id": "button-65cc9c0d2a",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.consentPanel1.checkboxConsent1CTA"
+    },
+    {
+      "label": "I Agree  >>",
+      "selector": "form.semi-form-wrapper #button-65cc9c0d2a",
+      "kind": "unknown",
+      "id": "button-65cc9c0d2a",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.consentPanel1.checkboxConsent1CTA"
+    },
+    {
+      "label": "I Agree  >>",
+      "selector": "form #button-65cc9c0d2a",
+      "kind": "unknown",
+      "id": "button-65cc9c0d2a",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.consentPanel1.checkboxConsent1CTA"
+    },
+    {
+      "label": "<p>I hereby consent to processing of my Data for sending me personalized offers on other products and services of HDFC Bank, its affiliates and partners through Call, SMS, WhatsApp, Email or other channels in the manner described in the notice&nbsp;<b style=\"font-size: 0.8125rem;\"><u>here.</u></b><br>\n</p>\n",
+      "selector": "form.semi-form-wrapper input[type='checkbox']#checkbox-e357fb6ea9",
+      "kind": "unknown",
+      "id": "checkbox-e357fb6ea9",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.checkboxConsent2Label"
+    },
+    {
+      "label": "<p>I hereby consent to processing of my Data for sending me personalized offers on other products and services of HDFC Bank, its affiliates and partners through Call, SMS, WhatsApp, Email or other channels in the manner described in the notice&nbsp;<b style=\"font-size: 0.8125rem;\"><u>here.</u></b><br>\n</p>\n",
+      "selector": "form.semi-form-wrapper #checkbox-e357fb6ea9",
+      "kind": "unknown",
+      "id": "checkbox-e357fb6ea9",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.checkboxConsent2Label"
+    },
+    {
+      "label": "<p>I hereby consent to processing of my Data for sending me personalized offers on other products and services of HDFC Bank, its affiliates and partners through Call, SMS, WhatsApp, Email or other channels in the manner described in the notice&nbsp;<b style=\"font-size: 0.8125rem;\"><u>here.</u></b><br>\n</p>\n",
+      "selector": "form #checkbox-e357fb6ea9",
+      "kind": "unknown",
+      "id": "checkbox-e357fb6ea9",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.checkboxConsent2Label"
+    },
+    {
+      "label": "checkboxConsent2Text",
+      "selector": "form.semi-form-wrapper #text-93d7524bca",
+      "kind": "unknown",
+      "id": "text-93d7524bca",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.consentPanel2.checkboxConsent2Text"
+    },
+    {
+      "label": "checkboxConsent2Text",
+      "selector": "form #text-93d7524bca",
+      "kind": "unknown",
+      "id": "text-93d7524bca",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.consentPanel2.checkboxConsent2Text"
+    },
+    {
+      "label": "Done >>",
+      "selector": "form.semi-form-wrapper button[type='button']#button-0e8ec17231",
+      "kind": "unknown",
+      "id": "button-0e8ec17231",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.consentPanel2.checkboxConsent2CTA"
+    },
+    {
+      "label": "Done >>",
+      "selector": "form.semi-form-wrapper #button-0e8ec17231",
+      "kind": "unknown",
+      "id": "button-0e8ec17231",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.consentPanel2.checkboxConsent2CTA"
+    },
+    {
+      "label": "Done >>",
+      "selector": "form #button-0e8ec17231",
+      "kind": "unknown",
+      "id": "button-0e8ec17231",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentFragment.consentPanel2.checkboxConsent2CTA"
+    },
+    {
+      "label": "Get OTP",
+      "selector": "form.semi-form-wrapper button[type='button']#button-9e57b97869",
+      "kind": "unknown",
+      "id": "button-9e57b97869",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.getOTPbutton"
+    },
+    {
+      "label": "Get OTP",
+      "selector": "form.semi-form-wrapper #button-9e57b97869",
+      "kind": "unknown",
+      "id": "button-9e57b97869",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.getOTPbutton"
+    },
+    {
+      "label": "Get OTP",
+      "selector": "form #button-9e57b97869",
+      "kind": "unknown",
+      "id": "button-9e57b97869",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.getOTPbutton"
+    },
+    {
+      "label": "locSemiJourneyDropOffParam Flag",
+      "selector": "form.semi-form-wrapper button[type='button']#button-c90a5fd286",
+      "kind": "unknown",
+      "id": "button-c90a5fd286",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.locSemiJourneyDropOffParam"
+    },
+    {
+      "label": "locSemiJourneyDropOffParam Flag",
+      "selector": "form.semi-form-wrapper #button-c90a5fd286",
+      "kind": "unknown",
+      "id": "button-c90a5fd286",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.locSemiJourneyDropOffParam"
+    },
+    {
+      "label": "locSemiJourneyDropOffParam Flag",
+      "selector": "form #button-c90a5fd286",
+      "kind": "unknown",
+      "id": "button-c90a5fd286",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.locSemiJourneyDropOffParam"
+    },
+    {
+      "label": "locSemJourneyFlag",
+      "selector": "form.semi-form-wrapper button[type='button']#button-edaf0afd57",
+      "kind": "unknown",
+      "id": "button-edaf0afd57",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.locSemJourneyFlagValue"
+    },
+    {
+      "label": "locSemJourneyFlag",
+      "selector": "form.semi-form-wrapper #button-edaf0afd57",
+      "kind": "unknown",
+      "id": "button-edaf0afd57",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.locSemJourneyFlagValue"
+    },
+    {
+      "label": "locSemJourneyFlag",
+      "selector": "form #button-edaf0afd57",
+      "kind": "unknown",
+      "id": "button-edaf0afd57",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.locSemJourneyFlagValue"
+    },
+    {
+      "label": "aem_textdisclaimer",
+      "selector": "form.semi-form-wrapper #text-080b1bae51",
+      "kind": "unknown",
+      "id": "text-080b1bae51",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentPanel.aem_textdisclaimer"
+    },
+    {
+      "label": "aem_textdisclaimer",
+      "selector": "form #text-080b1bae51",
+      "kind": "unknown",
+      "id": "text-080b1bae51",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentPanel.aem_textdisclaimer"
+    },
+    {
+      "label": "aem_disclaimer_text",
+      "selector": "form.semi-form-wrapper #text-330f17aade",
+      "kind": "unknown",
+      "id": "text-330f17aade",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentPanel.aem_disclaimer_text"
+    },
+    {
+      "label": "aem_disclaimer_text",
+      "selector": "form #text-330f17aade",
+      "kind": "unknown",
+      "id": "text-330f17aade",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentPanel.aem_disclaimer_text"
+    },
+    {
+      "label": "err-popup-text",
+      "selector": "form.semi-form-wrapper #text-d90b376712",
+      "kind": "unknown",
+      "id": "text-d90b376712",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentPanel.landingConfirmationPopup.doYouWishToContinue.err-popup-text"
+    },
+    {
+      "label": "err-popup-text",
+      "selector": "form #text-d90b376712",
+      "kind": "unknown",
+      "id": "text-d90b376712",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentPanel.landingConfirmationPopup.doYouWishToContinue.err-popup-text"
+    },
+    {
+      "label": "Yes, Continue",
+      "selector": "form.semi-form-wrapper button[type='button']#button-2cf31ee528",
+      "kind": "unknown",
+      "id": "button-2cf31ee528",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentPanel.landingConfirmationPopup.doYouWishToContinue.err-popup-buttonConfirm"
+    },
+    {
+      "label": "Yes, Continue",
+      "selector": "form.semi-form-wrapper #button-2cf31ee528",
+      "kind": "unknown",
+      "id": "button-2cf31ee528",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentPanel.landingConfirmationPopup.doYouWishToContinue.err-popup-buttonConfirm"
+    },
+    {
+      "label": "Yes, Continue",
+      "selector": "form #button-2cf31ee528",
+      "kind": "unknown",
+      "id": "button-2cf31ee528",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentPanel.landingConfirmationPopup.doYouWishToContinue.err-popup-buttonConfirm"
+    },
+    {
+      "label": "No, Stay Here",
+      "selector": "form.semi-form-wrapper button[type='button']#button-4b8dfc41e4",
+      "kind": "unknown",
+      "id": "button-4b8dfc41e4",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentPanel.landingConfirmationPopup.doYouWishToContinue.cross-btn"
+    },
+    {
+      "label": "No, Stay Here",
+      "selector": "form.semi-form-wrapper #button-4b8dfc41e4",
+      "kind": "unknown",
+      "id": "button-4b8dfc41e4",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentPanel.landingConfirmationPopup.doYouWishToContinue.cross-btn"
+    },
+    {
+      "label": "No, Stay Here",
+      "selector": "form #button-4b8dfc41e4",
+      "kind": "unknown",
+      "id": "button-4b8dfc41e4",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.consentPanel.landingConfirmationPopup.doYouWishToContinue.cross-btn"
+    },
+    {
+      "label": "incorrectOTPTextPopup",
+      "selector": "form.semi-form-wrapper #text-f2ea2b7e88",
+      "kind": "unknown",
+      "id": "text-f2ea2b7e88",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.aem_wrongOtpPopUpWrapper.aem_wrongOtpPopUp.incorrectOTPTextPopup"
+    },
+    {
+      "label": "incorrectOTPTextPopup",
+      "selector": "form #text-f2ea2b7e88",
+      "kind": "unknown",
+      "id": "text-f2ea2b7e88",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.aem_wrongOtpPopUpWrapper.aem_wrongOtpPopUp.incorrectOTPTextPopup"
+    },
+    {
+      "label": "OK",
+      "selector": "form.semi-form-wrapper button[type='button']#button-75a1ce404f",
+      "kind": "unknown",
+      "id": "button-75a1ce404f",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.aem_wrongOtpPopUpWrapper.aem_wrongOtpPopUp.aem_wrongOtpPopUpBtn"
+    },
+    {
+      "label": "OK",
+      "selector": "form.semi-form-wrapper #button-75a1ce404f",
+      "kind": "unknown",
+      "id": "button-75a1ce404f",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.aem_wrongOtpPopUpWrapper.aem_wrongOtpPopUp.aem_wrongOtpPopUpBtn"
+    },
+    {
+      "label": "OK",
+      "selector": "form #button-75a1ce404f",
+      "kind": "unknown",
+      "id": "button-75a1ce404f",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.aem_wrongOtpPopUpWrapper.aem_wrongOtpPopUp.aem_wrongOtpPopUpBtn"
+    },
+    {
+      "label": "otpHelpText",
+      "selector": "form.semi-form-wrapper #text-7ceae31cbd",
+      "kind": "unknown",
+      "id": "text-7ceae31cbd",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.otpHelpText"
+    },
+    {
+      "label": "otpHelpText",
+      "selector": "form #text-7ceae31cbd",
+      "kind": "unknown",
+      "id": "text-7ceae31cbd",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.otpHelpText"
+    },
+    {
+      "label": "aem_otpNumber",
+      "selector": "form.semi-form-wrapper input[type='password']#telephoneinput-713ba941fc",
+      "kind": "unknown",
+      "id": "telephoneinput-713ba941fc",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.aem_otpNumber"
+    },
+    {
+      "label": "aem_otpNumber",
+      "selector": "form.semi-form-wrapper #telephoneinput-713ba941fc",
+      "kind": "unknown",
+      "id": "telephoneinput-713ba941fc",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.aem_otpNumber"
+    },
+    {
+      "label": "aem_otpNumber",
+      "selector": "form #telephoneinput-713ba941fc",
+      "kind": "unknown",
+      "id": "telephoneinput-713ba941fc",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.aem_otpNumber"
+    },
+    {
+      "label": "resendOTPlabel",
+      "selector": "form.semi-form-wrapper #text-7ffa911619",
+      "kind": "unknown",
+      "id": "text-7ffa911619",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.secondsPanel.resendOTPlabel"
+    },
+    {
+      "label": "resendOTPlabel",
+      "selector": "form #text-7ffa911619",
+      "kind": "unknown",
+      "id": "text-7ffa911619",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.secondsPanel.resendOTPlabel"
+    },
+    {
+      "label": "seconds",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-cb61aa4ba8",
+      "kind": "unknown",
+      "id": "textinput-cb61aa4ba8",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.secondsPanel.seconds"
+    },
+    {
+      "label": "seconds",
+      "selector": "form.semi-form-wrapper #textinput-cb61aa4ba8",
+      "kind": "unknown",
+      "id": "textinput-cb61aa4ba8",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.secondsPanel.seconds"
+    },
+    {
+      "label": "seconds",
+      "selector": "form #textinput-cb61aa4ba8",
+      "kind": "unknown",
+      "id": "textinput-cb61aa4ba8",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.secondsPanel.seconds"
+    },
+    {
+      "label": "secText",
+      "selector": "form.semi-form-wrapper #text-1192efdba7",
+      "kind": "unknown",
+      "id": "text-1192efdba7",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.secondsPanel.secText"
+    },
+    {
+      "label": "secText",
+      "selector": "form #text-1192efdba7",
+      "kind": "unknown",
+      "id": "text-1192efdba7",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.secondsPanel.secText"
+    },
+    {
+      "label": "aem_maxlimitOTP",
+      "selector": "form.semi-form-wrapper #text-ade94710dd",
+      "kind": "unknown",
+      "id": "text-ade94710dd",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.aem_maxlimitOTP"
+    },
+    {
+      "label": "aem_maxlimitOTP",
+      "selector": "form #text-ade94710dd",
+      "kind": "unknown",
+      "id": "text-ade94710dd",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.aem_maxlimitOTP"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form.semi-form-wrapper button[type='button']#button-329b2fdabc",
+      "kind": "unknown",
+      "id": "button-329b2fdabc",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.aem_otpResend"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form.semi-form-wrapper #button-329b2fdabc",
+      "kind": "unknown",
+      "id": "button-329b2fdabc",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.aem_otpResend"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form #button-329b2fdabc",
+      "kind": "unknown",
+      "id": "button-329b2fdabc",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.aem_otpResend"
+    },
+    {
+      "label": "Submit OTP",
+      "selector": "form.semi-form-wrapper button[type='button']#button-c64e955ffd",
+      "kind": "unknown",
+      "id": "button-c64e955ffd",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.aem_submitOtp"
+    },
+    {
+      "label": "Submit OTP",
+      "selector": "form.semi-form-wrapper #button-c64e955ffd",
+      "kind": "unknown",
+      "id": "button-c64e955ffd",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.aem_submitOtp"
+    },
+    {
+      "label": "Submit OTP",
+      "selector": "form #button-c64e955ffd",
+      "kind": "unknown",
+      "id": "button-c64e955ffd",
+      "qname": "$form.aem_semiWizard.aem_identifierPanel.aem_otpPanel.otpPanel.aem_submitOtp"
+    },
+    {
+      "label": "aem_smartToolTip",
+      "selector": "form.semi-form-wrapper #text-17150d0f38",
+      "kind": "unknown",
+      "id": "text-17150d0f38",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_smartToolTip"
+    },
+    {
+      "label": "aem_smartToolTip",
+      "selector": "form #text-17150d0f38",
+      "kind": "unknown",
+      "id": "text-17150d0f38",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_smartToolTip"
+    },
+    {
+      "label": "aem_txnsSummaryHeadingText",
+      "selector": "form.semi-form-wrapper #text-8bc80146ef",
+      "kind": "unknown",
+      "id": "text-8bc80146ef",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryPopupWrapper.aem_txnsSummaryPopup.aem_txnsSummaryHeadingText"
+    },
+    {
+      "label": "aem_txnsSummaryHeadingText",
+      "selector": "form #text-8bc80146ef",
+      "kind": "unknown",
+      "id": "text-8bc80146ef",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryPopupWrapper.aem_txnsSummaryPopup.aem_txnsSummaryHeadingText"
+    },
+    {
+      "label": "aem_txnsSummaryText1",
+      "selector": "form.semi-form-wrapper #text-1dc624b697",
+      "kind": "unknown",
+      "id": "text-1dc624b697",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryPopupWrapper.aem_txnsSummaryPopup.aem_txnsSummaryText1"
+    },
+    {
+      "label": "aem_txnsSummaryText1",
+      "selector": "form #text-1dc624b697",
+      "kind": "unknown",
+      "id": "text-1dc624b697",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryPopupWrapper.aem_txnsSummaryPopup.aem_txnsSummaryText1"
+    },
+    {
+      "label": "aem_txnsSummaryText2",
+      "selector": "form.semi-form-wrapper #text-a1d8e30315",
+      "kind": "unknown",
+      "id": "text-a1d8e30315",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryPopupWrapper.aem_txnsSummaryPopup.aem_txnsSummaryText2"
+    },
+    {
+      "label": "aem_txnsSummaryText2",
+      "selector": "form #text-a1d8e30315",
+      "kind": "unknown",
+      "id": "text-a1d8e30315",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryPopupWrapper.aem_txnsSummaryPopup.aem_txnsSummaryText2"
+    },
+    {
+      "label": "aem_txnsSummaryText3",
+      "selector": "form.semi-form-wrapper #text-4a4cd55641",
+      "kind": "unknown",
+      "id": "text-4a4cd55641",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryPopupWrapper.aem_txnsSummaryPopup.aem_txnsSummaryText3"
+    },
+    {
+      "label": "aem_txnsSummaryText3",
+      "selector": "form #text-4a4cd55641",
+      "kind": "unknown",
+      "id": "text-4a4cd55641",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryPopupWrapper.aem_txnsSummaryPopup.aem_txnsSummaryText3"
+    },
+    {
+      "label": "OK",
+      "selector": "form.semi-form-wrapper button[type='button']#button-1825e6f586",
+      "kind": "unknown",
+      "id": "button-1825e6f586",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryPopupWrapper.aem_txnsSummaryPopup.aem_txnsSummaryok"
+    },
+    {
+      "label": "OK",
+      "selector": "form.semi-form-wrapper #button-1825e6f586",
+      "kind": "unknown",
+      "id": "button-1825e6f586",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryPopupWrapper.aem_txnsSummaryPopup.aem_txnsSummaryok"
+    },
+    {
+      "label": "OK",
+      "selector": "form #button-1825e6f586",
+      "kind": "unknown",
+      "id": "button-1825e6f586",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryPopupWrapper.aem_txnsSummaryPopup.aem_txnsSummaryok"
+    },
+    {
+      "label": "aem_eligibleTxnLabel",
+      "selector": "form.semi-form-wrapper #text-e5230703ef",
+      "kind": "unknown",
+      "id": "text-e5230703ef",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_transactionsInfoPanel.aem_eligibleTxnLabel"
+    },
+    {
+      "label": "aem_eligibleTxnLabel",
+      "selector": "form #text-e5230703ef",
+      "kind": "unknown",
+      "id": "text-e5230703ef",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_transactionsInfoPanel.aem_eligibleTxnLabel"
+    },
+    {
+      "label": "Select Top 10",
+      "selector": "form.semi-form-wrapper button[type='button']#button-6e70d21d59",
+      "kind": "unknown",
+      "id": "button-6e70d21d59",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_transactionsInfoPanel.aem_selectTop10Txt"
+    },
+    {
+      "label": "Select Top 10",
+      "selector": "form.semi-form-wrapper #button-6e70d21d59",
+      "kind": "unknown",
+      "id": "button-6e70d21d59",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_transactionsInfoPanel.aem_selectTop10Txt"
+    },
+    {
+      "label": "Select Top 10",
+      "selector": "form #button-6e70d21d59",
+      "kind": "unknown",
+      "id": "button-6e70d21d59",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_transactionsInfoPanel.aem_selectTop10Txt"
+    },
+    {
+      "label": "aem_TotalSelectedTxt",
+      "selector": "form.semi-form-wrapper #text-c9566dee9d",
+      "kind": "unknown",
+      "id": "text-c9566dee9d",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_transactionsInfoPanel.aem_TotalSelectedTxt"
+    },
+    {
+      "label": "aem_TotalSelectedTxt",
+      "selector": "form #text-c9566dee9d",
+      "kind": "unknown",
+      "id": "text-c9566dee9d",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_transactionsInfoPanel.aem_TotalSelectedTxt"
+    },
+    {
+      "label": "aem_selectTxnTitle",
+      "selector": "form.semi-form-wrapper #text-92d7e2d053",
+      "kind": "unknown",
+      "id": "text-92d7e2d053",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_selectTxnTitle"
+    },
+    {
+      "label": "aem_selectTxnTitle",
+      "selector": "form #text-92d7e2d053",
+      "kind": "unknown",
+      "id": "text-92d7e2d053",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_selectTxnTitle"
+    },
+    {
+      "label": "aem_TxnAvailable",
+      "selector": "form.semi-form-wrapper #text-bd6534c4fb",
+      "kind": "unknown",
+      "id": "text-bd6534c4fb",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_TxnAvailable"
+    },
+    {
+      "label": "aem_TxnAvailable",
+      "selector": "form #text-bd6534c4fb",
+      "kind": "unknown",
+      "id": "text-bd6534c4fb",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_TxnAvailable"
+    },
+    {
+      "label": "aem_txnSelected",
+      "selector": "form.semi-form-wrapper #text-2af5255029",
+      "kind": "unknown",
+      "id": "text-2af5255029",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_txnSelected"
+    },
+    {
+      "label": "aem_txnSelected",
+      "selector": "form #text-2af5255029",
+      "kind": "unknown",
+      "id": "text-2af5255029",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_txnSelected"
+    },
+    {
+      "label": "aem_txnSortDD",
+      "selector": "form.semi-form-wrapper select#dropdown-112a54d9c8",
+      "kind": "unknown",
+      "id": "dropdown-112a54d9c8",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_txnSortDD"
+    },
+    {
+      "label": "aem_txnSortDD",
+      "selector": "form.semi-form-wrapper #dropdown-112a54d9c8",
+      "kind": "unknown",
+      "id": "dropdown-112a54d9c8",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_txnSortDD"
+    },
+    {
+      "label": "aem_txnSortDD",
+      "selector": "form #dropdown-112a54d9c8",
+      "kind": "unknown",
+      "id": "dropdown-112a54d9c8",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_txnSortDD"
+    },
+    {
+      "label": "expand_Btn",
+      "selector": "form.semi-form-wrapper button[type='button']#button-b825aa7b91",
+      "kind": "unknown",
+      "id": "button-b825aa7b91",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.expand_Btn"
+    },
+    {
+      "label": "expand_Btn",
+      "selector": "form.semi-form-wrapper #button-b825aa7b91",
+      "kind": "unknown",
+      "id": "button-b825aa7b91",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.expand_Btn"
+    },
+    {
+      "label": "expand_Btn",
+      "selector": "form #button-b825aa7b91",
+      "kind": "unknown",
+      "id": "button-b825aa7b91",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.expand_Btn"
+    },
+    {
+      "label": "aem_Txn_checkBox",
+      "selector": "form.semi-form-wrapper input[type='checkbox']#checkbox-8d0869c6ab",
+      "kind": "unknown",
+      "id": "checkbox-8d0869c6ab",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_Txn_checkBox"
+    },
+    {
+      "label": "aem_Txn_checkBox",
+      "selector": "form.semi-form-wrapper #checkbox-8d0869c6ab",
+      "kind": "unknown",
+      "id": "checkbox-8d0869c6ab",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_Txn_checkBox"
+    },
+    {
+      "label": "aem_Txn_checkBox",
+      "selector": "form #checkbox-8d0869c6ab",
+      "kind": "unknown",
+      "id": "checkbox-8d0869c6ab",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_Txn_checkBox"
+    },
+    {
+      "label": "aem_TxnName",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-c6ab14536c",
+      "kind": "unknown",
+      "id": "textinput-c6ab14536c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnName"
+    },
+    {
+      "label": "aem_TxnName",
+      "selector": "form.semi-form-wrapper #textinput-c6ab14536c",
+      "kind": "unknown",
+      "id": "textinput-c6ab14536c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnName"
+    },
+    {
+      "label": "aem_TxnName",
+      "selector": "form #textinput-c6ab14536c",
+      "kind": "unknown",
+      "id": "textinput-c6ab14536c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnName"
+    },
+    {
+      "label": "aem_TxnID",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-2af2cc407d",
+      "kind": "unknown",
+      "id": "textinput-2af2cc407d",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnID"
+    },
+    {
+      "label": "aem_TxnID",
+      "selector": "form.semi-form-wrapper #textinput-2af2cc407d",
+      "kind": "unknown",
+      "id": "textinput-2af2cc407d",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnID"
+    },
+    {
+      "label": "aem_TxnID",
+      "selector": "form #textinput-2af2cc407d",
+      "kind": "unknown",
+      "id": "textinput-2af2cc407d",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnID"
+    },
+    {
+      "label": "aem_TxnDate",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-efb75372cf",
+      "kind": "unknown",
+      "id": "textinput-efb75372cf",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnDate"
+    },
+    {
+      "label": "aem_TxnDate",
+      "selector": "form.semi-form-wrapper #textinput-efb75372cf",
+      "kind": "unknown",
+      "id": "textinput-efb75372cf",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnDate"
+    },
+    {
+      "label": "aem_TxnDate",
+      "selector": "form #textinput-efb75372cf",
+      "kind": "unknown",
+      "id": "textinput-efb75372cf",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnDate"
+    },
+    {
+      "label": "aem_TxnAmt",
+      "selector": "form.semi-form-wrapper input[type='text']#numberinput-2c94dea319",
+      "kind": "unknown",
+      "id": "numberinput-2c94dea319",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnAmt"
+    },
+    {
+      "label": "aem_TxnAmt",
+      "selector": "form.semi-form-wrapper #numberinput-2c94dea319",
+      "kind": "unknown",
+      "id": "numberinput-2c94dea319",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnAmt"
+    },
+    {
+      "label": "aem_TxnAmt",
+      "selector": "form #numberinput-2c94dea319",
+      "kind": "unknown",
+      "id": "numberinput-2c94dea319",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnAmt"
+    },
+    {
+      "label": "authCode",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-6abd220e1f",
+      "kind": "unknown",
+      "id": "textinput-6abd220e1f",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].authCode"
+    },
+    {
+      "label": "authCode",
+      "selector": "form.semi-form-wrapper #textinput-6abd220e1f",
+      "kind": "unknown",
+      "id": "textinput-6abd220e1f",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].authCode"
+    },
+    {
+      "label": "authCode",
+      "selector": "form #textinput-6abd220e1f",
+      "kind": "unknown",
+      "id": "textinput-6abd220e1f",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].authCode"
+    },
+    {
+      "label": "logicMod",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-01e801e03c",
+      "kind": "unknown",
+      "id": "textinput-01e801e03c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].logicMod"
+    },
+    {
+      "label": "logicMod",
+      "selector": "form.semi-form-wrapper #textinput-01e801e03c",
+      "kind": "unknown",
+      "id": "textinput-01e801e03c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].logicMod"
+    },
+    {
+      "label": "logicMod",
+      "selector": "form #textinput-01e801e03c",
+      "kind": "unknown",
+      "id": "textinput-01e801e03c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].logicMod"
+    },
+    {
+      "label": "aem_txn_type",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-9a22844fe4",
+      "kind": "unknown",
+      "id": "textinput-9a22844fe4",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_txn_type"
+    },
+    {
+      "label": "aem_txn_type",
+      "selector": "form.semi-form-wrapper #textinput-9a22844fe4",
+      "kind": "unknown",
+      "id": "textinput-9a22844fe4",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_txn_type"
+    },
+    {
+      "label": "aem_txn_type",
+      "selector": "form #textinput-9a22844fe4",
+      "kind": "unknown",
+      "id": "textinput-9a22844fe4",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_txn_type"
+    },
+    {
+      "label": "txnmaxreachederror",
+      "selector": "form.semi-form-wrapper #text-e3a2089982",
+      "kind": "unknown",
+      "id": "text-e3a2089982",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.txnmaxreachederror"
+    },
+    {
+      "label": "txnmaxreachederror",
+      "selector": "form #text-e3a2089982",
+      "kind": "unknown",
+      "id": "text-e3a2089982",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.billedTxnFragment.txnmaxreachederror"
+    },
+    {
+      "label": "aem_TxnAvailable",
+      "selector": "form.semi-form-wrapper #text-b487552152",
+      "kind": "unknown",
+      "id": "text-b487552152",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_TxnAvailable"
+    },
+    {
+      "label": "aem_TxnAvailable",
+      "selector": "form #text-b487552152",
+      "kind": "unknown",
+      "id": "text-b487552152",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_TxnAvailable"
+    },
+    {
+      "label": "aem_txnSelected",
+      "selector": "form.semi-form-wrapper #text-6ad856d9bd",
+      "kind": "unknown",
+      "id": "text-6ad856d9bd",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_txnSelected"
+    },
+    {
+      "label": "aem_txnSelected",
+      "selector": "form #text-6ad856d9bd",
+      "kind": "unknown",
+      "id": "text-6ad856d9bd",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_txnSelected"
+    },
+    {
+      "label": "aem_txnSortDD",
+      "selector": "form.semi-form-wrapper select#dropdown-cf8c187497",
+      "kind": "unknown",
+      "id": "dropdown-cf8c187497",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_txnSortDD"
+    },
+    {
+      "label": "aem_txnSortDD",
+      "selector": "form.semi-form-wrapper #dropdown-cf8c187497",
+      "kind": "unknown",
+      "id": "dropdown-cf8c187497",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_txnSortDD"
+    },
+    {
+      "label": "aem_txnSortDD",
+      "selector": "form #dropdown-cf8c187497",
+      "kind": "unknown",
+      "id": "dropdown-cf8c187497",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.aem_txnSortDD"
+    },
+    {
+      "label": "expand_Btn",
+      "selector": "form.semi-form-wrapper button[type='button']#button-0b831cd1ef",
+      "kind": "unknown",
+      "id": "button-0b831cd1ef",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.expand_Btn"
+    },
+    {
+      "label": "expand_Btn",
+      "selector": "form.semi-form-wrapper #button-0b831cd1ef",
+      "kind": "unknown",
+      "id": "button-0b831cd1ef",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.expand_Btn"
+    },
+    {
+      "label": "expand_Btn",
+      "selector": "form #button-0b831cd1ef",
+      "kind": "unknown",
+      "id": "button-0b831cd1ef",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_txnHeaderPanel.expand_Btn"
+    },
+    {
+      "label": "aem_Txn_checkBox",
+      "selector": "form.semi-form-wrapper input[type='checkbox']#checkbox-8870e1124c",
+      "kind": "unknown",
+      "id": "checkbox-8870e1124c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_Txn_checkBox"
+    },
+    {
+      "label": "aem_Txn_checkBox",
+      "selector": "form.semi-form-wrapper #checkbox-8870e1124c",
+      "kind": "unknown",
+      "id": "checkbox-8870e1124c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_Txn_checkBox"
+    },
+    {
+      "label": "aem_Txn_checkBox",
+      "selector": "form #checkbox-8870e1124c",
+      "kind": "unknown",
+      "id": "checkbox-8870e1124c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_Txn_checkBox"
+    },
+    {
+      "label": "aem_TxnName",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-bc98499cb5",
+      "kind": "unknown",
+      "id": "textinput-bc98499cb5",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnName"
+    },
+    {
+      "label": "aem_TxnName",
+      "selector": "form.semi-form-wrapper #textinput-bc98499cb5",
+      "kind": "unknown",
+      "id": "textinput-bc98499cb5",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnName"
+    },
+    {
+      "label": "aem_TxnName",
+      "selector": "form #textinput-bc98499cb5",
+      "kind": "unknown",
+      "id": "textinput-bc98499cb5",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnName"
+    },
+    {
+      "label": "aem_TxnID",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-ea043c394e",
+      "kind": "unknown",
+      "id": "textinput-ea043c394e",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnID"
+    },
+    {
+      "label": "aem_TxnID",
+      "selector": "form.semi-form-wrapper #textinput-ea043c394e",
+      "kind": "unknown",
+      "id": "textinput-ea043c394e",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnID"
+    },
+    {
+      "label": "aem_TxnID",
+      "selector": "form #textinput-ea043c394e",
+      "kind": "unknown",
+      "id": "textinput-ea043c394e",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnID"
+    },
+    {
+      "label": "aem_TxnDate",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-141f5bc36b",
+      "kind": "unknown",
+      "id": "textinput-141f5bc36b",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnDate"
+    },
+    {
+      "label": "aem_TxnDate",
+      "selector": "form.semi-form-wrapper #textinput-141f5bc36b",
+      "kind": "unknown",
+      "id": "textinput-141f5bc36b",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnDate"
+    },
+    {
+      "label": "aem_TxnDate",
+      "selector": "form #textinput-141f5bc36b",
+      "kind": "unknown",
+      "id": "textinput-141f5bc36b",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnDate"
+    },
+    {
+      "label": "aem_TxnAmt",
+      "selector": "form.semi-form-wrapper input[type='text']#numberinput-355636c7a8",
+      "kind": "unknown",
+      "id": "numberinput-355636c7a8",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnAmt"
+    },
+    {
+      "label": "aem_TxnAmt",
+      "selector": "form.semi-form-wrapper #numberinput-355636c7a8",
+      "kind": "unknown",
+      "id": "numberinput-355636c7a8",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnAmt"
+    },
+    {
+      "label": "aem_TxnAmt",
+      "selector": "form #numberinput-355636c7a8",
+      "kind": "unknown",
+      "id": "numberinput-355636c7a8",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_TxnAmt"
+    },
+    {
+      "label": "aem_txn_type",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-9527075b8d",
+      "kind": "unknown",
+      "id": "textinput-9527075b8d",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_txn_type"
+    },
+    {
+      "label": "aem_txn_type",
+      "selector": "form.semi-form-wrapper #textinput-9527075b8d",
+      "kind": "unknown",
+      "id": "textinput-9527075b8d",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_txn_type"
+    },
+    {
+      "label": "aem_txn_type",
+      "selector": "form #textinput-9527075b8d",
+      "kind": "unknown",
+      "id": "textinput-9527075b8d",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].aem_txn_type"
+    },
+    {
+      "label": "logicMod",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-2c3f79c652",
+      "kind": "unknown",
+      "id": "textinput-2c3f79c652",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].logicMod"
+    },
+    {
+      "label": "logicMod",
+      "selector": "form.semi-form-wrapper #textinput-2c3f79c652",
+      "kind": "unknown",
+      "id": "textinput-2c3f79c652",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].logicMod"
+    },
+    {
+      "label": "logicMod",
+      "selector": "form #textinput-2c3f79c652",
+      "kind": "unknown",
+      "id": "textinput-2c3f79c652",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].logicMod"
+    },
+    {
+      "label": "authCode",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-b8dccda175",
+      "kind": "unknown",
+      "id": "textinput-b8dccda175",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].authCode"
+    },
+    {
+      "label": "authCode",
+      "selector": "form.semi-form-wrapper #textinput-b8dccda175",
+      "kind": "unknown",
+      "id": "textinput-b8dccda175",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].authCode"
+    },
+    {
+      "label": "authCode",
+      "selector": "form #textinput-b8dccda175",
+      "kind": "unknown",
+      "id": "textinput-b8dccda175",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.unbilledTxnFragment.aem_chooseTransactions.aem_TxnsList[0].authCode"
+    },
+    {
+      "label": "aem_txtSelectionConfirmation",
+      "selector": "form.semi-form-wrapper #text-40a4a6201c",
+      "kind": "unknown",
+      "id": "text-40a4a6201c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txtSelectionPopupWrapper.aem_txtSelectionPopup.aem_txtSelectionConfirmation"
+    },
+    {
+      "label": "aem_txtSelectionConfirmation",
+      "selector": "form #text-40a4a6201c",
+      "kind": "unknown",
+      "id": "text-40a4a6201c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txtSelectionPopupWrapper.aem_txtSelectionPopup.aem_txtSelectionConfirmation"
+    },
+    {
+      "label": "aem_txtSelectionConfirmation1",
+      "selector": "form.semi-form-wrapper #text-4251c4776f",
+      "kind": "unknown",
+      "id": "text-4251c4776f",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txtSelectionPopupWrapper.aem_txtSelectionPopup.aem_txtSelectionConfirmation1"
+    },
+    {
+      "label": "aem_txtSelectionConfirmation1",
+      "selector": "form #text-4251c4776f",
+      "kind": "unknown",
+      "id": "text-4251c4776f",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txtSelectionPopupWrapper.aem_txtSelectionPopup.aem_txtSelectionConfirmation1"
+    },
+    {
+      "label": "OK",
+      "selector": "form.semi-form-wrapper button[type='button']#button-2c1a4b4c34",
+      "kind": "unknown",
+      "id": "button-2c1a4b4c34",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txtSelectionPopupWrapper.aem_txtSelectionPopup.aem_txtSelectionConfirmationButton"
+    },
+    {
+      "label": "OK",
+      "selector": "form.semi-form-wrapper #button-2c1a4b4c34",
+      "kind": "unknown",
+      "id": "button-2c1a4b4c34",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txtSelectionPopupWrapper.aem_txtSelectionPopup.aem_txtSelectionConfirmationButton"
+    },
+    {
+      "label": "OK",
+      "selector": "form #button-2c1a4b4c34",
+      "kind": "unknown",
+      "id": "button-2c1a4b4c34",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txtSelectionPopupWrapper.aem_txtSelectionPopup.aem_txtSelectionConfirmationButton"
+    },
+    {
+      "label": "Navive WhatsApp",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-e632ff836c",
+      "kind": "unknown",
+      "id": "textinput-e632ff836c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.nativeWhatsApp"
+    },
+    {
+      "label": "Navive WhatsApp",
+      "selector": "form.semi-form-wrapper #textinput-e632ff836c",
+      "kind": "unknown",
+      "id": "textinput-e632ff836c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.nativeWhatsApp"
+    },
+    {
+      "label": "Navive WhatsApp",
+      "selector": "form #textinput-e632ff836c",
+      "kind": "unknown",
+      "id": "textinput-e632ff836c",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.nativeWhatsApp"
+    },
+    {
+      "label": "Hidden Billed Total Amount",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-55798566dd",
+      "kind": "unknown",
+      "id": "textinput-55798566dd",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.hiddenBilledTotal"
+    },
+    {
+      "label": "Hidden Billed Total Amount",
+      "selector": "form.semi-form-wrapper #textinput-55798566dd",
+      "kind": "unknown",
+      "id": "textinput-55798566dd",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.hiddenBilledTotal"
+    },
+    {
+      "label": "Hidden Billed Total Amount",
+      "selector": "form #textinput-55798566dd",
+      "kind": "unknown",
+      "id": "textinput-55798566dd",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.hiddenBilledTotal"
+    },
+    {
+      "label": "Hidden UnBilled Total Amount",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-723623334d",
+      "kind": "unknown",
+      "id": "textinput-723623334d",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.hiddenUnBilledTotal"
+    },
+    {
+      "label": "Hidden UnBilled Total Amount",
+      "selector": "form.semi-form-wrapper #textinput-723623334d",
+      "kind": "unknown",
+      "id": "textinput-723623334d",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.hiddenUnBilledTotal"
+    },
+    {
+      "label": "Hidden UnBilled Total Amount",
+      "selector": "form #textinput-723623334d",
+      "kind": "unknown",
+      "id": "textinput-723623334d",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.hiddenUnBilledTotal"
+    },
+    {
+      "label": "HIDDEN TRANSACTION TYPE",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-acbf1b6933",
+      "kind": "unknown",
+      "id": "textinput-acbf1b6933",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.combinedTransactionType"
+    },
+    {
+      "label": "HIDDEN TRANSACTION TYPE",
+      "selector": "form.semi-form-wrapper #textinput-acbf1b6933",
+      "kind": "unknown",
+      "id": "textinput-acbf1b6933",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.combinedTransactionType"
+    },
+    {
+      "label": "HIDDEN TRANSACTION TYPE",
+      "selector": "form #textinput-acbf1b6933",
+      "kind": "unknown",
+      "id": "textinput-acbf1b6933",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.combinedTransactionType"
+    },
+    {
+      "label": "Check EMI",
+      "selector": "form.semi-form-wrapper button[type='button']#button-cd2dd82924",
+      "kind": "unknown",
+      "id": "button-cd2dd82924",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnSelectionContinue"
+    },
+    {
+      "label": "Check EMI",
+      "selector": "form.semi-form-wrapper #button-cd2dd82924",
+      "kind": "unknown",
+      "id": "button-cd2dd82924",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnSelectionContinue"
+    },
+    {
+      "label": "Check EMI",
+      "selector": "form #button-cd2dd82924",
+      "kind": "unknown",
+      "id": "button-cd2dd82924",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnSelectionContinue"
+    },
+    {
+      "label": "aem_txnsSummaryText",
+      "selector": "form.semi-form-wrapper #text-2cc53cbca1",
+      "kind": "unknown",
+      "id": "text-2cc53cbca1",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryText"
+    },
+    {
+      "label": "aem_txnsSummaryText",
+      "selector": "form #text-2cc53cbca1",
+      "kind": "unknown",
+      "id": "text-2cc53cbca1",
+      "qname": "$form.aem_semiWizard.aem_chooseTransactions.aem_txnsSummaryText"
+    },
+    {
+      "label": "aem_flowTotalAmountSelectedText",
+      "selector": "form.semi-form-wrapper #text-dc33c66e75",
+      "kind": "unknown",
+      "id": "text-dc33c66e75",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_flowTotalAmountSelectedText"
+    },
+    {
+      "label": "aem_flowTotalAmountSelectedText",
+      "selector": "form #text-dc33c66e75",
+      "kind": "unknown",
+      "id": "text-dc33c66e75",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_flowTotalAmountSelectedText"
+    },
+    {
+      "label": "aem_flowDisplayTotalAmountSelected",
+      "selector": "form.semi-form-wrapper #text-8c27ef368a",
+      "kind": "unknown",
+      "id": "text-8c27ef368a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_flowDisplayTotalAmountSelected"
+    },
+    {
+      "label": "aem_flowDisplayTotalAmountSelected",
+      "selector": "form #text-8c27ef368a",
+      "kind": "unknown",
+      "id": "text-8c27ef368a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_flowDisplayTotalAmountSelected"
+    },
+    {
+      "label": "aem_emiDurationLabel",
+      "selector": "form.semi-form-wrapper #text-500e920658",
+      "kind": "unknown",
+      "id": "text-500e920658",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_emiDurationLabel"
+    },
+    {
+      "label": "aem_emiDurationLabel",
+      "selector": "form #text-500e920658",
+      "kind": "unknown",
+      "id": "text-500e920658",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_emiDurationLabel"
+    },
+    {
+      "label": "tenure_header1",
+      "selector": "form.semi-form-wrapper #text-f2bab20694",
+      "kind": "unknown",
+      "id": "text-f2bab20694",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionHeaderPanel.tenure_header1"
+    },
+    {
+      "label": "tenure_header1",
+      "selector": "form #text-f2bab20694",
+      "kind": "unknown",
+      "id": "text-f2bab20694",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionHeaderPanel.tenure_header1"
+    },
+    {
+      "label": "tenure_header2",
+      "selector": "form.semi-form-wrapper #text-17041a56f6",
+      "kind": "unknown",
+      "id": "text-17041a56f6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionHeaderPanel.tenure_header2"
+    },
+    {
+      "label": "tenure_header2",
+      "selector": "form #text-17041a56f6",
+      "kind": "unknown",
+      "id": "text-17041a56f6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionHeaderPanel.tenure_header2"
+    },
+    {
+      "label": "tenure_header3",
+      "selector": "form.semi-form-wrapper #text-2b2406ca33",
+      "kind": "unknown",
+      "id": "text-2b2406ca33",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionHeaderPanel.tenure_header3"
+    },
+    {
+      "label": "tenure_header3",
+      "selector": "form #text-2b2406ca33",
+      "kind": "unknown",
+      "id": "text-2b2406ca33",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionHeaderPanel.tenure_header3"
+    },
+    {
+      "label": "tenure_header4",
+      "selector": "form.semi-form-wrapper #text-3e59e46085",
+      "kind": "unknown",
+      "id": "text-3e59e46085",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionHeaderPanel.tenure_header4"
+    },
+    {
+      "label": "tenure_header4",
+      "selector": "form #text-3e59e46085",
+      "kind": "unknown",
+      "id": "text-3e59e46085",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionHeaderPanel.tenure_header4"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form.semi-form-wrapper fieldset#radiobutton-04673bf6ee",
+      "kind": "unknown",
+      "id": "radiobutton-04673bf6ee",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form.semi-form-wrapper #radiobutton-04673bf6ee",
+      "kind": "unknown",
+      "id": "radiobutton-04673bf6ee",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form #radiobutton-04673bf6ee",
+      "kind": "unknown",
+      "id": "radiobutton-04673bf6ee",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-202bb47098",
+      "kind": "unknown",
+      "id": "textinput-202bb47098",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form.semi-form-wrapper #textinput-202bb47098",
+      "kind": "unknown",
+      "id": "textinput-202bb47098",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form #textinput-202bb47098",
+      "kind": "unknown",
+      "id": "textinput-202bb47098",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form.semi-form-wrapper input[type='text']#numberinput-0a311c3c9a",
+      "kind": "unknown",
+      "id": "numberinput-0a311c3c9a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form.semi-form-wrapper #numberinput-0a311c3c9a",
+      "kind": "unknown",
+      "id": "numberinput-0a311c3c9a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form #numberinput-0a311c3c9a",
+      "kind": "unknown",
+      "id": "numberinput-0a311c3c9a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form.semi-form-wrapper input[type='text']#numberinput-e08615f5d5",
+      "kind": "unknown",
+      "id": "numberinput-e08615f5d5",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form.semi-form-wrapper #numberinput-e08615f5d5",
+      "kind": "unknown",
+      "id": "numberinput-e08615f5d5",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form #numberinput-e08615f5d5",
+      "kind": "unknown",
+      "id": "numberinput-e08615f5d5",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-98789b928c",
+      "kind": "unknown",
+      "id": "textinput-98789b928c",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form.semi-form-wrapper #textinput-98789b928c",
+      "kind": "unknown",
+      "id": "textinput-98789b928c",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form #textinput-98789b928c",
+      "kind": "unknown",
+      "id": "textinput-98789b928c",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-733c277dd3",
+      "kind": "unknown",
+      "id": "textinput-733c277dd3",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_roi_monthly"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form.semi-form-wrapper #textinput-733c277dd3",
+      "kind": "unknown",
+      "id": "textinput-733c277dd3",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_roi_monthly"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form #textinput-733c277dd3",
+      "kind": "unknown",
+      "id": "textinput-733c277dd3",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_roi_monthly"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-707b9013d5",
+      "kind": "unknown",
+      "id": "textinput-707b9013d5",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form.semi-form-wrapper #textinput-707b9013d5",
+      "kind": "unknown",
+      "id": "textinput-707b9013d5",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form #textinput-707b9013d5",
+      "kind": "unknown",
+      "id": "textinput-707b9013d5",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[0].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form.semi-form-wrapper fieldset#CAyrjYVp6XE",
+      "kind": "unknown",
+      "id": "CAyrjYVp6XE",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form.semi-form-wrapper #CAyrjYVp6XE",
+      "kind": "unknown",
+      "id": "CAyrjYVp6XE",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form #CAyrjYVp6XE",
+      "kind": "unknown",
+      "id": "CAyrjYVp6XE",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form.semi-form-wrapper input[type='text']#dQ23YRccetC",
+      "kind": "unknown",
+      "id": "dQ23YRccetC",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form.semi-form-wrapper #dQ23YRccetC",
+      "kind": "unknown",
+      "id": "dQ23YRccetC",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form #dQ23YRccetC",
+      "kind": "unknown",
+      "id": "dQ23YRccetC",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form.semi-form-wrapper input[type='text']#DTiyYZqsXbz",
+      "kind": "unknown",
+      "id": "DTiyYZqsXbz",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form.semi-form-wrapper #DTiyYZqsXbz",
+      "kind": "unknown",
+      "id": "DTiyYZqsXbz",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form #DTiyYZqsXbz",
+      "kind": "unknown",
+      "id": "DTiyYZqsXbz",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form.semi-form-wrapper input[type='text']#WKDD9r4ImLe",
+      "kind": "unknown",
+      "id": "WKDD9r4ImLe",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form.semi-form-wrapper #WKDD9r4ImLe",
+      "kind": "unknown",
+      "id": "WKDD9r4ImLe",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form #WKDD9r4ImLe",
+      "kind": "unknown",
+      "id": "WKDD9r4ImLe",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form.semi-form-wrapper input[type='text']#cbMwOKc2kRM",
+      "kind": "unknown",
+      "id": "cbMwOKc2kRM",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form.semi-form-wrapper #cbMwOKc2kRM",
+      "kind": "unknown",
+      "id": "cbMwOKc2kRM",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form #cbMwOKc2kRM",
+      "kind": "unknown",
+      "id": "cbMwOKc2kRM",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form.semi-form-wrapper input[type='text']#pfbOXKTg_tn",
+      "kind": "unknown",
+      "id": "pfbOXKTg_tn",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_roi_monthly"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form.semi-form-wrapper #pfbOXKTg_tn",
+      "kind": "unknown",
+      "id": "pfbOXKTg_tn",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_roi_monthly"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form #pfbOXKTg_tn",
+      "kind": "unknown",
+      "id": "pfbOXKTg_tn",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_roi_monthly"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form.semi-form-wrapper input[type='text']#rHl7vj1d6lv",
+      "kind": "unknown",
+      "id": "rHl7vj1d6lv",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form.semi-form-wrapper #rHl7vj1d6lv",
+      "kind": "unknown",
+      "id": "rHl7vj1d6lv",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form #rHl7vj1d6lv",
+      "kind": "unknown",
+      "id": "rHl7vj1d6lv",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[1].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form.semi-form-wrapper fieldset#eEwcwxqxIF7",
+      "kind": "unknown",
+      "id": "eEwcwxqxIF7",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form.semi-form-wrapper #eEwcwxqxIF7",
+      "kind": "unknown",
+      "id": "eEwcwxqxIF7",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form #eEwcwxqxIF7",
+      "kind": "unknown",
+      "id": "eEwcwxqxIF7",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form.semi-form-wrapper input[type='text']#fB7hGcfdJ7p",
+      "kind": "unknown",
+      "id": "fB7hGcfdJ7p",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form.semi-form-wrapper #fB7hGcfdJ7p",
+      "kind": "unknown",
+      "id": "fB7hGcfdJ7p",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form #fB7hGcfdJ7p",
+      "kind": "unknown",
+      "id": "fB7hGcfdJ7p",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form.semi-form-wrapper input[type='text']#YJVIPuCPQjp",
+      "kind": "unknown",
+      "id": "YJVIPuCPQjp",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form.semi-form-wrapper #YJVIPuCPQjp",
+      "kind": "unknown",
+      "id": "YJVIPuCPQjp",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form #YJVIPuCPQjp",
+      "kind": "unknown",
+      "id": "YJVIPuCPQjp",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form.semi-form-wrapper input[type='text']#cRssl8uS0hq",
+      "kind": "unknown",
+      "id": "cRssl8uS0hq",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form.semi-form-wrapper #cRssl8uS0hq",
+      "kind": "unknown",
+      "id": "cRssl8uS0hq",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form #cRssl8uS0hq",
+      "kind": "unknown",
+      "id": "cRssl8uS0hq",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form.semi-form-wrapper input[type='text']#RBn23A0gXTF",
+      "kind": "unknown",
+      "id": "RBn23A0gXTF",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form.semi-form-wrapper #RBn23A0gXTF",
+      "kind": "unknown",
+      "id": "RBn23A0gXTF",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form #RBn23A0gXTF",
+      "kind": "unknown",
+      "id": "RBn23A0gXTF",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form.semi-form-wrapper input[type='text']#Zx52zE31QR6",
+      "kind": "unknown",
+      "id": "Zx52zE31QR6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_roi_monthly"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form.semi-form-wrapper #Zx52zE31QR6",
+      "kind": "unknown",
+      "id": "Zx52zE31QR6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_roi_monthly"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form #Zx52zE31QR6",
+      "kind": "unknown",
+      "id": "Zx52zE31QR6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_roi_monthly"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form.semi-form-wrapper input[type='text']#o9Za87R2aIH",
+      "kind": "unknown",
+      "id": "o9Za87R2aIH",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form.semi-form-wrapper #o9Za87R2aIH",
+      "kind": "unknown",
+      "id": "o9Za87R2aIH",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form #o9Za87R2aIH",
+      "kind": "unknown",
+      "id": "o9Za87R2aIH",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[2].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form.semi-form-wrapper fieldset#Gn7diYvs4xx",
+      "kind": "unknown",
+      "id": "Gn7diYvs4xx",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form.semi-form-wrapper #Gn7diYvs4xx",
+      "kind": "unknown",
+      "id": "Gn7diYvs4xx",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form #Gn7diYvs4xx",
+      "kind": "unknown",
+      "id": "Gn7diYvs4xx",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form.semi-form-wrapper input[type='text']#GmuJ73kiTh6",
+      "kind": "unknown",
+      "id": "GmuJ73kiTh6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form.semi-form-wrapper #GmuJ73kiTh6",
+      "kind": "unknown",
+      "id": "GmuJ73kiTh6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form #GmuJ73kiTh6",
+      "kind": "unknown",
+      "id": "GmuJ73kiTh6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form.semi-form-wrapper input[type='text']#GNtV3EemSH0",
+      "kind": "unknown",
+      "id": "GNtV3EemSH0",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form.semi-form-wrapper #GNtV3EemSH0",
+      "kind": "unknown",
+      "id": "GNtV3EemSH0",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form #GNtV3EemSH0",
+      "kind": "unknown",
+      "id": "GNtV3EemSH0",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form.semi-form-wrapper input[type='text']#IArW0V_8ECQ",
+      "kind": "unknown",
+      "id": "IArW0V_8ECQ",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form.semi-form-wrapper #IArW0V_8ECQ",
+      "kind": "unknown",
+      "id": "IArW0V_8ECQ",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form #IArW0V_8ECQ",
+      "kind": "unknown",
+      "id": "IArW0V_8ECQ",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form.semi-form-wrapper input[type='text']#Ofh099yON5o",
+      "kind": "unknown",
+      "id": "Ofh099yON5o",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form.semi-form-wrapper #Ofh099yON5o",
+      "kind": "unknown",
+      "id": "Ofh099yON5o",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form #Ofh099yON5o",
+      "kind": "unknown",
+      "id": "Ofh099yON5o",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form.semi-form-wrapper input[type='text']#TG94Fda5SwB",
+      "kind": "unknown",
+      "id": "TG94Fda5SwB",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_roi_monthly"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form.semi-form-wrapper #TG94Fda5SwB",
+      "kind": "unknown",
+      "id": "TG94Fda5SwB",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_roi_monthly"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form #TG94Fda5SwB",
+      "kind": "unknown",
+      "id": "TG94Fda5SwB",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_roi_monthly"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form.semi-form-wrapper input[type='text']#dkZx6_8_IoF",
+      "kind": "unknown",
+      "id": "dkZx6_8_IoF",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form.semi-form-wrapper #dkZx6_8_IoF",
+      "kind": "unknown",
+      "id": "dkZx6_8_IoF",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form #dkZx6_8_IoF",
+      "kind": "unknown",
+      "id": "dkZx6_8_IoF",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[3].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form.semi-form-wrapper fieldset#dezr9LSAjly",
+      "kind": "unknown",
+      "id": "dezr9LSAjly",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form.semi-form-wrapper #dezr9LSAjly",
+      "kind": "unknown",
+      "id": "dezr9LSAjly",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenureSelection",
+      "selector": "form #dezr9LSAjly",
+      "kind": "unknown",
+      "id": "dezr9LSAjly",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenureSelection"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form.semi-form-wrapper input[type='text']#sKfu1uldPm2",
+      "kind": "unknown",
+      "id": "sKfu1uldPm2",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form.semi-form-wrapper #sKfu1uldPm2",
+      "kind": "unknown",
+      "id": "sKfu1uldPm2",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenure_display",
+      "selector": "form #sKfu1uldPm2",
+      "kind": "unknown",
+      "id": "sKfu1uldPm2",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenure_display"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form.semi-form-wrapper input[type='text']#daUuXgICV8x",
+      "kind": "unknown",
+      "id": "daUuXgICV8x",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form.semi-form-wrapper #daUuXgICV8x",
+      "kind": "unknown",
+      "id": "daUuXgICV8x",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionEmi",
+      "selector": "form #daUuXgICV8x",
+      "kind": "unknown",
+      "id": "daUuXgICV8x",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenureSelectionEmi"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form.semi-form-wrapper input[type='text']#kv9d3gMFy5j",
+      "kind": "unknown",
+      "id": "kv9d3gMFy5j",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form.semi-form-wrapper #kv9d3gMFy5j",
+      "kind": "unknown",
+      "id": "kv9d3gMFy5j",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_tenureSelectionProcessing",
+      "selector": "form #kv9d3gMFy5j",
+      "kind": "unknown",
+      "id": "kv9d3gMFy5j",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenureSelectionProcessing"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form.semi-form-wrapper input[type='text']#wGwlN_zZZXC",
+      "kind": "unknown",
+      "id": "wGwlN_zZZXC",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form.semi-form-wrapper #wGwlN_zZZXC",
+      "kind": "unknown",
+      "id": "wGwlN_zZZXC",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_annually",
+      "selector": "form #wGwlN_zZZXC",
+      "kind": "unknown",
+      "id": "wGwlN_zZZXC",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_roi_annually"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form.semi-form-wrapper input[type='text']#KfRQmWxhlKB",
+      "kind": "unknown",
+      "id": "KfRQmWxhlKB",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_roi_monthly"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form.semi-form-wrapper #KfRQmWxhlKB",
+      "kind": "unknown",
+      "id": "KfRQmWxhlKB",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_roi_monthly"
+    },
+    {
+      "label": "aem_roi_monthly",
+      "selector": "form #KfRQmWxhlKB",
+      "kind": "unknown",
+      "id": "KfRQmWxhlKB",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_roi_monthly"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form.semi-form-wrapper input[type='text']#vMa7BeVNiWv",
+      "kind": "unknown",
+      "id": "vMa7BeVNiWv",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form.semi-form-wrapper #vMa7BeVNiWv",
+      "kind": "unknown",
+      "id": "vMa7BeVNiWv",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenureRawData"
+    },
+    {
+      "label": "aem_tenureRawData",
+      "selector": "form #vMa7BeVNiWv",
+      "kind": "unknown",
+      "id": "vMa7BeVNiWv",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tenureSelectionMainPnl.aem_tenureSelectionRepeatablePanel[4].aem_tenureRawData"
+    },
+    {
+      "label": "Processing Fee",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-796587d6e1",
+      "kind": "unknown",
+      "id": "textinput-796587d6e1",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_flow_processingFees"
+    },
+    {
+      "label": "Processing Fee",
+      "selector": "form.semi-form-wrapper #textinput-796587d6e1",
+      "kind": "unknown",
+      "id": "textinput-796587d6e1",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_flow_processingFees"
+    },
+    {
+      "label": "Processing Fee",
+      "selector": "form #textinput-796587d6e1",
+      "kind": "unknown",
+      "id": "textinput-796587d6e1",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_flow_processingFees"
+    },
+    {
+      "label": "Rate of Interest",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-66b732176e",
+      "kind": "unknown",
+      "id": "textinput-66b732176e",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_ROI"
+    },
+    {
+      "label": "Rate of Interest",
+      "selector": "form.semi-form-wrapper #textinput-66b732176e",
+      "kind": "unknown",
+      "id": "textinput-66b732176e",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_ROI"
+    },
+    {
+      "label": "Rate of Interest",
+      "selector": "form #textinput-66b732176e",
+      "kind": "unknown",
+      "id": "textinput-66b732176e",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_ROI"
+    },
+    {
+      "label": "rateOfInterestPerAnnumValue",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-7024e477f8",
+      "kind": "unknown",
+      "id": "textinput-7024e477f8",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.rateOfInterestPerAnnumValue"
+    },
+    {
+      "label": "rateOfInterestPerAnnumValue",
+      "selector": "form.semi-form-wrapper #textinput-7024e477f8",
+      "kind": "unknown",
+      "id": "textinput-7024e477f8",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.rateOfInterestPerAnnumValue"
+    },
+    {
+      "label": "rateOfInterestPerAnnumValue",
+      "selector": "form #textinput-7024e477f8",
+      "kind": "unknown",
+      "id": "textinput-7024e477f8",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.rateOfInterestPerAnnumValue"
+    },
+    {
+      "label": "aem_bankAssistedToggleLabel",
+      "selector": "form.semi-form-wrapper #text-6f5b0b9874",
+      "kind": "unknown",
+      "id": "text-6f5b0b9874",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_bankAssistedToggleLabel"
+    },
+    {
+      "label": "aem_bankAssistedToggleLabel",
+      "selector": "form #text-6f5b0b9874",
+      "kind": "unknown",
+      "id": "text-6f5b0b9874",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_bankAssistedToggleLabel"
+    },
+    {
+      "label": ".",
+      "selector": "form.semi-form-wrapper input[type='checkbox']#checkbox-624c064dae",
+      "kind": "unknown",
+      "id": "checkbox-624c064dae",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_bankAssistedToggle"
+    },
+    {
+      "label": ".",
+      "selector": "form.semi-form-wrapper #checkbox-624c064dae",
+      "kind": "unknown",
+      "id": "checkbox-624c064dae",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_bankAssistedToggle"
+    },
+    {
+      "label": ".",
+      "selector": "form #checkbox-624c064dae",
+      "kind": "unknown",
+      "id": "checkbox-624c064dae",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_bankAssistedToggle"
+    },
+    {
+      "label": "Channel ",
+      "selector": "form.semi-form-wrapper select#dropdown-a2bc2e4478",
+      "kind": "unknown",
+      "id": "dropdown-a2bc2e4478",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_channel"
+    },
+    {
+      "label": "Channel ",
+      "selector": "form.semi-form-wrapper #dropdown-a2bc2e4478",
+      "kind": "unknown",
+      "id": "dropdown-a2bc2e4478",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_channel"
+    },
+    {
+      "label": "Channel ",
+      "selector": "form #dropdown-a2bc2e4478",
+      "kind": "unknown",
+      "id": "dropdown-a2bc2e4478",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_channel"
+    },
+    {
+      "label": "Branch Code",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-b0eaf65a70",
+      "kind": "unknown",
+      "id": "textinput-b0eaf65a70",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_branchCode"
+    },
+    {
+      "label": "Branch Code",
+      "selector": "form.semi-form-wrapper #textinput-b0eaf65a70",
+      "kind": "unknown",
+      "id": "textinput-b0eaf65a70",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_branchCode"
+    },
+    {
+      "label": "Branch Code",
+      "selector": "form #textinput-b0eaf65a70",
+      "kind": "unknown",
+      "id": "textinput-b0eaf65a70",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_branchCode"
+    },
+    {
+      "label": "Branch Name",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-a513670cfe",
+      "kind": "unknown",
+      "id": "textinput-a513670cfe",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_branchName"
+    },
+    {
+      "label": "Branch Name",
+      "selector": "form.semi-form-wrapper #textinput-a513670cfe",
+      "kind": "unknown",
+      "id": "textinput-a513670cfe",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_branchName"
+    },
+    {
+      "label": "Branch Name",
+      "selector": "form #textinput-a513670cfe",
+      "kind": "unknown",
+      "id": "textinput-a513670cfe",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_branchName"
+    },
+    {
+      "label": "Branch City",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-1e1f92f2f6",
+      "kind": "unknown",
+      "id": "textinput-1e1f92f2f6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_branchCity"
+    },
+    {
+      "label": "Branch City",
+      "selector": "form.semi-form-wrapper #textinput-1e1f92f2f6",
+      "kind": "unknown",
+      "id": "textinput-1e1f92f2f6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_branchCity"
+    },
+    {
+      "label": "Branch City",
+      "selector": "form #textinput-1e1f92f2f6",
+      "kind": "unknown",
+      "id": "textinput-1e1f92f2f6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_branchCity"
+    },
+    {
+      "label": "DSA Code",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-497467a698",
+      "kind": "unknown",
+      "id": "textinput-497467a698",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_dsaCode"
+    },
+    {
+      "label": "DSA Code",
+      "selector": "form.semi-form-wrapper #textinput-497467a698",
+      "kind": "unknown",
+      "id": "textinput-497467a698",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_dsaCode"
+    },
+    {
+      "label": "DSA Code",
+      "selector": "form #textinput-497467a698",
+      "kind": "unknown",
+      "id": "textinput-497467a698",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_dsaCode"
+    },
+    {
+      "label": "DSA Name",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-951b759344",
+      "kind": "unknown",
+      "id": "textinput-951b759344",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_dsaName"
+    },
+    {
+      "label": "DSA Name",
+      "selector": "form.semi-form-wrapper #textinput-951b759344",
+      "kind": "unknown",
+      "id": "textinput-951b759344",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_dsaName"
+    },
+    {
+      "label": "DSA Name",
+      "selector": "form #textinput-951b759344",
+      "kind": "unknown",
+      "id": "textinput-951b759344",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_dsaName"
+    },
+    {
+      "label": "SM Code",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-0f5887a70a",
+      "kind": "unknown",
+      "id": "textinput-0f5887a70a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_smCode"
+    },
+    {
+      "label": "SM Code",
+      "selector": "form.semi-form-wrapper #textinput-0f5887a70a",
+      "kind": "unknown",
+      "id": "textinput-0f5887a70a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_smCode"
+    },
+    {
+      "label": "SM Code",
+      "selector": "form #textinput-0f5887a70a",
+      "kind": "unknown",
+      "id": "textinput-0f5887a70a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_smCode"
+    },
+    {
+      "label": "LC1",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-3356bdc137",
+      "kind": "unknown",
+      "id": "textinput-3356bdc137",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_lc1Code"
+    },
+    {
+      "label": "LC1",
+      "selector": "form.semi-form-wrapper #textinput-3356bdc137",
+      "kind": "unknown",
+      "id": "textinput-3356bdc137",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_lc1Code"
+    },
+    {
+      "label": "LC1",
+      "selector": "form #textinput-3356bdc137",
+      "kind": "unknown",
+      "id": "textinput-3356bdc137",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_lc1Code"
+    },
+    {
+      "label": "Branch Employee/ TSE/ LG Code",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-ff5315f714",
+      "kind": "unknown",
+      "id": "textinput-ff5315f714",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_branchTseLgCode"
+    },
+    {
+      "label": "Branch Employee/ TSE/ LG Code",
+      "selector": "form.semi-form-wrapper #textinput-ff5315f714",
+      "kind": "unknown",
+      "id": "textinput-ff5315f714",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_branchTseLgCode"
+    },
+    {
+      "label": "Branch Employee/ TSE/ LG Code",
+      "selector": "form #textinput-ff5315f714",
+      "kind": "unknown",
+      "id": "textinput-ff5315f714",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_branchTseLgCode"
+    },
+    {
+      "label": "Cards BDR/LC1 Code",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-1d7b160637",
+      "kind": "unknown",
+      "id": "textinput-1d7b160637",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_bdrLc1Code"
+    },
+    {
+      "label": "Cards BDR/LC1 Code",
+      "selector": "form.semi-form-wrapper #textinput-1d7b160637",
+      "kind": "unknown",
+      "id": "textinput-1d7b160637",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_bdrLc1Code"
+    },
+    {
+      "label": "Cards BDR/LC1 Code",
+      "selector": "form #textinput-1d7b160637",
+      "kind": "unknown",
+      "id": "textinput-1d7b160637",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_bdrLc1Code"
+    },
+    {
+      "label": "LC2",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-7d9e07b748",
+      "kind": "unknown",
+      "id": "textinput-7d9e07b748",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_lc2Code"
+    },
+    {
+      "label": "LC2",
+      "selector": "form.semi-form-wrapper #textinput-7d9e07b748",
+      "kind": "unknown",
+      "id": "textinput-7d9e07b748",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_lc2Code"
+    },
+    {
+      "label": "LC2",
+      "selector": "form #textinput-7d9e07b748",
+      "kind": "unknown",
+      "id": "textinput-7d9e07b748",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_lc2Code"
+    },
+    {
+      "label": "LG/TSE Code",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-9db6e9c526",
+      "kind": "unknown",
+      "id": "textinput-9db6e9c526",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_lgTseCode"
+    },
+    {
+      "label": "LG/TSE Code",
+      "selector": "form.semi-form-wrapper #textinput-9db6e9c526",
+      "kind": "unknown",
+      "id": "textinput-9db6e9c526",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_lgTseCode"
+    },
+    {
+      "label": "LG/TSE Code",
+      "selector": "form #textinput-9db6e9c526",
+      "kind": "unknown",
+      "id": "textinput-9db6e9c526",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_employeeAssistancePanel.aem_lgTseCode"
+    },
+    {
+      "label": "aem_TandCTenureText",
+      "selector": "form.semi-form-wrapper #text-5f4afa8f66",
+      "kind": "unknown",
+      "id": "text-5f4afa8f66",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_TnCTenureWrapper.aem_TnCTenure.aem_TandCTenureText"
+    },
+    {
+      "label": "aem_TandCTenureText",
+      "selector": "form #text-5f4afa8f66",
+      "kind": "unknown",
+      "id": "text-5f4afa8f66",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_TnCTenureWrapper.aem_TnCTenure.aem_TandCTenureText"
+    },
+    {
+      "label": "Yes, Continue",
+      "selector": "form.semi-form-wrapper button[type='button']#button-85eb9a6593",
+      "kind": "unknown",
+      "id": "button-85eb9a6593",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_TnCTenureWrapper.aem_TnCTenure.aem_continueTnC"
+    },
+    {
+      "label": "Yes, Continue",
+      "selector": "form.semi-form-wrapper #button-85eb9a6593",
+      "kind": "unknown",
+      "id": "button-85eb9a6593",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_TnCTenureWrapper.aem_TnCTenure.aem_continueTnC"
+    },
+    {
+      "label": "Yes, Continue",
+      "selector": "form #button-85eb9a6593",
+      "kind": "unknown",
+      "id": "button-85eb9a6593",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_TnCTenureWrapper.aem_TnCTenure.aem_continueTnC"
+    },
+    {
+      "label": "No, Stay Here",
+      "selector": "form.semi-form-wrapper button[type='button']#button-967d61f442",
+      "kind": "unknown",
+      "id": "button-967d61f442",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_TnCTenureWrapper.aem_TnCTenure.aem_stayHereTnC"
+    },
+    {
+      "label": "No, Stay Here",
+      "selector": "form.semi-form-wrapper #button-967d61f442",
+      "kind": "unknown",
+      "id": "button-967d61f442",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_TnCTenureWrapper.aem_TnCTenure.aem_stayHereTnC"
+    },
+    {
+      "label": "No, Stay Here",
+      "selector": "form #button-967d61f442",
+      "kind": "unknown",
+      "id": "button-967d61f442",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_TnCTenureWrapper.aem_TnCTenure.aem_stayHereTnC"
+    },
+    {
+      "label": "<p>I agree to</p>",
+      "selector": "form.semi-form-wrapper input[type='checkbox']#checkbox-66ce452078",
+      "kind": "unknown",
+      "id": "checkbox-66ce452078",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.tnCPanelWrapper.aem_tandC"
+    },
+    {
+      "label": "<p>I agree to</p>",
+      "selector": "form.semi-form-wrapper #checkbox-66ce452078",
+      "kind": "unknown",
+      "id": "checkbox-66ce452078",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.tnCPanelWrapper.aem_tandC"
+    },
+    {
+      "label": "<p>I agree to</p>",
+      "selector": "form #checkbox-66ce452078",
+      "kind": "unknown",
+      "id": "checkbox-66ce452078",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.tnCPanelWrapper.aem_tandC"
+    },
+    {
+      "label": "Terms & Conditions ",
+      "selector": "form.semi-form-wrapper button[type='button']#button-5b507f7ee2",
+      "kind": "unknown",
+      "id": "button-5b507f7ee2",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.tnCPanelWrapper.aem_TnCButton"
+    },
+    {
+      "label": "Terms & Conditions ",
+      "selector": "form.semi-form-wrapper #button-5b507f7ee2",
+      "kind": "unknown",
+      "id": "button-5b507f7ee2",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.tnCPanelWrapper.aem_TnCButton"
+    },
+    {
+      "label": "Terms & Conditions ",
+      "selector": "form #button-5b507f7ee2",
+      "kind": "unknown",
+      "id": "button-5b507f7ee2",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.tnCPanelWrapper.aem_TnCButton"
+    },
+    {
+      "label": "I understand and agree that I need to pay the Minimum Amount Due as per the latest credit card statement",
+      "selector": "form.semi-form-wrapper input[type='checkbox']#checkbox-b6e0da02c7",
+      "kind": "unknown",
+      "id": "checkbox-b6e0da02c7",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tandCMAD"
+    },
+    {
+      "label": "I understand and agree that I need to pay the Minimum Amount Due as per the latest credit card statement",
+      "selector": "form.semi-form-wrapper #checkbox-b6e0da02c7",
+      "kind": "unknown",
+      "id": "checkbox-b6e0da02c7",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tandCMAD"
+    },
+    {
+      "label": "I understand and agree that I need to pay the Minimum Amount Due as per the latest credit card statement",
+      "selector": "form #checkbox-b6e0da02c7",
+      "kind": "unknown",
+      "id": "checkbox-b6e0da02c7",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_tandCMAD"
+    },
+    {
+      "label": "Back",
+      "selector": "form.semi-form-wrapper button[type='button']#button-7c0d4b1669",
+      "kind": "unknown",
+      "id": "button-7c0d4b1669",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_backLinkTenure"
+    },
+    {
+      "label": "Back",
+      "selector": "form.semi-form-wrapper #button-7c0d4b1669",
+      "kind": "unknown",
+      "id": "button-7c0d4b1669",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_backLinkTenure"
+    },
+    {
+      "label": "Back",
+      "selector": "form #button-7c0d4b1669",
+      "kind": "unknown",
+      "id": "button-7c0d4b1669",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_backLinkTenure"
+    },
+    {
+      "label": "Continue",
+      "selector": "form.semi-form-wrapper button[type='button']#button-04bd056272",
+      "kind": "unknown",
+      "id": "button-04bd056272",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_continueToTQ"
+    },
+    {
+      "label": "Continue",
+      "selector": "form.semi-form-wrapper #button-04bd056272",
+      "kind": "unknown",
+      "id": "button-04bd056272",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_continueToTQ"
+    },
+    {
+      "label": "Continue",
+      "selector": "form #button-04bd056272",
+      "kind": "unknown",
+      "id": "button-04bd056272",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_continueToTQ"
+    },
+    {
+      "label": "aem_reviewYourSelectedEmiPlanText",
+      "selector": "form.semi-form-wrapper #text-d9a6ff978f",
+      "kind": "unknown",
+      "id": "text-d9a6ff978f",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_reviewYourSelectedEmiPlanText"
+    },
+    {
+      "label": "aem_reviewYourSelectedEmiPlanText",
+      "selector": "form #text-d9a6ff978f",
+      "kind": "unknown",
+      "id": "text-d9a6ff978f",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_reviewYourSelectedEmiPlanText"
+    },
+    {
+      "label": "aem_selectedEmiSummaryText",
+      "selector": "form.semi-form-wrapper #text-451f78a47f",
+      "kind": "unknown",
+      "id": "text-451f78a47f",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_selectedEmiSummaryText"
+    },
+    {
+      "label": "aem_selectedEmiSummaryText",
+      "selector": "form #text-451f78a47f",
+      "kind": "unknown",
+      "id": "text-451f78a47f",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_selectedEmiSummaryText"
+    },
+    {
+      "label": "Amount",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-eb94f1c8ad",
+      "kind": "unknown",
+      "id": "textinput-eb94f1c8ad",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_reviewAmount"
+    },
+    {
+      "label": "Amount",
+      "selector": "form.semi-form-wrapper #textinput-eb94f1c8ad",
+      "kind": "unknown",
+      "id": "textinput-eb94f1c8ad",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_reviewAmount"
+    },
+    {
+      "label": "Amount",
+      "selector": "form #textinput-eb94f1c8ad",
+      "kind": "unknown",
+      "id": "textinput-eb94f1c8ad",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_reviewAmount"
+    },
+    {
+      "label": "Duration",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-221bf3f19e",
+      "kind": "unknown",
+      "id": "textinput-221bf3f19e",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_duration"
+    },
+    {
+      "label": "Duration",
+      "selector": "form.semi-form-wrapper #textinput-221bf3f19e",
+      "kind": "unknown",
+      "id": "textinput-221bf3f19e",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_duration"
+    },
+    {
+      "label": "Duration",
+      "selector": "form #textinput-221bf3f19e",
+      "kind": "unknown",
+      "id": "textinput-221bf3f19e",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_duration"
+    },
+    {
+      "label": "Monthly EMI Amount",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-c18a28f246",
+      "kind": "unknown",
+      "id": "textinput-c18a28f246",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_monthlyEmi"
+    },
+    {
+      "label": "Monthly EMI Amount",
+      "selector": "form.semi-form-wrapper #textinput-c18a28f246",
+      "kind": "unknown",
+      "id": "textinput-c18a28f246",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_monthlyEmi"
+    },
+    {
+      "label": "Monthly EMI Amount",
+      "selector": "form #textinput-c18a28f246",
+      "kind": "unknown",
+      "id": "textinput-c18a28f246",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_monthlyEmi"
+    },
+    {
+      "label": "Rate of Interest",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-a8cd44b08a",
+      "kind": "unknown",
+      "id": "textinput-a8cd44b08a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_roi"
+    },
+    {
+      "label": "Rate of Interest",
+      "selector": "form.semi-form-wrapper #textinput-a8cd44b08a",
+      "kind": "unknown",
+      "id": "textinput-a8cd44b08a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_roi"
+    },
+    {
+      "label": "Rate of Interest",
+      "selector": "form #textinput-a8cd44b08a",
+      "kind": "unknown",
+      "id": "textinput-a8cd44b08a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_roi"
+    },
+    {
+      "label": "Processing Fee",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-13d4a1e19f",
+      "kind": "unknown",
+      "id": "textinput-13d4a1e19f",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_processingFee"
+    },
+    {
+      "label": "Processing Fee",
+      "selector": "form.semi-form-wrapper #textinput-13d4a1e19f",
+      "kind": "unknown",
+      "id": "textinput-13d4a1e19f",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_processingFee"
+    },
+    {
+      "label": "Processing Fee",
+      "selector": "form #textinput-13d4a1e19f",
+      "kind": "unknown",
+      "id": "textinput-13d4a1e19f",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_processingFee"
+    },
+    {
+      "label": "aem_ifAsistedByBankText",
+      "selector": "form.semi-form-wrapper #text-3993e2325f",
+      "kind": "unknown",
+      "id": "text-3993e2325f",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_assistedPanel.aem_ifAsistedByBankText"
+    },
+    {
+      "label": "aem_ifAsistedByBankText",
+      "selector": "form #text-3993e2325f",
+      "kind": "unknown",
+      "id": "text-3993e2325f",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_assistedPanel.aem_ifAsistedByBankText"
+    },
+    {
+      "label": "LG Code",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-ed5403727b",
+      "kind": "unknown",
+      "id": "textinput-ed5403727b",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_assistedPanel.aem_lgCode"
+    },
+    {
+      "label": "LG Code",
+      "selector": "form.semi-form-wrapper #textinput-ed5403727b",
+      "kind": "unknown",
+      "id": "textinput-ed5403727b",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_assistedPanel.aem_lgCode"
+    },
+    {
+      "label": "LG Code",
+      "selector": "form #textinput-ed5403727b",
+      "kind": "unknown",
+      "id": "textinput-ed5403727b",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_assistedPanel.aem_lgCode"
+    },
+    {
+      "label": "LC Code",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-d44ab28a32",
+      "kind": "unknown",
+      "id": "textinput-d44ab28a32",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_assistedPanel.aem_lcCode"
+    },
+    {
+      "label": "LC Code",
+      "selector": "form.semi-form-wrapper #textinput-d44ab28a32",
+      "kind": "unknown",
+      "id": "textinput-d44ab28a32",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_assistedPanel.aem_lcCode"
+    },
+    {
+      "label": "LC Code",
+      "selector": "form #textinput-d44ab28a32",
+      "kind": "unknown",
+      "id": "textinput-d44ab28a32",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_assistedPanel.aem_lcCode"
+    },
+    {
+      "label": "Continue",
+      "selector": "form.semi-form-wrapper button[type='button']#button-d713b6325a",
+      "kind": "unknown",
+      "id": "button-d713b6325a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_assistedPanel.aem_continueToTQFlow"
+    },
+    {
+      "label": "Continue",
+      "selector": "form.semi-form-wrapper #button-d713b6325a",
+      "kind": "unknown",
+      "id": "button-d713b6325a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_assistedPanel.aem_continueToTQFlow"
+    },
+    {
+      "label": "Continue",
+      "selector": "form #button-d713b6325a",
+      "kind": "unknown",
+      "id": "button-d713b6325a",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.reviewDetailsView.aem_assistedPanel.aem_continueToTQFlow"
+    },
+    {
+      "label": "incorrectOTPTextPopup2",
+      "selector": "form.semi-form-wrapper #text-5b59df77ea",
+      "kind": "unknown",
+      "id": "text-5b59df77ea",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_wrongOtpPopUpWrapper2.aem_wrongOtpPopUp2.incorrectOTPTextPopup2"
+    },
+    {
+      "label": "incorrectOTPTextPopup2",
+      "selector": "form #text-5b59df77ea",
+      "kind": "unknown",
+      "id": "text-5b59df77ea",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_wrongOtpPopUpWrapper2.aem_wrongOtpPopUp2.incorrectOTPTextPopup2"
+    },
+    {
+      "label": "OK",
+      "selector": "form.semi-form-wrapper button[type='button']#button-852c2e0227",
+      "kind": "unknown",
+      "id": "button-852c2e0227",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_wrongOtpPopUpWrapper2.aem_wrongOtpPopUp2.aem_wrongOtpPopUpBtn2"
+    },
+    {
+      "label": "OK",
+      "selector": "form.semi-form-wrapper #button-852c2e0227",
+      "kind": "unknown",
+      "id": "button-852c2e0227",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_wrongOtpPopUpWrapper2.aem_wrongOtpPopUp2.aem_wrongOtpPopUpBtn2"
+    },
+    {
+      "label": "OK",
+      "selector": "form #button-852c2e0227",
+      "kind": "unknown",
+      "id": "button-852c2e0227",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_wrongOtpPopUpWrapper2.aem_wrongOtpPopUp2.aem_wrongOtpPopUpBtn2"
+    },
+    {
+      "label": "aem_confirmAndAuthenticateText",
+      "selector": "form.semi-form-wrapper #text-32ea670530",
+      "kind": "unknown",
+      "id": "text-32ea670530",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_confirmAndAuthenticateText"
+    },
+    {
+      "label": "aem_confirmAndAuthenticateText",
+      "selector": "form #text-32ea670530",
+      "kind": "unknown",
+      "id": "text-32ea670530",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_confirmAndAuthenticateText"
+    },
+    {
+      "label": "aem_otpHelpText2",
+      "selector": "form.semi-form-wrapper #text-8a2e59c96d",
+      "kind": "unknown",
+      "id": "text-8a2e59c96d",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_otpHelpText2"
+    },
+    {
+      "label": "aem_otpHelpText2",
+      "selector": "form #text-8a2e59c96d",
+      "kind": "unknown",
+      "id": "text-8a2e59c96d",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_otpHelpText2"
+    },
+    {
+      "label": "Verify OTP",
+      "selector": "form.semi-form-wrapper input[type='password']#telephoneinput-2cc516c1d7",
+      "kind": "unknown",
+      "id": "telephoneinput-2cc516c1d7",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_otpNumber2"
+    },
+    {
+      "label": "Verify OTP",
+      "selector": "form.semi-form-wrapper #telephoneinput-2cc516c1d7",
+      "kind": "unknown",
+      "id": "telephoneinput-2cc516c1d7",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_otpNumber2"
+    },
+    {
+      "label": "Verify OTP",
+      "selector": "form #telephoneinput-2cc516c1d7",
+      "kind": "unknown",
+      "id": "telephoneinput-2cc516c1d7",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_otpNumber2"
+    },
+    {
+      "label": "resendOTPlabel2",
+      "selector": "form.semi-form-wrapper #text-7c672346f7",
+      "kind": "unknown",
+      "id": "text-7c672346f7",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.secondsPanel.resendOTPlabel2"
+    },
+    {
+      "label": "resendOTPlabel2",
+      "selector": "form #text-7c672346f7",
+      "kind": "unknown",
+      "id": "text-7c672346f7",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.secondsPanel.resendOTPlabel2"
+    },
+    {
+      "label": "seconds",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-c3e6a3525d",
+      "kind": "unknown",
+      "id": "textinput-c3e6a3525d",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.secondsPanel.seconds2"
+    },
+    {
+      "label": "seconds",
+      "selector": "form.semi-form-wrapper #textinput-c3e6a3525d",
+      "kind": "unknown",
+      "id": "textinput-c3e6a3525d",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.secondsPanel.seconds2"
+    },
+    {
+      "label": "seconds",
+      "selector": "form #textinput-c3e6a3525d",
+      "kind": "unknown",
+      "id": "textinput-c3e6a3525d",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.secondsPanel.seconds2"
+    },
+    {
+      "label": "secText2",
+      "selector": "form.semi-form-wrapper #text-72e69d1c62",
+      "kind": "unknown",
+      "id": "text-72e69d1c62",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.secondsPanel.secText2"
+    },
+    {
+      "label": "secText2",
+      "selector": "form #text-72e69d1c62",
+      "kind": "unknown",
+      "id": "text-72e69d1c62",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.secondsPanel.secText2"
+    },
+    {
+      "label": "aem_resendOtpCount2",
+      "selector": "form.semi-form-wrapper input[type='number']#numberinput-35d826228f",
+      "kind": "unknown",
+      "id": "numberinput-35d826228f",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_resendOtpCount2"
+    },
+    {
+      "label": "aem_resendOtpCount2",
+      "selector": "form.semi-form-wrapper #numberinput-35d826228f",
+      "kind": "unknown",
+      "id": "numberinput-35d826228f",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_resendOtpCount2"
+    },
+    {
+      "label": "aem_resendOtpCount2",
+      "selector": "form #numberinput-35d826228f",
+      "kind": "unknown",
+      "id": "numberinput-35d826228f",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_resendOtpCount2"
+    },
+    {
+      "label": "aem_maxlimitOTP2",
+      "selector": "form.semi-form-wrapper #text-76f0659be6",
+      "kind": "unknown",
+      "id": "text-76f0659be6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_maxlimitOTP2"
+    },
+    {
+      "label": "aem_maxlimitOTP2",
+      "selector": "form #text-76f0659be6",
+      "kind": "unknown",
+      "id": "text-76f0659be6",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_maxlimitOTP2"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form.semi-form-wrapper button[type='button']#button-2cc6c66552",
+      "kind": "unknown",
+      "id": "button-2cc6c66552",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_otpResend2"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form.semi-form-wrapper #button-2cc6c66552",
+      "kind": "unknown",
+      "id": "button-2cc6c66552",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_otpResend2"
+    },
+    {
+      "label": "Resend OTP",
+      "selector": "form #button-2cc6c66552",
+      "kind": "unknown",
+      "id": "button-2cc6c66552",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_otpResend2"
+    },
+    {
+      "label": "Submit",
+      "selector": "form.semi-form-wrapper button[type='button']#button-62a27ce126",
+      "kind": "unknown",
+      "id": "button-62a27ce126",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_submitOtp2"
+    },
+    {
+      "label": "Submit",
+      "selector": "form.semi-form-wrapper #button-62a27ce126",
+      "kind": "unknown",
+      "id": "button-62a27ce126",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_submitOtp2"
+    },
+    {
+      "label": "Submit",
+      "selector": "form #button-62a27ce126",
+      "kind": "unknown",
+      "id": "button-62a27ce126",
+      "qname": "$form.aem_semiWizard.aem_selectTenure.aem_otpPanelConfirmation.aem_otpPanel2.aem_submitOtp2"
+    },
+    {
+      "label": "HIdden SmartEMI Amount",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-ddd443ee62",
+      "kind": "unknown",
+      "id": "textinput-ddd443ee62",
+      "qname": "$form.aem_semiWizard.aem_success.smartEMIAmountHidden"
+    },
+    {
+      "label": "HIdden SmartEMI Amount",
+      "selector": "form.semi-form-wrapper #textinput-ddd443ee62",
+      "kind": "unknown",
+      "id": "textinput-ddd443ee62",
+      "qname": "$form.aem_semiWizard.aem_success.smartEMIAmountHidden"
+    },
+    {
+      "label": "HIdden SmartEMI Amount",
+      "selector": "form #textinput-ddd443ee62",
+      "kind": "unknown",
+      "id": "textinput-ddd443ee62",
+      "qname": "$form.aem_semiWizard.aem_success.smartEMIAmountHidden"
+    },
+    {
+      "label": "Hidden Total Amt",
+      "selector": "form.semi-form-wrapper input[type='number']#numberinput-2260ce33d9",
+      "kind": "unknown",
+      "id": "numberinput-2260ce33d9",
+      "qname": "$form.aem_semiWizard.aem_success.aem_hiddenTotalAmt"
+    },
+    {
+      "label": "Hidden Total Amt",
+      "selector": "form.semi-form-wrapper #numberinput-2260ce33d9",
+      "kind": "unknown",
+      "id": "numberinput-2260ce33d9",
+      "qname": "$form.aem_semiWizard.aem_success.aem_hiddenTotalAmt"
+    },
+    {
+      "label": "Hidden Total Amt",
+      "selector": "form #numberinput-2260ce33d9",
+      "kind": "unknown",
+      "id": "numberinput-2260ce33d9",
+      "qname": "$form.aem_semiWizard.aem_success.aem_hiddenTotalAmt"
+    },
+    {
+      "label": "aem_successResultTextLabel",
+      "selector": "form.semi-form-wrapper #text-72bac3ef1d",
+      "kind": "unknown",
+      "id": "text-72bac3ef1d",
+      "qname": "$form.aem_semiWizard.aem_success.aem_successResultTextLabel"
+    },
+    {
+      "label": "aem_successResultTextLabel",
+      "selector": "form #text-72bac3ef1d",
+      "kind": "unknown",
+      "id": "text-72bac3ef1d",
+      "qname": "$form.aem_semiWizard.aem_success.aem_successResultTextLabel"
+    },
+    {
+      "label": "aem_loanRefNum",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-ae3f73ab8f",
+      "kind": "unknown",
+      "id": "textinput-ae3f73ab8f",
+      "qname": "$form.aem_semiWizard.aem_success.aem_loanRefNum"
+    },
+    {
+      "label": "aem_loanRefNum",
+      "selector": "form.semi-form-wrapper #textinput-ae3f73ab8f",
+      "kind": "unknown",
+      "id": "textinput-ae3f73ab8f",
+      "qname": "$form.aem_semiWizard.aem_success.aem_loanRefNum"
+    },
+    {
+      "label": "aem_loanRefNum",
+      "selector": "form #textinput-ae3f73ab8f",
+      "kind": "unknown",
+      "id": "textinput-ae3f73ab8f",
+      "qname": "$form.aem_semiWizard.aem_success.aem_loanRefNum"
+    },
+    {
+      "label": "aem_semiAmount",
+      "selector": "form.semi-form-wrapper input[type='text']#numberinput-1adf954f51",
+      "kind": "unknown",
+      "id": "numberinput-1adf954f51",
+      "qname": "$form.aem_semiWizard.aem_success.aem_semiAmount"
+    },
+    {
+      "label": "aem_semiAmount",
+      "selector": "form.semi-form-wrapper #numberinput-1adf954f51",
+      "kind": "unknown",
+      "id": "numberinput-1adf954f51",
+      "qname": "$form.aem_semiWizard.aem_success.aem_semiAmount"
+    },
+    {
+      "label": "aem_semiAmount",
+      "selector": "form #numberinput-1adf954f51",
+      "kind": "unknown",
+      "id": "numberinput-1adf954f51",
+      "qname": "$form.aem_semiWizard.aem_success.aem_semiAmount"
+    },
+    {
+      "label": "aem_amountLabel",
+      "selector": "form.semi-form-wrapper #text-f6048b79c8",
+      "kind": "unknown",
+      "id": "text-f6048b79c8",
+      "qname": "$form.aem_semiWizard.aem_success.aem_amountLabel"
+    },
+    {
+      "label": "aem_amountLabel",
+      "selector": "form #text-f6048b79c8",
+      "kind": "unknown",
+      "id": "text-f6048b79c8",
+      "qname": "$form.aem_semiWizard.aem_success.aem_amountLabel"
+    },
+    {
+      "label": "aem_moreTxnLabel",
+      "selector": "form.semi-form-wrapper #text-3122d5b5e7",
+      "kind": "unknown",
+      "id": "text-3122d5b5e7",
+      "qname": "$form.aem_semiWizard.aem_success.aem_moreTxnSEMI.aem_moreTxnLabel"
+    },
+    {
+      "label": "aem_moreTxnLabel",
+      "selector": "form #text-3122d5b5e7",
+      "kind": "unknown",
+      "id": "text-3122d5b5e7",
+      "qname": "$form.aem_semiWizard.aem_success.aem_moreTxnSEMI.aem_moreTxnLabel"
+    },
+    {
+      "label": "Proceed",
+      "selector": "form.semi-form-wrapper button[type='button']#button-2e241b2cd3",
+      "kind": "unknown",
+      "id": "button-2e241b2cd3",
+      "qname": "$form.aem_semiWizard.aem_success.aem_moreTxnSEMI.aem_tqSuccessButton"
+    },
+    {
+      "label": "Proceed",
+      "selector": "form.semi-form-wrapper #button-2e241b2cd3",
+      "kind": "unknown",
+      "id": "button-2e241b2cd3",
+      "qname": "$form.aem_semiWizard.aem_success.aem_moreTxnSEMI.aem_tqSuccessButton"
+    },
+    {
+      "label": "Proceed",
+      "selector": "form #button-2e241b2cd3",
+      "kind": "unknown",
+      "id": "button-2e241b2cd3",
+      "qname": "$form.aem_semiWizard.aem_success.aem_moreTxnSEMI.aem_tqSuccessButton"
+    },
+    {
+      "label": "Proceed",
+      "selector": "form.semi-form-wrapper button[type='button']#button-dd38b8e7ac",
+      "kind": "unknown",
+      "id": "button-dd38b8e7ac",
+      "qname": "$form.aem_semiWizard.aem_success.aem_moreTxnSEMI.aem_tqSuccessInstaJumboButton"
+    },
+    {
+      "label": "Proceed",
+      "selector": "form.semi-form-wrapper #button-dd38b8e7ac",
+      "kind": "unknown",
+      "id": "button-dd38b8e7ac",
+      "qname": "$form.aem_semiWizard.aem_success.aem_moreTxnSEMI.aem_tqSuccessInstaJumboButton"
+    },
+    {
+      "label": "Proceed",
+      "selector": "form #button-dd38b8e7ac",
+      "kind": "unknown",
+      "id": "button-dd38b8e7ac",
+      "qname": "$form.aem_semiWizard.aem_success.aem_moreTxnSEMI.aem_tqSuccessInstaJumboButton"
+    },
+    {
+      "label": "ratingLabel",
+      "selector": "form.semi-form-wrapper #text-e080cd30a3",
+      "kind": "unknown",
+      "id": "text-e080cd30a3",
+      "qname": "$form.aem_semiWizard.aem_success.ratingPanel.ratingPanel.ratingLabel"
+    },
+    {
+      "label": "ratingLabel",
+      "selector": "form #text-e080cd30a3",
+      "kind": "unknown",
+      "id": "text-e080cd30a3",
+      "qname": "$form.aem_semiWizard.aem_success.ratingPanel.ratingPanel.ratingLabel"
+    },
+    {
+      "label": "<p><b>We would love your feedback</b></p>",
+      "selector": "form.semi-form-wrapper input[type='number']#numberinput-6c08051ecb",
+      "kind": "unknown",
+      "id": "numberinput-6c08051ecb",
+      "qname": "$form.aem_semiWizard.aem_success.ratingPanel.ratingPanel.rating"
+    },
+    {
+      "label": "<p><b>We would love your feedback</b></p>",
+      "selector": "form.semi-form-wrapper #numberinput-6c08051ecb",
+      "kind": "unknown",
+      "id": "numberinput-6c08051ecb",
+      "qname": "$form.aem_semiWizard.aem_success.ratingPanel.ratingPanel.rating"
+    },
+    {
+      "label": "<p><b>We would love your feedback</b></p>",
+      "selector": "form #numberinput-6c08051ecb",
+      "kind": "unknown",
+      "id": "numberinput-6c08051ecb",
+      "qname": "$form.aem_semiWizard.aem_success.ratingPanel.ratingPanel.rating"
+    },
+    {
+      "label": "ratingvalue",
+      "selector": "form.semi-form-wrapper input[type='number']#numberinput-e20ed239ed",
+      "kind": "unknown",
+      "id": "numberinput-e20ed239ed",
+      "qname": "$form.aem_semiWizard.aem_success.ratingPanel.ratingPanel.ratingvalue"
+    },
+    {
+      "label": "ratingvalue",
+      "selector": "form.semi-form-wrapper #numberinput-e20ed239ed",
+      "kind": "unknown",
+      "id": "numberinput-e20ed239ed",
+      "qname": "$form.aem_semiWizard.aem_success.ratingPanel.ratingPanel.ratingvalue"
+    },
+    {
+      "label": "ratingvalue",
+      "selector": "form #numberinput-e20ed239ed",
+      "kind": "unknown",
+      "id": "numberinput-e20ed239ed",
+      "qname": "$form.aem_semiWizard.aem_success.ratingPanel.ratingPanel.ratingvalue"
+    },
+    {
+      "label": "Submit",
+      "selector": "form.semi-form-wrapper button[type='button']#button-10f2755855",
+      "kind": "unknown",
+      "id": "button-10f2755855",
+      "qname": "$form.aem_semiWizard.aem_success.ratingPanel.ratingPanel.submitFeedback"
+    },
+    {
+      "label": "Submit",
+      "selector": "form.semi-form-wrapper #button-10f2755855",
+      "kind": "unknown",
+      "id": "button-10f2755855",
+      "qname": "$form.aem_semiWizard.aem_success.ratingPanel.ratingPanel.submitFeedback"
+    },
+    {
+      "label": "Submit",
+      "selector": "form #button-10f2755855",
+      "kind": "unknown",
+      "id": "button-10f2755855",
+      "qname": "$form.aem_semiWizard.aem_success.ratingPanel.ratingPanel.submitFeedback"
+    },
+    {
+      "label": "semilocsuccessheadertext",
+      "selector": "form.semi-form-wrapper #text-c199467a52",
+      "kind": "unknown",
+      "id": "text-c199467a52",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessTopBannerWrapper.semiLocSuccessHeaderPanel.semilocsuccessheadertext"
+    },
+    {
+      "label": "semilocsuccessheadertext",
+      "selector": "form #text-c199467a52",
+      "kind": "unknown",
+      "id": "text-c199467a52",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessTopBannerWrapper.semiLocSuccessHeaderPanel.semilocsuccessheadertext"
+    },
+    {
+      "label": "topBannerLabel",
+      "selector": "form.semi-form-wrapper #text-1ab5f6e7f2",
+      "kind": "unknown",
+      "id": "text-1ab5f6e7f2",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessTopBannerWrapper.semiLocSuccessTopBanner.topBannerPanel.topBannerLabel"
+    },
+    {
+      "label": "topBannerLabel",
+      "selector": "form #text-1ab5f6e7f2",
+      "kind": "unknown",
+      "id": "text-1ab5f6e7f2",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessTopBannerWrapper.semiLocSuccessTopBanner.topBannerPanel.topBannerLabel"
+    },
+    {
+      "label": "topBannerSubtitle",
+      "selector": "form.semi-form-wrapper #text-99cabd1495",
+      "kind": "unknown",
+      "id": "text-99cabd1495",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessTopBannerWrapper.semiLocSuccessTopBanner.topBannerPanel.topBannerSubtitle"
+    },
+    {
+      "label": "topBannerSubtitle",
+      "selector": "form #text-99cabd1495",
+      "kind": "unknown",
+      "id": "text-99cabd1495",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessTopBannerWrapper.semiLocSuccessTopBanner.topBannerPanel.topBannerSubtitle"
+    },
+    {
+      "label": "offerText1",
+      "selector": "form.semi-form-wrapper #text-0b72fc1d2b",
+      "kind": "unknown",
+      "id": "text-0b72fc1d2b",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerTopWrap.offerTopDescWrap.offerText1"
+    },
+    {
+      "label": "offerText1",
+      "selector": "form #text-0b72fc1d2b",
+      "kind": "unknown",
+      "id": "text-0b72fc1d2b",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerTopWrap.offerTopDescWrap.offerText1"
+    },
+    {
+      "label": "offerText2",
+      "selector": "form.semi-form-wrapper #text-1c220cf0bd",
+      "kind": "unknown",
+      "id": "text-1c220cf0bd",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerTopWrap.offerTopDescWrap.offerText2"
+    },
+    {
+      "label": "offerText2",
+      "selector": "form #text-1c220cf0bd",
+      "kind": "unknown",
+      "id": "text-1c220cf0bd",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerTopWrap.offerTopDescWrap.offerText2"
+    },
+    {
+      "label": "detailAmountName",
+      "selector": "form.semi-form-wrapper #text-c2230673a9",
+      "kind": "unknown",
+      "id": "text-c2230673a9",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailAmountName"
+    },
+    {
+      "label": "detailAmountName",
+      "selector": "form #text-c2230673a9",
+      "kind": "unknown",
+      "id": "text-c2230673a9",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailAmountName"
+    },
+    {
+      "label": "detailEmiAmount",
+      "selector": "form.semi-form-wrapper #text-728592d6bf",
+      "kind": "unknown",
+      "id": "text-728592d6bf",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailAmountWrap.detailEmiAmount"
+    },
+    {
+      "label": "detailEmiAmount",
+      "selector": "form #text-728592d6bf",
+      "kind": "unknown",
+      "id": "text-728592d6bf",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailAmountWrap.detailEmiAmount"
+    },
+    {
+      "label": "detailAmountText",
+      "selector": "form.semi-form-wrapper #text-bd0d4ada32",
+      "kind": "unknown",
+      "id": "text-bd0d4ada32",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailAmountWrap.detailAmountText"
+    },
+    {
+      "label": "detailAmountText",
+      "selector": "form #text-bd0d4ada32",
+      "kind": "unknown",
+      "id": "text-bd0d4ada32",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailAmountWrap.detailAmountText"
+    },
+    {
+      "label": "detailRefNumLabel",
+      "selector": "form.semi-form-wrapper #text-3b2fb24ff6",
+      "kind": "unknown",
+      "id": "text-3b2fb24ff6",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailRefNumLabel"
+    },
+    {
+      "label": "detailRefNumLabel",
+      "selector": "form #text-3b2fb24ff6",
+      "kind": "unknown",
+      "id": "text-3b2fb24ff6",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailRefNumLabel"
+    },
+    {
+      "label": "detailRefNum",
+      "selector": "form.semi-form-wrapper #text-8be0125c08",
+      "kind": "unknown",
+      "id": "text-8be0125c08",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailRefNumWrap.detailRefNum"
+    },
+    {
+      "label": "detailRefNum",
+      "selector": "form #text-8be0125c08",
+      "kind": "unknown",
+      "id": "text-8be0125c08",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailRefNumWrap.detailRefNum"
+    },
+    {
+      "label": "...",
+      "selector": "form.semi-form-wrapper button[type='button']#button-e9aefc1e97",
+      "kind": "unknown",
+      "id": "button-e9aefc1e97",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailRefNumWrap.detailRefNumCopy"
+    },
+    {
+      "label": "...",
+      "selector": "form.semi-form-wrapper #button-e9aefc1e97",
+      "kind": "unknown",
+      "id": "button-e9aefc1e97",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailRefNumWrap.detailRefNumCopy"
+    },
+    {
+      "label": "...",
+      "selector": "form #button-e9aefc1e97",
+      "kind": "unknown",
+      "id": "button-e9aefc1e97",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.semiOfferContainer.offerDetailsWrap.detailRefNumWrap.detailRefNumCopy"
+    },
+    {
+      "label": "offerText1",
+      "selector": "form.semi-form-wrapper #text-8b816f09aa",
+      "kind": "unknown",
+      "id": "text-8b816f09aa",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerTopWrap.offerTopDescWrap.offerText1"
+    },
+    {
+      "label": "offerText1",
+      "selector": "form #text-8b816f09aa",
+      "kind": "unknown",
+      "id": "text-8b816f09aa",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerTopWrap.offerTopDescWrap.offerText1"
+    },
+    {
+      "label": "offerText2",
+      "selector": "form.semi-form-wrapper #text-ceb04135a6",
+      "kind": "unknown",
+      "id": "text-ceb04135a6",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerTopWrap.offerTopDescWrap.offerText2"
+    },
+    {
+      "label": "offerText2",
+      "selector": "form #text-ceb04135a6",
+      "kind": "unknown",
+      "id": "text-ceb04135a6",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerTopWrap.offerTopDescWrap.offerText2"
+    },
+    {
+      "label": "detailAmountName",
+      "selector": "form.semi-form-wrapper #text-9f0d051ac5",
+      "kind": "unknown",
+      "id": "text-9f0d051ac5",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.detailAmountName"
+    },
+    {
+      "label": "detailAmountName",
+      "selector": "form #text-9f0d051ac5",
+      "kind": "unknown",
+      "id": "text-9f0d051ac5",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.detailAmountName"
+    },
+    {
+      "label": "detailAmountDesc",
+      "selector": "form.semi-form-wrapper #text-3c76316875",
+      "kind": "unknown",
+      "id": "text-3c76316875",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.detailAmountWrap.detailAmountDesc"
+    },
+    {
+      "label": "detailAmountDesc",
+      "selector": "form #text-3c76316875",
+      "kind": "unknown",
+      "id": "text-3c76316875",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.detailAmountWrap.detailAmountDesc"
+    },
+    {
+      "label": "detailAmount",
+      "selector": "form.semi-form-wrapper #text-d4446a09ce",
+      "kind": "unknown",
+      "id": "text-d4446a09ce",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.detailAmountWrap.detailAmount"
+    },
+    {
+      "label": "detailAmount",
+      "selector": "form #text-d4446a09ce",
+      "kind": "unknown",
+      "id": "text-d4446a09ce",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.detailAmountWrap.detailAmount"
+    },
+    {
+      "label": "offerDetailDesc",
+      "selector": "form.semi-form-wrapper #text-da0896ecca",
+      "kind": "unknown",
+      "id": "text-da0896ecca",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.offerDetailDesc"
+    },
+    {
+      "label": "offerDetailDesc",
+      "selector": "form #text-da0896ecca",
+      "kind": "unknown",
+      "id": "text-da0896ecca",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.offerDetailDesc"
+    },
+    {
+      "label": "Proceed to Apply >>",
+      "selector": "form.semi-form-wrapper button[type='button']#button-3b99038366",
+      "kind": "unknown",
+      "id": "button-3b99038366",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.jumboApply"
+    },
+    {
+      "label": "Proceed to Apply >>",
+      "selector": "form.semi-form-wrapper #button-3b99038366",
+      "kind": "unknown",
+      "id": "button-3b99038366",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.jumboApply"
+    },
+    {
+      "label": "Proceed to Apply >>",
+      "selector": "form #button-3b99038366",
+      "kind": "unknown",
+      "id": "button-3b99038366",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.jumboApply"
+    },
+    {
+      "label": "offerLoanMsg",
+      "selector": "form.semi-form-wrapper #text-59b4b2bc28",
+      "kind": "unknown",
+      "id": "text-59b4b2bc28",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerLoanMsg"
+    },
+    {
+      "label": "offerLoanMsg",
+      "selector": "form #text-59b4b2bc28",
+      "kind": "unknown",
+      "id": "text-59b4b2bc28",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerLoanMsg"
+    },
+    {
+      "label": "detailRefNumLabel",
+      "selector": "form.semi-form-wrapper #text-75332bc9b9",
+      "kind": "unknown",
+      "id": "text-75332bc9b9",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumLabel"
+    },
+    {
+      "label": "detailRefNumLabel",
+      "selector": "form #text-75332bc9b9",
+      "kind": "unknown",
+      "id": "text-75332bc9b9",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumLabel"
+    },
+    {
+      "label": "detailRefNum",
+      "selector": "form.semi-form-wrapper #text-0f469d809c",
+      "kind": "unknown",
+      "id": "text-0f469d809c",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumWrap.detailRefNum"
+    },
+    {
+      "label": "detailRefNum",
+      "selector": "form #text-0f469d809c",
+      "kind": "unknown",
+      "id": "text-0f469d809c",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumWrap.detailRefNum"
+    },
+    {
+      "label": "...",
+      "selector": "form.semi-form-wrapper button[type='button']#button-5446c84eee",
+      "kind": "unknown",
+      "id": "button-5446c84eee",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumWrap.detailRefNumCopy"
+    },
+    {
+      "label": "...",
+      "selector": "form.semi-form-wrapper #button-5446c84eee",
+      "kind": "unknown",
+      "id": "button-5446c84eee",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumWrap.detailRefNumCopy"
+    },
+    {
+      "label": "...",
+      "selector": "form #button-5446c84eee",
+      "kind": "unknown",
+      "id": "button-5446c84eee",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.jumboOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumWrap.detailRefNumCopy"
+    },
+    {
+      "label": "offerText1",
+      "selector": "form.semi-form-wrapper #text-86431a6051",
+      "kind": "unknown",
+      "id": "text-86431a6051",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerTopWrap.offerTopDescWrap.offerText1"
+    },
+    {
+      "label": "offerText1",
+      "selector": "form #text-86431a6051",
+      "kind": "unknown",
+      "id": "text-86431a6051",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerTopWrap.offerTopDescWrap.offerText1"
+    },
+    {
+      "label": "offerText2",
+      "selector": "form.semi-form-wrapper #text-e92e5d49ee",
+      "kind": "unknown",
+      "id": "text-e92e5d49ee",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerTopWrap.offerTopDescWrap.offerText2"
+    },
+    {
+      "label": "offerText2",
+      "selector": "form #text-e92e5d49ee",
+      "kind": "unknown",
+      "id": "text-e92e5d49ee",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerTopWrap.offerTopDescWrap.offerText2"
+    },
+    {
+      "label": "detailAmountName",
+      "selector": "form.semi-form-wrapper #text-0816d04d39",
+      "kind": "unknown",
+      "id": "text-0816d04d39",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.detailAmountName"
+    },
+    {
+      "label": "detailAmountName",
+      "selector": "form #text-0816d04d39",
+      "kind": "unknown",
+      "id": "text-0816d04d39",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.detailAmountName"
+    },
+    {
+      "label": "detailAmountDesc",
+      "selector": "form.semi-form-wrapper #text-869c683126",
+      "kind": "unknown",
+      "id": "text-869c683126",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.detailAmountWrap.detailAmountDesc"
+    },
+    {
+      "label": "detailAmountDesc",
+      "selector": "form #text-869c683126",
+      "kind": "unknown",
+      "id": "text-869c683126",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.detailAmountWrap.detailAmountDesc"
+    },
+    {
+      "label": "detailAmount",
+      "selector": "form.semi-form-wrapper #text-0ca96204c9",
+      "kind": "unknown",
+      "id": "text-0ca96204c9",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.detailAmountWrap.detailAmount"
+    },
+    {
+      "label": "detailAmount",
+      "selector": "form #text-0ca96204c9",
+      "kind": "unknown",
+      "id": "text-0ca96204c9",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.detailAmountWrap.detailAmount"
+    },
+    {
+      "label": "offerDetailDesc",
+      "selector": "form.semi-form-wrapper #text-7be9daa6b3",
+      "kind": "unknown",
+      "id": "text-7be9daa6b3",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.offerDetailDesc"
+    },
+    {
+      "label": "offerDetailDesc",
+      "selector": "form #text-7be9daa6b3",
+      "kind": "unknown",
+      "id": "text-7be9daa6b3",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerDetailLeftWrap.offerDetailDesc"
+    },
+    {
+      "label": "Proceed to Apply >>",
+      "selector": "form.semi-form-wrapper button[type='button']#button-23af71dad0",
+      "kind": "unknown",
+      "id": "button-23af71dad0",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.jumboApply"
+    },
+    {
+      "label": "Proceed to Apply >>",
+      "selector": "form.semi-form-wrapper #button-23af71dad0",
+      "kind": "unknown",
+      "id": "button-23af71dad0",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.jumboApply"
+    },
+    {
+      "label": "Proceed to Apply >>",
+      "selector": "form #button-23af71dad0",
+      "kind": "unknown",
+      "id": "button-23af71dad0",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.jumboApply"
+    },
+    {
+      "label": "offerLoanMsg",
+      "selector": "form.semi-form-wrapper #text-72b0d5f4e4",
+      "kind": "unknown",
+      "id": "text-72b0d5f4e4",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerLoanMsg"
+    },
+    {
+      "label": "offerLoanMsg",
+      "selector": "form #text-72b0d5f4e4",
+      "kind": "unknown",
+      "id": "text-72b0d5f4e4",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.offerLoanMsg"
+    },
+    {
+      "label": "detailRefNumLabel",
+      "selector": "form.semi-form-wrapper #text-dc5f932325",
+      "kind": "unknown",
+      "id": "text-dc5f932325",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumLabel"
+    },
+    {
+      "label": "detailRefNumLabel",
+      "selector": "form #text-dc5f932325",
+      "kind": "unknown",
+      "id": "text-dc5f932325",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumLabel"
+    },
+    {
+      "label": "detailRefNum",
+      "selector": "form.semi-form-wrapper #text-c714e83581",
+      "kind": "unknown",
+      "id": "text-c714e83581",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumWrap.detailRefNum"
+    },
+    {
+      "label": "detailRefNum",
+      "selector": "form #text-c714e83581",
+      "kind": "unknown",
+      "id": "text-c714e83581",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumWrap.detailRefNum"
+    },
+    {
+      "label": "...",
+      "selector": "form.semi-form-wrapper button[type='button']#button-f425310f4a",
+      "kind": "unknown",
+      "id": "button-f425310f4a",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumWrap.detailRefNumCopy"
+    },
+    {
+      "label": "...",
+      "selector": "form.semi-form-wrapper #button-f425310f4a",
+      "kind": "unknown",
+      "id": "button-f425310f4a",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumWrap.detailRefNumCopy"
+    },
+    {
+      "label": "...",
+      "selector": "form #button-f425310f4a",
+      "kind": "unknown",
+      "id": "button-f425310f4a",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offersWrapper.instaOfferContainer.offerDetailsWrap.offerDetailMainWrap.detailRefNumWrap.detailRefNumCopy"
+    },
+    {
+      "label": "offerNoteTitle",
+      "selector": "form.semi-form-wrapper #text-6a4d7c5115",
+      "kind": "unknown",
+      "id": "text-6a4d7c5115",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offerNoteTitle"
+    },
+    {
+      "label": "offerNoteTitle",
+      "selector": "form #text-6a4d7c5115",
+      "kind": "unknown",
+      "id": "text-6a4d7c5115",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offerNoteTitle"
+    },
+    {
+      "label": "offerNoteDescription1",
+      "selector": "form.semi-form-wrapper #text-2dd2ff6b32",
+      "kind": "unknown",
+      "id": "text-2dd2ff6b32",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offerNoteDescription1"
+    },
+    {
+      "label": "offerNoteDescription1",
+      "selector": "form #text-2dd2ff6b32",
+      "kind": "unknown",
+      "id": "text-2dd2ff6b32",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offerNoteDescription1"
+    },
+    {
+      "label": "offerNoteDescription2",
+      "selector": "form.semi-form-wrapper #text-393d638496",
+      "kind": "unknown",
+      "id": "text-393d638496",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offerNoteDescription2"
+    },
+    {
+      "label": "offerNoteDescription2",
+      "selector": "form #text-393d638496",
+      "kind": "unknown",
+      "id": "text-393d638496",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.offersContainer.offerNoteDescription2"
+    },
+    {
+      "label": "serviceNote1",
+      "selector": "form.semi-form-wrapper #text-6fab430dad",
+      "kind": "unknown",
+      "id": "text-6fab430dad",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.serviceNote1"
+    },
+    {
+      "label": "serviceNote1",
+      "selector": "form #text-6fab430dad",
+      "kind": "unknown",
+      "id": "text-6fab430dad",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.semiLocSuccessOffersContainer.serviceNote1"
+    },
+    {
+      "label": "feedbackConfirmationTitle",
+      "selector": "form.semi-form-wrapper #text-307951839b",
+      "kind": "unknown",
+      "id": "text-307951839b",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.feedbackConfirmationTitle"
+    },
+    {
+      "label": "feedbackConfirmationTitle",
+      "selector": "form #text-307951839b",
+      "kind": "unknown",
+      "id": "text-307951839b",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.feedbackConfirmationTitle"
+    },
+    {
+      "label": "0",
+      "selector": "form.semi-form-wrapper button[type='button']#button-2c53c2171b",
+      "kind": "unknown",
+      "id": "button-2c53c2171b",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating0"
+    },
+    {
+      "label": "0",
+      "selector": "form.semi-form-wrapper #button-2c53c2171b",
+      "kind": "unknown",
+      "id": "button-2c53c2171b",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating0"
+    },
+    {
+      "label": "0",
+      "selector": "form #button-2c53c2171b",
+      "kind": "unknown",
+      "id": "button-2c53c2171b",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating0"
+    },
+    {
+      "label": "1",
+      "selector": "form.semi-form-wrapper button[type='button']#button-435feeba71",
+      "kind": "unknown",
+      "id": "button-435feeba71",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating1"
+    },
+    {
+      "label": "1",
+      "selector": "form.semi-form-wrapper #button-435feeba71",
+      "kind": "unknown",
+      "id": "button-435feeba71",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating1"
+    },
+    {
+      "label": "1",
+      "selector": "form #button-435feeba71",
+      "kind": "unknown",
+      "id": "button-435feeba71",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating1"
+    },
+    {
+      "label": "2",
+      "selector": "form.semi-form-wrapper button[type='button']#button-f61928c7b4",
+      "kind": "unknown",
+      "id": "button-f61928c7b4",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating2"
+    },
+    {
+      "label": "2",
+      "selector": "form.semi-form-wrapper #button-f61928c7b4",
+      "kind": "unknown",
+      "id": "button-f61928c7b4",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating2"
+    },
+    {
+      "label": "2",
+      "selector": "form #button-f61928c7b4",
+      "kind": "unknown",
+      "id": "button-f61928c7b4",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating2"
+    },
+    {
+      "label": "3",
+      "selector": "form.semi-form-wrapper button[type='button']#button-32963cdcef",
+      "kind": "unknown",
+      "id": "button-32963cdcef",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating3"
+    },
+    {
+      "label": "3",
+      "selector": "form.semi-form-wrapper #button-32963cdcef",
+      "kind": "unknown",
+      "id": "button-32963cdcef",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating3"
+    },
+    {
+      "label": "3",
+      "selector": "form #button-32963cdcef",
+      "kind": "unknown",
+      "id": "button-32963cdcef",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating3"
+    },
+    {
+      "label": "4",
+      "selector": "form.semi-form-wrapper button[type='button']#button-29d460a5e0",
+      "kind": "unknown",
+      "id": "button-29d460a5e0",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating4"
+    },
+    {
+      "label": "4",
+      "selector": "form.semi-form-wrapper #button-29d460a5e0",
+      "kind": "unknown",
+      "id": "button-29d460a5e0",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating4"
+    },
+    {
+      "label": "4",
+      "selector": "form #button-29d460a5e0",
+      "kind": "unknown",
+      "id": "button-29d460a5e0",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating4"
+    },
+    {
+      "label": "5",
+      "selector": "form.semi-form-wrapper button[type='button']#button-b8b8a88b6a",
+      "kind": "unknown",
+      "id": "button-b8b8a88b6a",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating5"
+    },
+    {
+      "label": "5",
+      "selector": "form.semi-form-wrapper #button-b8b8a88b6a",
+      "kind": "unknown",
+      "id": "button-b8b8a88b6a",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating5"
+    },
+    {
+      "label": "5",
+      "selector": "form #button-b8b8a88b6a",
+      "kind": "unknown",
+      "id": "button-b8b8a88b6a",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating5"
+    },
+    {
+      "label": "6",
+      "selector": "form.semi-form-wrapper button[type='button']#button-8c11cc9abe",
+      "kind": "unknown",
+      "id": "button-8c11cc9abe",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating6"
+    },
+    {
+      "label": "6",
+      "selector": "form.semi-form-wrapper #button-8c11cc9abe",
+      "kind": "unknown",
+      "id": "button-8c11cc9abe",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating6"
+    },
+    {
+      "label": "6",
+      "selector": "form #button-8c11cc9abe",
+      "kind": "unknown",
+      "id": "button-8c11cc9abe",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating6"
+    },
+    {
+      "label": "7",
+      "selector": "form.semi-form-wrapper button[type='button']#button-5f8730a04a",
+      "kind": "unknown",
+      "id": "button-5f8730a04a",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating7"
+    },
+    {
+      "label": "7",
+      "selector": "form.semi-form-wrapper #button-5f8730a04a",
+      "kind": "unknown",
+      "id": "button-5f8730a04a",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating7"
+    },
+    {
+      "label": "7",
+      "selector": "form #button-5f8730a04a",
+      "kind": "unknown",
+      "id": "button-5f8730a04a",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating7"
+    },
+    {
+      "label": "8",
+      "selector": "form.semi-form-wrapper button[type='button']#button-cd5dd2caa8",
+      "kind": "unknown",
+      "id": "button-cd5dd2caa8",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating8"
+    },
+    {
+      "label": "8",
+      "selector": "form.semi-form-wrapper #button-cd5dd2caa8",
+      "kind": "unknown",
+      "id": "button-cd5dd2caa8",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating8"
+    },
+    {
+      "label": "8",
+      "selector": "form #button-cd5dd2caa8",
+      "kind": "unknown",
+      "id": "button-cd5dd2caa8",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating8"
+    },
+    {
+      "label": "9",
+      "selector": "form.semi-form-wrapper button[type='button']#button-1130063d7a",
+      "kind": "unknown",
+      "id": "button-1130063d7a",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating9"
+    },
+    {
+      "label": "9",
+      "selector": "form.semi-form-wrapper #button-1130063d7a",
+      "kind": "unknown",
+      "id": "button-1130063d7a",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating9"
+    },
+    {
+      "label": "9",
+      "selector": "form #button-1130063d7a",
+      "kind": "unknown",
+      "id": "button-1130063d7a",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating9"
+    },
+    {
+      "label": "10",
+      "selector": "form.semi-form-wrapper button[type='button']#button-87c5bde1a3",
+      "kind": "unknown",
+      "id": "button-87c5bde1a3",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating10"
+    },
+    {
+      "label": "10",
+      "selector": "form.semi-form-wrapper #button-87c5bde1a3",
+      "kind": "unknown",
+      "id": "button-87c5bde1a3",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating10"
+    },
+    {
+      "label": "10",
+      "selector": "form #button-87c5bde1a3",
+      "kind": "unknown",
+      "id": "button-87c5bde1a3",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingButtons.rating10"
+    },
+    {
+      "label": "notLikelyText",
+      "selector": "form.semi-form-wrapper #text-c99b3a6d7e",
+      "kind": "unknown",
+      "id": "text-c99b3a6d7e",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingColorCodes.notLikelyText"
+    },
+    {
+      "label": "notLikelyText",
+      "selector": "form #text-c99b3a6d7e",
+      "kind": "unknown",
+      "id": "text-c99b3a6d7e",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingColorCodes.notLikelyText"
+    },
+    {
+      "label": "mayBeText",
+      "selector": "form.semi-form-wrapper #text-8baa86fbc2",
+      "kind": "unknown",
+      "id": "text-8baa86fbc2",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingColorCodes.mayBeText"
+    },
+    {
+      "label": "mayBeText",
+      "selector": "form #text-8baa86fbc2",
+      "kind": "unknown",
+      "id": "text-8baa86fbc2",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingColorCodes.mayBeText"
+    },
+    {
+      "label": "veryLikelyText",
+      "selector": "form.semi-form-wrapper #text-a01202ee57",
+      "kind": "unknown",
+      "id": "text-a01202ee57",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingColorCodes.veryLikelyText"
+    },
+    {
+      "label": "veryLikelyText",
+      "selector": "form #text-a01202ee57",
+      "kind": "unknown",
+      "id": "text-a01202ee57",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.ratingColorCodes.veryLikelyText"
+    },
+    {
+      "label": "Capture Rating",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-991c3103ae",
+      "kind": "unknown",
+      "id": "textinput-991c3103ae",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.tqSubmitWrapper.captureRating"
+    },
+    {
+      "label": "Capture Rating",
+      "selector": "form.semi-form-wrapper #textinput-991c3103ae",
+      "kind": "unknown",
+      "id": "textinput-991c3103ae",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.tqSubmitWrapper.captureRating"
+    },
+    {
+      "label": "Capture Rating",
+      "selector": "form #textinput-991c3103ae",
+      "kind": "unknown",
+      "id": "textinput-991c3103ae",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.tqSubmitWrapper.captureRating"
+    },
+    {
+      "label": "Submit",
+      "selector": "form.semi-form-wrapper button[type='button']#button-ee9a659e1f",
+      "kind": "unknown",
+      "id": "button-ee9a659e1f",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.tqSubmitWrapper.tqSubmitButton"
+    },
+    {
+      "label": "Submit",
+      "selector": "form.semi-form-wrapper #button-ee9a659e1f",
+      "kind": "unknown",
+      "id": "button-ee9a659e1f",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.tqSubmitWrapper.tqSubmitButton"
+    },
+    {
+      "label": "Submit",
+      "selector": "form #button-ee9a659e1f",
+      "kind": "unknown",
+      "id": "button-ee9a659e1f",
+      "qname": "$form.aem_semiInstaSuccess.semiLocSuccessPanel.feedbackConfirmation.tqSubmitWrapper.tqSubmitButton"
+    },
+    {
+      "label": "errorMessageText",
+      "selector": "form.semi-form-wrapper #text-9dc3fb2b42",
+      "kind": "unknown",
+      "id": "text-9dc3fb2b42",
+      "qname": "$form.resultPanel.errorResultPanelSemi.errorMessageText"
+    },
+    {
+      "label": "errorMessageText",
+      "selector": "form #text-9dc3fb2b42",
+      "kind": "unknown",
+      "id": "text-9dc3fb2b42",
+      "qname": "$form.resultPanel.errorResultPanelSemi.errorMessageText"
+    },
+    {
+      "label": "START AGAIN",
+      "selector": "form.semi-form-wrapper button[type='button']#button-c05f919f6d",
+      "kind": "unknown",
+      "id": "button-c05f919f6d",
+      "qname": "$form.resultPanel.errorResultPanelSemi.tryAgainButtonErrorPanel"
+    },
+    {
+      "label": "START AGAIN",
+      "selector": "form.semi-form-wrapper #button-c05f919f6d",
+      "kind": "unknown",
+      "id": "button-c05f919f6d",
+      "qname": "$form.resultPanel.errorResultPanelSemi.tryAgainButtonErrorPanel"
+    },
+    {
+      "label": "START AGAIN",
+      "selector": "form #button-c05f919f6d",
+      "kind": "unknown",
+      "id": "button-c05f919f6d",
+      "qname": "$form.resultPanel.errorResultPanelSemi.tryAgainButtonErrorPanel"
+    },
+    {
+      "label": "cardSeq",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-7724935d44",
+      "kind": "unknown",
+      "id": "textinput-7724935d44",
+      "qname": "$form.runtime.cardSeq"
+    },
+    {
+      "label": "cardSeq",
+      "selector": "form.semi-form-wrapper #textinput-7724935d44",
+      "kind": "unknown",
+      "id": "textinput-7724935d44",
+      "qname": "$form.runtime.cardSeq"
+    },
+    {
+      "label": "cardSeq",
+      "selector": "form #textinput-7724935d44",
+      "kind": "unknown",
+      "id": "textinput-7724935d44",
+      "qname": "$form.runtime.cardSeq"
+    },
+    {
+      "label": "journeyId",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-8c6a02b337",
+      "kind": "unknown",
+      "id": "textinput-8c6a02b337",
+      "qname": "$form.runtime.journeyId"
+    },
+    {
+      "label": "journeyId",
+      "selector": "form.semi-form-wrapper #textinput-8c6a02b337",
+      "kind": "unknown",
+      "id": "textinput-8c6a02b337",
+      "qname": "$form.runtime.journeyId"
+    },
+    {
+      "label": "journeyId",
+      "selector": "form #textinput-8c6a02b337",
+      "kind": "unknown",
+      "id": "textinput-8c6a02b337",
+      "qname": "$form.runtime.journeyId"
+    },
+    {
+      "label": "leadProifileId",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-c44f50d169",
+      "kind": "unknown",
+      "id": "textinput-c44f50d169",
+      "qname": "$form.runtime.leadProifileId"
+    },
+    {
+      "label": "leadProifileId",
+      "selector": "form.semi-form-wrapper #textinput-c44f50d169",
+      "kind": "unknown",
+      "id": "textinput-c44f50d169",
+      "qname": "$form.runtime.leadProifileId"
+    },
+    {
+      "label": "leadProifileId",
+      "selector": "form #textinput-c44f50d169",
+      "kind": "unknown",
+      "id": "textinput-c44f50d169",
+      "qname": "$form.runtime.leadProifileId"
+    },
+    {
+      "label": " originAcct",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-62c0b29706",
+      "kind": "unknown",
+      "id": "textinput-62c0b29706",
+      "qname": "$form.runtime.originAcct"
+    },
+    {
+      "label": " originAcct",
+      "selector": "form.semi-form-wrapper #textinput-62c0b29706",
+      "kind": "unknown",
+      "id": "textinput-62c0b29706",
+      "qname": "$form.runtime.originAcct"
+    },
+    {
+      "label": " originAcct",
+      "selector": "form #textinput-62c0b29706",
+      "kind": "unknown",
+      "id": "textinput-62c0b29706",
+      "qname": "$form.runtime.originAcct"
+    },
+    {
+      "label": "journeyName",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-915b32003c",
+      "kind": "unknown",
+      "id": "textinput-915b32003c",
+      "qname": "$form.runtime.journeyName"
+    },
+    {
+      "label": "journeyName",
+      "selector": "form.semi-form-wrapper #textinput-915b32003c",
+      "kind": "unknown",
+      "id": "textinput-915b32003c",
+      "qname": "$form.runtime.journeyName"
+    },
+    {
+      "label": "journeyName",
+      "selector": "form #textinput-915b32003c",
+      "kind": "unknown",
+      "id": "textinput-915b32003c",
+      "qname": "$form.runtime.journeyName"
+    },
+    {
+      "label": "channel",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-05b970186f",
+      "kind": "unknown",
+      "id": "textinput-05b970186f",
+      "qname": "$form.runtime.channel"
+    },
+    {
+      "label": "channel",
+      "selector": "form.semi-form-wrapper #textinput-05b970186f",
+      "kind": "unknown",
+      "id": "textinput-05b970186f",
+      "qname": "$form.runtime.channel"
+    },
+    {
+      "label": "channel",
+      "selector": "form #textinput-05b970186f",
+      "kind": "unknown",
+      "id": "textinput-05b970186f",
+      "qname": "$form.runtime.channel"
+    },
+    {
+      "label": "plan",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-0cf052032c",
+      "kind": "unknown",
+      "id": "textinput-0cf052032c",
+      "qname": "$form.runtime.plan"
+    },
+    {
+      "label": "plan",
+      "selector": "form.semi-form-wrapper #textinput-0cf052032c",
+      "kind": "unknown",
+      "id": "textinput-0cf052032c",
+      "qname": "$form.runtime.plan"
+    },
+    {
+      "label": "plan",
+      "selector": "form #textinput-0cf052032c",
+      "kind": "unknown",
+      "id": "textinput-0cf052032c",
+      "qname": "$form.runtime.plan"
+    },
+    {
+      "label": "currentFormContext",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-3ba1ee1a5c",
+      "kind": "unknown",
+      "id": "textinput-3ba1ee1a5c",
+      "qname": "$form.runtime.currentFormContext"
+    },
+    {
+      "label": "currentFormContext",
+      "selector": "form.semi-form-wrapper #textinput-3ba1ee1a5c",
+      "kind": "unknown",
+      "id": "textinput-3ba1ee1a5c",
+      "qname": "$form.runtime.currentFormContext"
+    },
+    {
+      "label": "currentFormContext",
+      "selector": "form #textinput-3ba1ee1a5c",
+      "kind": "unknown",
+      "id": "textinput-3ba1ee1a5c",
+      "qname": "$form.runtime.currentFormContext"
+    },
+    {
+      "label": "visionPlusEnabled",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-8a3ff3bf4b",
+      "kind": "unknown",
+      "id": "textinput-8a3ff3bf4b",
+      "qname": "$form.runtime.visionPlusEnabled"
+    },
+    {
+      "label": "visionPlusEnabled",
+      "selector": "form.semi-form-wrapper #textinput-8a3ff3bf4b",
+      "kind": "unknown",
+      "id": "textinput-8a3ff3bf4b",
+      "qname": "$form.runtime.visionPlusEnabled"
+    },
+    {
+      "label": "visionPlusEnabled",
+      "selector": "form #textinput-8a3ff3bf4b",
+      "kind": "unknown",
+      "id": "textinput-8a3ff3bf4b",
+      "qname": "$form.runtime.visionPlusEnabled"
+    },
+    {
+      "label": "locSemiJourneyId",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-195c44359f",
+      "kind": "unknown",
+      "id": "textinput-195c44359f",
+      "qname": "$form.runtime.locSemiJourneyId"
+    },
+    {
+      "label": "locSemiJourneyId",
+      "selector": "form.semi-form-wrapper #textinput-195c44359f",
+      "kind": "unknown",
+      "id": "textinput-195c44359f",
+      "qname": "$form.runtime.locSemiJourneyId"
+    },
+    {
+      "label": "locSemiJourneyId",
+      "selector": "form #textinput-195c44359f",
+      "kind": "unknown",
+      "id": "textinput-195c44359f",
+      "qname": "$form.runtime.locSemiJourneyId"
+    },
+    {
+      "label": "semiSingleSession",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-6d79d51d35",
+      "kind": "unknown",
+      "id": "textinput-6d79d51d35",
+      "qname": "$form.runtime.semiSingleSession"
+    },
+    {
+      "label": "semiSingleSession",
+      "selector": "form.semi-form-wrapper #textinput-6d79d51d35",
+      "kind": "unknown",
+      "id": "textinput-6d79d51d35",
+      "qname": "$form.runtime.semiSingleSession"
+    },
+    {
+      "label": "semiSingleSession",
+      "selector": "form #textinput-6d79d51d35",
+      "kind": "unknown",
+      "id": "textinput-6d79d51d35",
+      "qname": "$form.runtime.semiSingleSession"
+    },
+    {
+      "label": "loc Semi Single Session Initiated",
+      "selector": "form.semi-form-wrapper input[type='text']#textinput-1e54142e6f",
+      "kind": "unknown",
+      "id": "textinput-1e54142e6f",
+      "qname": "$form.runtime.locSemiSingleSessionInitiated"
+    },
+    {
+      "label": "loc Semi Single Session Initiated",
+      "selector": "form.semi-form-wrapper #textinput-1e54142e6f",
+      "kind": "unknown",
+      "id": "textinput-1e54142e6f",
+      "qname": "$form.runtime.locSemiSingleSessionInitiated"
+    },
+    {
+      "label": "loc Semi Single Session Initiated",
+      "selector": "form #textinput-1e54142e6f",
+      "kind": "unknown",
+      "id": "textinput-1e54142e6f",
+      "qname": "$form.runtime.locSemiSingleSessionInitiated"
+    }
+  ]
+}

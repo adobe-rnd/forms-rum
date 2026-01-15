@@ -7,6 +7,7 @@ import '../charts/load-time-histogram.js';
 import '../charts/source-time-series-chart.js';
 import '../charts/resource-time-table.js';
 import '../charts/user-agent-pie-chart.js';
+import '../charts/selector-click-table.js';
 import { performanceDataChunks } from '../datachunks.js';
 
 // Helper functions for filtering raw data
@@ -73,6 +74,7 @@ class PerformanceDashboard extends HTMLElement {
     this.dataChunks = null;
     this.rawData = null; // Store raw data for re-filtering
     this.url = '';
+    this.filteredRawChunks = null;
     // Top-level filter state (both are multi-select, empty = all)
     this.selectedDeviceTypes = [];
     this.selectedSources = [];
@@ -485,6 +487,8 @@ class PerformanceDashboard extends HTMLElement {
             <user-agent-pie-chart id="user-agent-chart"></user-agent-pie-chart>
           </div>
         </div>
+
+        <selector-click-table id="selector-click-table"></selector-click-table>
       </div>
     `;
   }
@@ -689,6 +693,7 @@ class PerformanceDashboard extends HTMLElement {
 
     // Re-create DataChunks with filtered data
     this.dataChunks = performanceDataChunks(filteredData);
+    this.filteredRawChunks = filteredData;
 
     // Debug: log filter results
     console.log('Applied filters - Devices:', this.selectedDeviceTypes, 'Sources:', this.selectedSources);
@@ -700,6 +705,17 @@ class PerformanceDashboard extends HTMLElement {
     this.updateHistogram();
     this.updateResourceTable();
     this.updateUserAgentChart();
+    this.updateSelectorClickTable();
+  }
+
+  updateSelectorClickTable() {
+    const table = this.shadowRoot.getElementById('selector-click-table');
+    if (!table) return;
+    const chunks = Array.isArray(this.filteredRawChunks) ? this.filteredRawChunks : [];
+    const bundles = chunks.flatMap((c) => c.rumBundles || []);
+    if (table.setData) {
+      table.setData(bundles, this.url);
+    }
   }
 
   updateUserAgentChart() {
@@ -829,8 +845,13 @@ class PerformanceDashboard extends HTMLElement {
     if (userAgentChart) {
       userAgentChart.reset();
     }
+    const selectorClickTable = this.shadowRoot.getElementById('selector-click-table');
+    if (selectorClickTable && selectorClickTable.reset) {
+      selectorClickTable.reset();
+    }
     this.dataChunks = null;
     this.url = '';
+    this.filteredRawChunks = null;
   }
 }
 
