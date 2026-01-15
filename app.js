@@ -8,6 +8,7 @@ import LoadDashboard from './dashboards/performance-dashboard.js';
 import EngagementDashboard from './dashboards/engagement-dashboard.js';
 import ResourceDashboard from './dashboards/resource-dashboard.js';
 import { errorDataChunks, performanceDataChunks, engagementDataChunks, resourceDataChunks } from './datachunks.js';
+import { formatLocalYMD, localRangeToUTCISOs } from './utils/date-utils.js';
 
 
 
@@ -50,20 +51,22 @@ function updateURLParams(params) {
 
 function showLoading() {
   const urlResults = document.getElementById('url-results');
-  urlResults.innerHTML = `
-    <div class="loading-container">
-      <div class="loading-spinner"></div>
-      <p>Loading data...</p>
-    </div>
-  `;
+  if (urlResults) {
+    // If the dashboard is currently mounted, we still show a loader for initial/tab renders
+    // to avoid a visible "blank" gap.
+    urlResults.innerHTML = `
+      <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <p>Loading data...</p>
+      </div>
+    `;
+  }
 }
 
 function hideLoading() {
   const urlResults = document.getElementById('url-results');
-  const loadingContainer = urlResults.querySelector('.loading-container');
-  if (loadingContainer) {
-    loadingContainer.remove();
-  }
+  const loadingContainer = urlResults?.querySelector?.('.loading-container');
+  if (loadingContainer) loadingContainer.remove();
 }
 
 const dataChunksConfig = {
@@ -82,7 +85,9 @@ async function renderFromURLParams() {
   const {
     startDate = dateRangePicker.getStartDate(),
     endDate = dateRangePicker.getEndDate(),
-    url = urlAutocomplete.getValue(),
+    // url-autocomplete may not have initialized its internal value yet on first paint;
+    // fall back to the attribute value to avoid an initial "blank" render.
+    url = urlAutocomplete.getValue() || urlAutocomplete.getAttribute('value') || '',
     tab = 'error'
   } = params;
   // Set active tab based on URL params
@@ -109,6 +114,7 @@ async function renderFromURLParams() {
   }
   // If URL is specified, filter data and render dashboard
   if (url) {
+    showLoading();
     try {
       // Ensure data is loaded before rendering
       if (!currentData || !Array.isArray(currentData)) {
@@ -122,14 +128,12 @@ async function renderFromURLParams() {
       })).filter((chunk) => chunk.rumBundles.length > 0);
 
       if (filteredData.length > 0 && !filteredData.every(chunk => chunk.rumBundles.length === 0)) {
-        // Render the dashboard based on the tab
-        urlResults.innerHTML = '';
-
+        // Render the dashboard based on the tab (swap in one operation to avoid blank flashes)
         let dataChunksForDashboard;
         let dashboardElement;
         dataChunksForDashboard = dataChunksConfig[tab](filteredData);
         dashboardElement = document.createElement(`${tab}-dashboard`);
-        urlResults.appendChild(dashboardElement);
+        urlResults.replaceChildren(dashboardElement);
         // Pass filteredData as third arg so performance dashboard can aggregate sources fully
         dashboardElement.setData(dataChunksForDashboard, url, filteredData, sourceAliasMap);
       } else {
@@ -138,9 +142,12 @@ async function renderFromURLParams() {
     } catch (error) {
       console.error('Error rendering dashboard:', error);
       urlResults.innerHTML = '<p class="error">Error processing data. Please try again.</p>';
+    } finally {
+      hideLoading();
     }
   } else {
     urlResults.innerHTML = '<p>Please select a URL to view dashboard</p>';
+    hideLoading();
   }
 }
 
@@ -186,7 +193,12 @@ function normalizeSourceValue(src) {
 
 async function loadData(startDate, endDate) {
   await loadSourceAliasesOnce();
-  currentData = await dataLoader.fetchDateRange(startDate, endDate);
+  const utc = localRangeToUTCISOs(startDate, endDate);
+  if (!utc) {
+    currentData = [];
+    return;
+  }
+  currentData = await dataLoader.fetchDateRange(utc.startUTC, utc.endUTC);
   // Update the URLs autocomplete with new data
   const newDataChunks = new DataChunks();
   newDataChunks.load(currentData);
@@ -233,6 +245,7 @@ function setupEventListeners() {
       const urlResults = document.getElementById('url-results');
       urlResults.innerHTML = '<p class="error">Error loading data. Please try again.</p>';
       console.error('Error fetching data:', error);
+      hideLoading();
     }
   });
 }
@@ -246,8 +259,12 @@ window.addEventListener('popstate', () => {
 setupEventListeners();
 const params = getURLParams();
 const dateRangePicker = document.getElementById('date-range-picker');
-const today = new Date().toISOString().split('T')[0];
-const oneWeekAgo = new Date(new Date().setDate(new Date().getDate() - 7)).toISOString().split('T')[0];
+const today = formatLocalYMD(new Date());
+const oneWeekAgo = (() => {
+  const d = new Date();
+  d.setDate(d.getDate() - 7);
+  return formatLocalYMD(d);
+})();
 dateRangePicker.setDates(oneWeekAgo, today);
 const urlAutocomplete = document.getElementById('url-autocomplete');
 const defaults = {
@@ -269,6 +286,7 @@ const changedParams = Object.fromEntries(
   )
 // Load initial data
 if (merged.startDate && merged.endDate) {
+  showLoading();
   await loadData(merged.startDate, merged.endDate);
 }
 
